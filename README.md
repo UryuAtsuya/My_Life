@@ -11,6 +11,7 @@
 ## 入口
 
 - [Company overview](company/overview.md)
+- [Sync policy](company/sync-policy.md)
 - [Today's TODO](company/todos/2026-05-07.md)
 - [Projects](company/projects/README.md)
 - [Notes](company/notes/README.md)
@@ -22,4 +23,4 @@
 - 意思決定は `company/decisions/YYYY-MM-DD.md` に記録する
 - 迷ったメモやアイデアは `company/notes/` に入れる
 - プロジェクト単位の進捗は `company/projects/` にまとめる
-
+- ローカルの `.company/` 更新後は、必要な内容をこのリポジトリにも反映してpushする
