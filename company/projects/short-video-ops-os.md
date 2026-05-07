@@ -26,3 +26,10 @@ This path is closer to revenue than a new SaaS, Daily Planner, job-hunting site,
 
 Complete `AgentRunShowcaseShort` as a 15-second "CapCutでよくない？" reel.
 
+## 2026-05-07 Morning Update
+
+- Today's sample is `AgentRunShowcaseShort`
+- The first priority is a publishable MP4, not expanding the business plan
+- Suggested CTA: "この運用を試したい人いますか？"
+- The two-week validation starts from this first sample
+
