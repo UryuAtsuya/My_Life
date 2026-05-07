@@ -33,3 +33,9 @@ Complete `AgentRunShowcaseShort` as a 15-second "CapCutでよくない？" reel.
 - Suggested CTA: "この運用を試したい人いますか？"
 - The two-week validation starts from this first sample
 
+## 2026-05-08 Morning Update
+
+- `AgentRunShowcaseShort` has an output MP4 at `out/agent-run-showcase-short.mp4`.
+- The current file is `15.061333` seconds, so it needs a small trim or re-render to meet the 15-second criterion.
+- Today's focus is to close this as a publishable first sample before choosing the next three shorts.
+- Keep public sync concise: status, review criteria, decisions, and next action only.
