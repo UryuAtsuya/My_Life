@@ -39,3 +39,11 @@ Complete `AgentRunShowcaseShort` as a 15-second "CapCutでよくない？" reel.
 - The current file is `15.061333` seconds, so it needs a small trim or re-render to meet the 15-second criterion.
 - Today's focus is to close this as a publishable first sample before choosing the next three shorts.
 - Keep public sync concise: status, review criteria, decisions, and next action only.
+
+## 2026-05-08 Work Update
+
+- Created the strict 15-second posting file: `out/agent-run-showcase-short-15s.mp4`.
+- Created a thumbnail candidate: `out/agent-run-showcase-short-thumbnail.jpg`.
+- Final posting frame: show how Codex logs, diffs, and implementation results can become short-video material.
+- First validation metrics: 3-second hold, completion rate, and profile/DM/action signals.
+- Next video candidate: `log-to-video`.
