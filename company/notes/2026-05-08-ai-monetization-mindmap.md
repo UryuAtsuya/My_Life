@@ -29,8 +29,10 @@ Mindmap branches:
 - Creative brief created in `.company`.
 - PM ticket created and moved to in-progress.
 - Remotion composition added: `AiMonetizationMindmap`.
-- Verification completed: lint, bundle, and representative still-frame render.
+- Draft narration generated with macOS `say` voice Kyoko.
+- First draft MP4 rendered: `out/ai-monetization-mindmap-v1.mp4`.
+- Verification completed: lint, bundle, representative still-frame render, and stream check with `ffprobe`.
 
 ## Next Action
 
-Add narration/audio or make a subtitle-only draft, then render the first MP4.
+Create the posting package: title, caption, thumbnail text, and whether to keep or replace the temporary narration.

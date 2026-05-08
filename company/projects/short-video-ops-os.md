@@ -53,5 +53,6 @@ Complete `AgentRunShowcaseShort` as a 15-second "CapCutでよくない？" reel.
 - Added a new candidate direction: collect recent AI monetization YouTube/article references, organize them into a mindmap, then produce a short video from that map.
 - Working title: `2026年AI収益化マップ。稼ぎ方は5つ、でも落とし穴は1つ`.
 - Added Remotion composition: `AiMonetizationMindmap`.
-- Verification completed: lint, bundle, and representative still-frame render.
-- Next action: add narration/audio or make a subtitle-only draft, then render the first MP4.
+- First draft rendered: `out/ai-monetization-mindmap-v1.mp4`, about 60 seconds, with temporary narration and captions.
+- Verification completed: lint, bundle, representative still-frame render, and stream check with `ffprobe`.
+- Next action: create the posting package and decide whether to keep or replace the temporary narration.
