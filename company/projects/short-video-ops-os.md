@@ -47,3 +47,11 @@ Complete `AgentRunShowcaseShort` as a 15-second "CapCutでよくない？" reel.
 - Final posting frame: show how Codex logs, diffs, and implementation results can become short-video material.
 - First validation metrics: 3-second hold, completion rate, and profile/DM/action signals.
 - Next video candidate: `log-to-video`.
+
+## 2026-05-08 AI Monetization Mindmap Update
+
+- Added a new candidate direction: collect recent AI monetization YouTube/article references, organize them into a mindmap, then produce a short video from that map.
+- Working title: `2026年AI収益化マップ。稼ぎ方は5つ、でも落とし穴は1つ`.
+- Added Remotion composition: `AiMonetizationMindmap`.
+- Verification completed: lint, bundle, and representative still-frame render.
+- Next action: add narration/audio or make a subtitle-only draft, then render the first MP4.
