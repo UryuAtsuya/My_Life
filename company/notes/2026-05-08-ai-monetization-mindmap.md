@@ -32,7 +32,16 @@ Mindmap branches:
 - Draft narration generated with macOS `say` voice Kyoko.
 - First draft MP4 rendered: `out/ai-monetization-mindmap-v1.mp4`.
 - Verification completed: lint, bundle, representative still-frame render, and stream check with `ffprobe`.
+- Revised v2 layout rendered: `out/ai-monetization-news-v2.mp4`.
+- v2 switches from dense mindmap nodes to a news-style layout: presenter on the left, one explanatory slide on the right.
 
 ## Next Action
 
 Create the posting package: title, caption, thumbnail text, and whether to keep or replace the temporary narration.
+
+## TTS Options
+
+- CoeFont: easiest next manual test for Japanese narration.
+- ElevenLabs: strong API and commercial-quality narration.
+- OpenAI TTS: easiest fit if the pipeline is automated from script to audio.
+- AivisSpeech / Style-Bert-VITS2: local Japanese TTS options if setup cost is acceptable.

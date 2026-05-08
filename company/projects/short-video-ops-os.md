@@ -56,3 +56,4 @@ Complete `AgentRunShowcaseShort` as a 15-second "CapCutでよくない？" reel.
 - First draft rendered: `out/ai-monetization-mindmap-v1.mp4`, about 60 seconds, with temporary narration and captions.
 - Verification completed: lint, bundle, representative still-frame render, and stream check with `ffprobe`.
 - Next action: create the posting package and decide whether to keep or replace the temporary narration.
+- v2 rendered: `out/ai-monetization-news-v2.mp4`. This simplifies the layout into a news-style explainer with a presenter on the left and one slide on the right.
