@@ -34,6 +34,8 @@ Mindmap branches:
 - Verification completed: lint, bundle, representative still-frame render, and stream check with `ffprobe`.
 - Revised v2 layout rendered: `out/ai-monetization-news-v2.mp4`.
 - v2 switches from dense mindmap nodes to a news-style layout: presenter on the left, one explanatory slide on the right.
+- v3 rendered: `out/ai-monetization-news-v3.mp4`.
+- v3 moves the presenter into a replaceable asset slot: `public/images/ai-news-presenter.svg`.
 
 ## Next Action
 
