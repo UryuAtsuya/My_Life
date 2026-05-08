@@ -1,6 +1,6 @@
 # Codex Active Projects
 
-Last updated: 2026-05-08
+Last updated: 2026-05-09
 
 ## Main Focus
 
@@ -36,3 +36,9 @@ Last updated: 2026-05-08
 - Clarify whether `hermes-pinterest-app` belongs under `ai-inspiration-board`.
 - Clarify the purpose of `Projects/Social_Automation/`.
 - Keep `agency-agents` as a reference asset unless it becomes an implementation project.
+
+## 2026-05-09 Morning Update
+
+1. `short-video-ops-os`: publish `AgentRunShowcaseShort` and record reactions.
+2. `ai-monetization-mindmap-video`: finalize posting title, caption, thumbnail copy, and TTS decision for `AI monetization news v3`.
+3. `short-video-ops-os`: scope the next `log-to-video` demo to one concrete Run log.

@@ -58,3 +58,10 @@ Complete `AgentRunShowcaseShort` as a 15-second "CapCutでよくない？" reel.
 - Next action: create the posting package and decide whether to keep or replace the temporary narration.
 - v2 rendered: `out/ai-monetization-news-v2.mp4`. This simplifies the layout into a news-style explainer with a presenter on the left and one slide on the right.
 - v3 rendered: `out/ai-monetization-news-v3.mp4`. The presenter is now a replaceable image asset, so GPT/Gemini-generated character art can be swapped into the same slot.
+
+## 2026-05-09 Morning Update
+
+- Today's first priority is publishing the existing `AgentRunShowcaseShort` 15-second sample and recording reactions.
+- Track 3-second hold, completion rate, saves, comments, profile visits, DMs, and other action signals.
+- Use the reaction log as evidence for outreach and the short-video operations offer.
+- Next production should be a minimal `log-to-video` demo that shows one Run log becoming a 15-second short.
