@@ -87,3 +87,10 @@ Complete `AgentRunShowcaseShort` as a 15-second "CapCutでよくない？" reel.
 - Create 24h and 72h checkpoints with fixed metrics before interpreting performance.
 - Do not start broader production until this first reaction data exists.
 - Next demo remains `log-to-video`, scoped to one Codex run log becoming one 15-second vertical short.
+
+## 2026-05-10 Evening Meeting Update
+
+- The production bottleneck is no longer the main issue; posting, measuring, and sales connection are the bottlenecks.
+- `log-to-video-proof.mp4` is accepted as a proof asset for outreach and meeting context.
+- Next validation should capture both numbers and lead quality: who reacted, what they reacted to, and whether they fit a paid or paid-intent use case.
+- Outreach should start with 5 focused targets rather than a broad list.

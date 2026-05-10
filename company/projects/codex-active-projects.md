@@ -63,3 +63,10 @@ Last updated: 2026-05-10
 1. `LogToVideoProof`: created as a Remotion Composition and rendered to `out/log-to-video-proof.mp4`.
 2. Verification: lint and render passed; output is 1080x1920, 30fps, 15 seconds.
 3. Next: decide whether to add narration/effects or post as a silent proof.
+
+## 2026-05-10 Evening Meeting Update
+
+1. `short-video-ops-os`: current blocker is posting and measurement, not production.
+2. `AgentRunShowcaseShort`: publish first, then record URL, time, thumbnail, caption, first reactions, and lead quality.
+3. `log-to-video`: use the produced proof as a sales support asset; defer polish until reaction data exists.
+4. `ai-monetization-mindmap-video`: keep as the next post candidate and only adjust caption/CTA after first-post learning.

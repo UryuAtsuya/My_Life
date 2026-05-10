@@ -64,3 +64,55 @@ Today's main outcome should be the first public baseline: publish `AgentRunShowc
 - First-post caption and CTA are ready.
 - `AI monetization news v3` has a completed posting package.
 - `log-to-video` has a defined 15-second structure, but production remains gated on first-post reaction data.
+
+## 22:16 Workflow Rerun
+
+### Context
+
+- System date: 2026-05-10 22:16 JST.
+- Today's TODO and project notes already contain the morning plan and later production update.
+- `AgentRunShowcaseShort` still has the most important unfinished work: public posting, URL/time capture, and reaction measurement.
+- `log-to-video-proof.mp4` is now produced and verified, so the decision point is how to use it without drifting back into production polish.
+
+### Selected Discussion Topics
+
+1. Whether tonight's priority should remain posting and measurement rather than more production.
+2. How to position `log-to-video-proof.mp4` after it has been built.
+3. How to connect the first post to lightweight sales outreach.
+4. What to do with `AI monetization news v3` before publishing it as the next candidate.
+
+### Role Conclusions
+
+#### PM / Strategy
+
+- **Conclusion**: The top priority is to publish `AgentRunShowcaseShort` and start fixed measurement. `log-to-video-proof.mp4` should support sales evidence, not become another polishing loop.
+- **Risk**: Delayed posting also delays the 24h/72h checkpoints and pushes learning into tomorrow.
+- **Next action**: Record URL, publish time, first reactions, and one hypothesis for outreach or post improvement.
+
+#### Creative / Content
+
+- **Conclusion**: Publish `AgentRunShowcaseShort` first because the material and CTA are ready. Keep `AI monetization news v3` as the second candidate, with only caption/CTA adjustments after first-post data.
+- **Risk**: A vague reaction log will not improve the next post. `log-to-video-proof.mp4` is silent, so it may need context when used in DMs or meetings.
+- **Next action**: Make the CTA more direct for interested viewers: people who want their company or work logs turned into video should reply or DM.
+
+#### Engineering / Production
+
+- **Conclusion**: Minimum pre-post checks are playback, caption, CTA, link/profile path, thumbnail, and smartphone display. `log-to-video-proof.mp4` is technically enough for proof use.
+- **Risk**: If CTA and contact path are weak, publishing produces views but not learning. Extra BGM, subtitle, or effect work can delay validation.
+- **Next action**: Defer additional narration, BGM, sound effects, and detailed subtitle polish until reaction data shows a need.
+
+#### Business / Growth
+
+- **Conclusion**: The shortest sales route is to publish first, then use reactions and `log-to-video-proof.mp4` in targeted replies or DMs.
+- **Risk**: Broad outreach makes it hard to learn why someone reacted. Quality debate can replace sales validation if the scope is not fixed.
+- **Next action**: Pick 5 people from three groups: frequent work-log posters, AI-use posters, and small-business operators who could use video for sales, hiring, or internal updates.
+
+### Secretary Summary
+
+The meeting reaffirmed that the business bottleneck is not production capacity anymore. The current bottleneck is publishing, measuring, and turning reactions into a sales conversation. Tonight's useful outcome is a posted `AgentRunShowcaseShort`, a measurement log with URL/time/first reactions, and a small outreach list. `log-to-video-proof.mp4` should be used as a proof asset after the first post is live; it should not trigger another production pass before real reaction data exists.
+
+### Top 3 TODO
+
+1. Publish `AgentRunShowcaseShort` and record URL, exact publish time, caption, thumbnail, and first reactions.
+2. Start 24h/72h measurement and record who reacted, not only aggregate counts.
+3. Prepare 5 lightweight outreach targets and use `log-to-video-proof.mp4` as supporting proof after the first post is live.

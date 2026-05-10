@@ -32,3 +32,10 @@ Show one concrete transformation: a Codex run log becomes a 15-second vertical v
 ## Next Action
 
 Start only after `AgentRunShowcaseShort` has been published and the initial reaction log has been created.
+
+## 2026-05-10 Evening Update
+
+- `Projects/Video_Automation/out/log-to-video-proof.mp4` has already been built and verified as a 15-second vertical proof.
+- Treat the current proof as a supporting sales asset rather than a new production branch.
+- Do not add narration, BGM, sound effects, or detailed subtitle polish until posting reactions show what message needs improvement.
+- Use cases to test first: sales update, hiring update, and internal progress report.
