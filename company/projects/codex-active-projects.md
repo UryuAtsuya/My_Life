@@ -1,13 +1,14 @@
 # Codex Active Projects
 
-Last updated: 2026-05-10
+Last updated: 2026-05-11
 
 ## Main Focus
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | Short Video Operations OS | validation | Publish the first 15-second sample and record URL/time/reactions |
-| 2 | AI Monetization Mindmap Video | posting-prep | Finalize title, caption, thumbnail copy, and TTS decision |
+| 1 | Short Video Operations OS | validation | Publish the first 15-second sample, start 24h/72h measurement, and prepare 5 outreach candidates |
+| 2 | note article flow | planning | Create the first article outline from short-video operations logs |
+| 3 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
 
 ## Managed Projects
 
@@ -77,3 +78,10 @@ Last updated: 2026-05-10
 1. Added `note-article-flow` as a planning item for turning company/Codex logs into note articles.
 2. First target account: `https://note.com/glad_shrew1020`.
 3. Next action: choose the first article theme and draft the outline from recent company automation or short-video production logs.
+
+## 2026-05-11 Morning Update
+
+1. `short-video-ops-os`: today is publish, measure, and connect to 5 focused outreach candidates.
+2. `log-to-video`: use `log-to-video-proof.mp4` as a sales proof asset, not as a new polish loop.
+3. `note-article-flow`: first article theme is `Short Video Operations OS を作ってわかった、AI動画運用を続けるための制作ログ術`; today only create the outline.
+4. `ai-monetization-mindmap-video`: keep as the next posting candidate and limit changes to caption/CTA after first-post learning.

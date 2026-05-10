@@ -94,3 +94,10 @@ Complete `AgentRunShowcaseShort` as a 15-second "CapCutでよくない？" reel.
 - `log-to-video-proof.mp4` is accepted as a proof asset for outreach and meeting context.
 - Next validation should capture both numbers and lead quality: who reacted, what they reacted to, and whether they fit a paid or paid-intent use case.
 - Outreach should start with 5 focused targets rather than a broad list.
+
+## 2026-05-11 Morning Update
+
+- 今日の最優先は `AgentRunShowcaseShort` の公開、24h/72h計測開始、5件アウトリーチ準備。
+- 午前は新規制作、再編集、尺変更、追加生成をしない。公開不能な欠陥だけ例外として扱う。
+- `log-to-video-proof.mp4` は営業証拠資産として使い、追加磨き込みは反応データが出るまで保留する。
+- note記事化は最初の記事テーマと見出し作成まで。本文化は公開ログ、投稿結果、DM反応が集まってから判断する。
