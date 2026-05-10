@@ -66,6 +66,13 @@ Complete `AgentRunShowcaseShort` as a 15-second "CapCutでよくない？" reel.
 - Use the reaction log as evidence for outreach and the short-video operations offer.
 - Next production should be a minimal `log-to-video` demo that shows one Run log becoming a 15-second short.
 
+## 2026-05-10 Work Update
+
+- First-post caption and CTA are finalized. CTA: `あなたなら何を自動化したいですか？`
+- The reaction log is ready; remaining blocker is the actual post URL and publish time.
+- `AI monetization news v3` has a postable package: title, caption, thumbnail copy, and current narration accepted for today's version.
+- `log-to-video` is scoped as a 15-second concept using work/development logs for sales, hiring, or progress updates. Production waits for first-post reaction data.
+
 ## 2026-05-10 Morning Update
 
 - Keep the first priority unchanged: publish `AgentRunShowcaseShort` and record URL, exact time, thumbnail, and first reactions.

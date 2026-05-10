@@ -13,10 +13,10 @@ Last updated: 2026-05-10
 
 | Project | Status | Summary | Next action |
 |---|---|---|---|
-| `short-video-ops-os` | validation | Codex/company workflow for short-video ideation, production, posting, and review. | Post the first sample and track 3-sec hold, completion, and DM/action signals. |
+| `short-video-ops-os` | validation | Codex/company workflow for short-video ideation, production, posting, and review. | Post the first sample and track 3-sec retention, completion, saves, comments, profile clicks, and DMs. |
 | `remotion-first-reel` | in-progress | First Instagram Reel produced with Remotion. | Finish the first-post loop and move to `log-to-video`. |
-| `ai-monetization-mindmap-video` | posting-prep | News-style vertical video explaining AI monetization options. | Close title, caption, thumbnail, and TTS decision. |
-| `log-to-video` | planned | Proof that one Codex run log can become a 15-second vertical short. | Start only after first post URL/time/reactions are logged. |
+| `ai-monetization-mindmap-video` | posting-prep | News-style vertical video explaining AI monetization options. | Posting package is ready; do a short playback check before posting. |
+| `log-to-video` | planned | Proof that one work/development log can become a 15-second vertical short. | Start production only after first post URL/time/reactions are logged. |
 | `job-hunting-support-site` | planning | Job-hunting support prototype that turns anxiety into one next action. | Review the first user flow. |
 | `ai-inspiration-board` | planning | Pinterest-style AI board for collecting references and generating briefs. | Create wireframes and dummy Pin data. |
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
@@ -51,3 +51,9 @@ Last updated: 2026-05-10
 2. Fix 24h/72h reaction metrics at publish time.
 3. Keep `AI monetization news v3` as the next posting candidate and close only the packaging decisions today.
 4. Scope `log-to-video` as one 15-second proof demo, not a product build.
+
+## 2026-05-10 Work Update
+
+1. `AgentRunShowcaseShort`: caption/CTA/reaction fields are ready; waiting on actual publish URL and time.
+2. `ai-monetization-mindmap-video`: title/caption/thumbnail/TTS decision completed.
+3. `log-to-video`: 15-second concept defined; production waits for first-post reaction data.

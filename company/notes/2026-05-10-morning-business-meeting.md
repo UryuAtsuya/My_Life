@@ -11,8 +11,8 @@ created: "2026-05-10 08:00 JST"
 - System date: 2026-05-10 08:00 JST.
 - `AgentRunShowcaseShort` has a strict 15-second posting asset and thumbnail ready.
 - `AI monetization news v3` exists, but still needs title, caption, thumbnail copy, and a binary TTS decision.
-- The next production candidate is `log-to-video`, but it should stay a single 15-second proof demo.
-- Local `.company` writes were blocked by the current sandbox, so this file is the public-facing synced meeting record.
+- The next production candidate is `log-to-video`, but today it should stay at hypothesis definition.
+- Local `.company` records are the detailed operation log; this file is the concise public-facing synced meeting record.
 
 ## Discussion Topics
 
@@ -31,9 +31,9 @@ created: "2026-05-10 08:00 JST"
 
 ### Creative / Content
 
-- **Conclusion**: The ready 15-second showcase is the clearest proof asset; do not let title/caption/TTS decisions delay it.
-- **Risk**: Weak logging at publish time makes 24h/72h creative readout unreliable.
-- **Next action**: Freeze the metric fields and draft the next hook around `その作業ログ、投稿にできます。`
+- **Conclusion**: The ready 15-second showcase is the clearest proof asset; position it as proof that AI/work logs can become content.
+- **Risk**: Weak hook and unclear CTA make the asset look like a generic screen recording.
+- **Next action**: Use a soft CTA: `あなたなら何を自動化したいですか？`
 
 ### Engineering / Production
 
@@ -51,10 +51,16 @@ created: "2026-05-10 08:00 JST"
 
 Today's main outcome should be the first public baseline: publish `AgentRunShowcaseShort`, record the URL and exact time, and set 24h/72h checkpoints before starting another production loop.
 
-`AI monetization news v3` remains the next posting candidate, but the only decision needed today is packaging: title, caption, thumbnail copy, and whether the current TTS is acceptable. `log-to-video` should be scoped as one 15-second proof showing one Codex run log becoming one vertical short.
+`AI monetization news v3` remains the next posting candidate, but the only decision needed today is packaging: title, caption, thumbnail copy, and whether the current TTS is acceptable. `log-to-video` should stay out of production until first-post data exists; define one 15-second hypothesis around turning work/development logs into sales, hiring, or progress-update material.
 
 ## Top 3 TODO
 
-1. Publish `agent-run-showcase-short-15s.mp4` and record URL, exact publish time, thumbnail, and initial reactions.
-2. Create 24h/72h reaction checkpoints with fixed metrics.
+1. Publish `agent-run-showcase-short-15s.mp4` and record URL, exact publish time, caption, and initial reactions.
+2. Start 24h/72h reaction checkpoints with fixed metrics.
 3. Finalize `AI monetization news v3` title, caption, thumbnail copy, and TTS decision.
+
+## 11:00 Follow-up
+
+- First-post caption and CTA are ready.
+- `AI monetization news v3` has a completed posting package.
+- `log-to-video` has a defined 15-second structure, but production remains gated on first-post reaction data.

@@ -30,6 +30,14 @@ AI収益化の選択肢を、視聴者が短時間で整理できるニュース
 - 今日決めるものは、投稿タイトル、キャプション、サムネ文言、TTSを使うか差し替えるかの二択。
 - TTS判断を長引かせず、現在音声で投稿するか、差し替え待ちで保留するかを明確にする。
 
+## 2026-05-10 Work Update
+
+- Posting title: `AI収益化、2026年は「稼ぎ方」より先に地図を作る`
+- Thumbnail copy: `AI収益化 5つの道`
+- CTA: `あなたなら、どの枝から始めますか？`
+- TTS decision: use the current narration for today's postable version; improve narration quality in a later pass.
+- Packaging angle: turn AI monetization signals into a workflow map, not just a news explainer.
+
 ## 次アクション
 
 1. 投稿タイトルを3案出して1案に決める。
