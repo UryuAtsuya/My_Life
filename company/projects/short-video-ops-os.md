@@ -65,3 +65,11 @@ Complete `AgentRunShowcaseShort` as a 15-second "CapCutでよくない？" reel.
 - Track 3-second hold, completion rate, saves, comments, profile visits, DMs, and other action signals.
 - Use the reaction log as evidence for outreach and the short-video operations offer.
 - Next production should be a minimal `log-to-video` demo that shows one Run log becoming a 15-second short.
+
+## 2026-05-10 Morning Update
+
+- Keep the first priority unchanged: publish `AgentRunShowcaseShort` and record URL, exact time, thumbnail, and first reactions.
+- Treat the post as a baseline validation asset rather than a finished-product launch.
+- Create 24h and 72h checkpoints with fixed metrics before interpreting performance.
+- Do not start broader production until this first reaction data exists.
+- Next demo remains `log-to-video`, scoped to one Codex run log becoming one 15-second vertical short.
