@@ -20,6 +20,7 @@ Last updated: 2026-05-10
 | `job-hunting-support-site` | planning | Job-hunting support prototype that turns anxiety into one next action. | Review the first user flow. |
 | `ai-inspiration-board` | planning | Pinterest-style AI board for collecting references and generating briefs. | Create wireframes and dummy Pin data. |
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
+| `note-article-flow` | planning | Workflow for turning company/Codex production logs into note articles. | Pick the first article theme and draft the outline for `https://note.com/glad_shrew1020`. |
 
 ## Local Project Directories
 
@@ -70,3 +71,9 @@ Last updated: 2026-05-10
 2. `AgentRunShowcaseShort`: publish first, then record URL, time, thumbnail, caption, first reactions, and lead quality.
 3. `log-to-video`: use the produced proof as a sales support asset; defer polish until reaction data exists.
 4. `ai-monetization-mindmap-video`: keep as the next post candidate and only adjust caption/CTA after first-post learning.
+
+## 2026-05-10 Note Content Update
+
+1. Added `note-article-flow` as a planning item for turning company/Codex logs into note articles.
+2. First target account: `https://note.com/glad_shrew1020`.
+3. Next action: choose the first article theme and draft the outline from recent company automation or short-video production logs.
