@@ -3,7 +3,7 @@ created: "2026-05-11"
 project: "note-article-flow"
 assignee: "codex"
 priority: high
-status: blocked
+status: done
 ---
 
 # note投稿ブラウザ自動化記事の公開
@@ -17,20 +17,23 @@ status: blocked
 - [x] 記事本文を作成する | Done: 2026-05-11
 - [x] CTA、タグ、アイキャッチ方向、alt textを作る | Done: 2026-05-11
 - [x] `note-growth-editor` の採点表で80点以上にする | Done: 2026-05-11
-- [ ] note編集画面へ転記する
-- [ ] 公開URL、公開時刻、タグ、初動状態を記録する
-- [ ] 24h/72hの計測予定を更新する
+- [x] note編集画面へ転記する | Done: 2026-05-11
+- [x] 公開URL、公開時刻、タグ、初動状態を記録する | Done: 2026-05-11
+- [x] 24h/72hの計測予定を更新する | Done: 2026-05-11
 
 ## 成果物
 
 - 記事ファイル: `company/marketing/content-plan/2026-05-11-note-browser-publishing-automation.md`
 - 記事スコア: 87/100
-- 公開条件: 本文上は満たしている
+- 公開条件: 満たした
+- 公開URL: `https://note.com/glad_shrew1020/n/n1513d700bef0`
+- 公開時刻: `2026-05-11 16:04 JST`
+- タグ: `#AI活用`, `#生成AI`, `#Codex`, `#note`
 
-## ブロッカー
+## ブロッカー解消
 
-2026-05-11 15:55 JST時点で、Chrome/ArcのComputer Use権限がMCP側で拒否されたため、noteのブラウザ投稿操作を実行できなかった。
+2026-05-11 15:55 JST時点ではChrome/ArcのComputer Use権限がMCP側で拒否されたため、noteのブラウザ投稿操作を実行できなかった。その後、ChromeのComputer Use操作が通り、ユーザーの明示許可に基づいて `投稿する` まで実行した。
 
 ## 次アクション
 
-Browser/Computer Use権限を有効にした状態でnote編集画面を開き、本文・タグを転記して公開する。公開後にURL、公開時刻、初動状態を記事ファイルとTODOへ戻す。
+24h/72hでスキ、コメント、フォロー、プロフィール遷移、DMを確認し、次の記事テーマまたはCTA改善を判断する。

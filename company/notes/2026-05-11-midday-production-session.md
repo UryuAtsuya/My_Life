@@ -51,18 +51,21 @@ created: "2026-05-11 13:05 JST"
 
 ### 公開状況
 
-- note公開: 未実施
-- 理由: Chrome/ArcのComputer Use権限がMCP側で拒否され、note編集画面へ転記できなかった。
-- 公開条件: 記事品質、証拠素材、CTA、タグ、計測欄は満たしている。
+- note公開: 実施
+- 公開URL: `https://note.com/glad_shrew1020/n/n1513d700bef0`
+- 公開時刻: `2026-05-11 16:04 JST`
+- タグ: `#AI活用`, `#生成AI`, `#Codex`, `#note`
+- 公開条件: 記事品質、証拠素材、CTA、タグ、計測欄を満たした。
 
 ### 検証
 
 - 記事採点: 87/100
 - 根拠チェック: 公開済みnote URL、Vault内の運用ログ、`note-growth-editor`、automation memoryに基づく。根拠のない数値・実績は入れていない。
-- ブラウザ検証: Computer Use権限拒否のため未実施。
+- ブラウザ検証: ChromeのComputer Useでタイトル、本文、タグを転記し、ユーザー明示許可に基づいて `投稿する` を実行。
+- 公開確認: `curl -L` で公開URLへアクセスし、HTTP 200、title、canonical URL、schema.org `datePublished` を確認。
 
 ### 次の具体アクション
 
-1. Browser/Computer Use権限を有効にする。
-2. 記事本文とタグをnoteへ転記し、公開する。
-3. 公開URL、公開時刻、初動状態を記事ファイル、TODO、バックログへ戻す。
+1. 24h `2026-05-12 16:04 JST` にスキ、コメント、フォロー、プロフィール遷移、DMを確認する。
+2. 72h `2026-05-14 16:04 JST` に同じ項目を再確認する。
+3. 反応から次の記事テーマまたはCTA改善を決める。
