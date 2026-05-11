@@ -35,3 +35,34 @@ created: "2026-05-11 13:05 JST"
 1. `AgentRunShowcaseShort` を公開する。
 2. `company/projects/short-video-ops-os-publishing-log.md` にURL、時刻、投稿先を記録する。
 3. 24h/72h計測と5件DM送付を開始する。
+
+## 追加実行 - note記事制作 16:05 JST
+
+### 実行対象
+
+午後の優先変更とnote編集部OSに従い、バックログ1位の `note投稿をブラウザ操作で自動化してみた` を制作対象にした。
+
+### 作ったもの
+
+- 記事ファイル: `company/marketing/content-plan/2026-05-11-note-browser-publishing-automation.md`
+- 本文、CTA、タグ候補、アイキャッチプロンプト3案、alt text、記事スコア、公開前チェック、投稿後計測欄を作成。
+- `note-growth-editor` の採点表で87/100と判定。
+- PMチケット: `company/pm/tickets/2026-05-11-note-browser-publishing-automation.md`
+
+### 公開状況
+
+- note公開: 未実施
+- 理由: Chrome/ArcのComputer Use権限がMCP側で拒否され、note編集画面へ転記できなかった。
+- 公開条件: 記事品質、証拠素材、CTA、タグ、計測欄は満たしている。
+
+### 検証
+
+- 記事採点: 87/100
+- 根拠チェック: 公開済みnote URL、Vault内の運用ログ、`note-growth-editor`、automation memoryに基づく。根拠のない数値・実績は入れていない。
+- ブラウザ検証: Computer Use権限拒否のため未実施。
+
+### 次の具体アクション
+
+1. Browser/Computer Use権限を有効にする。
+2. 記事本文とタグをnoteへ転記し、公開する。
+3. 公開URL、公開時刻、初動状態を記事ファイル、TODO、バックログへ戻す。

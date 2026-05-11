@@ -6,7 +6,7 @@ Last updated: 2026-05-11
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | note article flow | active | Use `note-growth-editor` to write the next article: `note投稿をブラウザ操作で自動化してみた` |
+| 1 | note article flow | blocked | Publish `note投稿をブラウザ操作で自動化してみた` after Browser/Computer Use access is available |
 | 2 | Short Video Operations OS | validation | Publish the first 15-second sample, start 24h/72h measurement, and prepare 5 outreach candidates |
 | 3 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
 
@@ -21,7 +21,7 @@ Last updated: 2026-05-11
 | `job-hunting-support-site` | planning | Job-hunting support prototype that turns anxiety into one next action. | Review the first user flow. |
 | `ai-inspiration-board` | planning | Pinterest-style AI board for collecting references and generating briefs. | Create wireframes and dummy Pin data. |
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
-| `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | Score and draft `note投稿をブラウザ操作で自動化してみた` using `note-growth-editor`. |
+| `note-article-flow` | blocked | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | Browser/Computer Use権限を有効にし、87点の記事をnoteへ転記・公開する。 |
 
 ## Local Project Directories
 
@@ -98,3 +98,9 @@ Last updated: 2026-05-11
 2. `note-article-flow`: created the `note-growth-editor` skill for market analysis, article scoring, eyecatch prompts, and safe browser publishing.
 3. `note-article-flow`: added `note-editorial-system.md`, `note-growth-analysis-2026-05-11.md`, and `note-article-backlog.md`.
 4. Next article: `note投稿をブラウザ操作で自動化してみた`.
+
+## 2026-05-11 Midday Note Production Update
+
+1. `note-article-flow`: drafted `note投稿をブラウザ操作で自動化してみた` at 87/100 with CTA, tags, eyecatch prompts, alt text, checklist, and measurement fields.
+2. Browser publishing was blocked because Chrome/Arc Computer Use approval was denied by MCP.
+3. Next action: enable Browser/Computer Use access, then transfer the article to note and record public URL/publish time.

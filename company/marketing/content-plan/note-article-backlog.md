@@ -17,7 +17,7 @@ tags: [note, backlog, editorial]
 
 | 優先 | タイトル案 | 柱 | 証拠素材 | 読者への約束 | 収益化接続 | 状態 |
 |---:|---|---|---|---|---|---|
-| 1 | note投稿をブラウザ操作で自動化してみた | Practical AI Production Notes | `2026-05-11-short-video-ops-note-draft.md` と公開URL | note投稿自動化の現実的な手順が分かる | 自動化相談、テンプレ | next |
+| 1 | note投稿をブラウザ操作で自動化してみた | Practical AI Production Notes | `2026-05-11-note-browser-publishing-automation.md` と公開URL | note投稿自動化の現実的な手順が分かる | 自動化相談、テンプレ | ready_to_publish / browser blocked |
 | 2 | AIで作るより難しい、公開後の反応ログ設計 | Publish And Measure | `short-video-ops-os-publishing-log.md` | 投稿後に何を見るべきか分かる | 投稿運用OS | planned |
 | 3 | Codexでひとり会社の昼会を回したら、TODOが制作物に変わった | AI Solo Company OS | midday production note | AI秘書を実務に接続する流れが分かる | 会社運用テンプレ | planned |
 | 4 | 作業ログを15秒動画にする実験 | Log To Asset | `log-to-video-proof.mp4` | 作業ログを発信素材にする発想が分かる | 動画化サービス | planned |
@@ -35,3 +35,11 @@ tags: [note, backlog, editorial]
 - 自動化の価値が分かりやすい。
 - note成長システムの導入記事として自然。
 - 収益化導線を「投稿自動化テンプレ」「note編集部OS」に接続しやすい。
+
+## 2026-05-11 昼制作更新
+
+- 記事ファイル: `company/marketing/content-plan/2026-05-11-note-browser-publishing-automation.md`
+- スコア: 87/100
+- 状態: note公開待ち
+- ブロッカー: Chrome/ArcのComputer Use権限がMCP側で拒否され、note編集画面への転記と公開ができなかった。
+- 次アクション: Browser/Computer Use権限を有効にし、記事本文・タグをnoteへ転記して公開URLと公開時刻を記録する。
