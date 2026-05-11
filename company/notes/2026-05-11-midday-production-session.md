@@ -36,7 +36,7 @@ created: "2026-05-11 13:05 JST"
 2. `company/projects/short-video-ops-os-publishing-log.md` にURL、時刻、投稿先を記録する。
 3. 24h/72h計測と5件DM送付を開始する。
 
-## 追加実行 - note記事制作 16:05 JST
+## 追加実行 - note記事制作 15:55 JST
 
 ### 実行対象
 

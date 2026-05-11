@@ -29,7 +29,7 @@ status: blocked
 
 ## ブロッカー
 
-2026-05-11 16:05 JST時点で、Chrome/ArcのComputer Use権限がMCP側で拒否されたため、noteのブラウザ投稿操作を実行できなかった。
+2026-05-11 15:55 JST時点で、Chrome/ArcのComputer Use権限がMCP側で拒否されたため、noteのブラウザ投稿操作を実行できなかった。
 
 ## 次アクション
 
