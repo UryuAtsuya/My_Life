@@ -85,3 +85,9 @@ Last updated: 2026-05-11
 2. `log-to-video`: use `log-to-video-proof.mp4` as a sales proof asset, not as a new polish loop.
 3. `note-article-flow`: first article theme is `Short Video Operations OS を作ってわかった、AI動画運用を続けるための制作ログ術`; today only create the outline.
 4. `ai-monetization-mindmap-video`: keep as the next posting candidate and limit changes to caption/CTA after first-post learning.
+
+## 2026-05-11 Midday Production Update
+
+1. `short-video-ops-os`: created `company/projects/short-video-ops-os-publishing-log.md` for publish URL/time, 24h/72h metrics, first reactions, and outreach tracking.
+2. `short-video-ops-os`: measurement fields are fixed; remaining blocker is the actual post URL, publish time, posting platform, and five named outreach targets.
+3. `log-to-video`: use `log-to-video-proof.mp4` only after a reply or interest signal, as proof that a work log can become a short video.
