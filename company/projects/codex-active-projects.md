@@ -1,6 +1,6 @@
 # Codex Active Projects
 
-Last updated: 2026-05-11
+Last updated: 2026-05-12
 
 ## Main Focus
 
@@ -112,3 +112,10 @@ Last updated: 2026-05-11
 2. `short-video-ops-os`: still blocked on actual post URL/time/platform and 5 named outreach targets.
 3. `log-to-video`: proof asset is ready; use only after a reply or interest signal.
 4. `ai-monetization-mindmap-video`: keep on hold until first-post learning exists.
+
+## 2026-05-12 Morning Update
+
+1. `note-article-flow`: default growth priority today. Next article is `AIで作るより難しい、公開後の反応ログ設計`; use the 16:04 JST 24h measurement as proof if available.
+2. `short-video-ops-os`: publish `AgentRunShowcaseShort` without extra production and record URL/time/platform/thumbnail/first reactions.
+3. `log-to-video`: keep `log-to-video-proof.mp4` as a reply-stage sales proof asset.
+4. `ai-monetization-mindmap-video`: remain on hold until first-post learning exists.

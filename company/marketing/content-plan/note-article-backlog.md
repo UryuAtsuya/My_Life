@@ -18,7 +18,7 @@ tags: [note, backlog, editorial]
 | 優先 | タイトル案 | 柱 | 証拠素材 | 読者への約束 | 収益化接続 | 状態 |
 |---:|---|---|---|---|---|---|
 | 1 | note投稿をブラウザ操作で自動化してみた | Practical AI Production Notes | `2026-05-11-note-browser-publishing-automation.md` と公開URL | note投稿自動化の現実的な手順が分かる | 自動化相談、テンプレ | published |
-| 2 | AIで作るより難しい、公開後の反応ログ設計 | Publish And Measure | `short-video-ops-os-publishing-log.md` | 投稿後に何を見るべきか分かる | 投稿運用OS | planned |
+| 2 | AIで作るより難しい、公開後の反応ログ設計 | Publish And Measure | `short-video-ops-os-publishing-log.md`、公開済みnote2本、2026-05-12 24h計測 | 投稿後に何を見るべきか分かる | 投稿運用OS、反応ログテンプレ | next |
 | 3 | Codexでひとり会社の昼会を回したら、TODOが制作物に変わった | AI Solo Company OS | midday production note | AI秘書を実務に接続する流れが分かる | 会社運用テンプレ | planned |
 | 4 | 作業ログを15秒動画にする実験 | Log To Asset | `log-to-video-proof.mp4` | 作業ログを発信素材にする発想が分かる | 動画化サービス | planned |
 | 5 | AI記事を量産する前に、採点表を作った | Publish And Measure | `note-editorial-system.md` | 低品質な量産を避ける基準が分かる | 有料チェックリスト | planned |
@@ -51,3 +51,10 @@ tags: [note, backlog, editorial]
 - 優先1の記事は公開済み。
 - 次候補は `AIで作るより難しい、公開後の反応ログ設計`。
 - ただし、2026-05-12の24h反応を確認してから、次の記事化かCTA改善かを最終判断する。
+
+## 2026-05-12 朝会更新
+
+- 今日の `next` は `AIで作るより難しい、公開後の反応ログ設計`。
+- 16:04 JSTの24h計測で具体的な反応が1つでも取れたら、その結果を一次情報として昼に記事化する。
+- 反応が薄い場合も、記事テーマ自体は維持し、本文を「なぜCTA改善が必要か」に寄せる。
+- アイキャッチ方向は `反応ログ` を第一候補にする。

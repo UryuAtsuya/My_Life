@@ -115,3 +115,11 @@ Complete `AgentRunShowcaseShort` as a 15-second "CapCutでよくない？" reel.
 - note側の公開実績が先に進んだため、ショート動画側は公開・計測・5件アウトリーチを2026-05-12へ持ち越す。
 - `AgentRunShowcaseShort` は制作物と台帳は準備済みだが、公開URL、公開時刻、投稿先、初動反応は未入力。
 - 明日は追加制作ではなく、投稿と台帳記入を最初に行う。
+
+## 2026-05-12 Morning Update
+
+- 今日もボトルネックは制作ではなく、公開、計測、営業接続。
+- `AgentRunShowcaseShort` は既存素材で公開し、公開URL、公開時刻、投稿先、サムネ、初動反応を `company/projects/short-video-ops-os-publishing-log.md` に記録する。
+- 24h/72h計測は、公開時刻を基準に固定する。
+- 5件アウトリーチは、AI活用に関心があり、制作・運用・開発の可視化に課題がある相手へ絞る。
+- `log-to-video-proof.mp4` は返信後に送る証拠素材として維持し、初回DMでは公開noteと短い質問を優先する。
