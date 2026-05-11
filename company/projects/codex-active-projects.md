@@ -6,8 +6,8 @@ Last updated: 2026-05-11
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | note article flow | active | Measure the published `note投稿をブラウザ操作で自動化してみた` article at 24h/72h |
-| 2 | Short Video Operations OS | validation | Publish the first 15-second sample, start 24h/72h measurement, and prepare 5 outreach candidates |
+| 1 | note article flow | active | Measure the published `note投稿をブラウザ操作で自動化してみた` article at 2026-05-12 16:04 JST |
+| 2 | Short Video Operations OS | validation | Publish the first 15-second sample, record URL/time/platform, and name 5 outreach candidates |
 | 3 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
 
 ## Managed Projects
@@ -105,3 +105,10 @@ Last updated: 2026-05-11
 2. Browser publishing was initially blocked because Chrome/Arc Computer Use approval was denied by MCP.
 3. After Chrome access recovered, the article was published at `https://note.com/glad_shrew1020/n/n1513d700bef0` at `2026-05-11 16:04 JST`.
 4. Next action: measure 24h/72h reactions and decide the next note topic.
+
+## 2026-05-11 Evening Closeout
+
+1. `note-article-flow`: next checkpoint is 24h measurement at `2026-05-12 16:04 JST`.
+2. `short-video-ops-os`: still blocked on actual post URL/time/platform and 5 named outreach targets.
+3. `log-to-video`: proof asset is ready; use only after a reply or interest signal.
+4. `ai-monetization-mindmap-video`: keep on hold until first-post learning exists.
