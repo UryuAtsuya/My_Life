@@ -1,7 +1,7 @@
 ---
 created: "2026-05-10"
 platform: "note"
-status: draft
+status: staged-in-note
 publish_date: ""
 tags: [note, content, workflow, ai, short-video-ops]
 ---
@@ -79,9 +79,9 @@ note: `https://note.com/glad_shrew1020`
 
 ## ステータス
 
-- [ ] 構成
-- [ ] 下書き
-- [ ] レビュー
+- [x] 構成
+- [x] 下書き
+- [x] レビュー
 - [ ] 公開
 
 ## 2026-05-11 朝会更新
@@ -103,6 +103,9 @@ note: `https://note.com/glad_shrew1020`
 
 ### 今日の扱い
 
-- 本文作成はまだしない。
-- 公開ログ、投稿結果、DM反応が集まってから下書きへ進む。
-- 素材は「背景 / 作ったもの / 判断 / 失敗・学び / 次回改善」の5見出しで集める。
+- 2026-05-11 14:46時点で、ユーザー判断によりnote記事を優先事項へ切り替えた。
+- 投稿用下書きは `company/marketing/content-plan/2026-05-11-short-video-ops-note-draft.md` に作成済み。
+- 未公開の `AgentRunShowcaseShort` は公開済みと書かず、制作・運用実験として扱う。
+- note投稿画面へタイトルと本文を転記し、下書き保存した。
+- 公開設定画面まで進めたが、`投稿する` は外部公開操作のため未クリック。
+- 公開する場合は、ユーザー確認後に `https://editor.note.com/notes/nb56ae90688a4/publish/` で投稿する。
