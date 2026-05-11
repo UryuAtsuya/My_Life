@@ -1,8 +1,8 @@
 ---
 created: "2026-05-10"
 platform: "note"
-status: staged-in-note
-publish_date: ""
+status: published
+publish_date: "2026-05-11"
 tags: [note, content, workflow, ai, short-video-ops]
 ---
 
@@ -82,7 +82,7 @@ note: `https://note.com/glad_shrew1020`
 - [x] 構成
 - [x] 下書き
 - [x] レビュー
-- [ ] 公開
+- [x] 公開
 
 ## 2026-05-11 朝会更新
 
@@ -107,5 +107,7 @@ note: `https://note.com/glad_shrew1020`
 - 投稿用下書きは `company/marketing/content-plan/2026-05-11-short-video-ops-note-draft.md` に作成済み。
 - 未公開の `AgentRunShowcaseShort` は公開済みと書かず、制作・運用実験として扱う。
 - note投稿画面へタイトルと本文を転記し、下書き保存した。
-- 公開設定画面まで進めたが、`投稿する` は外部公開操作のため未クリック。
-- 公開する場合は、ユーザー確認後に `https://editor.note.com/notes/nb56ae90688a4/publish/` で投稿する。
+- ユーザーが試験公開を実行した。
+- 公開URL: `https://note.com/glad_shrew1020/n/nb56ae90688a4`
+- 今回の結果により、note記事の自動作成から公開までのブラウザ自動化は可能と判断。
+- 今後の安全運用では、明示許可がある場合だけ `投稿する` まで実行する。
