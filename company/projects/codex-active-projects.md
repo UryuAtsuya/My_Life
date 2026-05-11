@@ -6,8 +6,8 @@ Last updated: 2026-05-11
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | Short Video Operations OS | validation | Publish the first 15-second sample, start 24h/72h measurement, and prepare 5 outreach candidates |
-| 2 | note article flow | planning | Create the first article outline from short-video operations logs |
+| 1 | note article flow | active | Use `note-growth-editor` to write the next article: `note投稿をブラウザ操作で自動化してみた` |
+| 2 | Short Video Operations OS | validation | Publish the first 15-second sample, start 24h/72h measurement, and prepare 5 outreach candidates |
 | 3 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
 
 ## Managed Projects
@@ -21,7 +21,7 @@ Last updated: 2026-05-11
 | `job-hunting-support-site` | planning | Job-hunting support prototype that turns anxiety into one next action. | Review the first user flow. |
 | `ai-inspiration-board` | planning | Pinterest-style AI board for collecting references and generating briefs. | Create wireframes and dummy Pin data. |
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
-| `note-article-flow` | planning | Workflow for turning company/Codex production logs into note articles. | Pick the first article theme and draft the outline for `https://note.com/glad_shrew1020`. |
+| `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | Score and draft `note投稿をブラウザ操作で自動化してみた` using `note-growth-editor`. |
 
 ## Local Project Directories
 
@@ -91,3 +91,10 @@ Last updated: 2026-05-11
 1. `short-video-ops-os`: created `company/projects/short-video-ops-os-publishing-log.md` for publish URL/time, 24h/72h metrics, first reactions, and outreach tracking.
 2. `short-video-ops-os`: measurement fields are fixed; remaining blocker is the actual post URL, publish time, posting platform, and five named outreach targets.
 3. `log-to-video`: use `log-to-video-proof.mp4` only after a reply or interest signal, as proof that a work log can become a short video.
+
+## 2026-05-11 Note Editorial Update
+
+1. `note-article-flow`: published the first automation-backed note article at `https://note.com/glad_shrew1020/n/nb56ae90688a4`.
+2. `note-article-flow`: created the `note-growth-editor` skill for market analysis, article scoring, eyecatch prompts, and safe browser publishing.
+3. `note-article-flow`: added `note-editorial-system.md`, `note-growth-analysis-2026-05-11.md`, and `note-article-backlog.md`.
+4. Next article: `note投稿をブラウザ操作で自動化してみた`.
