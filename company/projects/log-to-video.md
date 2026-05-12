@@ -50,3 +50,8 @@ Start only after `AgentRunShowcaseShort` has been published and the initial reac
 
 - `log-to-video-proof.mp4` は返信後に送る証拠資産として扱う方針で確定。
 - 2026-05-12は、5件アウトリーチの反応が出た相手にだけこの動画を出す。
+
+## 2026-05-12 Evening Closeout
+
+- 5件アウトリーチが未送付のため、`log-to-video-proof.mp4` の提示機会はまだ発生していない。
+- 2026-05-13も、初回DMでは押し出さず、返信または興味反応が出た相手にだけ証拠資産として送る。

@@ -6,8 +6,8 @@ Last updated: 2026-05-12
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | note article flow | active | Measure the published `note投稿をブラウザ操作で自動化してみた` article at 2026-05-12 16:04 JST, then measure today's article at 2026-05-13 13:07 JST |
-| 2 | Short Video Operations OS | validation | Publish the first 15-second sample, record URL/time/platform, and name 5 outreach candidates |
+| 1 | note article flow | active | Record the delayed 24h measurement for `note投稿をブラウザ操作で自動化してみた`, then measure `AIで作るより難しい、公開後の反応ログ設計` at 2026-05-13 13:07 JST |
+| 2 | Short Video Operations OS | validation / blocked on posting | Publish the first 15-second sample, record URL/time/platform/reactions, and name 5 outreach candidates |
 | 3 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
 
 ## Managed Projects
@@ -134,3 +134,11 @@ Last updated: 2026-05-12
 3. Tags confirmed before publishing: `#AI活用`, `#生成AI`, `#note`.
 4. Verification: note publish completion modal was shown, and the shared URL returned HTTP 200.
 5. Next action: measure `note投稿をブラウザ操作で自動化してみた` at `2026-05-12 16:04 JST`, and measure this article at `2026-05-13 13:07 JST`.
+
+## 2026-05-12 Evening Closeout
+
+1. `note-article-flow`: today's article is published and logged; 24h/72h checkpoints are fixed.
+2. `note-article-flow`: the 24h measurement for `note投稿をブラウザ操作で自動化してみた` has no recorded metrics in the Vault as of 18:21 JST, so carry it as delayed measurement.
+3. `short-video-ops-os`: still blocked on the actual `AgentRunShowcaseShort` publish URL/time/platform and first reactions.
+4. `log-to-video`: keep `log-to-video-proof.mp4` as a reply-stage proof asset.
+5. `ai-monetization-mindmap-video`: keep waiting until first-post learning exists; only caption/CTA may change next.
