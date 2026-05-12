@@ -1,12 +1,12 @@
 ---
 created: "2026-05-12 12:32 JST"
 platform: "note"
-status: "ready_not_published"
+status: "published"
 target_account: "https://note.com/glad_shrew1020"
 project: "note-article-flow"
 pillar: "Publish And Measure"
 score: 86
-tags: [note, ai, publishing, measurement, workflow]
+tags: [note, ai, publishing, measurement, workflow, published]
 ---
 
 # AIで作るより難しい、公開後の反応ログ設計
@@ -192,23 +192,25 @@ Prompt A。記事タイトルの中心語である「反応ログ」がそのま
 - [x] CTAがある
 - [x] noteタグ候補がある
 - [x] アイキャッチ方向とalt textがある
-- [ ] note投稿画面へ転記する（2026-05-12 12:35 JST時点ではChrome/ArcのComputer Use権限拒否で未実施）
-- [ ] 公開URLを記録する
+- [x] note投稿画面へ転記する
+- [x] 公開URLを記録する
 
 ## 投稿後記録
 
-- 公開URL:
-- 公開時刻:
-- タグ:
-- 初動反応:
-- スキ:
-- コメント:
-- フォロー:
-- プロフィール遷移:
-- DM:
+- 公開URL: `https://note.com/glad_shrew1020/n/n4ca83f69af6c`
+- 共有URL: `https://note.com/glad_shrew1020/n/n4ca83f69af6c?sub_rt=share_pb`
+- 公開時刻: `2026-05-12 13:07 JST`
+- タグ: `#AI活用`, `#生成AI`, `#note`
+- コンテスト枠: `#AIと始めてみた` は選択操作を実施したが、公開直前にタグチップとしては確認できなかったため未確認。
+- 初動反応: 公開完了モーダルを確認し、公開URLのHTTP 200到達を確認。表示反応は未計測。
+- スキ: 未計測
+- コメント: 未計測
+- フォロー: 未計測
+- プロフィール遷移: 未計測
+- DM: 未計測
 - 次回計測チェックポイント:
-  - 24h:
-  - 72h:
+  - 24h: `2026-05-13 13:07 JST`
+  - 72h: `2026-05-15 13:07 JST`
 
 ## 制作メモ
 
@@ -217,3 +219,5 @@ Prompt A。記事タイトルの中心語である「反応ログ」がそのま
 - 画像生成/Canva制作は未実施。今回はアイキャッチプロンプト3案とalt textを記録した。
 - 2026-05-12 12:35 JSTにChromeとArcでComputer Useを試したが、どちらもMCP側で権限拒否されたため、noteへの転記・公開は未実施。
 - 次アクションは、16:04 JSTの24h計測後に必要なら本文を1段落だけ更新し、ブラウザ権限が使える状態でnoteへ転記・公開すること。
+- 2026-05-12 13:07 JSTにArcでnoteへ転記し、公開完了モーダルを確認した。
+- 公開後、共有URLを取得し、`curl -I -L` でHTTP 200到達を確認した。

@@ -6,7 +6,7 @@ Last updated: 2026-05-12
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | note article flow | active | Measure the published `note投稿をブラウザ操作で自動化してみた` article at 2026-05-12 16:04 JST |
+| 1 | note article flow | active | Measure the published `note投稿をブラウザ操作で自動化してみた` article at 2026-05-12 16:04 JST, then measure today's article at 2026-05-13 13:07 JST |
 | 2 | Short Video Operations OS | validation | Publish the first 15-second sample, record URL/time/platform, and name 5 outreach candidates |
 | 3 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
 
@@ -126,3 +126,11 @@ Last updated: 2026-05-12
 2. Publishing was blocked because Chrome/Arc Computer Use access was denied by MCP, so the article remains `ready_not_published`.
 3. The 24h checkpoint for `note投稿をブラウザ操作で自動化してみた` is still `2026-05-12 16:04 JST`; do not invent reaction metrics before that time.
 4. Next action: measure the 24h reaction, optionally add one paragraph, then publish when browser access is available.
+
+## 2026-05-12 Note Publish Update
+
+1. `note-article-flow`: published `AIで作るより難しい、公開後の反応ログ設計` at `https://note.com/glad_shrew1020/n/n4ca83f69af6c`.
+2. Publish time: `2026-05-12 13:07 JST`.
+3. Tags confirmed before publishing: `#AI活用`, `#生成AI`, `#note`.
+4. Verification: note publish completion modal was shown, and the shared URL returned HTTP 200.
+5. Next action: measure `note投稿をブラウザ操作で自動化してみた` at `2026-05-12 16:04 JST`, and measure this article at `2026-05-13 13:07 JST`.

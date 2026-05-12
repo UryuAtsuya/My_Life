@@ -18,7 +18,7 @@ status: open
 - [x] 昼記事の本文に、公開済みnote2本、24h計測予定、反応ログ欄のいずれかを証拠素材として入れる
 - [x] `note-growth-editor` の採点で80点以上にする
 - [x] アイキャッチ方向とalt textを決める
-- [ ] 公開する場合は、公開URL、公開時刻、タグ、24h/72h計測予定を記録する
+- [x] 公開する場合は、公開URL、公開時刻、タグ、24h/72h計測予定を記録する
 - [ ] 5件アウトリーチ候補を実名・アカウント名で埋める
 
 ## 判断ルール
@@ -37,3 +37,13 @@ status: open
 - 記事ファイル: `company/marketing/content-plan/2026-05-12-post-publication-reaction-log-design.md`
 - 24h計測は2026-05-12 16:04 JSTに未到達のため、本文では実績値を使わず、計測前に反応ログの型を固定する内容にした。
 - Chrome/ArcのComputer Use権限がMCP側で拒否されたため、noteへの転記・公開は未実施。
+
+## 2026-05-12 公開更新
+
+- Arcで記事をnoteへ転記し、`2026-05-12 13:07 JST` に公開した。
+- 公開URL: `https://note.com/glad_shrew1020/n/n4ca83f69af6c`
+- 共有URL: `https://note.com/glad_shrew1020/n/n4ca83f69af6c?sub_rt=share_pb`
+- タグ: `#AI活用`, `#生成AI`, `#note`
+- 検証: 公開完了モーダルを確認し、共有URLのHTTP 200到達を確認。
+- この記事の次回計測: 24h `2026-05-13 13:07 JST`、72h `2026-05-15 13:07 JST`。
+- 残件: `note投稿をブラウザ操作で自動化してみた` の24h反応を `2026-05-12 16:04 JST` に計測し、5件アウトリーチ候補を実名・アカウント名で埋める。

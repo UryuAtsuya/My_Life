@@ -18,7 +18,7 @@ tags: [note, backlog, editorial]
 | 優先 | タイトル案 | 柱 | 証拠素材 | 読者への約束 | 収益化接続 | 状態 |
 |---:|---|---|---|---|---|---|
 | 1 | note投稿をブラウザ操作で自動化してみた | Practical AI Production Notes | `2026-05-11-note-browser-publishing-automation.md` と公開URL | note投稿自動化の現実的な手順が分かる | 自動化相談、テンプレ | published |
-| 2 | AIで作るより難しい、公開後の反応ログ設計 | Publish And Measure | `short-video-ops-os-publishing-log.md`、公開済みnote2本、2026-05-12 24h計測 | 投稿後に何を見るべきか分かる | 投稿運用OS、反応ログテンプレ | next |
+| 2 | AIで作るより難しい、公開後の反応ログ設計 | Publish And Measure | `short-video-ops-os-publishing-log.md`、公開済みnote2本、2026-05-12 24h計測 | 投稿後に何を見るべきか分かる | 投稿運用OS、反応ログテンプレ | published |
 | 3 | Codexでひとり会社の昼会を回したら、TODOが制作物に変わった | AI Solo Company OS | midday production note | AI秘書を実務に接続する流れが分かる | 会社運用テンプレ | planned |
 | 4 | 作業ログを15秒動画にする実験 | Log To Asset | `log-to-video-proof.mp4` | 作業ログを発信素材にする発想が分かる | 動画化サービス | planned |
 | 5 | AI記事を量産する前に、採点表を作った | Publish And Measure | `note-editorial-system.md` | 低品質な量産を避ける基準が分かる | 有料チェックリスト | planned |
@@ -63,7 +63,11 @@ tags: [note, backlog, editorial]
 
 - 記事ファイル: `company/marketing/content-plan/2026-05-12-post-publication-reaction-log-design.md`
 - スコア: 86/100
-- 状態: ready_not_published
-- 公開状況: Chrome/ArcのComputer Use権限拒否によりnote転記・公開は未実施。
+- 状態: published
+- 公開URL: `https://note.com/glad_shrew1020/n/n4ca83f69af6c`
+- 共有URL: `https://note.com/glad_shrew1020/n/n4ca83f69af6c?sub_rt=share_pb`
+- 公開時刻: `2026-05-12 13:07 JST`
+- タグ: `#AI活用`, `#生成AI`, `#note`
+- 公開状況: Arcでnoteへ転記し、公開完了モーダルを確認。共有URLはHTTP 200到達確認済み。
 - 24h計測: `note投稿をブラウザ操作で自動化してみた` の24h計測時刻 `2026-05-12 16:04 JST` に未到達のため、実数は本文に入れていない。
-- 次アクション: 16:04 JSTの24h反応を確認し、必要なら本文を1段落だけ更新してから公開する。
+- 次アクション: 16:04 JSTに前日公開記事の24h反応を確認し、今回の記事は2026-05-13 13:07 JSTに24h反応を計測する。
