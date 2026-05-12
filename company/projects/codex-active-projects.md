@@ -119,3 +119,10 @@ Last updated: 2026-05-12
 2. `short-video-ops-os`: publish `AgentRunShowcaseShort` without extra production and record URL/time/platform/thumbnail/first reactions.
 3. `log-to-video`: keep `log-to-video-proof.mp4` as a reply-stage sales proof asset.
 4. `ai-monetization-mindmap-video`: remain on hold until first-post learning exists.
+
+## 2026-05-12 Midday Production Update
+
+1. `note-article-flow`: drafted `AIで作るより難しい、公開後の反応ログ設計` at 86/100 with CTA, tags, eyecatch prompts, alt text, checklist, and measurement fields.
+2. Publishing was blocked because Chrome/Arc Computer Use access was denied by MCP, so the article remains `ready_not_published`.
+3. The 24h checkpoint for `note投稿をブラウザ操作で自動化してみた` is still `2026-05-12 16:04 JST`; do not invent reaction metrics before that time.
+4. Next action: measure the 24h reaction, optionally add one paragraph, then publish when browser access is available.
