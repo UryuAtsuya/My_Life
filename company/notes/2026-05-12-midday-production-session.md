@@ -1,7 +1,7 @@
 ---
 date: "2026-05-12"
 type: midday-production-session
-created: "2026-05-12 12:42 JST"
+created: "2026-05-12 12:35 JST"
 ---
 
 # Midday Production Session - 2026-05-12
@@ -26,7 +26,7 @@ created: "2026-05-12 12:42 JST"
 ## 公開判断
 
 - 記事スコアは80点以上で公開候補。
-- ただし、2026-05-12 12:42 JST時点ではChromeとArcのComputer UseがMCP側で権限拒否されたため、noteへの転記・公開は未実施。
+- ただし、2026-05-12 12:35 JST時点ではChromeとArcのComputer UseがMCP側で権限拒否されたため、noteへの転記・公開は未実施。
 - 24h計測時刻 `2026-05-12 16:04 JST` に未到達のため、実績値は本文に入れていない。
 
 ## アイキャッチ
