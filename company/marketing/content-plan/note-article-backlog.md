@@ -17,7 +17,7 @@ tags: [note, backlog, editorial]
 
 | 優先 | タイトル案 | 柱 | 証拠素材 | 読者への約束 | 収益化接続 | 状態 |
 |---:|---|---|---|---|---|---|
-| 1 | AIで始めたnote運用で、公開後ログまで見て初めて分かったこと | Publish And Measure / AI Solo Company OS | 公開済みnote2本、2026-05-13の計測試行、`note-research-2026-05-13.md` | AIで作った記事を公開後ログと次の改善へつなげる型が分かる | note編集部OS、反応ログテンプレ、個別相談 | ready_not_published |
+| 1 | AIで始めたnote運用で、公開後ログまで見て初めて分かったこと | Publish And Measure / AI Solo Company OS | 公開済みnote2本、2026-05-13の計測試行、`note-research-2026-05-13.md` | AIで作った記事を公開後ログと次の改善へつなげる型が分かる | note編集部OS、反応ログテンプレ、個別相談 | published |
 | 2 | note投稿をブラウザ操作で自動化してみた | Practical AI Production Notes | `2026-05-11-note-browser-publishing-automation.md` と公開URL | note投稿自動化の現実的な手順が分かる | 自動化相談、テンプレ | published |
 | 3 | AIで作るより難しい、公開後の反応ログ設計 | Publish And Measure | `short-video-ops-os-publishing-log.md`、公開済みnote2本、2026-05-12 24h計測 | 投稿後に何を見るべきか分かる | 投稿運用OS、反応ログテンプレ | published |
 | 4 | Codexでひとり会社の昼会を回したら、TODOが制作物に変わった | AI Solo Company OS | midday production note | AI秘書を実務に接続する流れが分かる | 会社運用テンプレ | planned |
@@ -25,6 +25,7 @@ tags: [note, backlog, editorial]
 | 6 | AI記事を量産する前に、採点表を作った | Publish And Measure | `note-editorial-system.md` | 低品質な量産を避ける基準が分かる | 有料チェックリスト | planned |
 | 7 | noteアイキャッチを記事の世界観から作る | Practical AI Production Notes | `note-growth-editor` eyecatch prompts | 画像まで含めた投稿設計が分かる | 画像プロンプト集 | planned |
 | 8 | AI秘書に任せる仕事と、人間が決める仕事 | AI Solo Company OS | automation memory / decisions | AI運用の役割分担が分かる | 伴走相談 | planned |
+| 9 | 朝のコーヒーとAI朝会をセットにする仕事ルーティン | AI Solo Company OS / Lifestyle Operations | 朝会ログ、コーヒールーティン、SCAJ2026、国内消費統計 | 朝の習慣をAI運用の継続装置にする型が分かる | 伴走相談、習慣化テンプレ、note連載 | planned |
 
 ## 次に書く1本
 
@@ -90,3 +91,14 @@ tags: [note, backlog, editorial]
 - `#AIと始めてみた` は公式告知上Google AI体験が審査対象のため、今回の公開タグからは外す判断。
 - 13:10 JST時点で24h計測時刻には到達済みだが、ローカル `curl` はDNS解決不可、Chrome/ArcのComputer Useは承認拒否のため反応値は未取得。
 - 次アクション: ブラウザ操作権限が戻ったら、公開済み2本の反応値を回収し、今日の記事をnoteへ転記・公開する。
+
+## 2026-05-13 公開更新
+
+- 記事ファイル: `company/marketing/content-plan/2026-05-13-ai-started-note-operation-publication-log.md`
+- 状態: published
+- 公開URL: `https://note.com/glad_shrew1020/n/nb451e94f6a35`
+- 公開時刻: `2026-05-13 13:31:11 JST`
+- タグ: `#note`, `#記事`, `#反応`, `#公開`
+- 初期反応: スキ0、コメント0。フォロー、プロフィール遷移、DMは未計測。
+- 次回計測: 24h `2026-05-14 13:31 JST`、72h `2026-05-16 13:31 JST`。
+- 補足: コーヒー×AI要素は、今回AI運用ログへ寄せたため本文から外れた。次候補 `朝のコーヒーとAI朝会をセットにする仕事ルーティン` としてバックログへ追加。

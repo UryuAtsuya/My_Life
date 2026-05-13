@@ -6,7 +6,7 @@ Last updated: 2026-05-13
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | note article flow | blocked on browser publishing | Publish the ready draft `AIで始めたnote運用で、公開後ログまで見て初めて分かったこと` after measuring two note reaction checkpoints |
+| 1 | note article flow | published / measurement pending | Measure the new note at 24h/72h and recover delayed measurements for the prior two notes |
 | 2 | Short Video Operations OS | validation / blocked on posting | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and name 5 outreach candidates |
 | 3 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
 
@@ -157,3 +157,11 @@ Last updated: 2026-05-13
 2. Article file: `company/marketing/content-plan/2026-05-13-ai-started-note-operation-publication-log.md`.
 3. Publishing and reaction measurement are blocked because Chrome/Arc Computer Use access was denied and local `curl` cannot resolve `note.com`.
 4. Next action: recover browser access, record reactions for the two published notes, then publish today's ready draft and log URL/time/tags.
+
+## 2026-05-13 Note Publish Update
+
+1. `note-article-flow`: published `AIで始めたnote運用で、公開後ログまで見て初めて分かったこと`.
+2. Public URL: `https://note.com/glad_shrew1020/n/nb451e94f6a35`.
+3. Publish time: `2026-05-13 13:31:11 JST`.
+4. Initial visible reaction state: likes 0, comments 0; follow/profile/DM not measured.
+5. Coffee + AI angle was not included in this article because the midday lane narrowed to AI publishing operations. Track it as the next article candidate: `朝のコーヒーとAI朝会をセットにする仕事ルーティン`.
