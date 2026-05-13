@@ -1,13 +1,13 @@
 # Codex Active Projects
 
-Last updated: 2026-05-12
+Last updated: 2026-05-13
 
 ## Main Focus
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | note article flow | active | Record the delayed 24h measurement for `note投稿をブラウザ操作で自動化してみた`, then measure `AIで作るより難しい、公開後の反応ログ設計` at 2026-05-13 13:07 JST |
-| 2 | Short Video Operations OS | validation / blocked on posting | Publish the first 15-second sample, record URL/time/platform/reactions, and name 5 outreach candidates |
+| 1 | note article flow | active | Record two note reaction checkpoints, then write `AIで始めたnote運用で、公開後ログまで見て初めて分かったこと` at midday |
+| 2 | Short Video Operations OS | validation / blocked on posting | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and name 5 outreach candidates |
 | 3 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
 
 ## Managed Projects
@@ -142,3 +142,11 @@ Last updated: 2026-05-12
 3. `short-video-ops-os`: still blocked on the actual `AgentRunShowcaseShort` publish URL/time/platform and first reactions.
 4. `log-to-video`: keep `log-to-video-proof.mp4` as a reply-stage proof asset.
 5. `ai-monetization-mindmap-video`: keep waiting until first-post learning exists; only caption/CTA may change next.
+
+## 2026-05-13 Morning Update
+
+1. `note-article-flow`: today remains the default growth priority. Next article is `AIで始めたnote運用で、公開後ログまで見て初めて分かったこと`.
+2. `note-article-flow`: compare AI and coffee lanes; choose AI because it has stronger proof from published notes, reaction logs, and the `#AIと始めてみた` deadline.
+3. `short-video-ops-os`: publish `AgentRunShowcaseShort` without extra production and record URL/time/platform/thumbnail/first reactions.
+4. `log-to-video`: keep `log-to-video-proof.mp4` as a reply-stage proof asset.
+5. `ai-monetization-mindmap-video`: remain on hold until first-post learning exists.

@@ -130,3 +130,10 @@ Complete `AgentRunShowcaseShort` as a 15-second "CapCutでよくない？" reel.
 - `AgentRunShowcaseShort` の公開URL、公開時刻、投稿先、初動反応は未入力のまま。
 - 5件アウトリーチは候補条件とDM文面はあるが、実名・アカウント名と送付記録が未完了。
 - 2026-05-13は、公開して計測台帳を埋めることを最優先に戻す。
+
+## 2026-05-13 Morning Update
+
+- 今日も追加制作はしない。`AgentRunShowcaseShort` は既存素材で公開し、公開URL、公開時刻、投稿先、サムネ、初動反応を記録する。
+- 24h/72h計測は、公開時刻を基準に固定する。
+- 5件アウトリーチは、今日のnote記事 `AIで始めたnote運用で、公開後ログまで見て初めて分かったこと` と接続できる相手へ絞る。
+- `log-to-video-proof.mp4` は初回DMでいきなり送らず、返信または関心が出た後の証拠素材として使う。
