@@ -20,7 +20,7 @@ tags: [note, backlog, editorial]
 | 1 | AIで始めたnote運用で、公開後ログまで見て初めて分かったこと | Publish And Measure / AI Solo Company OS | 公開済みnote2本、2026-05-13の計測試行、`note-research-2026-05-13.md` | AIで作った記事を公開後ログと次の改善へつなげる型が分かる | note編集部OS、反応ログテンプレ、個別相談 | published |
 | 2 | note投稿をブラウザ操作で自動化してみた | Practical AI Production Notes | `2026-05-11-note-browser-publishing-automation.md` と公開URL | note投稿自動化の現実的な手順が分かる | 自動化相談、テンプレ | published |
 | 3 | AIで作るより難しい、公開後の反応ログ設計 | Publish And Measure | `short-video-ops-os-publishing-log.md`、公開済みnote2本、2026-05-12 24h計測 | 投稿後に何を見るべきか分かる | 投稿運用OS、反応ログテンプレ | published |
-| 4 | 朝のコーヒーとAI朝会をセットにしたら、仕事の始め方が変わった | AI Solo Company OS / Lifestyle Operations | 朝会ログ、コーヒールーティン、SCAJ2026、国内消費統計、`2026-05-13-coffee-ai-morning-routine.md` | 朝の習慣をAI運用の継続装置にする型が分かる | 伴走相談、習慣化テンプレ、note連載 | ready_blocked_note_editor |
+| 4 | 朝のコーヒーとAI朝会をセットにしたら、仕事の始め方が変わった | AI Solo Company OS / Lifestyle Operations | 朝会ログ、コーヒールーティン、SCAJ2026、国内消費統計、`2026-05-13-coffee-ai-morning-routine.md` | 朝の習慣をAI運用の継続装置にする型が分かる | 伴走相談、習慣化テンプレ、note連載 | published |
 | 5 | Codexでひとり会社の昼会を回したら、TODOが制作物に変わった | AI Solo Company OS | midday production note | AI秘書を実務に接続する流れが分かる | 会社運用テンプレ | planned |
 | 6 | 作業ログを15秒動画にする実験 | Log To Asset | `log-to-video-proof.mp4` | 作業ログを発信素材にする発想が分かる | 動画化サービス | planned |
 | 7 | AI記事を量産する前に、採点表を作った | Publish And Measure | `note-editorial-system.md` | 低品質な量産を避ける基準が分かる | 有料チェックリスト | planned |
@@ -124,3 +124,11 @@ tags: [note, backlog, editorial]
 - Chromeのログイン済みnoteで新規記事作成へ進み、`editor.note.com/notes/.../edit/` への遷移は確認。
 - ただし編集画面本文領域が白紙表示のままになり、本文転記と公開操作は未完了。
 - 記事は公開基準を満たしているため、次回はnote編集画面の正常表示確認から再開する。
+
+## 2026-05-13 コーヒーAI公開更新
+
+- 公開URL: `https://note.com/glad_shrew1020/n/n8dd878a215bc`
+- 公開時刻: `2026-05-13 13:54:14 JST`
+- タグ: `#コーヒー`, `#今日`, `#仕事`, `#時間`, `#note`
+- 初期反応: スキ0、コメント0相当。フォロー、プロフィール遷移、DMは未計測。
+- 計測予定: 24h `2026-05-14 13:54 JST`、72h `2026-05-16 13:54 JST`。

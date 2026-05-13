@@ -6,7 +6,7 @@ Last updated: 2026-05-13
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | note article flow | coffee + AI ready, editor blocked | Publish `朝のコーヒーとAI朝会をセットにしたら、仕事の始め方が変わった` after note editor renders, then record URL/time/reactions |
+| 1 | note article flow | coffee + AI published | Measure `朝のコーヒーとAI朝会をセットにしたら、仕事の始め方が変わった` at 24h and 72h, then choose the next article angle |
 | 2 | Short Video Operations OS | validation / blocked on posting | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and name 5 outreach candidates |
 | 3 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
 
@@ -185,3 +185,11 @@ Last updated: 2026-05-13
 1. Opened note new-article flow in logged-in Chrome.
 2. note redirected to `editor.note.com/notes/.../edit/`, but the editor body rendered blank.
 3. Article remains ready and unpublished; next step is browser/editor recovery, then direct publish.
+
+## 2026-05-13 Coffee AI Published
+
+1. Published `朝のコーヒーとAI朝会をセットにしたら、仕事の始め方が変わった`.
+2. URL: `https://note.com/glad_shrew1020/n/n8dd878a215bc`.
+3. Publish time: `2026-05-13 13:54:14 JST`.
+4. Initial visible reaction: likes 0, comments 0 equivalent; follows/profile/DM not measured.
+5. Next checkpoints: 24h `2026-05-14 13:54 JST`, 72h `2026-05-16 13:54 JST`.
