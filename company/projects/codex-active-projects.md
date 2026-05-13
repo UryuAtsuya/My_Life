@@ -6,7 +6,7 @@ Last updated: 2026-05-13
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | note article flow | published / measurement pending | Measure the new note at 24h/72h and recover delayed measurements for the prior two notes |
+| 1 | note article flow | coffee + AI next | Draft `朝のコーヒーとAI朝会をセットにする仕事ルーティン` from the new brief |
 | 2 | Short Video Operations OS | validation / blocked on posting | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and name 5 outreach candidates |
 | 3 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
 
@@ -165,3 +165,10 @@ Last updated: 2026-05-13
 3. Publish time: `2026-05-13 13:31:11 JST`.
 4. Initial visible reaction state: likes 0, comments 0; follow/profile/DM not measured.
 5. Coffee + AI angle was not included in this article because the midday lane narrowed to AI publishing operations. Track it as the next article candidate: `朝のコーヒーとAI朝会をセットにする仕事ルーティン`.
+
+## 2026-05-13 Priority Correction
+
+1. User clarified that coffee + AI should be prioritized over the publishing-log lane.
+2. `note-article-flow`: next article is now `朝のコーヒーとAI朝会をセットにする仕事ルーティン`.
+3. Brief created: `company/marketing/content-plan/2026-05-13-coffee-ai-morning-routine-brief.md`.
+4. PM ticket created: `company/pm/tickets/2026-05-13-coffee-ai-morning-routine-note.md`.

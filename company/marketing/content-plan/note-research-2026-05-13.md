@@ -95,6 +95,24 @@ tags: [note, research, ai, coffee, publishing, measurement]
 
 ## 推奨記事
 
+### 2026-05-13 13:40 方針修正
+
+ユーザー指示により、次のnote制作はAI運用ログ単体ではなく、コーヒー×AI系を優先する。
+
+- 推奨タイトル: `朝のコーヒーとAI朝会をセットにしたら、仕事の始め方が変わった`
+- 状態: `next`
+- 対象読者: AIを使いたいが、毎日の仕事に定着していない個人事業者、クリエイター、小規模事業者。
+- 証拠素材:
+  - `company/notes/2026-05-13-morning-business-meeting.md`
+  - `company/todos/2026-05-13.md`
+  - `company/marketing/content-plan/2026-05-13-coffee-ai-morning-routine-brief.md`
+  - SCAJ2026 `開催概要`: `https://scajconference.jp/overview/`
+  - 全日本コーヒー協会 `統計資料`: `https://coffee.ajca.or.jp/data/`
+- 読者への約束: 朝のコーヒーをAI朝会の入口にして、今日のTODO、公開予定、計測予定を自然に始める型が分かる。
+- 収益化接続: AI朝会テンプレ、生活習慣に組み込むAI伴走、個人事業者向け運用設計。
+
+### 旧推奨記事
+
 - 推奨タイトル: `AIで始めたnote運用で、公開後ログまで見て初めて分かったこと`
 - 状態: `next`
 - 対象読者: AIで記事や動画を作り始めたが、公開後の計測、改善、相談導線づくりが止まりがちな個人・小規模事業者。

@@ -20,23 +20,23 @@ tags: [note, backlog, editorial]
 | 1 | AIで始めたnote運用で、公開後ログまで見て初めて分かったこと | Publish And Measure / AI Solo Company OS | 公開済みnote2本、2026-05-13の計測試行、`note-research-2026-05-13.md` | AIで作った記事を公開後ログと次の改善へつなげる型が分かる | note編集部OS、反応ログテンプレ、個別相談 | published |
 | 2 | note投稿をブラウザ操作で自動化してみた | Practical AI Production Notes | `2026-05-11-note-browser-publishing-automation.md` と公開URL | note投稿自動化の現実的な手順が分かる | 自動化相談、テンプレ | published |
 | 3 | AIで作るより難しい、公開後の反応ログ設計 | Publish And Measure | `short-video-ops-os-publishing-log.md`、公開済みnote2本、2026-05-12 24h計測 | 投稿後に何を見るべきか分かる | 投稿運用OS、反応ログテンプレ | published |
-| 4 | Codexでひとり会社の昼会を回したら、TODOが制作物に変わった | AI Solo Company OS | midday production note | AI秘書を実務に接続する流れが分かる | 会社運用テンプレ | planned |
-| 5 | 作業ログを15秒動画にする実験 | Log To Asset | `log-to-video-proof.mp4` | 作業ログを発信素材にする発想が分かる | 動画化サービス | planned |
-| 6 | AI記事を量産する前に、採点表を作った | Publish And Measure | `note-editorial-system.md` | 低品質な量産を避ける基準が分かる | 有料チェックリスト | planned |
-| 7 | noteアイキャッチを記事の世界観から作る | Practical AI Production Notes | `note-growth-editor` eyecatch prompts | 画像まで含めた投稿設計が分かる | 画像プロンプト集 | planned |
-| 8 | AI秘書に任せる仕事と、人間が決める仕事 | AI Solo Company OS | automation memory / decisions | AI運用の役割分担が分かる | 伴走相談 | planned |
-| 9 | 朝のコーヒーとAI朝会をセットにする仕事ルーティン | AI Solo Company OS / Lifestyle Operations | 朝会ログ、コーヒールーティン、SCAJ2026、国内消費統計 | 朝の習慣をAI運用の継続装置にする型が分かる | 伴走相談、習慣化テンプレ、note連載 | planned |
+| 4 | 朝のコーヒーとAI朝会をセットにする仕事ルーティン | AI Solo Company OS / Lifestyle Operations | 朝会ログ、コーヒールーティン、SCAJ2026、国内消費統計、`2026-05-13-coffee-ai-morning-routine-brief.md` | 朝の習慣をAI運用の継続装置にする型が分かる | 伴走相談、習慣化テンプレ、note連載 | next |
+| 5 | Codexでひとり会社の昼会を回したら、TODOが制作物に変わった | AI Solo Company OS | midday production note | AI秘書を実務に接続する流れが分かる | 会社運用テンプレ | planned |
+| 6 | 作業ログを15秒動画にする実験 | Log To Asset | `log-to-video-proof.mp4` | 作業ログを発信素材にする発想が分かる | 動画化サービス | planned |
+| 7 | AI記事を量産する前に、採点表を作った | Publish And Measure | `note-editorial-system.md` | 低品質な量産を避ける基準が分かる | 有料チェックリスト | planned |
+| 8 | noteアイキャッチを記事の世界観から作る | Practical AI Production Notes | `note-growth-editor` eyecatch prompts | 画像まで含めた投稿設計が分かる | 画像プロンプト集 | planned |
+| 9 | AI秘書に任せる仕事と、人間が決める仕事 | AI Solo Company OS | automation memory / decisions | AI運用の役割分担が分かる | 伴走相談 | planned |
 
 ## 次に書く1本
 
-`AIで始めたnote運用で、公開後ログまで見て初めて分かったこと`
+`朝のコーヒーとAI朝会をセットにする仕事ルーティン`
 
 理由:
 
-- `#AIと始めてみた` が2026-05-15締切で、今日の公開なら市場文脈に乗りやすい。
-- 直近2本の公開済みnoteと、2026-05-13の24h/遅延計測を一次情報にできる。
-- 手順解説ではなく、AIで始めた発信運用を計測・改善・相談導線まで続ける話にできる。
-- 収益化導線を「note編集部OS」「反応ログテンプレ」「業務自動化・記事制作相談」に接続しやすい。
+- ユーザー方針として、公開後ログ系よりもコーヒー×AI系を優先する。
+- AI活用を生活に定着させる入口として、朝のコーヒーとAI朝会の組み合わせが強い。
+- 直近のAI運用ログに、生活感・習慣化・仕事開始の文脈を足せる。
+- コーヒー市場の参考リンクを使いつつ、本人の朝ルーティンとAI朝会を一次情報にできる。
 
 ## 2026-05-11 昼制作更新
 
@@ -102,3 +102,10 @@ tags: [note, backlog, editorial]
 - 初期反応: スキ0、コメント0。フォロー、プロフィール遷移、DMは未計測。
 - 次回計測: 24h `2026-05-14 13:31 JST`、72h `2026-05-16 13:31 JST`。
 - 補足: コーヒー×AI要素は、今回AI運用ログへ寄せたため本文から外れた。次候補 `朝のコーヒーとAI朝会をセットにする仕事ルーティン` としてバックログへ追加。
+
+## 2026-05-13 方針修正
+
+- ユーザー指示により、次のnote制作はコーヒー×AI系を優先する。
+- `朝のコーヒーとAI朝会をセットにする仕事ルーティン` を `next` に変更。
+- 記事ブリーフ: `company/marketing/content-plan/2026-05-13-coffee-ai-morning-routine-brief.md`
+- PMチケット: `company/pm/tickets/2026-05-13-coffee-ai-morning-routine-note.md`

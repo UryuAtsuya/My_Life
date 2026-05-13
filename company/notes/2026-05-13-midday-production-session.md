@@ -60,3 +60,11 @@ created: "2026-05-13 13:22 JST"
 - 72h計測: `2026-05-16 13:31 JST`
 - 検証: 公開ページHTTP 200、canonical URL、schema.org `datePublished` を確認。
 - コーヒーとAI要素: 朝会でAI運用ログを優先したため、今回の記事から外れた。次記事候補として `朝のコーヒーとAI朝会をセットにする仕事ルーティン` をバックログへ追加。
+
+## 2026-05-13 方針修正
+
+- ユーザー指示: コーヒー×AI系を優先する。
+- 修正内容: 次のnote候補を `朝のコーヒーとAI朝会をセットにする仕事ルーティン` に変更。
+- 作成: `company/marketing/content-plan/2026-05-13-coffee-ai-morning-routine-brief.md`
+- 作成: `company/pm/tickets/2026-05-13-coffee-ai-morning-routine-note.md`
+- 次アクション: 次の制作枠で、コーヒーを「飾り」ではなくAI朝会を始める生活導線として本文化する。
