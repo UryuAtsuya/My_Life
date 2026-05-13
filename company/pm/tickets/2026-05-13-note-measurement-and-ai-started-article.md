@@ -3,7 +3,7 @@ created: "2026-05-13"
 project: "note-article-flow"
 assignee: "codex"
 priority: high
-status: open
+status: blocked
 ---
 
 # note計測回収とAI体験記事化
@@ -16,7 +16,7 @@ status: open
 
 - [ ] `note投稿をブラウザ操作で自動化してみた` の24h遅延計測を記録する
 - [ ] `AIで作るより難しい、公開後の反応ログ設計` の24h反応を `2026-05-13 13:07 JST` に記録する
-- [ ] 昼記事の本文に、公開済みnote2本、反応ログ、今日のTODO、`#AIと始めてみた` の市場文脈を入れる
+- [x] 昼記事の本文に、公開済みnote2本、反応ログ、今日のTODO、`#AIと始めてみた` の市場文脈を入れる
 - [ ] 記事採点80点以上なら公開し、公開URL、公開時刻、タグ、24h/72h計測予定を記録する
 - [ ] 5件アウトリーチ候補を実名・アカウント名で埋め、少なくとも送付直前状態まで進める
 
@@ -30,3 +30,12 @@ status: open
 ## 次アクション
 
 昼オートメーションは `company/marketing/content-plan/note-research-2026-05-13.md` とこのチケットを読み、記事構成、本文、採点、アイキャッチ、公開判断へ進む。
+
+## 2026-05-13 昼進捗
+
+- 記事ファイル: `company/marketing/content-plan/2026-05-13-ai-started-note-operation-publication-log.md`
+- 記事スコア: `86/100`
+- 状態: `ready_not_published`
+- 公開ブロッカー: Chrome/ArcのComputer UseがMCP側で承認拒否。ローカル `curl` も `Could not resolve host: note.com`。
+- 反応計測: 13:10 JST時点で2本目の24h計測時刻には到達済みだが、ブラウザ・ネットワーク到達不可のため未計測。
+- 次アクション: ブラウザ権限復旧後、2本の反応値を記録し、今日の記事をnoteへ転記・公開する。

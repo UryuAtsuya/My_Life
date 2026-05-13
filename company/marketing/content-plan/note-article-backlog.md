@@ -17,7 +17,7 @@ tags: [note, backlog, editorial]
 
 | 優先 | タイトル案 | 柱 | 証拠素材 | 読者への約束 | 収益化接続 | 状態 |
 |---:|---|---|---|---|---|---|
-| 1 | AIで始めたnote運用で、公開後ログまで見て初めて分かったこと | Publish And Measure / AI Solo Company OS | 公開済みnote2本、2026-05-13の24h/遅延計測、`note-research-2026-05-13.md` | AIで作った記事を公開後ログと次の改善へつなげる型が分かる | note編集部OS、反応ログテンプレ、個別相談 | next |
+| 1 | AIで始めたnote運用で、公開後ログまで見て初めて分かったこと | Publish And Measure / AI Solo Company OS | 公開済みnote2本、2026-05-13の計測試行、`note-research-2026-05-13.md` | AIで作った記事を公開後ログと次の改善へつなげる型が分かる | note編集部OS、反応ログテンプレ、個別相談 | ready_not_published |
 | 2 | note投稿をブラウザ操作で自動化してみた | Practical AI Production Notes | `2026-05-11-note-browser-publishing-automation.md` と公開URL | note投稿自動化の現実的な手順が分かる | 自動化相談、テンプレ | published |
 | 3 | AIで作るより難しい、公開後の反応ログ設計 | Publish And Measure | `short-video-ops-os-publishing-log.md`、公開済みnote2本、2026-05-12 24h計測 | 投稿後に何を見るべきか分かる | 投稿運用OS、反応ログテンプレ | published |
 | 4 | Codexでひとり会社の昼会を回したら、TODOが制作物に変わった | AI Solo Company OS | midday production note | AI秘書を実務に接続する流れが分かる | 会社運用テンプレ | planned |
@@ -80,3 +80,13 @@ tags: [note, backlog, editorial]
 - 理由は、公開済みnote2本、反応ログ設計、`#AIと始めてみた` 締切直前、相談導線への接続が強いため。
 - 昼までに `note投稿をブラウザ操作で自動化してみた` の24h遅延計測を回収し、13:07 JSTに `AIで作るより難しい、公開後の反応ログ設計` の24h計測を行う。
 - 計測値が取れない場合も、実績値は捏造せず、公開後ログの型と次に直す場所を記事の主題にする。
+
+## 2026-05-13 昼制作更新
+
+- 記事ファイル: `company/marketing/content-plan/2026-05-13-ai-started-note-operation-publication-log.md`
+- スコア: 86/100
+- 状態: ready_not_published
+- タグ候補: `#AI活用`, `#生成AI`, `#note`, `#発信`, `#仕事術`, `#個人事業`
+- `#AIと始めてみた` は公式告知上Google AI体験が審査対象のため、今回の公開タグからは外す判断。
+- 13:10 JST時点で24h計測時刻には到達済みだが、ローカル `curl` はDNS解決不可、Chrome/ArcのComputer Useは承認拒否のため反応値は未取得。
+- 次アクション: ブラウザ操作権限が戻ったら、公開済み2本の反応値を回収し、今日の記事をnoteへ転記・公開する。

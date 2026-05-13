@@ -6,7 +6,7 @@ Last updated: 2026-05-13
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | note article flow | active | Record two note reaction checkpoints, then write `AIで始めたnote運用で、公開後ログまで見て初めて分かったこと` at midday |
+| 1 | note article flow | blocked on browser publishing | Publish the ready draft `AIで始めたnote運用で、公開後ログまで見て初めて分かったこと` after measuring two note reaction checkpoints |
 | 2 | Short Video Operations OS | validation / blocked on posting | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and name 5 outreach candidates |
 | 3 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
 
@@ -150,3 +150,10 @@ Last updated: 2026-05-13
 3. `short-video-ops-os`: publish `AgentRunShowcaseShort` without extra production and record URL/time/platform/thumbnail/first reactions.
 4. `log-to-video`: keep `log-to-video-proof.mp4` as a reply-stage proof asset.
 5. `ai-monetization-mindmap-video`: remain on hold until first-post learning exists.
+
+## 2026-05-13 Midday Production Update
+
+1. `note-article-flow`: drafted `AIで始めたnote運用で、公開後ログまで見て初めて分かったこと` at `86/100`.
+2. Article file: `company/marketing/content-plan/2026-05-13-ai-started-note-operation-publication-log.md`.
+3. Publishing and reaction measurement are blocked because Chrome/Arc Computer Use access was denied and local `curl` cannot resolve `note.com`.
+4. Next action: recover browser access, record reactions for the two published notes, then publish today's ready draft and log URL/time/tags.
