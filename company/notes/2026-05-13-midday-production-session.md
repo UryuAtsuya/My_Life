@@ -68,3 +68,20 @@ created: "2026-05-13 13:22 JST"
 - 作成: `company/marketing/content-plan/2026-05-13-coffee-ai-morning-routine-brief.md`
 - 作成: `company/pm/tickets/2026-05-13-coffee-ai-morning-routine-note.md`
 - 次アクション: 次の制作枠で、コーヒーを「飾り」ではなくAI朝会を始める生活導線として本文化する。
+
+## 2026-05-13 コーヒーAI記事制作追記
+
+- 記事タイトル: `朝のコーヒーとAI朝会をセットにしたら、仕事の始め方が変わった`
+- 記事ファイル: `company/marketing/content-plan/2026-05-13-coffee-ai-morning-routine.md`
+- 状態: `ready_not_published`
+- スコア: `85/100`
+- 本文文字数: 約1,504字
+- 参考確認: SCAJ2026開催概要、全日本コーヒー協会統計資料。
+- 次アクション: noteへ公開し、URLと公開時刻を記録する。
+
+## 2026-05-13 コーヒーAI公開試行
+
+- 試行: Chromeのログイン済みnoteで `https://note.com/notes/new` を開いた。
+- 結果: `editor.note.com/notes/n5cd83998b3d9/edit/` と `editor.note.com/notes/n51bbdf937ca5/edit/` への遷移は発生したが、編集画面本文領域が白紙表示のままだった。
+- 判断: タイトル、本文、タグ、公開ボタンを確認できないため、公開済みとして扱わない。
+- 現在状態: 記事本文、CTA、タグ候補、アイキャッチ方向、採点、公開前チェックは完了。note転記と公開のみ未完了。

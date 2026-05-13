@@ -3,7 +3,7 @@ created: "2026-05-13"
 project: "note-article-flow"
 assignee: "codex"
 priority: high
-status: open
+status: blocked_note_editor
 ---
 
 # コーヒー×AI朝会noteを優先する
@@ -14,11 +14,12 @@ status: open
 
 ## 完了条件
 
-- [ ] `company/marketing/content-plan/2026-05-13-coffee-ai-morning-routine-brief.md` をもとに本文を作る
-- [ ] 1,500〜2,500字の無料通常記事にする
-- [ ] コーヒー要素を飾りではなく、AI運用を始める儀式として本文の中心に置く
-- [ ] SCAJ2026と全日本コーヒー協会のリンクを参考素材として残す
-- [ ] 記事採点80点以上ならnoteへ公開する
+- [x] `company/marketing/content-plan/2026-05-13-coffee-ai-morning-routine-brief.md` をもとに本文を作る
+- [x] 1,500〜2,500字の無料通常記事にする
+- [x] コーヒー要素を飾りではなく、AI運用を始める儀式として本文の中心に置く
+- [x] SCAJ2026と全日本コーヒー協会のリンクを参考素材として残す
+- [x] 記事採点80点以上ならnoteへ公開候補にする
+- [ ] note編集画面へ転記し、公開URLと公開時刻を記録する
 
 ## 判断ルール
 
@@ -29,3 +30,18 @@ status: open
 ## 次アクション
 
 次の制作枠で、`朝のコーヒーとAI朝会をセットにしたら、仕事の始め方が変わった` を本文化する。
+
+## 2026-05-13 制作更新
+
+- 記事ファイル: `company/marketing/content-plan/2026-05-13-coffee-ai-morning-routine.md`
+- 状態: `ready_not_published`
+- スコア: `85/100`
+- 本文文字数: 約1,504字
+- 次アクション: noteへ転記・公開し、公開URL、公開時刻、タグ、24h/72h計測予定を記録する。
+
+## 2026-05-13 公開ブロック
+
+- Chromeのログイン済みnoteから `https://note.com/notes/new` を開き、`editor.note.com/notes/.../edit/` へ遷移することは確認した。
+- ただし編集画面本文領域が白紙表示のままになり、タイトル欄・本文欄・公開ボタンを取得できなかった。
+- 記事は公開基準を満たしているが、内容を転記できていないため未公開扱いを維持する。
+- 次アクション: note編集画面が表示される状態で、タイトル、本文、タグを転記して公開する。

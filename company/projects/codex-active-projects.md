@@ -6,7 +6,7 @@ Last updated: 2026-05-13
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | note article flow | coffee + AI next | Draft `朝のコーヒーとAI朝会をセットにする仕事ルーティン` from the new brief |
+| 1 | note article flow | coffee + AI ready, editor blocked | Publish `朝のコーヒーとAI朝会をセットにしたら、仕事の始め方が変わった` after note editor renders, then record URL/time/reactions |
 | 2 | Short Video Operations OS | validation / blocked on posting | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and name 5 outreach candidates |
 | 3 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
 
@@ -172,3 +172,16 @@ Last updated: 2026-05-13
 2. `note-article-flow`: next article is now `朝のコーヒーとAI朝会をセットにする仕事ルーティン`.
 3. Brief created: `company/marketing/content-plan/2026-05-13-coffee-ai-morning-routine-brief.md`.
 4. PM ticket created: `company/pm/tickets/2026-05-13-coffee-ai-morning-routine-note.md`.
+
+## 2026-05-13 Coffee AI Draft Update
+
+1. `note-article-flow`: drafted `朝のコーヒーとAI朝会をセットにしたら、仕事の始め方が変わった` at `85/100`.
+2. Article file: `company/marketing/content-plan/2026-05-13-coffee-ai-morning-routine.md`.
+3. Body length: about 1,504 Japanese characters.
+4. External note draft saved to `/Users/uryuatsuya/note/articles/drafts/20260513-coffee-ai-morning-routine.md`.
+
+## 2026-05-13 Coffee AI Publish Attempt
+
+1. Opened note new-article flow in logged-in Chrome.
+2. note redirected to `editor.note.com/notes/.../edit/`, but the editor body rendered blank.
+3. Article remains ready and unpublished; next step is browser/editor recovery, then direct publish.
