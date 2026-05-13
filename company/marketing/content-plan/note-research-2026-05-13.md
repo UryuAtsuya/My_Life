@@ -191,3 +191,63 @@ Alt text: 公開済みnote記事のカード、反応ログ表、次アクショ
 - 自分のnoteはすでに作成・公開・反応ログ設計まで進んでおり、今日の24h/遅延計測で一次情報を補える。
 - コーヒー関係より、AI関係の方が既存のnote編集部OS、ショート動画公開台帳、アウトリーチ、相談導線へ接続しやすい。
 - 昼オートメーションは本文執筆に集中できるよう、朝の時点でタイトル、証拠素材、構成、タグ、アイキャッチ方向を固定できる。
+
+## Evening Next Brief - 2026-05-13 18:00 JST
+
+### 保存先メモ
+
+- 本来の保存先 `/Users/uryuatsuya/note/articles/research/2026-05-13-evening-next-brief.md` は、現在のサンドボックス外で `Operation not permitted` のため作成できなかった。
+- 明朝に使う要点は、このcompany側ブリーフと `company/todos/2026-05-14.md` に保存する。
+
+### 今日の公開成果
+
+- `AIで始めたnote運用で、公開後ログまで見て初めて分かったこと`
+  - URL: `https://note.com/glad_shrew1020/n/nb451e94f6a35`
+  - 公開時刻: `2026-05-13 13:31:11 JST`
+  - 24h計測: `2026-05-14 13:31 JST`
+- `朝のコーヒーとAI朝会をセットにしたら、仕事の始め方が変わった`
+  - URL: `https://note.com/glad_shrew1020/n/n8dd878a215bc`
+  - 公開時刻: `2026-05-13 13:54:14 JST`
+  - 24h計測: `2026-05-14 13:54 JST`
+
+### AI関係シグナル
+
+- OpenAI release notesでは、ChatGPTのMemory sourcesと、過去チャット・保存メモリ・ファイル・接続Gmailなどを使ったパーソナライズ改善が直近テーマになっている。
+  - Source: https://help.openai.com/en/articles/6825453-chatgpt-release-notes
+- GoogleはPersonal Intelligenceとして、GeminiがGmail、Photos、YouTube、Searchなどの個人文脈へ接続する方向を打ち出している。
+  - Source: https://blog.google/innovation-and-ai/products/gemini-app/personal-intelligence
+- Google I/O 2026は `2026-05-19` から `2026-05-20` に開催予定。明日以降は、AIが「記事生成ツール」から「個人文脈を持つ日常運用レイヤー」へ移る流れを追う。
+  - Source: https://blog.google/innovation-and-ai/technology/developers-tools/io-save-the-date-2026-gemini/
+
+### コーヒー関係シグナル
+
+- SCAJ2026は `Brew the Future` をテーマに、2026年10月14日から東京ビッグサイトで開催予定。
+  - Source: https://scajconference.jp/overview/
+- 全日本コーヒー協会の統計では、2025年の日本のコーヒー消費量は397,272トン、前年比99.3%。日常習慣としての強さは引き続き記事素材になる。
+  - Source: https://coffee.ajca.or.jp/data/
+- コーヒー文脈は市場解説より、朝の儀式、集中開始、AI朝会の継続装置として扱う方が自分の一次情報に近い。
+
+### 明日の重要語
+
+- Memory sources
+- Personal Intelligence
+- Gemini
+- Google I/O 2026
+- SCAJ2026
+- Brew the Future
+- AI朝会
+- 公開後ログ
+- 24h計測
+- 翌日引き継ぎ
+
+### 記事角度候補
+
+1. `朝のコーヒーとAI朝会を、明日の自分に引き継ぐ記憶システムにする`
+2. `AIに書かせるより、AIに昨日の自分を覚えさせる方が効いた`
+3. `公開後ログを見ないまま記事を増やすと、AI運用は散らかる`
+
+### 明朝の開いた問い
+
+- 今日公開した2本の24h反応は、タイトル、冒頭、タグ、CTAのどこを直す示唆になるか。
+- コーヒー×AI記事は、単なる日記ではなくAI習慣化の型として読まれたか。
+- `AgentRunShowcaseShort` の公開が遅れている原因は、投稿先選定、公開操作、計測不安、アウトリーチ心理のどれか。

@@ -1,0 +1,51 @@
+---
+date: "2026-05-13"
+type: evening-closeout-review
+created: "2026-05-13 18:00 JST"
+---
+
+# Evening Closeout Review - 2026-05-13
+
+## 今日の変更
+
+- システム日付は `2026-05-13 18:00 JST` に確認済み。
+- 朝会で、今日の既定優先をnote成長に置き、当初はAI運用ログ記事を昼の主軸にした。
+- 昼制作で `AIで始めたnote運用で、公開後ログまで見て初めて分かったこと` を作成した。スコアは86/100、公開URLは `https://note.com/glad_shrew1020/n/nb451e94f6a35`、公開時刻は `2026-05-13 13:31:11 JST`。
+- ユーザー方針により、次の制作優先をコーヒー×AIへ切り替えた。
+- `朝のコーヒーとAI朝会をセットにしたら、仕事の始め方が変わった` を作成した。スコアは85/100、公開URLは `https://note.com/glad_shrew1020/n/n8dd878a215bc`、公開時刻は `2026-05-13 13:54:14 JST`。
+- PMチケット `company/pm/tickets/2026-05-13-coffee-ai-morning-routine-note.md` は `published` まで進んだ。
+- `AI monetization news v3` は、`AgentRunShowcaseShort` の初回反応がまだないため、キャプション/CTA調整以外は引き続き保留した。
+
+## 完了したTODO
+
+- [x] 昼のnote制作でAI運用ログ記事を本文化し、公開URL/時刻/タグ/計測予定まで記録した。
+- [x] コーヒー×AI記事のブリーフ、本文、採点、公開、24h/72h計測予定の記録まで完了した。
+- [x] 次のnote優先をコーヒー×AI系へ切り替えた。
+- [x] `AI monetization news v3` の保留方針を維持した。
+
+## 未完了・ブロッカー
+
+- `note投稿をブラウザ操作で自動化してみた` の24h遅延計測は未完了。スキ、コメント、フォロー、プロフィール遷移、DM、読者文脈、次に直す場所の数値証跡がない。
+- `AIで作るより難しい、公開後の反応ログ設計` の24h計測は未完了。`2026-05-13 13:07 JST` 時点の反応値が未記録。
+- 今日公開した2本の24h計測は明日実施。AI運用ログ記事は `2026-05-14 13:31 JST`、コーヒー×AI記事は `2026-05-14 13:54 JST`。
+- `AgentRunShowcaseShort` は公開URL、公開時刻、投稿先、初動反応が未入力。公開前チェックも一部未確認。
+- 5件アウトリーチ候補は枠と文面だけあり、実名・アカウント名、送付記録、反応ログが未完了。
+- `/Users/uryuatsuya/note/articles/research/2026-05-13-evening-next-brief.md` は、現在のサンドボックス外で `Operation not permitted` となり作成できなかった。
+
+## 検証結果
+
+- 昼制作ログでは、note公開ページHTTP 200、canonical URL、schema.org `datePublished` の確認が記録されている。
+- note公式告知、OpenAI release notes、SCAJ2026開催概要、全日本コーヒー協会統計資料はWeb確認済み。
+- 夕方時点では、note反応値の再計測とショート動画公開は未検証。
+
+## 明日への引き継ぎ
+
+1. 旧note2本の遅延計測と、今日公開した2本の24h計測を回収する。
+2. `AgentRunShowcaseShort` を既存素材で公開し、公開・計測台帳を埋める。
+3. 5件アウトリーチ候補を実名・アカウント名で確定し、まず初回DMを送る。
+
+## 明日のnote仮説
+
+最有力角度は `朝のコーヒーとAI朝会を、明日の自分に引き継ぐ記憶システムにする`。今日のコーヒー×AI記事の続編として、OpenAIのMemory sources、GoogleのPersonal Intelligence/Gemini系の流れ、毎朝のcompany TODOを接続できる。
+
+記事化する場合は、外部ニュース解説ではなく、実際の朝会、TODO、公開後計測、コーヒー習慣を「毎日続くAI運用」に落とす体験記事にする。
