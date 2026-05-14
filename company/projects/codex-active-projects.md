@@ -209,3 +209,11 @@ Last updated: 2026-05-14
 4. External draft save was rejected as outside the writable sandbox.
 5. Chrome publishing was blocked by Computer Use `approval denied`.
 6. Next action: restore Chrome operation, publish through Chrome, then log URL/time/tags/reactions.
+
+## 2026-05-14 Evening Closeout
+
+1. `note-article-flow`: keep the two-lane plan: one coffee article and one AI article.
+2. Coffee article is drafted at `84/100` and remains unpublished because Chrome operation was denied.
+3. AI article candidate remains `AI時代に、毎日の仕事ログを残す理由`; use Memory sources, Gemini Intelligence, and company logs as proof.
+4. Reaction measurements for the four published note articles are still not recorded in the Vault.
+5. `short-video-ops-os`: still blocked on the first public URL/time/platform and at least one named outreach send record.

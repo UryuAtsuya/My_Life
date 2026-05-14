@@ -36,3 +36,10 @@ status: ready_not_published
 - 外部ドラフト保存: `/Users/uryuatsuya/note/articles/drafts/20260514-morning-coffee-reset.md` への書き込みはサンドボックス外として拒否された。
 - 公開試行: Chrome Computer Useが `approval denied` となり、note転記・公開は未実施。
 - 次アクション: Chrome操作権限が戻ったら、Vault正本からnoteへ転記・公開する。
+
+## 2026-05-14 Evening Closeout
+
+- 状態: `ready_not_published` のまま維持。
+- 完了: 本文、採点84/100、タグ候補、アイキャッチ案、alt text、公開前チェック。
+- 未完了: 外部ドラフト保存、note転記、公開URL/時刻/タグ/初期反応、24h/72h計測予定。
+- 次アクション: 2026-05-15はこのチケットを最初に処理し、公開後すぐに公開後ログを埋める。
