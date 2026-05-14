@@ -59,3 +59,9 @@ status: published
 - 状態: `published` で完了扱い。
 - 残確認: 2026-05-14 13:54 JSTに24h反応を計測する。
 - 次記事接続: コーヒーをAI朝会の開始トリガーとして扱い、Memory sources、Personal Intelligence、company TODOの翌日引き継ぎへ接続する。
+
+## 2026-05-13 Chrome Extension Update Test
+
+- Codex Chrome Extension経由で公開済み記事 `https://note.com/glad_shrew1020/n/n8dd878a215bc` の編集画面を開き、追記を入れて `更新する` まで実行した。
+- 公開ページで追記の反映を確認済み。
+- 運用メモ: 部分挿入はカーソル位置の誤りが起きることがあるため、重要な更新ではVault正本から本文全体を再投入してから更新する方が安定する。

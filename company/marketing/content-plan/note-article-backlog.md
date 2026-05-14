@@ -13,30 +13,47 @@ tags: [note, backlog, editorial]
 - 65-79点: 改稿
 - 64点以下: 保留または統合
 
+## 2026-05-13 方針更新
+
+次フェーズは `AI使ってやってみた` 系を主軸にしない。
+
+- 1日2本を目安にする。
+- 1本目はコーヒー単体の記事。生活、味、器具、習慣、店、豆、仕事前の整え方を扱う。
+- 2本目はAI単体の記事。AI時代の仕事術、個人事業、発信、意思決定、運用設計を扱う。
+- コーヒー×AIは橋渡しとして使えるが、毎日の基本型にはしない。
+- AI記事は「ツールを使ってみた」ではなく、「AIで仕事や発信の考え方がどう変わるか」に寄せる。
+
 ## 候補
 
 | 優先 | タイトル案 | 柱 | 証拠素材 | 読者への約束 | 収益化接続 | 状態 |
 |---:|---|---|---|---|---|---|
-| 1 | AIで始めたnote運用で、公開後ログまで見て初めて分かったこと | Publish And Measure / AI Solo Company OS | 公開済みnote2本、2026-05-13の計測試行、`note-research-2026-05-13.md` | AIで作った記事を公開後ログと次の改善へつなげる型が分かる | note編集部OS、反応ログテンプレ、個別相談 | published |
-| 2 | note投稿をブラウザ操作で自動化してみた | Practical AI Production Notes | `2026-05-11-note-browser-publishing-automation.md` と公開URL | note投稿自動化の現実的な手順が分かる | 自動化相談、テンプレ | published |
-| 3 | AIで作るより難しい、公開後の反応ログ設計 | Publish And Measure | `short-video-ops-os-publishing-log.md`、公開済みnote2本、2026-05-12 24h計測 | 投稿後に何を見るべきか分かる | 投稿運用OS、反応ログテンプレ | published |
-| 4 | 朝のコーヒーとAI朝会をセットにしたら、仕事の始め方が変わった | AI Solo Company OS / Lifestyle Operations | 朝会ログ、コーヒールーティン、SCAJ2026、国内消費統計、`2026-05-13-coffee-ai-morning-routine.md` | 朝の習慣をAI運用の継続装置にする型が分かる | 伴走相談、習慣化テンプレ、note連載 | published |
-| 5 | Codexでひとり会社の昼会を回したら、TODOが制作物に変わった | AI Solo Company OS | midday production note | AI秘書を実務に接続する流れが分かる | 会社運用テンプレ | planned |
-| 6 | 作業ログを15秒動画にする実験 | Log To Asset | `log-to-video-proof.mp4` | 作業ログを発信素材にする発想が分かる | 動画化サービス | planned |
-| 7 | AI記事を量産する前に、採点表を作った | Publish And Measure | `note-editorial-system.md` | 低品質な量産を避ける基準が分かる | 有料チェックリスト | planned |
-| 8 | noteアイキャッチを記事の世界観から作る | Practical AI Production Notes | `note-growth-editor` eyecatch prompts | 画像まで含めた投稿設計が分かる | 画像プロンプト集 | planned |
+| 1 | 毎朝のコーヒーを、仕事前の小さなリセットにする | Coffee Lifestyle | 朝のコーヒールーティン、抽出メモ、作業開始前の状態、`2026-05-14-morning-coffee-reset.md` | 朝の1杯を仕事前の整え方として真似できる | コーヒー連載、生活習慣系読者の獲得 | ready_not_published |
+| 2 | AI時代に、毎日の仕事ログを残す理由 | AI Work Style | company TODO、朝会/昼会/夕会ログ、公開後計測ログ | AIを使う前に残すべき仕事ログの型が分かる | AI運用テンプレ、個別相談 | next_ai |
+| 3 | AIで始めたnote運用で、公開後ログまで見て初めて分かったこと | Publish And Measure / AI Solo Company OS | 公開済みnote2本、2026-05-13の計測試行、`note-research-2026-05-13.md` | AIで作った記事を公開後ログと次の改善へつなげる型が分かる | note編集部OS、反応ログテンプレ、個別相談 | published |
+| 4 | note投稿をブラウザ操作で自動化してみた | Practical AI Production Notes | `2026-05-11-note-browser-publishing-automation.md` と公開URL | note投稿自動化の現実的な手順が分かる | 自動化相談、テンプレ | published |
+| 5 | AIで作るより難しい、公開後の反応ログ設計 | Publish And Measure | `short-video-ops-os-publishing-log.md`、公開済みnote2本、2026-05-12 24h計測 | 投稿後に何を見るべきか分かる | 投稿運用OS、反応ログテンプレ | published |
+| 6 | 朝のコーヒーとAI朝会をセットにしたら、仕事の始め方が変わった | Bridge / Lifestyle Operations | 朝会ログ、コーヒールーティン、SCAJ2026、国内消費統計、`2026-05-13-coffee-ai-morning-routine.md` | 朝の習慣をAI運用の継続装置にする型が分かる | 伴走相談、習慣化テンプレ、note連載 | published |
+| 7 | 今日の豆を選ぶ基準を、3つだけ決める | Coffee Lifestyle | 豆の購入履歴、味の好み、抽出メモ | コーヒー初心者でも豆選びの基準を持てる | コーヒー連載、レビュー記事 | planned |
+| 8 | AI記事を量産する前に、採点表を作った | Publish And Measure | `note-editorial-system.md` | 低品質な量産を避ける基準が分かる | 有料チェックリスト | planned |
 | 9 | AI秘書に任せる仕事と、人間が決める仕事 | AI Solo Company OS | automation memory / decisions | AI運用の役割分担が分かる | 伴走相談 | planned |
 
-## 次に書く1本
+## 次に書く2本
 
-`朝のコーヒーとAI朝会をセットにする仕事ルーティン`
+### コーヒー
 
-理由:
+`毎朝のコーヒーを、仕事前の小さなリセットにする`
 
-- ユーザー方針として、公開後ログ系よりもコーヒー×AI系を優先する。
-- AI活用を生活に定着させる入口として、朝のコーヒーとAI朝会の組み合わせが強い。
-- 直近のAI運用ログに、生活感・習慣化・仕事開始の文脈を足せる。
-- コーヒー市場の参考リンクを使いつつ、本人の朝ルーティンとAI朝会を一次情報にできる。
+- 目的: コーヒー単体の生活・習慣記事として読めるようにする。
+- 証拠素材: 朝のコーヒー習慣、抽出メモ、仕事開始前の気分や集中の変化。
+- 注意: AI朝会の説明に寄せすぎない。
+
+### AI
+
+`AI時代に、毎日の仕事ログを残す理由`
+
+- 目的: `AI使ってみた` ではなく、AI時代の仕事術として読めるようにする。
+- 証拠素材: company TODO、朝会/昼会/夕会ログ、note公開後計測ログ。
+- 注意: 特定ツールの操作手順ではなく、ログを残す意味と再利用方法に寄せる。
 
 ## 2026-05-11 昼制作更新
 
@@ -132,3 +149,14 @@ tags: [note, backlog, editorial]
 - タグ: `#コーヒー`, `#今日`, `#仕事`, `#時間`, `#note`
 - 初期反応: スキ0、コメント0相当。フォロー、プロフィール遷移、DMは未計測。
 - 計測予定: 24h `2026-05-14 13:54 JST`、72h `2026-05-16 13:54 JST`。
+
+## 2026-05-14 昼制作更新
+
+- 記事ファイル: `company/marketing/content-plan/2026-05-14-morning-coffee-reset.md`
+- スコア: `84/100`
+- 状態: `ready_not_published`
+- タグ候補: `#コーヒー`, `#朝活`, `#仕事術`, `#ルーティン`, `#暮らし`, `#習慣`
+- アイキャッチ: プロンプト3案とalt textを記事ファイルへ記録済み。
+- 外部ドラフト保存: サンドボックス外書き込み拒否により未実施。
+- 公開試行: Chrome Computer Useが `approval denied` となり未実施。
+- 次アクション: Chrome操作権限が戻ったら、Vault正本からnoteへ転記・公開する。
