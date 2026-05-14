@@ -6,7 +6,7 @@ Last updated: 2026-05-14
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | note article flow | coffee article ready / publish blocked | Restore Chrome operation, publish `毎朝のコーヒーを、仕事前の小さなリセットにする`, then record URL/time/tags/reactions |
+| 1 | note article flow | coffee article published / measurement pending | Measure `毎朝のコーヒーを、仕事前の小さなリセットにする` at 2026-05-15 22:34 JST, then decide the next article fix |
 | 2 | Short Video Operations OS | validation / blocked on posting | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and name 5 outreach candidates |
 | 3 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
 
@@ -210,10 +210,18 @@ Last updated: 2026-05-14
 5. Chrome publishing was blocked by Computer Use `approval denied`.
 6. Next action: restore Chrome operation, publish through Chrome, then log URL/time/tags/reactions.
 
+## 2026-05-14 Note Publish Follow-up
+
+1. `note-article-flow`: published `毎朝のコーヒーを、仕事前の小さなリセットにする`.
+2. Public URL: `https://note.com/glad_shrew1020/n/na4baf0cf4b8d`.
+3. Publish time: `2026-05-14 22:34 JST`.
+4. Tags: `#コーヒー`, `#最初`, `#仕事`, `#自分`, `#今日`.
+5. Next checkpoint: 24h measurement at `2026-05-15 22:34 JST`.
+
 ## 2026-05-14 Evening Closeout
 
 1. `note-article-flow`: keep the two-lane plan: one coffee article and one AI article.
-2. Coffee article is drafted at `84/100` and remains unpublished because Chrome operation was denied.
+2. Coffee article was published after the closeout follow-up; next action is 24h measurement.
 3. AI article candidate remains `AI時代に、毎日の仕事ログを残す理由`; use Memory sources, Gemini Intelligence, and company logs as proof.
 4. Reaction measurements for the four published note articles are still not recorded in the Vault.
 5. `short-video-ops-os`: still blocked on the first public URL/time/platform and at least one named outreach send record.

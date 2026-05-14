@@ -27,7 +27,7 @@ tags: [note, backlog, editorial]
 
 | 優先 | タイトル案 | 柱 | 証拠素材 | 読者への約束 | 収益化接続 | 状態 |
 |---:|---|---|---|---|---|---|
-| 1 | 毎朝のコーヒーを、仕事前の小さなリセットにする | Coffee Lifestyle | 朝のコーヒールーティン、抽出メモ、作業開始前の状態、`2026-05-14-morning-coffee-reset.md` | 朝の1杯を仕事前の整え方として真似できる | コーヒー連載、生活習慣系読者の獲得 | ready_not_published |
+| 1 | 毎朝のコーヒーを、仕事前の小さなリセットにする | Coffee Lifestyle | 朝のコーヒールーティン、抽出メモ、作業開始前の状態、`2026-05-14-morning-coffee-reset.md` | 朝の1杯を仕事前の整え方として真似できる | コーヒー連載、生活習慣系読者の獲得 | published |
 | 2 | AI時代に、毎日の仕事ログを残す理由 | AI Work Style | company TODO、朝会/昼会/夕会ログ、公開後計測ログ | AIを使う前に残すべき仕事ログの型が分かる | AI運用テンプレ、個別相談 | next_ai |
 | 3 | AIで始めたnote運用で、公開後ログまで見て初めて分かったこと | Publish And Measure / AI Solo Company OS | 公開済みnote2本、2026-05-13の計測試行、`note-research-2026-05-13.md` | AIで作った記事を公開後ログと次の改善へつなげる型が分かる | note編集部OS、反応ログテンプレ、個別相談 | published |
 | 4 | note投稿をブラウザ操作で自動化してみた | Practical AI Production Notes | `2026-05-11-note-browser-publishing-automation.md` と公開URL | note投稿自動化の現実的な手順が分かる | 自動化相談、テンプレ | published |
@@ -154,16 +154,18 @@ tags: [note, backlog, editorial]
 
 - 記事ファイル: `company/marketing/content-plan/2026-05-14-morning-coffee-reset.md`
 - スコア: `84/100`
-- 状態: `ready_not_published`
+- 状態: `published`
 - タグ候補: `#コーヒー`, `#朝活`, `#仕事術`, `#ルーティン`, `#暮らし`, `#習慣`
 - アイキャッチ: プロンプト3案とalt textを記事ファイルへ記録済み。
 - 外部ドラフト保存: サンドボックス外書き込み拒否により未実施。
-- 公開試行: Chrome Computer Useが `approval denied` となり未実施。
-- 次アクション: Chrome操作権限が戻ったら、Vault正本からnoteへ転記・公開する。
+- 公開URL: `https://note.com/glad_shrew1020/n/na4baf0cf4b8d`
+- 公開時刻: `2026-05-14 22:34 JST`
+- 公開タグ: `#コーヒー`, `#最初`, `#仕事`, `#自分`, `#今日`
+- 次アクション: 24h反応を `2026-05-15 22:34 JST` に計測し、タイトル、冒頭、タグ、CTAのどこを直すかを決める。
 
 ## 2026-05-14 朝会更新
 
 - 朝会での `next` は `毎朝のコーヒーを、仕事前の小さなリセットにする`。
-- 実行時点では後続の昼制作により本文作成・採点まで進んでいるため、テーブル上の現在状態は `ready_not_published` を維持する。
+- 22:34 JSTの公開後フォローで公開済みになったため、テーブル上の現在状態は `published` へ更新済み。
 - 2本目または夜のAI候補は `AI時代に、毎日の仕事ログを残す理由`。
 - AI関係は `#AIと始めてみた` 締切直前、OpenAI/Googleの個人文脈AI更新、noteのAIコンテクストネットワークが追い風。ただし、ツール紹介ではなく仕事ログ、記憶、引き継ぎ、公開後計測に寄せる。
