@@ -37,3 +37,12 @@ status: active
 - 外部ドラフト保存: `/Users/uryuatsuya/note/articles/drafts/20260515-ai-work-log-reason.md` への書き込みはサンドボックス外として拒否された。
 - 公開試行: Chrome Computer Useが `approval denied` のため、note編集画面を開けず、転記・公開は未実施。
 - 次アクション: noteへ転記・公開し、公開URL、公開時刻、タグ、初期反応、24h/72h計測予定を記録する。
+
+## 2026-05-16 昼制作更新
+
+- 公開試行を再実行した。
+- Chrome: Computer Use approval denied。
+- Arc: Computer Use approval denied。
+- 結果: note編集画面を開けず、転記・公開・公開URL記録は未完了。
+- 記事本文、証拠素材、CTA、タグ候補、アイキャッチ案、公開前チェックは維持。スコアは86/100。
+- 次アクション: ブラウザ操作権限が戻ったら、Vault正本からnoteへ転記・公開し、公開URL、公開時刻、タグ、初期反応、24h/72h計測予定をこの記事、バックログ、TODOへ戻す。
