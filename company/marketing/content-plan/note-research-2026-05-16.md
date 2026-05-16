@@ -100,3 +100,44 @@ status: active
 - 昼オートメーションは、本文作成ではなく公開、公開URL/時刻/タグ/初動反応/24h/72h計測予定の記録を主作業にする。
 - 反応実数は捏造しない。ブラウザ権限やログイン状態で取得できない場合は、未取得理由を残す。
 - 公開後、記事の核を `AgentRunShowcaseShort` または次の短尺動画キャプションへ転用し、1件だけ実名outreachを行う。
+
+## Evening Next Brief for 2026-05-17
+
+### 実行確認
+
+- System date confirmed: `2026-05-16 18:01 JST`。
+- 外部保存先 `/Users/uryuatsuya/note/articles/research/2026-05-16-evening-next-brief.md` は `NOT_WRITABLE`。この節を正本として扱う。
+
+### AI関係シグナル
+
+| Source | Link | 要点 | 明朝への使い方 |
+|---|---|---|---|
+| OpenAI `GPT-5.5 Instant: smarter, clearer, and more personalized` | https://openai.com/index/gpt-5-5-instant/ | 2026-05-05公開。ChatGPTの既定モデル更新、精度、文脈利用、個人化が主題。 | AI記事を機能紹介ではなく、日々のログをAIに渡す仕事術へ寄せる根拠にする。 |
+| OpenAI Help Center `ChatGPT — Release Notes` | https://help.openai.com/en/articles/6825453-release-notes | 2026-05-05にMemory sources、ChatGPT for Excel/Google Sheets、文脈利用の更新がまとまっている。 | `AI秘書に任せる仕事と、人間が決める仕事` の背景に使える。 |
+| note公式 `Google Gemini × noteで、投稿コンテスト「#AIと始めてみた」を開催します！` | https://note.com/info/n/nac7cd2446a08 | 募集期間は2026-05-15 23:59まで。結果発表は2026年7月中旬予定。 | 締切駆動ではもう使わない。AI体験談市場の読者文脈としてだけ使う。 |
+
+### コーヒー関係シグナル
+
+| Source | Link | 要点 | 明朝への使い方 |
+|---|---|---|---|
+| SCAJ2026 `SCAJとは` | https://scajconference.jp/about | 2026年テーマは `Brew the Future`。人手不足、気候変動、価格高騰、AI/自動化が文脈に入っている。 | コーヒー単体記事では生活習慣を主軸にし、産業変化は背景に留める。 |
+| SCAJ2026 `開催概要` | https://scajconference.jp/overview/ | SCAJ2026の会期・会場・テーマ確認用。 | 秋に向けたコーヒー連載の長期背景として保持する。 |
+| International Coffee Organization `Public Market Information` | https://ico.org/resources/public-market-information/ | 2026年の月次市場情報と価格指標ページ。 | 価格や市場に触れる記事では一次情報候補にする。 |
+| note `#coffee` | https://note.com/hashtag/coffee | note上では生活、店、習慣、体験のコーヒー記事が継続的に並ぶ。 | `今日の豆を選ぶ基準を、3つだけ決める` は実体験が必要。先に既公開記事の反応を見る。 |
+
+### 明朝の重要語
+
+- AI関係: `Memory sources`, `GPT-5.5 Instant`, `ChatGPT for Excel and Google Sheets`, `仕事ログ`, `AI秘書`, `人間が決める仕事`, `公開後計測`
+- コーヒー関係: `Brew the Future`, `SCAJ2026`, `価格高騰`, `豆選び`, `朝コーヒー`, `生活習慣`, `抽出メモ`
+
+### 記事角度
+
+1. 最優先: `AI時代に、毎日の仕事ログを残す理由` を公開する。新規本文は増やさない。
+2. AI次候補: `AI秘書に任せる仕事と、人間が決める仕事`。今日のdecisionとautomation memoryを証拠にできる。
+3. コーヒー次候補: `今日の豆を選ぶ基準を、3つだけ決める`。ただし、既公開コーヒー記事の24h/72h反応を見てから着手する。
+
+### 未解決質問
+
+- note管理画面から公開済み5本のスキ、コメント、フォロー、プロフィール遷移、DMを取得できるか。
+- `AI時代に、毎日の仕事ログを残す理由` の公開後、CTAはコメント/DM誘導で十分か、テンプレ配布導線を足すか。
+- コーヒー記事の次改善は、タイトル、冒頭、タグ、CTAのどこが最も弱いか。

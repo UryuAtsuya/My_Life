@@ -33,3 +33,11 @@ status: active
 1. note反応指標をPV、スキ、コメント/保存から優先して回収する。
 2. AI記事を公開し、24h/72h計測予定を固定する。
 3. 既存ショート動画を公開し、1件だけoutreachする。
+
+## 2026-05-16 Evening Closeout
+
+- 状態: active のまま継続。
+- 完了扱いにできるもの: 今日の朝会、昼制作、decision、note-research更新まで。
+- 未完了: 2026-05-13公開2本の72h反応、旧note2本と2026-05-14コーヒー記事の反応、AI記事公開、公開URL/時刻/タグ/初期反応/24h/72h予定、`AgentRunShowcaseShort` 公開、1件outreach。
+- ブロッカー: note公開と反応実測にはログイン済みブラウザ操作が必要。昼制作時点ではChrome/Arc Computer Useが承認拒否。
+- 次アクション: 2026-05-17はAI記事公開を先に完了し、その直後に公開済みnote5本の反応計測へ戻る。

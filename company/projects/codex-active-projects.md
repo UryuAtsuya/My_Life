@@ -30,6 +30,13 @@ Last updated: 2026-05-16
 3. Created the 2026-05-16 TODO and midday production note so the blocker and next action are explicit.
 4. Next action: restore browser access, publish the AI work-log article, then record URL/time/tags/initial reactions and 24h/72h checkpoints.
 
+## 2026-05-16 Evening Closeout
+
+1. `note-article-flow`: no evidence of note publishing or reaction measurement was found, so the open items carry to 2026-05-17.
+2. `note-article-flow`: tomorrow starts with publishing `AI時代に、毎日の仕事ログを残す理由`, then measuring the five published notes.
+3. `short-video-ops-os`: `AgentRunShowcaseShort` still has no URL/time/platform/reaction record; posting and one focused outreach remain the minimum completion target.
+4. External research path is not writable in this run; the next-note brief is stored under `company/marketing/content-plan/note-research-2026-05-16.md`.
+
 ## 2026-05-16 Morning Business Meeting Update
 
 1. `note-article-flow`: today's priority is measurement first, then publish the ready AI work-log article.
