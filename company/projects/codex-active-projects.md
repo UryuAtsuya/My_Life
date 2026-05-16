@@ -6,8 +6,8 @@ Last updated: 2026-05-16
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | note article flow | AI work-log article ready / publishing blocked by Chrome and Arc approval | Publish `AI時代に、毎日の仕事ログを残す理由` when browser access returns, then measure published note reactions |
-| 2 | Short Video Operations OS | validation / blocked on posting | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and name 5 outreach candidates |
+| 1 | note article flow | AI work-log article is `next`; 72h/24h measurement due | Recover note metrics, publish `AI時代に、毎日の仕事ログを残す理由`, then log URL/time/tags/reactions |
+| 2 | Short Video Operations OS | validation / blocked on posting | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 3 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
 
 ## Managed Projects
@@ -21,7 +21,7 @@ Last updated: 2026-05-16
 | `job-hunting-support-site` | planning | Job-hunting support prototype that turns anxiety into one next action. | Review the first user flow. |
 | `ai-inspiration-board` | planning | Pinterest-style AI board for collecting references and generating briefs. | Create wireframes and dummy Pin data. |
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
-| `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | `AI時代に、毎日の仕事ログを残す理由` をブラウザ操作権限回復後に公開し、公開済み記事の24h/72h反応を計測する。 |
+| `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | `AI時代に、毎日の仕事ログを残す理由` を公開し、公開済み記事の24h/72h反応を計測する。 |
 
 ## 2026-05-16 Midday Production Update
 
@@ -29,6 +29,13 @@ Last updated: 2026-05-16
 2. Chrome and Arc Computer Use approval was denied, so note publishing and reaction measurement remain blocked.
 3. Created the 2026-05-16 TODO and midday production note so the blocker and next action are explicit.
 4. Next action: restore browser access, publish the AI work-log article, then record URL/time/tags/initial reactions and 24h/72h checkpoints.
+
+## 2026-05-16 Morning Business Meeting Update
+
+1. `note-article-flow`: today's priority is measurement first, then publish the ready AI work-log article.
+2. `note-article-flow`: 2026-05-13 published notes are due for 72h checks today; do not invent reaction metrics.
+3. `short-video-ops-os`: publish `AgentRunShowcaseShort` with existing assets only, then fill URL/time/platform/24h/72h fields.
+4. Outreach: send 1 focused message tied to the AI work-log article or short-video proof, rather than broad 5-person expansion.
 
 ## Local Project Directories
 

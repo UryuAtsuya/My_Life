@@ -28,7 +28,7 @@ tags: [note, backlog, editorial]
 | 優先 | タイトル案 | 柱 | 証拠素材 | 読者への約束 | 収益化接続 | 状態 |
 |---:|---|---|---|---|---|---|
 | 1 | 毎朝のコーヒーを、仕事前の小さなリセットにする | Coffee Lifestyle | 朝のコーヒールーティン、抽出メモ、作業開始前の状態、`2026-05-14-morning-coffee-reset.md` | 朝の1杯を仕事前の整え方として真似できる | コーヒー連載、生活習慣系読者の獲得 | published |
-| 2 | AI時代に、毎日の仕事ログを残す理由 | AI Work Style | company TODO、朝会/昼会/夕会ログ、公開後計測ログ、`2026-05-15-ai-work-log-reason.md` | AIを使う前に残すべき仕事ログの型が分かる | AI運用テンプレ、個別相談 | ready_not_published |
+| 2 | AI時代に、毎日の仕事ログを残す理由 | AI Work Style | company TODO、朝会/昼会/夕会ログ、公開後計測ログ、`2026-05-15-ai-work-log-reason.md` | AIを使う前に残すべき仕事ログの型が分かる | AI運用テンプレ、個別相談 | next |
 | 3 | AIで始めたnote運用で、公開後ログまで見て初めて分かったこと | Publish And Measure / AI Solo Company OS | 公開済みnote2本、2026-05-13の計測試行、`note-research-2026-05-13.md` | AIで作った記事を公開後ログと次の改善へつなげる型が分かる | note編集部OS、反応ログテンプレ、個別相談 | published |
 | 4 | note投稿をブラウザ操作で自動化してみた | Practical AI Production Notes | `2026-05-11-note-browser-publishing-automation.md` と公開URL | note投稿自動化の現実的な手順が分かる | 自動化相談、テンプレ | published |
 | 5 | AIで作るより難しい、公開後の反応ログ設計 | Publish And Measure | `short-video-ops-os-publishing-log.md`、公開済みnote2本、2026-05-12 24h計測 | 投稿後に何を見るべきか分かる | 投稿運用OS、反応ログテンプレ | published |
@@ -199,3 +199,10 @@ tags: [note, backlog, editorial]
 - 記事状態は `ready_not_published`、スコアは86/100のまま公開候補。
 - ChromeとArcのComputer Useが承認拒否のため、note転記・公開・公開URL記録は未完了。
 - 次アクション: ブラウザ操作権限が戻ったら公開し、公開URL、公開時刻、タグ、初期反応、24h/72h計測予定を戻す。
+
+## 2026-05-16 朝会更新
+
+- 今日の `next` は `AI時代に、毎日の仕事ログを残す理由`。
+- 本文作成・採点86/100は完了済みなので、次の作業はnote転記・公開・公開URL/時刻/タグ/24h/72h計測予定の記録。
+- 2026-05-13公開2本は今日72hチェックポイントのため、公開前後に反応実数を回収し、記事の主張である「仕事ログが翌日の判断材料になる」を裏づける。
+- コーヒー側は新規記事を増やさず、`毎朝のコーヒーを、仕事前の小さなリセットにする` の24h反応を見て、タイトル、冒頭、タグ、CTAのどこを直すかを決める。
