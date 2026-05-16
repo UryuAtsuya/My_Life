@@ -130,3 +130,55 @@ created: "2026-05-15 08:26 JST"
 3. 公開URL、公開時刻、タグ、初動状態、24h/72h計測予定を戻す。
 4. `AgentRunShowcaseShort` を既存素材で公開し、台帳を埋める。
 5. 5件アウトリーチ候補を実名・アカウント名で確定し、少なくとも1件送付記録を残す。
+
+## 2026-05-15 Evening Next Brief
+
+### 保存方針
+
+- 外部保存先 `/Users/uryuatsuya/note/articles/research/2026-05-15-evening-next-brief.md` は現在のサンドボックスから書き込み不可。
+- このファイルを明朝ブリーフの正本として扱い、外部保存は書き込み可能な環境で再実行する。
+
+### 明朝の結論
+
+明日は、新規ネタを増やすより `AI時代に、毎日の仕事ログを残す理由` の公開と、公開済みnote5本の反応計測を優先する。`#AIと始めてみた` は2026-05-15 23:59締切のため、2026-05-16の主軸にはしない。
+
+### AI関係シグナル
+
+- OpenAIはChatGPTのメモリ、接続データ、ファイル、Gmail、Google Driveなどの文脈利用を強めている。仕事ログ記事では、ツール紹介ではなく「AIへ渡す材料としてのログ」に寄せる。
+- GoogleはGeminiをAndroidや個人文脈のAI体験へ接続している。明日のAI記事では、個別製品のニュース解説ではなく「個人の仕事文脈を残す必要性」として扱う。
+- Google I/O 2026は2026-05-19から2026-05-20予定。来週のAI記事候補は、I/O後の発表を見て「個人AI時代のログ設計」へ接続できる。
+- noteの `#AIと始めてみた` は2026-05-15締切。明日は締切後なので、タグ都合より記事の耐久性を優先する。
+- noteのAIコンテクストネットワークは、AI生成物そのものより、AIに渡せる文脈や出典設計の重要性を記事化する材料になる。
+
+### コーヒー関係シグナル
+
+- SCAJ2026のテーマ `Brew the Future` は、コーヒーを未来や習慣の文脈で扱いやすい。
+- 全日本コーヒー協会の国内消費データは、コーヒーを日常習慣として扱う裏付けになる。ただし、明日は新規コーヒー記事より、2026-05-14公開記事の24h反応計測を優先する。
+- 次のコーヒー角度は `今日の豆を選ぶ基準を、3つだけ決める`。反応計測でコーヒー記事の読まれ方が見えたら、タイトルと冒頭を生活寄りに調整してから書く。
+
+### 明朝の重要語
+
+- AI関係: 仕事ログ、AI-ready context、memory、handoff、decision log、checkpoint、公開後計測、AI Solo Company OS、Google I/O 2026、Gemini、ChatGPT memory。
+- コーヒー関係: 朝のリセット、豆選び、抽出メモ、SCAJ2026、Brew the Future、国内消費、生活習慣、仕事前の整え方。
+
+### 記事角度候補
+
+1. `AI時代に、毎日の仕事ログを残す理由` を公開する。すでに本文・採点86/100・アイキャッチ案まで完了しているため、明日の最短成果になる。
+2. `公開済み5本の反応ログを、次の記事選びに使う`。実数が取れたら、タイトル、冒頭、タグ、CTAのどこを直すかを記事または改善メモにする。
+3. `今日の豆を選ぶ基準を、3つだけ決める`。コーヒー単体レーンの次候補。ただし、先に2026-05-14公開記事の24h反応を見る。
+
+### Source Links
+
+- OpenAI ChatGPT release notes: https://help.openai.com/en/articles/6825453-chatgpt-release-notes
+- Google Blog `A smarter, more proactive Android with Gemini Intelligence`: https://blog.google/products-and-platforms/platforms/android/gemini-intelligence/
+- Google I/O: https://io.google/
+- note公式 `Google Gemini × noteで、投稿コンテスト「#AIと始めてみた」を開催します！`: https://note.com/info/n/nac7cd2446a08
+- note公式 `AIコンテクストネットワーク`: https://note.com/info/n/na423ff9bfcc4
+- SCAJ2026: https://scajconference.jp/overview/
+- 全日本コーヒー協会 統計資料: https://coffee.ajca.or.jp/data/
+
+### Tomorrow Handoff
+
+- 最優先はAI記事公開。公開後にURL、公開時刻、タグ、初動状態、24h/72h計測予定を `company/marketing/content-plan/2026-05-15-ai-work-log-reason.md` とPMチケットへ戻す。
+- 次に公開済みnote5本の反応を同じ表へ入れる。実数が取れなければ、未取得理由を残す。
+- コーヒー新規記事は、2026-05-14公開記事の24h反応を見てから着手する。
