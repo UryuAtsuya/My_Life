@@ -1,12 +1,12 @@
 # Codex Active Projects
 
-Last updated: 2026-05-14
+Last updated: 2026-05-15
 
 ## Main Focus
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | note article flow | coffee article published / measurement pending | Measure `毎朝のコーヒーを、仕事前の小さなリセットにする` at 2026-05-15 22:34 JST, then decide the next article fix |
+| 1 | note article flow | AI work-log article ready / publishing blocked by Chrome approval | Publish `AI時代に、毎日の仕事ログを残す理由` when Chrome access returns, then measure coffee article at 2026-05-15 22:34 JST |
 | 2 | Short Video Operations OS | validation / blocked on posting | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and name 5 outreach candidates |
 | 3 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
 
@@ -21,7 +21,7 @@ Last updated: 2026-05-14
 | `job-hunting-support-site` | planning | Job-hunting support prototype that turns anxiety into one next action. | Review the first user flow. |
 | `ai-inspiration-board` | planning | Pinterest-style AI board for collecting references and generating briefs. | Create wireframes and dummy Pin data. |
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
-| `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 公開済み記事の24h/72h反応を計測し、次の記事テーマを選ぶ。 |
+| `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | `AI時代に、毎日の仕事ログを残す理由` をChrome権限回復後に公開し、公開済み記事の24h/72h反応を計測する。 |
 
 ## Local Project Directories
 
@@ -225,3 +225,11 @@ Last updated: 2026-05-14
 3. AI article candidate remains `AI時代に、毎日の仕事ログを残す理由`; use Memory sources, Gemini Intelligence, and company logs as proof.
 4. Reaction measurements for the four published note articles are still not recorded in the Vault.
 5. `short-video-ops-os`: still blocked on the first public URL/time/platform and at least one named outreach send record.
+
+## 2026-05-15 Midday Production Update
+
+1. `note-article-flow`: drafted `AI時代に、毎日の仕事ログを残す理由` at `86/100`.
+2. Article file: `company/marketing/content-plan/2026-05-15-ai-work-log-reason.md`.
+3. External draft save to `/Users/uryuatsuya/note/articles/drafts/20260515-ai-work-log-reason.md` was rejected by the sandbox.
+4. Chrome publishing was blocked by Computer Use `approval denied`, so the article remains `ready_not_published`.
+5. Next action: restore Chrome operation, publish the ready article, then log URL/time/tags/reactions and continue the 22:34 JST coffee article measurement.
