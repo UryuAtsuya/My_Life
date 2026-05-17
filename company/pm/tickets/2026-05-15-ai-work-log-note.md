@@ -58,3 +58,10 @@ status: active
 - 状態は `ready_not_published` のまま。公開済み扱いにはしない。
 - 夕会時点でも公開URL、共有URL、公開時刻、公開タグ、初動反応、24h/72h計測予定は未入力。
 - 明日の最小完了条件: noteへ公開し、公開後記録欄を埋める。
+
+## 2026-05-17 Evening Closeout
+
+- 状態は `ready_not_published` のまま。本文、CTA、タグ候補、公開前チェック、採点86/100は維持。
+- ChromeとBraveのComputer Useが `approval denied` のため、note編集画面を開けず、転記・公開・公開URL記録は未実施。
+- 公開済み扱いにはしない。公開URL、共有URL、公開時刻、公開タグ、初動反応、24h/72h計測予定は未入力。
+- 次アクション: 2026-05-18にブラウザ操作権限を確認し、可能ならVault正本からnoteへ転記・公開する。

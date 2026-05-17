@@ -30,6 +30,13 @@ Last updated: 2026-05-17
 3. `short-video-ops-os`: `AgentRunShowcaseShort` は追加制作せず、既存素材で公開し、URL/time/platform/reactions/24h/72hを記録する。
 4. Outreach: 5件へ広げず、AI仕事ログ記事または作業ログ動画化に関心が高い実在相手1件に送る。
 
+## 2026-05-17 Evening Closeout
+
+1. `note-article-flow`: AI仕事ログ記事は `ready_not_published` のまま。Chrome/Brave Computer Useが `approval denied` のため公開は未完了。
+2. `note-article-flow`: 公開ページ上では `note投稿をブラウザ操作で自動化してみた` と `AIで作るより難しい、公開後の反応ログ設計` の可視スキ1を確認。ただし管理画面実測は未回収。
+3. `short-video-ops-os`: `AgentRunShowcaseShort` のURL/time/platform/reactions/24h/72hは未入力。公開と1件outreachを2026-05-18へ送る。
+4. Tomorrow: まずブラウザ操作権限を確認し、AI記事公開、note実測、Short公開/outreachの順に完了させる。
+
 ## 2026-05-17 Midday Production Update
 
 1. `note-article-flow`: `AI時代に、毎日の仕事ログを残す理由` は再確認済み。スコア86/100、状態は `ready_not_published`。

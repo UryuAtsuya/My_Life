@@ -102,3 +102,63 @@ status: active
 2. 公開後すぐにURL、時刻、タグ、初期反応、24h/72h計測予定をVaultへ戻す。
 3. その後、公開済みnote5本とコーヒー記事の反応を同じ表で回収する。
 4. コーヒー次候補 `今日の豆を選ぶ基準を、3つだけ決める` は、反応計測後に着手可否を決める。
+
+## Evening Next Brief - 2026-05-17
+
+### 実行確認
+
+- System date confirmed: `2026-05-17 18:04 JST`.
+- 外部保存先 `/Users/uryuatsuya/note/articles/research/2026-05-17-evening-next-brief.md` は現在のサンドボックスの書き込み許可外。夕会時点の正本はこのファイルに置く。
+- Chrome/Brave Computer Useは `approval denied` のため、note管理画面のPV、フォロー、プロフィール遷移、DM、Short投稿、outreach送付は未実施。
+
+### Current Signals
+
+#### AI
+
+| Source | Link | Signal | Tomorrow use |
+|---|---|---|---|
+| OpenAI Help - ChatGPT release notes | https://help.openai.com/en/articles/6825453-chatgpt-release-notes | 2026年5月の更新で、ChatGPTが過去チャット、保存メモ、ファイル、接続済みGmailなどの文脈をより使いやすくする方向が出ている。 | `AI秘書に任せる仕事と、人間が決める仕事` で、AIに渡す前提情報として仕事ログが必要だと説明できる。 |
+| OpenAI - sensitive conversations context update | https://openai.com/index/chatgpt-recognize-context-in-sensitive-conversations/ | 2026-05-14に、会話の文脈を見て慎重に応答する安全更新が公開された。 | AIが文脈を扱うほど、人間側のログ設計と境界設定が重要になるという背景に使える。 |
+| note公式 `#AIと始めてみた` | https://note.com/info/n/nac7cd2446a08 | 募集期間は2026-05-15 23:59で終了済み。審査対象はGoogle AI体験が分かる作品。 | 便乗タグではなく、AI仕事術・個人運用ログとして出す判断を補強する。 |
+| User note public page | https://note.com/glad_shrew1020/n/n1513d700bef0 | `note投稿をブラウザ操作で自動化してみた` は公開ページ上の可視スキ1。 | 反応実数の一部としては使えるが、管理画面実測の代替にはしない。 |
+| User note public page | https://note.com/glad_shrew1020/n/n4ca83f69af6c | `AIで作るより難しい、公開後の反応ログ設計` は公開ページ上の可視スキ1。 | 「ログ設計」記事は入口反応があるため、次はAI秘書の役割分担へ広げられる。 |
+
+#### Coffee
+
+| Source | Link | Signal | Tomorrow use |
+|---|---|---|---|
+| SCAJ2026 | https://scajconference.jp/about | SCAJ2026はSCAJ主催で、BtoBを主軸にしつつコーヒー文化を支えるファンも歓迎する場。 | 豆選び記事で、生活者視点と業界文脈をつなぐ背景になる。 |
+| 全日本コーヒー協会 | https://coffee.ajca.or.jp/english/ | 協会はコーヒー需要調査や統計情報の収集・提供を行い、2026年の月次輸入統計も掲載している。 | `今日の豆を選ぶ基準を、3つだけ決める` に、価格や流通の背景を薄く入れられる。 |
+| User coffee article | https://note.com/glad_shrew1020/n/na4baf0cf4b8d | `毎朝のコーヒーを、仕事前の小さなリセットにする` の24h遅延/72h反応は未回収。 | 新規コーヒー記事へ進む前に、タイトル、タグ、冒頭、CTAの改善点を決める必要がある。 |
+
+### 明日の重要語
+
+- AI側: 記憶、文脈、仕事ログ、AI秘書、任せる仕事、人間が決める仕事、公開後計測、引き継ぎ、境界設定。
+- コーヒー側: 豆選び、味の好み、価格、飲む時間、抽出メモ、SCAJ2026、月次輸入統計、朝のリセット。
+
+### Article Angles
+
+1. 最優先: `AI時代に、毎日の仕事ログを残す理由`
+   - 状態: `ready_not_published`。
+   - 明日の扱い: 新規執筆ではなく公開と記録。
+   - 必須記録: 公開URL、公開時刻、タグ、初期反応、24h/72h計測予定。
+2. AI次候補: `AI秘書に任せる仕事と、人間が決める仕事`
+   - 角度: AIに文脈を渡す前に、人間が決めるべき「目的、判断基準、次に見る数字」を整理する。
+   - 使う証拠: 今日のブラウザ権限ブロック、automation memory、company decision、仕事ログ記事。
+3. コーヒー次候補: `今日の豆を選ぶ基準を、3つだけ決める`
+   - 角度: 初心者が毎朝迷わないように、味、価格、飲む時間の3基準にする。
+   - 条件: 既公開コーヒー記事の24h/72h実測を先に見る。
+
+### Open Questions
+
+- note管理画面で5本分のPV、スキ、コメント、フォロー、プロフィール遷移、DMを回収できるか。
+- `AI時代に、毎日の仕事ログを残す理由` の公開時タグは `#AI活用`, `#仕事術`, `#発信`, `#個人事業`, `#note`, `#生成AI` のままでよいか。
+- コーヒー次候補に使える豆の購入履歴、味の好み、抽出メモがVaultまたは手元にあるか。
+- Short公開先はInstagram/Reels、TikTok、YouTube Shortsのどれを最初にするか。
+
+### Tomorrow Handoff Summary
+
+- 明日はまずブラウザ操作権限を確認する。
+- 権限が戻ったら、AI仕事ログ記事を公開してVaultへ記録する。
+- 権限が戻らない場合は、公開済みnoteの公開ページで見える範囲だけを記録し、管理画面実測は未取得として明示する。
+- 新規記事に進むならAI側を優先し、`AI秘書に任せる仕事と、人間が決める仕事` を短く構成する。コーヒー側は反応計測後に進める。

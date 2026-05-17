@@ -158,3 +158,10 @@ Complete `AgentRunShowcaseShort` as a 15-second "CapCutでよくない？" reel.
 - note側の最優先は `AI時代に、毎日の仕事ログを残す理由` の公開だが、Short公開台帳の空欄を残すと事業検証が進まない。
 - 24h/72h計測は公開時刻を基準に固定する。
 - outreachは5件に広げず、AI仕事ログ記事または作業ログ動画化に関心が高い実在相手1件に絞る。
+
+## 2026-05-17 Evening Closeout
+
+- 今日も制作物は増やしていない。
+- `AgentRunShowcaseShort` は公開URL、公開時刻、投稿先、初動反応が未入力のまま。
+- ブロッカーは制作ではなく、ブラウザ操作権限と送付実行。Chrome/Brave Computer Useは `approval denied`。
+- 2026-05-18は追加制作せず、既存素材の公開、24h/72h計測時刻の固定、1件outreach送付記録を最小完了条件にする。
