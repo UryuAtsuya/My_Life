@@ -221,3 +221,11 @@ tags: [note, backlog, editorial]
 - コーヒー側は `今日の豆を選ぶ基準を、3つだけ決める` を次候補として維持するが、既公開コーヒー記事の24h/72h反応が未回収のため、今日は本文化しない。
 - AI次候補 `AI秘書に任せる仕事と、人間が決める仕事` は、AI仕事ログ記事の公開と反応計測後に再判定する。
 - 外部researchパス `/Users/uryuatsuya/note/articles/research/2026-05-17-morning-brief.md` は `operation not permitted` のため保存不可。正本は `company/marketing/content-plan/note-research-2026-05-17.md`。
+
+## 2026-05-17 昼制作更新
+
+- `AI時代に、毎日の仕事ログを残す理由` は本文作成、採点86/100、公開前チェック完了のまま `ready_not_published` を維持。
+- Google Chrome Computer Useが `approval denied` で、note転記、下書き保存、公開、公開URL取得は未実施。
+- 外部ドラフト保存先 `/Users/uryuatsuya/note/articles/drafts/` は現セッションで書き込み不可または未作成のため、外部構造化ドラフトは未保存。
+- Webで確認できた公開記事反応: `note投稿をブラウザ操作で自動化してみた` はスキ相当表示1、`AIで作るより難しい、公開後の反応ログ設計` もスキ相当表示1。コメント、フォロー、プロフィール遷移、DM、管理画面の詳細値は未取得。
+- 次アクション: Chrome操作権限を戻してAI仕事ログ記事を公開し、その直後にURL、時刻、タグ、初期反応、24h/72h計測予定をこの記事ファイルとバックログへ戻す。

@@ -33,3 +33,11 @@ status: active
 1. AI仕事ログ記事を公開し、公開後の記録欄を埋める。
 2. 公開済みnote5本とコーヒー記事の反応を回収する。
 3. `AgentRunShowcaseShort` を公開し、1件outreachする。
+
+## 2026-05-17 Midday Update
+
+- AI仕事ログ記事は86/100で公開候補のまま。本文、CTA、タグ、参考リンク、アイキャッチ方向は変更不要。
+- Google Chrome Computer Useが承認拒否のため、note転記、下書き保存、公開、公開URL取得は未完了。
+- `/Users/uryuatsuya/note/articles/drafts/` は現セッションで `not_writable_or_missing` のため、外部構造化ドラフト保存も未完了。
+- 公開済みnote反応はWeb表示で2本のみ限定確認。`note投稿をブラウザ操作で自動化してみた` と `AIで作るより難しい、公開後の反応ログ設計` はスキ相当表示1。その他の実測値、管理画面値、DM/プロフィール遷移は未取得。
+- チケットは `active` 継続。次の最小完了条件は、Chrome操作権限復旧後にAI記事を公開し、公開URLと計測予定を戻すこと。

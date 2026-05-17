@@ -30,6 +30,14 @@ Last updated: 2026-05-17
 3. `short-video-ops-os`: `AgentRunShowcaseShort` は追加制作せず、既存素材で公開し、URL/time/platform/reactions/24h/72hを記録する。
 4. Outreach: 5件へ広げず、AI仕事ログ記事または作業ログ動画化に関心が高い実在相手1件に送る。
 
+## 2026-05-17 Midday Production Update
+
+1. `note-article-flow`: `AI時代に、毎日の仕事ログを残す理由` は再確認済み。スコア86/100、状態は `ready_not_published`。
+2. Google Chrome Computer Useが承認拒否のため、note公開、下書き保存、公開URL取得は未完了。
+3. `/Users/uryuatsuya/note/articles/drafts/` は現セッションで書き込み不可または未作成。外部構造化ドラフトは未保存。
+4. Webで確認できた公開済みnoteは2本のみで、いずれもスキ相当表示1。管理画面値と他記事の反応は未取得。
+5. Next action: Chrome操作権限を戻してAI記事を公開し、その後に全note反応計測と `AgentRunShowcaseShort` 公開へ進む。
+
 ## 2026-05-16 Midday Production Update
 
 1. `note-article-flow`: rechecked `AI時代に、毎日の仕事ログを残す理由`; it remains a publish candidate at `86/100`.
