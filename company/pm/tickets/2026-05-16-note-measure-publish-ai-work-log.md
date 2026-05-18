@@ -41,3 +41,10 @@ status: active
 - 未完了: 2026-05-13公開2本の72h反応、旧note2本と2026-05-14コーヒー記事の反応、AI記事公開、公開URL/時刻/タグ/初期反応/24h/72h予定、`AgentRunShowcaseShort` 公開、1件outreach。
 - ブロッカー: note公開と反応実測にはログイン済みブラウザ操作が必要。昼制作時点ではChrome/Arc Computer Useが承認拒否。
 - 次アクション: 2026-05-17はAI記事公開を先に完了し、その直後に公開済みnote5本の反応計測へ戻る。
+
+## 2026-05-18 Midday Update
+
+- 状態: active のまま継続。
+- AI記事公開、公開済みnote反応計測、Short公開、1件outreachはいずれも未完了。
+- 今日の確認ではChrome/Brave Computer Useが承認拒否、`note.com` はDNS解決不可。ログイン済みブラウザ操作と管理画面実測に進めなかった。
+- 次アクション: Chrome操作権限復旧後、AI記事公開と公開後記録を最初に完了する。
