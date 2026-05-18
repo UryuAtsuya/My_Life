@@ -65,3 +65,11 @@ status: active
 - ChromeとBraveのComputer Useが `approval denied` のため、note編集画面を開けず、転記・公開・公開URL記録は未実施。
 - 公開済み扱いにはしない。公開URL、共有URL、公開時刻、公開タグ、初動反応、24h/72h計測予定は未入力。
 - 次アクション: 2026-05-18にブラウザ操作権限を確認し、可能ならVault正本からnoteへ転記・公開する。
+
+## 2026-05-18 Midday Production Update
+
+- 状態は `ready_not_published` のまま。記事スコアは86/100、公開前チェックは維持。
+- Chrome Computer Useは `approval denied`。Brave Browserも `approval denied`。note編集画面を開けず、転記、下書き保存、公開、公開URL記録は未実施。
+- `/Users/uryuatsuya/note/articles/drafts/` は `not_writable` のため、外部構造化ドラフト保存は未実施。
+- `note.com` は `curl` でDNS解決不可。公開済み記事の追加反応確認も未実施。
+- 次アクション: Chrome操作権限復旧後、Vault正本からnoteへ公開し、URL/時刻/タグ/初期反応/24h/72h計測予定をこの記事、バックログ、TODOへ戻す。

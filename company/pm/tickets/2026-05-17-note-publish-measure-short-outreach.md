@@ -51,10 +51,18 @@ status: active
 - ブロッカー: ChromeとBraveのComputer Useが `approval denied`。ログイン済みブラウザを使った公開・計測・送付ができない。
 - 次アクション: 2026-05-18はブラウザ操作権限の確認から入り、可能ならAI仕事ログ記事公開を最初に完了する。
 
+## 2026-05-18 Midday Update
+
+- 状態: `active` のまま継続。
+- Chrome/BraveのComputer Use承認は今日も拒否。AI仕事ログ記事のnote公開、公開URL/時刻/タグ/初期反応/24h/72h予定の記録は未完了。
+- `note.com` のDNS解決も失敗したため、公開済みnote5本とコーヒー記事の追加反応計測は未実施。
+- `AgentRunShowcaseShort` 公開と1件outreachは、note公開・計測のブロッカー解消後に続ける。
+- 次アクション: Chrome操作権限を戻し、AI記事公開を最小完了条件として処理する。
+
 ## 2026-05-18 Evening Closeout
 
 - 状態: `active` のまま継続。
-- 完了扱いにできるもの: 夕会レビュー、翌日TODO、decision、note intelligence pass、PM/プロジェクト状態更新。
+- 完了扱いにできるもの: 13:08 JSTの昼制作ログ、夕会レビュー、翌日TODO、decision、note intelligence pass、PM/プロジェクト状態更新。
 - 未完了: AI記事公開、公開URL/時刻/タグ/初期反応/24h/72h予定の記録、公開済みnote5本とコーヒー記事の管理画面実測、`AgentRunShowcaseShort` 公開、1件outreach。
-- 判定理由: 2026-05-18 18:01 JST時点で、公開URL、公開時刻、管理画面実測、Short投稿先、送付記録がVault内に見つからない。
+- 判定理由: 2026-05-18 18:01 JST時点で、公開URL、公開時刻、管理画面実測、Short投稿先、送付記録がVault内に見つからない。昼制作ログでもChrome/Brave承認拒否、外部ドラフト保存不可、`note.com` DNS解決不可が確認済み。
 - 次アクション: 2026-05-19は新規本文制作ではなく、ブラウザ操作権限確認、AI仕事ログ記事公開、公開後記録、note実測、Short公開/outreachの順に閉じる。

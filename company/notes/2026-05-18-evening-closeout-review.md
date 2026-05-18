@@ -13,6 +13,7 @@ automation: evening-company-closeout-review
 
 ## 今日完了したこと
 
+- 13:08 JSTの昼制作ログで、AI仕事ログ記事の公開試行がブロックされたことを確認した。
 - `company/todos/2026-05-18.md` の未完了項目を証拠ベースで再確認した。
 - 2026-05-18夕会レビューを作成し、明日へ送るTODOとdecisionを整理した。
 - 2026-05-18夜のnote intelligence passを `company/marketing/content-plan/note-research-2026-05-18.md` に保存した。
@@ -21,6 +22,7 @@ automation: evening-company-closeout-review
 ## 未完了
 
 - AI記事 `AI時代に、毎日の仕事ログを残す理由` は `ready_not_published` のまま。公開URL、公開時刻、タグ、初期反応、24h/72h計測予定は未入力。
+- 昼制作ログでは、Google ChromeとBrave BrowserのComputer Useが承認拒否、`/Users/uryuatsuya/note/articles/drafts/` が `not_writable`、`curl` が `Could not resolve host: note.com` であることを確認している。
 - 公開済みnote5本とコーヒー記事の管理画面実測は未回収。公開ページ上で一部スキ相当表示を確認した過去記録はあるが、管理画面値の代替にはしない。
 - `AgentRunShowcaseShort` は公開URL、公開時刻、投稿先、初動反応、24h/72h計測時刻が未入力。
 - AI仕事ログ記事または作業ログ動画化に関心が高い実在相手1件へのoutreach送付記録は未入力。
