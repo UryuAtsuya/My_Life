@@ -139,6 +139,14 @@ tags: [short-video, publishing, measurement, outreach]
 - ブロッカー: ChromeとBraveのComputer Useが `approval denied`。投稿先ブラウザ操作と送付確認ができない。
 - 2026-05-18の最小完了条件は、既存素材を公開し、公開URL、時刻、投稿先、24h/72h計測予定を埋め、1件の送付記録を残すこと。
 
+## 2026-05-18 Morning Business Meeting
+
+- 今日の判断: 追加制作や再編集は行わず、既存素材で公開し、公開台帳を埋める。
+- note側の優先はAI仕事ログ記事の公開と公開済みnote反応計測だが、Short側もURL、公開時刻、投稿先、初動反応が未入力のままだと営業検証に使えない。
+- 最小完了条件: 公開URL、公開時刻、投稿先、初動反応、24h/72h計測時刻、1件のoutreach送付記録。
+- outreachは5件へ広げず、AI仕事ログ記事または作業ログ動画化に関心が高い実在相手1件に絞る。
+- Chrome/Brave Computer Use承認拒否が続く場合は、投稿は手動または承認済み経路に切り替え、結果だけこの台帳へ戻す。
+
 ## 2026-05-18 Evening Closeout
 
 - 18:01 JST時点で、公開URL、公開時刻、投稿先、初動反応は未入力。

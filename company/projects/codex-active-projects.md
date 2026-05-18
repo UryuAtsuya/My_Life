@@ -23,6 +23,14 @@ Last updated: 2026-05-18
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | `AI時代に、毎日の仕事ログを残す理由` を公開し、公開済み記事の24h/72h反応を計測する。 |
 
+## 2026-05-18 Morning Business Meeting Update
+
+1. `note-article-flow`: 今日の最優先は `AI時代に、毎日の仕事ログを残す理由` のnote公開。本文作成、採点86/100、公開前チェックは完了済み。
+2. `note-article-flow`: 公開済みnote5本とコーヒー記事の反応を同じ表で回収し、タイトル、冒頭、タグ、CTA、outreach先のどこを直すか1つに絞る。
+3. `short-video-ops-os`: `AgentRunShowcaseShort` は追加制作せず、既存素材で公開し、URL/time/platform/reactions/24h/72hを記録する。
+4. Outreach: 5件へ広げず、AI仕事ログ記事または作業ログ動画化に関心が高い実在相手1件に送る。
+5. External note research: `/Users/uryuatsuya/note/articles/research/2026-05-18-morning-brief.md` は `NOT_WRITABLE_OR_MISSING` のため、`company/marketing/content-plan/note-research-2026-05-18.md` を正本にする。
+
 ## 2026-05-18 Evening Closeout
 
 1. `note-article-flow`: AI仕事ログ記事は `ready_not_published` のまま。公開URL、公開時刻、公開タグ、初期反応、24h/72h計測予定は未入力。
