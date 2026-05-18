@@ -1,13 +1,13 @@
 # Codex Active Projects
 
-Last updated: 2026-05-17
+Last updated: 2026-05-18
 
 ## Main Focus
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | note article flow | AI work-log article is `next`; 72h/24h measurement due | Recover note metrics, publish `AI時代に、毎日の仕事ログを残す理由`, then log URL/time/tags/reactions |
-| 2 | Short Video Operations OS | validation / blocked on posting | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
+| 1 | note article flow | AI work-log article remains `ready_not_published`; measurement still due | Publish `AI時代に、毎日の仕事ログを残す理由`, then log URL/time/tags/reactions and measure published notes |
+| 2 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 3 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
 
 ## Managed Projects
@@ -22,6 +22,14 @@ Last updated: 2026-05-17
 | `ai-inspiration-board` | planning | Pinterest-style AI board for collecting references and generating briefs. | Create wireframes and dummy Pin data. |
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | `AI時代に、毎日の仕事ログを残す理由` を公開し、公開済み記事の24h/72h反応を計測する。 |
+
+## 2026-05-18 Evening Closeout
+
+1. `note-article-flow`: AI仕事ログ記事は `ready_not_published` のまま。公開URL、公開時刻、公開タグ、初期反応、24h/72h計測予定は未入力。
+2. `note-article-flow`: 公開済みnote5本とコーヒー記事の管理画面実測は未回収。実測なしで改善判断を確定しない。
+3. `short-video-ops-os`: `AgentRunShowcaseShort` のURL/time/platform/reactions/24h/72hは未入力。公開と1件outreachを2026-05-19へ送る。
+4. Tomorrow: まずブラウザ操作権限を確認し、AI記事公開、note実測、Short公開/outreachの順に完了させる。新規記事はその後。
+5. Next note angle after blockers: AI側 `スマホからCodexを動かせる時代の仕事ログ`、コーヒー側 `高くなったコーヒーで、豆選びを3基準に絞る`。
 
 ## 2026-05-17 Morning Business Meeting Update
 
