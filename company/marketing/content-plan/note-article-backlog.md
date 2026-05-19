@@ -36,6 +36,23 @@ tags: [note, backlog, editorial]
 | 7 | 今日の豆を選ぶ基準を、3つだけ決める | Coffee Lifestyle | 豆の購入履歴、味の好み、抽出メモ | コーヒー初心者でも豆選びの基準を持てる | コーヒー連載、レビュー記事 | planned |
 | 8 | AI記事を量産する前に、採点表を作った | Publish And Measure | `note-editorial-system.md` | 低品質な量産を避ける基準が分かる | 有料チェックリスト | planned |
 | 9 | AI秘書に任せる仕事と、人間が決める仕事 | AI Solo Company OS | automation memory / decisions | AI運用の役割分担が分かる | 伴走相談 | planned |
+| 10 | MBTI×ラブタイプ診断は、相性の答えより会話の入口になる | AI / Lifestyle Web Introduction | `https://mbti-lovetype.com/`、診断ページ、記事一覧、運営者情報、利用規約 | 診断を決めつけではなく、恋愛の会話と自己理解に使う方法が分かる | 診断系紹介記事、サイト導線、恋愛/自己理解読者の獲得 | published |
+
+## 2026-05-19 MBTI×ラブタイプ紹介記事制作更新
+
+- 記事ファイル: `company/marketing/content-plan/2026-05-19-mbti-love-type-introduction.md`
+- スコア: `84/100`
+- 状態: `published`
+- 公開URL: `https://note.com/glad_shrew1020/n/neaf5658d3765`
+- 共有URL: `https://note.com/glad_shrew1020/n/neaf5658d3765?sub_rt=share_pb`
+- 公開時刻: `2026-05-19 14:10 JST`
+- 公開タグ: `#相手`, `#診断`, `#恋愛`, `#タイプ`, `#相性`
+- 初動反応: 公開完了モーダルを確認。数値反応は未計測。
+- 計測予定: 24h `2026-05-20 14:10 JST`、72h `2026-05-22 14:10 JST`
+- タグ候補: `#MBTI`, `#恋愛`, `#相性診断`, `#ラブタイプ`, `#自己理解`, `#コミュニケーション`
+- 参考リンク: `https://mbti-lovetype.com/`, `https://mbti-lovetype.com/diagnosis`, `https://mbti-lovetype.com/articles`, `https://mbti-lovetype.com/about`, `https://mbti-lovetype.com/terms`
+- 方針: 診断結果を保証せず、相性の答えではなく会話の入口として紹介する。
+- 次アクション: 24h/72h計測でスキ、コメント、フォロー、プロフィール遷移、DM、サイト流入につながる反応を確認する。
 
 ## 次に書く2本
 
