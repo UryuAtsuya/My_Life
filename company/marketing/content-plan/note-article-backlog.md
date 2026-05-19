@@ -255,3 +255,11 @@ tags: [note, backlog, editorial]
 - 明日の最優先は新規本文制作ではなく、AI仕事ログ記事の公開と公開後記録。
 - 公開・計測後のAI次候補は `スマホからCodexを動かせる時代の仕事ログ`。OpenAIのCodex mobile remote access更新と、companyの朝昼夜ログ運用を接続する。
 - コーヒー次候補は `高くなったコーヒーで、豆選びを3基準に絞る`。ただし、既公開コーヒー記事の反応計測後に着手する。
+
+## 2026-05-19 朝会更新
+
+- 今日の `next` は引き続き `AI時代に、毎日の仕事ログを残す理由`。
+- 本文作成、採点86/100、公開前チェックは完了済みなので、昼の主作業はnote公開とURL/時刻/タグ/初期反応/24h/72h計測予定の記録にする。
+- OpenAIの2026-05-14 Codex mobile remote accessは、AI次候補 `スマホからCodexを動かせる時代の仕事ログ` の背景として強い。ただし、今日は既存AI仕事ログ記事の公開を優先する。
+- コーヒー側は `高くなったコーヒーで、豆選びを3基準に絞る` を次候補として維持するが、既公開コーヒー記事の管理画面実測が未回収のため本文化しない。
+- 外部researchパス `/Users/uryuatsuya/note/articles/research/2026-05-19-morning-brief.md` は現在のサンドボックス許可範囲外のため、正本は `company/marketing/content-plan/note-research-2026-05-19.md`。

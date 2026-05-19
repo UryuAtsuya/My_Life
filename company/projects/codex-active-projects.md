@@ -1,6 +1,6 @@
 # Codex Active Projects
 
-Last updated: 2026-05-18
+Last updated: 2026-05-19
 
 ## Main Focus
 
@@ -22,6 +22,15 @@ Last updated: 2026-05-18
 | `ai-inspiration-board` | planning | Pinterest-style AI board for collecting references and generating briefs. | Create wireframes and dummy Pin data. |
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | `AI時代に、毎日の仕事ログを残す理由` を公開し、公開済み記事の24h/72h反応を計測する。 |
+
+## 2026-05-19 Morning Business Meeting Update
+
+1. `note-article-flow`: 今日の最優先は `AI時代に、毎日の仕事ログを残す理由` のnote公開。本文作成、採点86/100、公開前チェックは完了済み。
+2. `note-article-flow`: OpenAIの2026-05-14 Codex mobile remote accessは次候補 `スマホからCodexを動かせる時代の仕事ログ` の材料にするが、今日の公開優先を変えない。
+3. `note-article-flow`: 公開済みnote5本とコーヒー記事の管理画面実測を同じ表で回収し、タイトル、冒頭、タグ、CTA、outreach先のどこを直すか1つに絞る。
+4. `short-video-ops-os`: `AgentRunShowcaseShort` は追加制作せず、既存素材で公開し、URL/time/platform/reactions/24h/72hを記録する。
+5. Outreach: 5件へ広げず、AI仕事ログ記事または作業ログ動画化に関心が高い実在相手1件に送る。
+6. External note research: `/Users/uryuatsuya/note/articles/research/2026-05-19-morning-brief.md` は現在のサンドボックス許可範囲外のため、`company/marketing/content-plan/note-research-2026-05-19.md` を正本にする。
 
 ## 2026-05-18 Morning Business Meeting Update
 
