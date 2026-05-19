@@ -23,7 +23,7 @@ status: published
 
 ## 記事
 
-- ファイル: `company/marketing/content-plan/2026-05-19-mbti-love-type-introduction.md`
+- ファイル: `company/marketing/content-plan/note/MBTI/2026-05-19-mbti-love-type-introduction.md`
 - 推奨タイトル: `MBTI×ラブタイプ診断は、相性の答えより会話の入口になる`
 - スコア: `84/100`
 - 状態: `published`

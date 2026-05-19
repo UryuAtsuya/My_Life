@@ -19,7 +19,7 @@ automation: "midday-company-production-session"
 
 ## 制作物
 
-- 記事: `company/marketing/content-plan/2026-05-14-morning-coffee-reset.md`
+- 記事: `company/marketing/content-plan/note/coffee/2026-05-14-morning-coffee-reset.md`
 - PMチケット: `company/pm/tickets/2026-05-14-morning-coffee-reset-note.md`
 - タイトル: `毎朝のコーヒーを、仕事前の小さなリセットにする`
 - 状態: `ready_not_published`

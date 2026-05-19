@@ -117,7 +117,7 @@ tags: [note, coffee, morning, routine, workstyle, ready]
 - 全日本コーヒー協会 `統計資料`: `https://coffee.ajca.or.jp/data/`
 - 今日のTODO: `company/todos/2026-05-14.md`
 - note記事バックログ: `company/marketing/content-plan/note-article-backlog.md`
-- 前日のコーヒー関連記事: `company/marketing/content-plan/2026-05-13-coffee-ai-morning-routine.md`
+- 前日のコーヒー関連記事: `company/marketing/content-plan/note/bridge/2026-05-13-coffee-ai-morning-routine.md`
 
 ## アイキャッチ方向
 

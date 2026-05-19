@@ -29,7 +29,7 @@ status: published
 
 ## 2026-05-14 昼制作更新
 
-- 記事ファイル: `company/marketing/content-plan/2026-05-14-morning-coffee-reset.md`
+- 記事ファイル: `company/marketing/content-plan/note/coffee/2026-05-14-morning-coffee-reset.md`
 - 状態: `published`
 - スコア: `84/100`
 - タグ候補: `#コーヒー`, `#朝活`, `#仕事術`, `#ルーティン`, `#暮らし`, `#習慣`

@@ -30,7 +30,7 @@ status: active
 
 ## 2026-05-15 昼制作更新
 
-- 記事ファイル: `company/marketing/content-plan/2026-05-15-ai-work-log-reason.md`
+- 記事ファイル: `company/marketing/content-plan/note/AI/2026-05-15-ai-work-log-reason.md`
 - 状態: `ready_not_published`
 - スコア: `86/100`
 - タグ候補: `#AI活用`, `#仕事術`, `#発信`, `#個人事業`, `#note`, `#生成AI`

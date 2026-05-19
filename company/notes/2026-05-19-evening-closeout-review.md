@@ -16,7 +16,7 @@ status: completed
 ## 今日完了したこと
 
 - ユーザー指定の `https://mbti-lovetype.com/` 紹介noteを制作し、`MBTI×ラブタイプ診断は、相性の答えより会話の入口になる` として公開した。
-- 公開記録を `company/marketing/content-plan/2026-05-19-mbti-love-type-introduction.md` とPMチケットへ反映済み。
+- 公開記録を `company/marketing/content-plan/note/MBTI/2026-05-19-mbti-love-type-introduction.md` とPMチケットへ反映済み。
 - 公開URL: `https://note.com/glad_shrew1020/n/neaf5658d3765`
 - 公開時刻: `2026-05-19 14:10 JST`
 - 公開タグ: `#相手`, `#診断`, `#恋愛`, `#タイプ`, `#相性`

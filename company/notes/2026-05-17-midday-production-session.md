@@ -15,7 +15,7 @@ created: "2026-05-17 18:04 JST"
 
 - 選定: `AI時代に、毎日の仕事ログを残す理由`。
 - 判断: 新規本文作成ではなく、公開準備済み記事の公開、記録、反応計測を優先。
-- 記事状態: `company/marketing/content-plan/2026-05-15-ai-work-log-reason.md` は本文、CTA、タグ、参考リンク、アイキャッチ案、公開前チェック済み。
+- 記事状態: `company/marketing/content-plan/note/AI/2026-05-15-ai-work-log-reason.md` は本文、CTA、タグ、参考リンク、アイキャッチ案、公開前チェック済み。
 - 再採点: `note-growth-editor` の採点表で86/100。80点以上の公開候補を維持。
 
 ## 実行結果

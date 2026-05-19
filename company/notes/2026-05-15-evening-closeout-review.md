@@ -15,7 +15,7 @@ created: "2026-05-15 19:37 JST"
 
 ## 今日完了したこと
 
-- AI単体記事 `AI時代に、毎日の仕事ログを残す理由` を `company/marketing/content-plan/2026-05-15-ai-work-log-reason.md` に作成済み。
+- AI単体記事 `AI時代に、毎日の仕事ログを残す理由` を `company/marketing/content-plan/note/AI/2026-05-15-ai-work-log-reason.md` に作成済み。
 - 記事スコアは86/100。公開基準80点を超え、状態は `ready_not_published`。
 - `company/pm/tickets/2026-05-15-ai-work-log-note.md` を作成し、記事バックログ、朝リサーチ、今日TODOへ制作進捗を反映済み。
 - 反応値や実績値は捏造せず、公開済みnote URL、company TODO、公開後計測欄を証拠素材として扱った。

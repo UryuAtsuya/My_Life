@@ -14,7 +14,7 @@ status: published
 
 ## 完了条件
 
-- [x] `company/marketing/content-plan/2026-05-13-coffee-ai-morning-routine-brief.md` をもとに本文を作る
+- [x] `company/marketing/content-plan/note/bridge/2026-05-13-coffee-ai-morning-routine-brief.md` をもとに本文を作る
 - [x] 1,500〜2,500字の無料通常記事にする
 - [x] コーヒー要素を飾りではなく、AI運用を始める儀式として本文の中心に置く
 - [x] SCAJ2026と全日本コーヒー協会のリンクを参考素材として残す
@@ -33,7 +33,7 @@ status: published
 
 ## 2026-05-13 制作更新
 
-- 記事ファイル: `company/marketing/content-plan/2026-05-13-coffee-ai-morning-routine.md`
+- 記事ファイル: `company/marketing/content-plan/note/bridge/2026-05-13-coffee-ai-morning-routine.md`
 - 状態: `ready_not_published`
 - スコア: `85/100`
 - 本文文字数: 約1,504字

@@ -12,7 +12,7 @@ created: "2026-05-15 08:26 JST"
 - System date confirmed: `2026-05-15 08:26:40 JST`.
 - `/Users/uryuatsuya/note/articles/research/2026-05-15-morning-brief.md` は現在のサンドボックスの書き込み可能範囲外のため、この `company/marketing/content-plan/note-research-2026-05-15.md` を正本とする。
 - 朝は記事本文を書かず、昼の `note-pipeline` / `note-growth-editor` へ渡せる調査、候補、構成、証拠素材までに留める。
-- 作業中に、すでに `company/marketing/content-plan/2026-05-15-ai-work-log-reason.md` が `ready_not_published` まで進んでいることを確認したため、以後の次アクションは公開と計測記録に寄せる。
+- 作業中に、すでに `company/marketing/content-plan/note/AI/2026-05-15-ai-work-log-reason.md` が `ready_not_published` まで進んでいることを確認したため、以後の次アクションは公開と計測記録に寄せる。
 
 ## 市場シグナル
 
@@ -179,6 +179,6 @@ created: "2026-05-15 08:26 JST"
 
 ### Tomorrow Handoff
 
-- 最優先はAI記事公開。公開後にURL、公開時刻、タグ、初動状態、24h/72h計測予定を `company/marketing/content-plan/2026-05-15-ai-work-log-reason.md` とPMチケットへ戻す。
+- 最優先はAI記事公開。公開後にURL、公開時刻、タグ、初動状態、24h/72h計測予定を `company/marketing/content-plan/note/AI/2026-05-15-ai-work-log-reason.md` とPMチケットへ戻す。
 - 次に公開済みnote5本の反応を同じ表へ入れる。実数が取れなければ、未取得理由を残す。
 - コーヒー新規記事は、2026-05-14公開記事の24h反応を見てから着手する。

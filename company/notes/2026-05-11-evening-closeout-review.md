@@ -29,8 +29,8 @@ created: "2026-05-11 18:00 JST"
 
 ### 作成・更新された主な成果物
 
-- `company/marketing/content-plan/2026-05-11-short-video-ops-note-draft.md`
-- `company/marketing/content-plan/2026-05-11-note-browser-publishing-automation.md`
+- `company/marketing/content-plan/note/AI/2026-05-11-short-video-ops-note-draft.md`
+- `company/marketing/content-plan/note/AI/2026-05-11-note-browser-publishing-automation.md`
 - `company/marketing/content-plan/note-editorial-system.md`
 - `company/marketing/content-plan/note-growth-analysis-2026-05-11.md`
 - `company/marketing/content-plan/note-article-backlog.md`

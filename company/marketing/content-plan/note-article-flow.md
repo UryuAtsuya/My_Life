@@ -104,7 +104,7 @@ note: `https://note.com/glad_shrew1020`
 ### 今日の扱い
 
 - 2026-05-11 14:46時点で、ユーザー判断によりnote記事を優先事項へ切り替えた。
-- 投稿用下書きは `company/marketing/content-plan/2026-05-11-short-video-ops-note-draft.md` に作成済み。
+- 投稿用下書きは `company/marketing/content-plan/note/AI/2026-05-11-short-video-ops-note-draft.md` に作成済み。
 - 未公開の `AgentRunShowcaseShort` は公開済みと書かず、制作・運用実験として扱う。
 - note投稿画面へタイトルと本文を転記し、下書き保存した。
 - ユーザーが試験公開を実行した。

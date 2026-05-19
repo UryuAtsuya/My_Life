@@ -52,7 +52,7 @@ status: active
 ## 2026-05-15 昼制作更新
 
 - 完了: AI記事 `AI時代に、毎日の仕事ログを残す理由` を本文化し、86/100で公開候補にした。
-- 記事ファイル: `company/marketing/content-plan/2026-05-15-ai-work-log-reason.md`
+- 記事ファイル: `company/marketing/content-plan/note/AI/2026-05-15-ai-work-log-reason.md`
 - PMチケット: `company/pm/tickets/2026-05-15-ai-work-log-note.md`
 - 未完了: Chrome Computer Useが `approval denied` のため、note転記・公開・公開URL記録は未実施。
 - 未完了: 外部ドラフト保存はサンドボックス外書き込み拒否。
@@ -61,7 +61,7 @@ status: active
 ## 2026-05-15 Evening Closeout
 
 - 完了: AI記事 `AI時代に、毎日の仕事ログを残す理由` は本文化・採点86/100・公開前チェックまで完了。
-- 記事ファイル: `company/marketing/content-plan/2026-05-15-ai-work-log-reason.md`
+- 記事ファイル: `company/marketing/content-plan/note/AI/2026-05-15-ai-work-log-reason.md`
 - 状態: `ready_not_published`
 - 未完了: note転記・公開、公開URL、公開時刻、タグ、初期反応、24h/72h計測予定の記録。
 - 未完了: 公開済みnote4本と2026-05-14公開コーヒー記事の反応計測。`2026-05-15 19:37 JST` 時点ではコーヒー記事24h計測時刻に未到達。

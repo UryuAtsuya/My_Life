@@ -51,3 +51,18 @@ The daily note workflow is now split across morning and midday:
 5. If publishing succeeds, midday records the public URL, publish time, tags, initial reaction state, and next measurement checkpoint in the Vault.
 
 Safety rule: the midday automation must not publish if the article score is below 80/100, note is logged out or blocks publishing, the content contains invented claims/metrics, or there is no concrete proof artifact.
+
+## 2026-05-19 Policy Update
+
+note記事は `company/marketing/content-plan/note/` 配下でカテゴリ別に管理する。
+
+- `note/coffee/`: コーヒー単体記事。
+- `note/AI/`: AI単体記事。
+- `note/MBTI/`: `mbti-lovetype.com` の相性診断関連記事。定期更新とサイテーション強化の対象。
+- `note/bridge/`: コーヒー×AIなどの例外的な橋渡し記事。
+
+webサービス制作を別プロジェクトとして追加する。
+
+1. Morning: webサービスの企画を行い、対象ユーザー、解決する痛み、最小機能、今日の実装範囲を決める。
+2. Midday: `Projects/` 配下でコーディングまたは最小プロトタイプ作成を行う。
+3. Evening: 動作確認、未完了、改善点、翌日の最小TODOをフィードバックとして残す。

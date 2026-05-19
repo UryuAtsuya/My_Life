@@ -15,7 +15,7 @@ status: active
 ## 完了条件
 
 - [ ] `AI時代に、毎日の仕事ログを残す理由` をnoteへ転記・公開する
-- [ ] 公開URL、公開時刻、タグ、初期反応、24h/72h計測予定を `company/marketing/content-plan/2026-05-15-ai-work-log-reason.md` と `note-article-backlog.md` へ記録する
+- [ ] 公開URL、公開時刻、タグ、初期反応、24h/72h計測予定を `company/marketing/content-plan/note/AI/2026-05-15-ai-work-log-reason.md` と `note-article-backlog.md` へ記録する
 - [ ] 公開済みnote5本とコーヒー記事の管理画面実測を同じ表で回収する
 - [ ] 次に直す場所を、タイトル、冒頭、タグ、CTA、outreach先のうち1つに絞る
 - [ ] `AgentRunShowcaseShort` を既存素材で公開し、公開台帳の空欄を埋める

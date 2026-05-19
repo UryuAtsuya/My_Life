@@ -105,7 +105,7 @@ tags: [note, research, ai, coffee, publishing, measurement]
 - 証拠素材:
   - `company/notes/2026-05-13-morning-business-meeting.md`
   - `company/todos/2026-05-13.md`
-  - `company/marketing/content-plan/2026-05-13-coffee-ai-morning-routine-brief.md`
+  - `company/marketing/content-plan/note/bridge/2026-05-13-coffee-ai-morning-routine-brief.md`
   - SCAJ2026 `開催概要`: `https://scajconference.jp/overview/`
   - 全日本コーヒー協会 `統計資料`: `https://coffee.ajca.or.jp/data/`
 - 読者への約束: 朝のコーヒーをAI朝会の入口にして、今日のTODO、公開予定、計測予定を自然に始める型が分かる。
@@ -119,8 +119,8 @@ tags: [note, research, ai, coffee, publishing, measurement]
 - 証拠素材:
   - `company/todos/2026-05-13.md`
   - `company/marketing/content-plan/note-article-backlog.md`
-  - `company/marketing/content-plan/2026-05-11-note-browser-publishing-automation.md`
-  - `company/marketing/content-plan/2026-05-12-post-publication-reaction-log-design.md`
+  - `company/marketing/content-plan/note/AI/2026-05-11-note-browser-publishing-automation.md`
+  - `company/marketing/content-plan/note/AI/2026-05-12-post-publication-reaction-log-design.md`
   - `company/projects/short-video-ops-os-publishing-log.md`
   - 公開済みnote: `https://note.com/glad_shrew1020/n/n1513d700bef0`
   - 公開済みnote: `https://note.com/glad_shrew1020/n/n4ca83f69af6c`

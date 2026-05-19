@@ -71,4 +71,4 @@ created: "2026-05-16 14:48 JST"
 - 対象読者: AIを使って仕事や発信を進めているが、日々の決定、次の確認項目、改善材料が散らかりやすい人。
 - 証拠素材: company TODO、朝会/昼会/夕会ログ、公開済みnote URL、公開後計測欄、`company/projects/short-video-ops-os-publishing-log.md`。
 - 方針: OpenAIやGoogleの更新は背景に留め、主題は「仕事ログがAI時代の記憶と引き継ぎになる」に置く。
-- 公開前状態: `company/marketing/content-plan/2026-05-15-ai-work-log-reason.md` に本文、タグ、CTA、アイキャッチ案、採点86/100を保存済み。
+- 公開前状態: `company/marketing/content-plan/note/AI/2026-05-15-ai-work-log-reason.md` に本文、タグ、CTA、アイキャッチ案、採点86/100を保存済み。

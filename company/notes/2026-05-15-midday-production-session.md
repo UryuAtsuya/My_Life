@@ -15,7 +15,7 @@ created: "2026-05-15 13:04 JST"
 
 ## 制作したもの
 
-- 記事: `company/marketing/content-plan/2026-05-15-ai-work-log-reason.md`
+- 記事: `company/marketing/content-plan/note/AI/2026-05-15-ai-work-log-reason.md`
 - PMチケット: `company/pm/tickets/2026-05-15-ai-work-log-note.md`
 - タイトル: `AI時代に、毎日の仕事ログを残す理由`
 - レーン: AI単体

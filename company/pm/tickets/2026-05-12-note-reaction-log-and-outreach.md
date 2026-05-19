@@ -34,7 +34,7 @@ status: open
 ## 2026-05-12 昼制作更新
 
 - 記事 `AIで作るより難しい、公開後の反応ログ設計` を作成し、86/100で公開候補にした。
-- 記事ファイル: `company/marketing/content-plan/2026-05-12-post-publication-reaction-log-design.md`
+- 記事ファイル: `company/marketing/content-plan/note/AI/2026-05-12-post-publication-reaction-log-design.md`
 - 24h計測は2026-05-12 16:04 JSTに未到達のため、本文では実績値を使わず、計測前に反応ログの型を固定する内容にした。
 - Chrome/ArcのComputer Use権限がMCP側で拒否されたため、noteへの転記・公開は未実施。
 

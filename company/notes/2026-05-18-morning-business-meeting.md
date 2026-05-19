@@ -52,7 +52,7 @@ created: "2026-05-18 08:03 JST"
 
 今日もnote成長を優先する。ただし、新規記事を増やす日ではない。すでに公開基準を満たしているAI記事を公開し、公開済みnoteの反応を実測し、Short公開台帳とoutreach記録を埋める。
 
-昼のnote候補は `AI時代に、毎日の仕事ログを残す理由`。これは新規執筆ではなく、公開とログ記入が主作業。公開後はURL、公開時刻、タグ、初期反応、24h/72h計測予定を `company/marketing/content-plan/2026-05-15-ai-work-log-reason.md` と `note-article-backlog.md` に戻す。
+昼のnote候補は `AI時代に、毎日の仕事ログを残す理由`。これは新規執筆ではなく、公開とログ記入が主作業。公開後はURL、公開時刻、タグ、初期反応、24h/72h計測予定を `company/marketing/content-plan/note/AI/2026-05-15-ai-work-log-reason.md` と `note-article-backlog.md` に戻す。
 
 コーヒー側は `今日の豆を選ぶ基準を、3つだけ決める` を次候補として維持する。ただし、既公開コーヒー記事の反応を見てから着手するため、今日は新規本文化しない。
 
@@ -70,4 +70,4 @@ created: "2026-05-18 08:03 JST"
 - 対象読者: AIを使って仕事や発信を進めているが、日々の決定、次の確認項目、改善材料が散らかりやすい人。
 - 証拠素材: company TODO、朝会/昼会/夕会ログ、公開済みnote URL、公開後計測欄、`company/projects/short-video-ops-os-publishing-log.md`。
 - 方針: OpenAIやnoteのAI文脈は背景に留め、主題は「仕事ログがAI時代の記憶と引き継ぎになる」に置く。
-- 公開前状態: `company/marketing/content-plan/2026-05-15-ai-work-log-reason.md` に本文、タグ、CTA、アイキャッチ案、採点86/100を保存済み。
+- 公開前状態: `company/marketing/content-plan/note/AI/2026-05-15-ai-work-log-reason.md` に本文、タグ、CTA、アイキャッチ案、採点86/100を保存済み。

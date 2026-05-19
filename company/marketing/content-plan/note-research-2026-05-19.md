@@ -38,7 +38,7 @@ status: active
 
 1. `AI時代に、毎日の仕事ログを残す理由`
    - 状態: `ready_not_published`, スコア86/100。
-   - 証拠素材: `company/marketing/content-plan/2026-05-15-ai-work-log-reason.md`, company TODO, 朝会/昼会/夕会ログ、公開済みnote URL、公開後計測欄、`company/projects/short-video-ops-os-publishing-log.md`。
+   - 証拠素材: `company/marketing/content-plan/note/AI/2026-05-15-ai-work-log-reason.md`, company TODO, 朝会/昼会/夕会ログ、公開済みnote URL、公開後計測欄、`company/projects/short-video-ops-os-publishing-log.md`。
    - 今日の扱い: 新規執筆ではなく、昼に公開し、URL/時刻/タグ/初期反応/24h/72h計測予定を戻す。
 2. `スマホからCodexを動かせる時代の仕事ログ`
    - 状態: 次候補。
@@ -69,7 +69,7 @@ status: active
 - 推奨タイトル: `AI時代に、毎日の仕事ログを残す理由`
 - レーン: AI単体
 - Target reader: AIを使って仕事や発信を進めているが、日々の決定、次の確認項目、改善材料が散らかりやすい人。
-- Proof artifact: `company/marketing/content-plan/2026-05-15-ai-work-log-reason.md`, company TODO, 朝会/昼会/夕会ログ、公開済みnote URL、公開後計測欄、`company/projects/short-video-ops-os-publishing-log.md`。
+- Proof artifact: `company/marketing/content-plan/note/AI/2026-05-15-ai-work-log-reason.md`, company TODO, 朝会/昼会/夕会ログ、公開済みnote URL、公開後計測欄、`company/projects/short-video-ops-os-publishing-log.md`。
 - Why today: 本文作成、採点86/100、公開前チェックが済んでいる。これ以上候補を増やすより、公開URL、公開時刻、タグ、24h/72h計測予定を戻すほうが成長ループに直結する。
 
 ## Outline for Midday Automation

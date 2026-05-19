@@ -14,7 +14,7 @@ created: "2026-05-12 12:35 JST"
 
 ## 作成物
 
-- 作成: `company/marketing/content-plan/2026-05-12-post-publication-reaction-log-design.md`
+- 作成: `company/marketing/content-plan/note/AI/2026-05-12-post-publication-reaction-log-design.md`
 - スコア: 86/100
 - 状態: ready_not_published
 - 記事の根拠素材:

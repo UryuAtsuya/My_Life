@@ -68,7 +68,7 @@ status: active
 - 推奨タイトル: `AI時代に、毎日の仕事ログを残す理由`
 - レーン: AI単体
 - Target reader: AIを使って仕事や発信を進めているが、日々の決定、次の確認項目、改善材料が散らかりやすい人。
-- Proof artifact: `company/marketing/content-plan/2026-05-15-ai-work-log-reason.md`, company TODO, 朝会/昼会/夕会ログ、公開済みnote URL、公開後計測欄。
+- Proof artifact: `company/marketing/content-plan/note/AI/2026-05-15-ai-work-log-reason.md`, company TODO, 朝会/昼会/夕会ログ、公開済みnote URL、公開後計測欄。
 - Why today: すでに本文作成、採点86/100、公開前チェックが済んでいる。これ以上新規候補を増やすより、公開URL、公開時刻、24h/72h計測予定を戻すほうが成長ループに直結する。
 
 ## Outline for Midday Automation

@@ -69,7 +69,7 @@ status: active
 - 対象読者: AIを使って仕事や発信を進めているが、毎日何を決めたか、次に何を見るかが散らかりやすい個人事業者・発信者。
 - 読者への約束: 仕事ログを、AIに渡せる記憶、翌日引き継ぎ、記事/動画/営業素材に変える最小単位が分かる。
 - 証拠素材: `company/todos/2026-05-15.md`、`company/notes/2026-05-15-midday-production-session.md`、公開済みnote URL、`company/projects/short-video-ops-os-publishing-log.md`。
-- 現在状態: `company/marketing/content-plan/2026-05-15-ai-work-log-reason.md` に本文、CTA、タグ、アイキャッチ案、採点86/100を保存済み。
+- 現在状態: `company/marketing/content-plan/note/AI/2026-05-15-ai-work-log-reason.md` に本文、CTA、タグ、アイキャッチ案、採点86/100を保存済み。
 - 今日書く理由: 今日は2026-05-13公開2本の72h計測日で、仕事ログと公開後計測を主題にした記事を出す根拠が最も強い。
 
 ## Outline

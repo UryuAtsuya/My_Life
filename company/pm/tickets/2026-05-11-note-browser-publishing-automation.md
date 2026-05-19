@@ -23,7 +23,7 @@ status: done
 
 ## 成果物
 
-- 記事ファイル: `company/marketing/content-plan/2026-05-11-note-browser-publishing-automation.md`
+- 記事ファイル: `company/marketing/content-plan/note/AI/2026-05-11-note-browser-publishing-automation.md`
 - 記事スコア: 87/100
 - 公開条件: 満たした
 - 公開URL: `https://note.com/glad_shrew1020/n/n1513d700bef0`

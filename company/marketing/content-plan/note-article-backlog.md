@@ -40,7 +40,7 @@ tags: [note, backlog, editorial]
 
 ## 2026-05-19 MBTI×ラブタイプ紹介記事制作更新
 
-- 記事ファイル: `company/marketing/content-plan/2026-05-19-mbti-love-type-introduction.md`
+- 記事ファイル: `company/marketing/content-plan/note/MBTI/2026-05-19-mbti-love-type-introduction.md`
 - スコア: `84/100`
 - 状態: `published`
 - 公開URL: `https://note.com/glad_shrew1020/n/neaf5658d3765`
@@ -62,6 +62,14 @@ tags: [note, backlog, editorial]
 - 公開・計測後のAI次候補は `スマホからCodexを動かせる時代の仕事ログ`。OpenAIのCodex mobile previewと、companyの朝昼夜ログ運用を接続する。
 - コーヒー次候補は `高くなったコーヒーで、豆選びを3基準に絞る`。UCC価格改定と全日本コーヒー協会の2026年1-3月速報を背景にできるが、既公開コーヒー記事の反応実測後に着手する。
 
+## 2026-05-19 方針更新
+
+- 今後の記事ファイルは `company/marketing/content-plan/note/` 配下で分類する。
+- コーヒー単体記事は `note/coffee/`、AI単体記事は `note/AI/`、MBTI×ラブタイプ診断関連記事は `note/MBTI/` に置く。
+- コーヒー×AIなど複数レーンを接続する例外記事は `note/bridge/` に置く。毎日の基本型にはしない。
+- MBTI×ラブタイプ診断記事は、今後も定期更新対象にする。更新時は `mbti-lovetype.com` の確認ページ、確認日、追加したサイテーション、未確認事項を記事ファイルへ残す。
+- AI記事とコーヒー記事は、引き続き混ぜずに分類して企画・制作する。
+
 ## 次に書く2本
 
 ### コーヒー
@@ -82,7 +90,7 @@ tags: [note, backlog, editorial]
 
 ## 2026-05-11 昼制作更新
 
-- 記事ファイル: `company/marketing/content-plan/2026-05-11-note-browser-publishing-automation.md`
+- 記事ファイル: `company/marketing/content-plan/note/AI/2026-05-11-note-browser-publishing-automation.md`
 - スコア: 87/100
 - 状態: published
 - 公開URL: `https://note.com/glad_shrew1020/n/n1513d700bef0`
@@ -105,7 +113,7 @@ tags: [note, backlog, editorial]
 
 ## 2026-05-12 昼制作更新
 
-- 記事ファイル: `company/marketing/content-plan/2026-05-12-post-publication-reaction-log-design.md`
+- 記事ファイル: `company/marketing/content-plan/note/AI/2026-05-12-post-publication-reaction-log-design.md`
 - スコア: 86/100
 - 状態: published
 - 公開URL: `https://note.com/glad_shrew1020/n/n4ca83f69af6c`
@@ -126,7 +134,7 @@ tags: [note, backlog, editorial]
 
 ## 2026-05-13 昼制作更新
 
-- 記事ファイル: `company/marketing/content-plan/2026-05-13-ai-started-note-operation-publication-log.md`
+- 記事ファイル: `company/marketing/content-plan/note/AI/2026-05-13-ai-started-note-operation-publication-log.md`
 - スコア: 86/100
 - 状態: ready_not_published
 - タグ候補: `#AI活用`, `#生成AI`, `#note`, `#発信`, `#仕事術`, `#個人事業`
@@ -136,7 +144,7 @@ tags: [note, backlog, editorial]
 
 ## 2026-05-13 公開更新
 
-- 記事ファイル: `company/marketing/content-plan/2026-05-13-ai-started-note-operation-publication-log.md`
+- 記事ファイル: `company/marketing/content-plan/note/AI/2026-05-13-ai-started-note-operation-publication-log.md`
 - 状態: published
 - 公開URL: `https://note.com/glad_shrew1020/n/nb451e94f6a35`
 - 公開時刻: `2026-05-13 13:31:11 JST`
@@ -149,12 +157,12 @@ tags: [note, backlog, editorial]
 
 - ユーザー指示により、次のnote制作はコーヒー×AI系を優先する。
 - `朝のコーヒーとAI朝会をセットにする仕事ルーティン` を `next` に変更。
-- 記事ブリーフ: `company/marketing/content-plan/2026-05-13-coffee-ai-morning-routine-brief.md`
+- 記事ブリーフ: `company/marketing/content-plan/note/bridge/2026-05-13-coffee-ai-morning-routine-brief.md`
 - PMチケット: `company/pm/tickets/2026-05-13-coffee-ai-morning-routine-note.md`
 
 ## 2026-05-13 コーヒーAI記事制作更新
 
-- 記事ファイル: `company/marketing/content-plan/2026-05-13-coffee-ai-morning-routine.md`
+- 記事ファイル: `company/marketing/content-plan/note/bridge/2026-05-13-coffee-ai-morning-routine.md`
 - スコア: 85/100
 - 状態: ready_not_published
 - 本文文字数: 約1,504字
@@ -177,7 +185,7 @@ tags: [note, backlog, editorial]
 
 ## 2026-05-14 昼制作更新
 
-- 記事ファイル: `company/marketing/content-plan/2026-05-14-morning-coffee-reset.md`
+- 記事ファイル: `company/marketing/content-plan/note/coffee/2026-05-14-morning-coffee-reset.md`
 - スコア: `84/100`
 - 状態: `published`
 - タグ候補: `#コーヒー`, `#朝活`, `#仕事術`, `#ルーティン`, `#暮らし`, `#習慣`
@@ -197,7 +205,7 @@ tags: [note, backlog, editorial]
 
 ## 2026-05-15 昼制作更新
 
-- 記事ファイル: `company/marketing/content-plan/2026-05-15-ai-work-log-reason.md`
+- 記事ファイル: `company/marketing/content-plan/note/AI/2026-05-15-ai-work-log-reason.md`
 - スコア: `86/100`
 - 状態: `ready_not_published`
 - 本文文字数: 約1,528字

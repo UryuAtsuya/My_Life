@@ -33,7 +33,7 @@ status: open
 
 ## 2026-05-13 昼進捗
 
-- 記事ファイル: `company/marketing/content-plan/2026-05-13-ai-started-note-operation-publication-log.md`
+- 記事ファイル: `company/marketing/content-plan/note/AI/2026-05-13-ai-started-note-operation-publication-log.md`
 - 記事スコア: `86/100`
 - 状態: `ready_not_published`
 - 公開ブロッカー: Chrome/ArcのComputer UseがMCP側で承認拒否。ローカル `curl` も `Could not resolve host: note.com`。

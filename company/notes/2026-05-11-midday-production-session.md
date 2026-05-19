@@ -44,7 +44,7 @@ created: "2026-05-11 13:05 JST"
 
 ### 作ったもの
 
-- 記事ファイル: `company/marketing/content-plan/2026-05-11-note-browser-publishing-automation.md`
+- 記事ファイル: `company/marketing/content-plan/note/AI/2026-05-11-note-browser-publishing-automation.md`
 - 本文、CTA、タグ候補、アイキャッチプロンプト3案、alt text、記事スコア、公開前チェック、投稿後計測欄を作成。
 - `note-growth-editor` の採点表で87/100と判定。
 - PMチケット: `company/pm/tickets/2026-05-11-note-browser-publishing-automation.md`

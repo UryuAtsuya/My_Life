@@ -9,6 +9,7 @@ Last updated: 2026-05-19
 | 1 | note article flow | AI work-log article remains `ready_not_published`; measurement still due | Publish `AI時代に、毎日の仕事ログを残す理由`, then log URL/time/tags/reactions and measure published notes |
 | 2 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 3 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
+| 4 | Web Service New Product | planning | 朝企画、昼コーディング、夜フィードバックのループで最初のwebサービス案を1つに絞る |
 
 ## Managed Projects
 
@@ -22,6 +23,14 @@ Last updated: 2026-05-19
 | `ai-inspiration-board` | planning | Pinterest-style AI board for collecting references and generating briefs. | Create wireframes and dummy Pin data. |
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | `AI時代に、毎日の仕事ログを残す理由` を公開し、公開済み記事の24h/72h反応を計測する。 |
+| `web-service-new-product` | planning | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | 最初に作るサービス案、対象ユーザー、痛み、最小機能、初回画面を決める。 |
+
+## 2026-05-19 User Policy Update
+
+1. `note-article-flow`: 記事ファイルを `company/marketing/content-plan/note/coffee/`, `note/AI/`, `note/MBTI/`, `note/bridge/` に分類する。
+2. `note-article-flow`: MBTI×ラブタイプ診断記事は定期更新対象。サイテーション、確認日、追加根拠、未確認事項を記事ファイルへ残す。
+3. `note-article-flow`: AI記事とコーヒー記事は別レーンで企画・制作する。混合記事は基本型にしない。
+4. `web-service-new-product`: noteとは別プロジェクトとして開始する。朝企画、昼コーディング、夜フィードバックを日次ループにする。
 
 ## 2026-05-19 Morning Business Meeting Update
 
@@ -247,7 +256,7 @@ Last updated: 2026-05-19
 ## 2026-05-13 Midday Production Update
 
 1. `note-article-flow`: drafted `AIで始めたnote運用で、公開後ログまで見て初めて分かったこと` at `86/100`.
-2. Article file: `company/marketing/content-plan/2026-05-13-ai-started-note-operation-publication-log.md`.
+2. Article file: `company/marketing/content-plan/note/AI/2026-05-13-ai-started-note-operation-publication-log.md`.
 3. Publishing and reaction measurement are blocked because Chrome/Arc Computer Use access was denied and local `curl` cannot resolve `note.com`.
 4. Next action: recover browser access, record reactions for the two published notes, then publish today's ready draft and log URL/time/tags.
 
@@ -263,13 +272,13 @@ Last updated: 2026-05-19
 
 1. User clarified that coffee + AI should be prioritized over the publishing-log lane.
 2. `note-article-flow`: next article is now `朝のコーヒーとAI朝会をセットにする仕事ルーティン`.
-3. Brief created: `company/marketing/content-plan/2026-05-13-coffee-ai-morning-routine-brief.md`.
+3. Brief created: `company/marketing/content-plan/note/bridge/2026-05-13-coffee-ai-morning-routine-brief.md`.
 4. PM ticket created: `company/pm/tickets/2026-05-13-coffee-ai-morning-routine-note.md`.
 
 ## 2026-05-13 Coffee AI Draft Update
 
 1. `note-article-flow`: drafted `朝のコーヒーとAI朝会をセットにしたら、仕事の始め方が変わった` at `85/100`.
-2. Article file: `company/marketing/content-plan/2026-05-13-coffee-ai-morning-routine.md`.
+2. Article file: `company/marketing/content-plan/note/bridge/2026-05-13-coffee-ai-morning-routine.md`.
 3. Body length: about 1,504 Japanese characters.
 4. External note draft saved to `/Users/uryuatsuya/note/articles/drafts/20260513-coffee-ai-morning-routine.md`.
 
@@ -297,7 +306,7 @@ Last updated: 2026-05-19
 ## 2026-05-14 Midday Note Production Update
 
 1. `note-article-flow`: drafted `毎朝のコーヒーを、仕事前の小さなリセットにする`.
-2. Article file: `company/marketing/content-plan/2026-05-14-morning-coffee-reset.md`.
+2. Article file: `company/marketing/content-plan/note/coffee/2026-05-14-morning-coffee-reset.md`.
 3. Score: `84/100`; status: `ready_not_published`.
 4. External draft save was rejected as outside the writable sandbox.
 5. Chrome publishing was blocked by Computer Use `approval denied`.
@@ -322,7 +331,7 @@ Last updated: 2026-05-19
 ## 2026-05-15 Midday Production Update
 
 1. `note-article-flow`: drafted `AI時代に、毎日の仕事ログを残す理由` at `86/100`.
-2. Article file: `company/marketing/content-plan/2026-05-15-ai-work-log-reason.md`.
+2. Article file: `company/marketing/content-plan/note/AI/2026-05-15-ai-work-log-reason.md`.
 3. External draft save to `/Users/uryuatsuya/note/articles/drafts/20260515-ai-work-log-reason.md` was rejected by the sandbox.
 4. Chrome publishing was blocked by Computer Use `approval denied`, so the article remains `ready_not_published`.
 5. Next action: restore Chrome operation, publish the ready article, then log URL/time/tags/reactions and continue the 22:34 JST coffee article measurement.

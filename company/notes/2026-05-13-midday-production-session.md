@@ -12,7 +12,7 @@ created: "2026-05-13 13:22 JST"
 - 今日の最上位タスクを `AIで始めたnote運用で、公開後ログまで見て初めて分かったこと` の記事化に固定した。
 - `note-growth-editor` と `note-pipeline` のルール、`note-editorial-system.md`、`note-article-backlog.md`、`note-research-2026-05-13.md`、朝会、決定ログ、PMチケット、関連プロジェクトを確認した。
 - note公式の `#AIと始めてみた` 告知とOpenAI release notesを確認し、記事内には参考リンクとして保存した。
-- 公開準備済み記事を `company/marketing/content-plan/2026-05-13-ai-started-note-operation-publication-log.md` に作成した。
+- 公開準備済み記事を `company/marketing/content-plan/note/AI/2026-05-13-ai-started-note-operation-publication-log.md` に作成した。
 
 ## 成果物
 
@@ -65,14 +65,14 @@ created: "2026-05-13 13:22 JST"
 
 - ユーザー指示: コーヒー×AI系を優先する。
 - 修正内容: 次のnote候補を `朝のコーヒーとAI朝会をセットにする仕事ルーティン` に変更。
-- 作成: `company/marketing/content-plan/2026-05-13-coffee-ai-morning-routine-brief.md`
+- 作成: `company/marketing/content-plan/note/bridge/2026-05-13-coffee-ai-morning-routine-brief.md`
 - 作成: `company/pm/tickets/2026-05-13-coffee-ai-morning-routine-note.md`
 - 次アクション: 次の制作枠で、コーヒーを「飾り」ではなくAI朝会を始める生活導線として本文化する。
 
 ## 2026-05-13 コーヒーAI記事制作追記
 
 - 記事タイトル: `朝のコーヒーとAI朝会をセットにしたら、仕事の始め方が変わった`
-- 記事ファイル: `company/marketing/content-plan/2026-05-13-coffee-ai-morning-routine.md`
+- 記事ファイル: `company/marketing/content-plan/note/bridge/2026-05-13-coffee-ai-morning-routine.md`
 - 状態: `ready_not_published`
 - スコア: `85/100`
 - 本文文字数: 約1,504字

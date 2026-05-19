@@ -12,7 +12,7 @@ created: "2026-05-16 12:39 JST"
 - System date: `2026-05-16 12:39:01 JST (+0900)`
 - 読んだルール: `CLAUDE.md`, `company/sync-policy.md`, automation memory
 - 読んだnote運用ファイル: `company/marketing/content-plan/note-editorial-system.md`, `company/marketing/content-plan/note-article-backlog.md`
-- 読んだ制作対象: `company/marketing/content-plan/2026-05-15-ai-work-log-reason.md`
+- 読んだ制作対象: `company/marketing/content-plan/note/AI/2026-05-15-ai-work-log-reason.md`
 - 読んだ関連チケット: `company/pm/tickets/2026-05-15-ai-work-log-note.md`, `company/pm/tickets/2026-05-14-note-measurement-two-lane-publishing.md`
 
 ## 今日の判断
@@ -24,7 +24,7 @@ created: "2026-05-16 12:39 JST"
 ## 制作結果
 
 - 記事状態: `ready_not_published`
-- 記事ファイル: `company/marketing/content-plan/2026-05-15-ai-work-log-reason.md`
+- 記事ファイル: `company/marketing/content-plan/note/AI/2026-05-15-ai-work-log-reason.md`
 - スコア: `86/100`
 - 本文文字数: 無料通常記事の範囲内
 - タグ候補: `#AI活用`, `#仕事術`, `#発信`, `#個人事業`, `#note`, `#生成AI`
@@ -39,7 +39,7 @@ created: "2026-05-16 12:39 JST"
 
 ## 外部ドラフト
 
-`/Users/uryuatsuya/note/articles/drafts/20260515-ai-work-log-reason.md` は前回同様、現在のサンドボックス外書き込み制約があるため、この実行では保存対象にしなかった。Vault内の `company/marketing/content-plan/2026-05-15-ai-work-log-reason.md` を正本として扱う。
+`/Users/uryuatsuya/note/articles/drafts/20260515-ai-work-log-reason.md` は前回同様、現在のサンドボックス外書き込み制約があるため、この実行では保存対象にしなかった。Vault内の `company/marketing/content-plan/note/AI/2026-05-15-ai-work-log-reason.md` を正本として扱う。
 
 ## 検証
 
