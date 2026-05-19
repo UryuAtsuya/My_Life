@@ -32,6 +32,13 @@ Last updated: 2026-05-19
 3. `note-article-flow`: AI記事とコーヒー記事は別レーンで企画・制作する。混合記事は基本型にしない。
 4. `web-service-new-product`: noteとは別プロジェクトとして開始する。朝企画、昼コーディング、夜フィードバックを日次ループにする。
 
+## 2026-05-19 User Policy Update 2
+
+1. `note-article-flow`: `coffee / AI / MBTI` の3分類で進める。
+2. `note-article-flow`: 各コンテンツで毎日1本ずつ記事を作る。
+3. `note-article-flow`: 毎日の成果物は、coffee記事1本、AI記事1本、MBTI記事1本。
+4. `note-article-flow`: 公開できない場合も、記事ファイル、出典、構成、次アクションを各レーンに残す。
+
 ## 2026-05-19 Morning Business Meeting Update
 
 1. `note-article-flow`: 今日の最優先は `AI時代に、毎日の仕事ログを残す理由` のnote公開。本文作成、採点86/100、公開前チェックは完了済み。
