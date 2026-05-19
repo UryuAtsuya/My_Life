@@ -43,3 +43,10 @@ status: active
 - `/Users/uryuatsuya/note/articles/drafts/` は `not_writable` のため、外部構造化ドラフト保存は未実施。
 - ローカル `curl` は `note.com` のDNS解決不可。公開ページで確認できた2記事は可視スキ相当表示1だが、管理画面実測は未回収。
 - ブロッカー解除後の最初の完了条件は、AI記事の公開URL、公開時刻、公開タグ、初期反応、24h/72h計測予定を記事ファイルとバックログへ戻すこと。
+
+## 2026-05-19 Evening Update
+
+- 本チケットの主要完了条件は未達。AI仕事ログ記事の公開、既存note管理画面実測、`AgentRunShowcaseShort` 公開、1件outreach送付記録はいずれも証跡なし。
+- 別件のユーザー指定でMBTI×ラブタイプ診断紹介noteは公開済み。公開URLは `https://note.com/glad_shrew1020/n/neaf5658d3765`、公開時刻は `2026-05-19 14:10 JST`。
+- 明日の最初の完了条件は変えない。AI仕事ログ記事を公開し、URL/時刻/タグ/初期反応/24h/72h計測予定をVaultへ戻す。
+- 追加で、MBTI紹介noteの24h反応を `2026-05-20 14:10 JST` 以降に回収する。

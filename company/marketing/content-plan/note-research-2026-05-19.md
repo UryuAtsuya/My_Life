@@ -103,3 +103,42 @@ status: active
 2. 公開後すぐにURL、時刻、タグ、初期反応、24h/72h計測予定をVaultへ戻す。
 3. その後、公開済みnote5本とコーヒー記事の反応を同じ表で回収する。
 4. コーヒー次候補 `高くなったコーヒーで、豆選びを3基準に絞る` は、反応計測後に着手可否を決める。
+
+## Evening Next Brief - 2026-05-20 Morning
+
+### 実行確認
+
+- Evening check: `2026-05-19 18:01 JST`。
+- 外部保存先 `/Users/uryuatsuya/note/articles/research/2026-05-19-evening-next-brief.md` は `NOT_WRITABLE` のため、このセクションを正本にする。
+
+### AI関係シグナル
+
+| Source title | Link | One-line summary | Tomorrow angle |
+|---|---|---|---|
+| OpenAI - Work with Codex from anywhere | https://openai.com/index/work-with-codex-from-anywhere/ | 2026-05-14にCodexがChatGPT mobile app previewへ入り、iOS/Androidからactive threads、approvals、plugins、project contextを扱えるようになった。 | `スマホからCodexを動かせる時代の仕事ログ` の背景。スマホ操作の便利さではなく、長時間動くAI作業を止めないためのログ設計に寄せる。 |
+| OpenAI - Codex remote access / secure relay | https://openai.com/index/work-with-codex-from-anywhere/ | 接続先のfiles、credentials、permissions、local setupは実行環境側に残し、phone側へdiff、test result、approvalなどが同期される。 | 「仕事ログはAIに渡す文脈であり、承認・差分・次アクションを残すほど遠隔でも判断しやすい」と書ける。 |
+| OpenAI - Hooks / Programmatic access tokens | https://openai.com/index/work-with-codex-from-anywhere/ | Hooks GA、programmatic access tokens、Enterprise向け管理機能が同時に示された。 | 個人運用でも、ログ、検証、権限、承認をセットで残す必要があるという実務角度に使う。 |
+
+### コーヒー関係シグナル
+
+| Source title | Link | One-line summary | Tomorrow angle |
+|---|---|---|---|
+| UCC上島珈琲 - 業務用、家庭用レギュラーコーヒー製品の一部価格改定について | https://www.ucc.co.jp/company/news/2025/rel251222.html | 2026-03-01出荷分から一部レギュラーコーヒー価格を改定し、実質店頭価格は10-18%程度上昇見込み。背景は国際相場、異常気象、資材・物流・エネルギー、円安。 | `高くなったコーヒーで、豆選びを3基準に絞る` の生活者向け背景。値上げ不安ではなく、選ぶ基準を減らす話にする。 |
+| 全日本コーヒー協会 - 日本のコーヒー需給表 | https://coffee.ajca.or.jp/wordpress/wp-content/uploads/2026/05/data-jukyu202603.pdf | 2026年1-3月速報では、生豆輸入量87,351トン、国内消費99,356トン。前年同期比は生豆輸入量+1.0%、国内消費+4.5%。 | コーヒー需要は続いている前提で、家で飲む一杯の納得感、頻度、味の好みを整理する記事にできる。 |
+
+### 明朝の重要語
+
+- AI: Codex mobile preview, ChatGPT mobile app, remote access, secure relay, active threads, approvals, diffs, test results, Hooks GA, programmatic access tokens。
+- コーヒー: UCC価格改定、実質店頭価格10-18%上昇見込み、生豆輸入量87,351トン、国内消費99,356トン、豆選び3基準。
+
+### 明日の記事角度
+
+1. 最優先: `AI時代に、毎日の仕事ログを残す理由` を公開する。本文、採点86/100、公開前チェックは完了済み。
+2. AI次候補: `スマホからCodexを動かせる時代の仕事ログ`。Codex mobileを「スマホで作業できる」ではなく「判断ログがあれば、長時間AI作業を途中で止めずに進められる」に寄せる。
+3. コーヒー次候補: `高くなったコーヒーで、豆選びを3基準に絞る`。価格上昇と需給速報を背景に、頻度、味、作業前の使いやすさの3基準へ落とす。
+
+### Open Questions
+
+- MBTI紹介noteの24h反応は、通常AI/コーヒー記事と比べてどの程度違うか。
+- AI仕事ログ記事を公開したあと、Codex mobile記事へ続けるべきか、既存noteの反応改善へ戻るべきか。
+- コーヒー記事は価格上昇文脈が強いが、既公開コーヒー記事の反応が薄い場合はタイトル/冒頭を先に直すべきか。
