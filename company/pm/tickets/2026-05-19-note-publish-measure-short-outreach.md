@@ -35,3 +35,11 @@ status: active
 1. AI仕事ログ記事を公開し、公開後の記録欄を埋める。
 2. 公開済みnote5本とコーヒー記事の反応を回収する。
 3. `AgentRunShowcaseShort` を公開し、1件outreachする。
+
+## 2026-05-19 Midday Update
+
+- `AI時代に、毎日の仕事ログを残す理由` はスコア86/100、公開前チェック済み、`ready_not_published` のまま。
+- Google Chrome Computer Useが承認拒否のため、note転記、下書き保存、公開、公開URL取得は未実施。
+- `/Users/uryuatsuya/note/articles/drafts/` は `not_writable` のため、外部構造化ドラフト保存は未実施。
+- ローカル `curl` は `note.com` のDNS解決不可。公開ページで確認できた2記事は可視スキ相当表示1だが、管理画面実測は未回収。
+- ブロッカー解除後の最初の完了条件は、AI記事の公開URL、公開時刻、公開タグ、初期反応、24h/72h計測予定を記事ファイルとバックログへ戻すこと。

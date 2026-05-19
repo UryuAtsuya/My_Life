@@ -263,3 +263,11 @@ tags: [note, backlog, editorial]
 - OpenAIの2026-05-14 Codex mobile remote accessは、AI次候補 `スマホからCodexを動かせる時代の仕事ログ` の背景として強い。ただし、今日は既存AI仕事ログ記事の公開を優先する。
 - コーヒー側は `高くなったコーヒーで、豆選びを3基準に絞る` を次候補として維持するが、既公開コーヒー記事の管理画面実測が未回収のため本文化しない。
 - 外部researchパス `/Users/uryuatsuya/note/articles/research/2026-05-19-morning-brief.md` は現在のサンドボックス許可範囲外のため、正本は `company/marketing/content-plan/note-research-2026-05-19.md`。
+
+## 2026-05-19 昼制作更新
+
+- `AI時代に、毎日の仕事ログを残す理由` は記事本文、CTA、タグ候補、参考リンク、アイキャッチ方向、公開前チェックを維持。スコアは86/100のまま公開候補。
+- Google Chrome Computer Useは承認拒否のため、note転記、下書き保存、公開、公開URL取得は未実施。
+- `/Users/uryuatsuya/note/articles/drafts/` は `not_writable` のため、外部構造化ドラフト保存は未実施。
+- ローカル `curl` は `note.com` のDNS解決に失敗した。Webで確認できた範囲では、公開済み2記事の公開ページ上の可視スキ相当表示は各1。管理画面実測と他記事の反応は未取得。
+- 状態は `ready_not_published` を維持する。次アクションはChrome操作権限復旧後に公開し、URL、時刻、タグ、初期反応、24h/72h計測予定を戻す。

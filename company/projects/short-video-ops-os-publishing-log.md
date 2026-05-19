@@ -161,3 +161,9 @@ tags: [short-video, publishing, measurement, outreach]
 - 最小完了条件: 公開URL、公開時刻、投稿先、初動反応、24h/72h計測時刻、1件のoutreach送付記録。
 - outreachは5件へ広げず、AI仕事ログ記事または作業ログ動画化に関心が高い実在相手1件に絞る。
 - Chrome/Brave Computer Use承認拒否が続く場合は、投稿は手動または承認済み経路に切り替え、結果だけこの台帳へ戻す。
+
+## 2026-05-19 Midday Production
+
+- 13:33 JST時点で、公開URL、公開時刻、投稿先、初動反応は未入力。
+- Google Chrome Computer Useが承認拒否のため、投稿先ブラウザ操作とoutreach送付確認は未実施。
+- note側のAI仕事ログ記事公開も同じブラウザ操作ブロッカーで停止中。午後以降はChrome操作権限を戻し、AI記事公開、note実測、Short公開/outreachの順で進める。

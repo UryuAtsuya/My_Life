@@ -32,6 +32,15 @@ Last updated: 2026-05-19
 5. Outreach: 5件へ広げず、AI仕事ログ記事または作業ログ動画化に関心が高い実在相手1件に送る。
 6. External note research: `/Users/uryuatsuya/note/articles/research/2026-05-19-morning-brief.md` は現在のサンドボックス許可範囲外のため、`company/marketing/content-plan/note-research-2026-05-19.md` を正本にする。
 
+## 2026-05-19 Midday Production Update
+
+1. `note-article-flow`: `AI時代に、毎日の仕事ログを残す理由` はスコア86/100、状態 `ready_not_published` を維持。
+2. Google Chrome Computer Useが承認拒否のため、note転記、下書き保存、公開、公開URL取得は未完了。
+3. `/Users/uryuatsuya/note/articles/drafts/` は `not_writable`。外部構造化ドラフトは未保存。
+4. ローカル `curl` は `note.com` のDNS解決不可。Web確認できた2記事は公開ページ上の可視スキ相当表示1だが、管理画面実測と他記事の反応は未取得。
+5. `short-video-ops-os`: 投稿先ブラウザ操作が必要なため、`AgentRunShowcaseShort` のURL/time/platform/outreach送付記録は未入力のまま。
+6. Next action: Chrome操作権限を戻し、AI仕事ログ記事の公開と公開後記録を最初に完了する。
+
 ## 2026-05-18 Morning Business Meeting Update
 
 1. `note-article-flow`: 今日の最優先は `AI時代に、毎日の仕事ログを残す理由` のnote公開。本文作成、採点86/100、公開前チェックは完了済み。
