@@ -94,6 +94,28 @@ tags: [note, backlog, editorial]
 - 公開まで行けない場合も、各レーンで記事ファイル、出典、構成、次アクションを残す。
 - MBTIは既存記事の定期更新だけでなく、相性診断、会話、自己理解、タイプ別の使い方、注意点を切り口に新規記事も作る。
 
+## 2026-05-20 昼制作更新
+
+- coffee記事 `高くなったコーヒーで、豆選びを3基準に絞る` を作成した。
+  - 記事ファイル: `company/marketing/content-plan/note/coffee/2026-05-20-coffee-bean-three-criteria.md`
+  - スコア: `84/100`
+  - 状態: `ready_not_published`
+  - 参考リンク: UCC価格改定、全日本コーヒー協会統計、既公開コーヒー記事。
+- AI記事 `スマホからCodexを動かせる時代の仕事ログ` を作成した。
+  - 記事ファイル: `company/marketing/content-plan/note/AI/2026-05-20-codex-mobile-work-log.md`
+  - スコア: `86/100`
+  - 状態: `ready_not_published`
+  - 参考リンク: OpenAI Codex mobile更新、ChatGPT Release Notes、company朝昼夜ログ、既存AI仕事ログ記事。
+- MBTI記事 `MBTI×ラブタイプ診断の結果を、会話に変える3つの聞き方` を作成した。
+  - 記事ファイル: `company/marketing/content-plan/note/MBTI/2026-05-20-love-type-result-conversation.md`
+  - スコア: `83/100`
+  - 状態: `ready_not_published`
+  - 参考リンク: `https://mbti-lovetype.com/`, `/diagnosis`, `/articles`, `/about`, `/terms`。
+  - 確認日、追加サイテーション、未確認事項は記事ファイル内へ記録済み。
+- Google Chrome Computer Useが `approval denied` のため、3本のnote転記、下書き保存、公開URL取得は未実施。
+- `/Users/uryuatsuya/note/articles/drafts/` は `not_writable` のため、外部構造化ドラフト保存は未実施。
+- 次アクション: 既存AI記事 `AI時代に、毎日の仕事ログを残す理由` の公開を先に閉じ、その後に新規3本の公開順を決める。
+
 ## 次に書く2本
 
 ### コーヒー
@@ -328,3 +350,11 @@ tags: [note, backlog, editorial]
 - `/Users/uryuatsuya/note/articles/drafts/` は `not_writable` のため、外部構造化ドラフト保存は未実施。
 - ローカル `curl` は `note.com` のDNS解決に失敗した。Webで確認できた範囲では、公開済み2記事の公開ページ上の可視スキ相当表示は各1。管理画面実測と他記事の反応は未取得。
 - 状態は `ready_not_published` を維持する。次アクションはChrome操作権限復旧後に公開し、URL、時刻、タグ、初期反応、24h/72h計測予定を戻す。
+
+## 2026-05-20 夕会更新
+
+- `AI時代に、毎日の仕事ログを残す理由` は引き続き `ready_not_published`。公開URL、公開時刻、タグ、初期反応、24h/72h計測予定は未入力。
+- MBTI×ラブタイプ診断紹介noteは2026-05-19に公開済みだが、24h反応の実測値は未回収。
+- 公開済みnote5本とコーヒー記事の管理画面実測も未回収。改善箇所はまだ決めない。
+- 明日の最優先は新規記事制作ではなく、AI記事公開、MBTI 24h反応、既存note/コーヒー記事の実測回収。
+- 公開・計測後の次候補は、AI側 `スマホからCodexを動かせる時代の仕事ログ`、コーヒー側 `高くなったコーヒーで、豆選びを3基準に絞る`、MBTI側 `MBTI×Love Typeを会話に変える質問リスト`。

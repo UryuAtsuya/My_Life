@@ -73,3 +73,9 @@ status: active
 - `/Users/uryuatsuya/note/articles/drafts/` は `not_writable` のため、外部構造化ドラフト保存は未実施。
 - `note.com` は `curl` でDNS解決不可。公開済み記事の追加反応確認も未実施。
 - 次アクション: Chrome操作権限復旧後、Vault正本からnoteへ公開し、URL/時刻/タグ/初期反応/24h/72h計測予定をこの記事、バックログ、TODOへ戻す。
+
+## 2026-05-20 Evening Closeout
+
+- 状態は `ready_not_published` のまま。公開URL、共有URL、公開時刻、公開タグ、初動反応、24h/72h計測予定は未入力。
+- 本文、CTA、タグ候補、参考リンク、アイキャッチ案、採点86/100、公開前チェックは維持。
+- 次アクション: 2026-05-21にnoteへ転記・公開し、公開後記録を記事ファイル、backlog、このチケットへ戻す。

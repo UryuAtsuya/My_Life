@@ -6,7 +6,7 @@ Last updated: 2026-05-20
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | note article flow | AI work-log article remains `ready_not_published`; measurement still due | Publish `AI時代に、毎日の仕事ログを残す理由`, then log URL/time/tags/reactions and measure published notes |
+| 1 | note article flow | 2026-05-20のcoffee/AI/MBTI 3記事は作成済み。既存AI work-log記事と新規3本が `ready_not_published` | Publish `AI時代に、毎日の仕事ログを残す理由` first, then log URL/time/tags/reactions and choose the order for the new three articles |
 | 2 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 3 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
 | 4 | Web Service New Product | planning | 朝企画、昼コーディング、夜フィードバックのループで最初のwebサービス案を1つに絞る |
@@ -33,6 +33,24 @@ Last updated: 2026-05-20
 4. `short-video-ops-os`: `AgentRunShowcaseShort` は追加制作せず、既存素材で公開し、URL/time/platform/reactions/24h/72h/outreachを記録する。
 5. `web-service-new-product`: 初回案は `ひとり事業の次アクション整理ボード`。昼は静的プロトタイプまたは最小設計までに絞る。
 6. External note research: `/Users/uryuatsuya/note/articles/research/2026-05-20-morning-brief.md` は `NOT_WRITABLE_OR_MISSING` のため、`company/marketing/content-plan/note-research-2026-05-20.md` を正本にする。
+
+## 2026-05-20 Midday Production Update
+
+1. `note-article-flow`: coffee記事 `高くなったコーヒーで、豆選びを3基準に絞る` を作成。スコア84/100、状態 `ready_not_published`。
+2. `note-article-flow`: AI記事 `スマホからCodexを動かせる時代の仕事ログ` を作成。スコア86/100、状態 `ready_not_published`。
+3. `note-article-flow`: MBTI記事 `MBTI×ラブタイプ診断の結果を、会話に変える3つの聞き方` を作成。スコア83/100、状態 `ready_not_published`。
+4. Google Chrome Computer Useが `approval denied` のため、note転記、下書き保存、公開、公開URL取得は未完了。
+5. `/Users/uryuatsuya/note/articles/drafts/` は `not_writable`。外部構造化ドラフトは未保存。
+6. Next action: 既存AI記事 `AI時代に、毎日の仕事ログを残す理由` の公開を最優先で閉じ、MBTI紹介noteの24h反応を回収する。
+
+## 2026-05-20 Evening Closeout
+
+1. `note-article-flow`: `AI時代に、毎日の仕事ログを残す理由` は引き続き `ready_not_published`。公開URL、公開時刻、タグ、初期反応、24h/72h計測予定は未入力。
+2. `note-article-flow`: MBTI×ラブタイプ診断紹介noteの24h計測時刻は到達済みだが、実測値は未回収。
+3. `note-article-flow`: 公開済みnote5本とコーヒー記事の管理画面実測は未回収。改善箇所はまだ確定しない。
+4. `short-video-ops-os`: `AgentRunShowcaseShort` のURL/time/platform/reactions/24h/72h/outreach送付記録は未入力。
+5. `web-service-new-product`: 企画ファイルとPMチケットはあるが、今日のコード、ローカル実行、スクリーンショット、動作確認は未記録。明日はサービス案、対象ユーザー、痛み、最小機能、初回画面を1つに絞り、`Projects/` 配下に最小成果物を置く。
+6. Tomorrow: AI記事公開、MBTI 24h反応、既存note/コーヒー記事実測、Short公開/outreach、web-service最小プロトタイプの順で閉じる。
 
 ## 2026-05-19 User Policy Update
 

@@ -136,3 +136,53 @@ noteは今日も成長優先。ただし、本文を増やす前に `AI時代に
 3. coffee: 既公開コーヒー記事の実測を見てから、`高くなったコーヒーで、豆選びを3基準に絞る` の下書きへ進む。
 4. Short: `AgentRunShowcaseShort` は追加制作せず、既存素材で公開台帳を埋める。
 5. web service: `ひとり事業の次アクション整理ボード` を最小候補として昼へ渡す。
+
+# Evening Next Brief - 2026-05-21 Morning
+
+## 実行確認
+
+- Evening check: `2026-05-20 18:13 JST`。
+- 外部保存先 `/Users/uryuatsuya/note/articles/research/2026-05-20-evening-next-brief.md` は `operation not permitted` のため、このVault内ファイルを正本にする。
+- この記事候補は、公開・計測・台帳記入が済んだ後に着手する。2026-05-21朝の最優先は新規執筆ではなく、AI仕事ログ記事の公開と反応回収。
+
+## AI関係シグナル
+
+| Source title | Link | One-line summary | Tomorrow angle |
+|---|---|---|---|
+| OpenAI - Work with Codex from anywhere | https://openai.com/index/work-with-codex-from-anywhere/ | Codex mobile preview、remote access、approvals、diffs、test results、Hooks、programmatic access tokensが、長時間AI作業の継続に関係する。 | `スマホからCodexを動かせる時代の仕事ログ`。スマホ操作そのものではなく、承認・差分・次アクションを残すログ設計に寄せる。 |
+| OpenAI Help Center - ChatGPT Release Notes | https://help.openai.com/en/articles/6825453-chatgpt-release-notes | ChatGPT/Codex周辺の更新確認先。 | 最新機能紹介に寄せすぎず、個人運用で何をログ化するかへ落とす。 |
+
+## コーヒー関係シグナル
+
+| Source title | Link | One-line summary | Tomorrow angle |
+|---|---|---|---|
+| UCC上島珈琲 - 価格改定リリース | https://www.ucc.co.jp/company/news/2025/rel251222.html | 2026-03-01出荷分から一部レギュラーコーヒー製品の価格改定。背景は国際相場、異常気象、資材・物流・エネルギー、円安。 | `高くなったコーヒーで、豆選びを3基準に絞る`。値上げ不安ではなく、選ぶ基準を減らす生活実用記事にする。 |
+| 全日本コーヒー協会 - 統計資料 | https://coffee.ajca.or.jp/data/ | 2026年1-3月速報や輸入量・需給表の確認先。 | 家で飲む一杯の頻度、納得感、味の好みを整理する背景に使う。 |
+
+## MBTI / Love Type シグナル
+
+| Source title | Link | One-line summary | Tomorrow angle |
+|---|---|---|---|
+| AI Love Matcher | https://mbti-lovetype.com/ | MBTIとLove Typeを組み合わせた診断サイト。 | 紹介記事の次は、診断結果を会話に変える質問リストへ展開できる。 |
+| AI Love Matcher - Articles | https://mbti-lovetype.com/articles | 恋愛・相性・連絡頻度・価値観などの記事群。 | 24h反応が良ければ、記事導線とnote導線をつなぐ追加サイテーション候補にする。 |
+| 公開済みnote | https://note.com/glad_shrew1020/n/neaf5658d3765 | 2026-05-19 14:10 JST公開のMBTI×ラブタイプ診断紹介note。 | 24h反応を取って、通常AI/コーヒー記事と比較する。 |
+
+## 明朝の重要語
+
+- AI: Codex mobile preview, remote access, approvals, diffs, test results, Hooks, programmatic access tokens, work log, handoff。
+- コーヒー: 価格改定、実質店頭価格上昇、需給表、豆選び、頻度、味、作業前の一杯。
+- MBTI: MBTI, Love Type, 相性診断, 会話の入口, 連絡頻度, 価値観, 質問リスト, サイテーション。
+
+## 明日の記事角度
+
+1. 最優先: `AI時代に、毎日の仕事ログを残す理由` を公開する。本文、採点86/100、公開前チェックは完了済み。
+2. AI次候補: `スマホからCodexを動かせる時代の仕事ログ`。スマホからAI作業を見られる話ではなく、ログがあるから途中判断できる話にする。
+3. コーヒー次候補: `高くなったコーヒーで、豆選びを3基準に絞る`。価格上昇を背景に、頻度、味、作業前の使いやすさへ落とす。
+4. MBTI次候補: `MBTI×Love Typeを会話に変える質問リスト`。診断サイト紹介から、読者が実際に話すための質問集にする。
+
+## Open Questions
+
+- MBTI紹介noteの24h反応は、AI/コーヒー記事より強いか。
+- AI記事公開後、次にCodex mobile記事へ続けるべきか、既存noteのタイトル/冒頭改善へ戻るべきか。
+- コーヒー記事は価格改定文脈で出す前に、既公開コーヒー記事の反応を先に見るべきか。
+- MBTI/love-typeのサイテーション施策は、note記事追加と外部参照ページ更新のどちらを先にするべきか。
