@@ -1,6 +1,6 @@
 # Codex Active Projects
 
-Last updated: 2026-05-19
+Last updated: 2026-05-20
 
 ## Main Focus
 
@@ -24,6 +24,15 @@ Last updated: 2026-05-19
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | `AI時代に、毎日の仕事ログを残す理由` を公開し、公開済み記事の24h/72h反応を計測する。 |
 | `web-service-new-product` | planning | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | 最初に作るサービス案、対象ユーザー、痛み、最小機能、初回画面を決める。 |
+
+## 2026-05-20 Morning Business Meeting Update
+
+1. `note-article-flow`: 今日の最優先は `AI時代に、毎日の仕事ログを残す理由` の公開と投稿後記録。新規本文より公開URL、時刻、タグ、初動反応、24h/72h計測予定を戻す。
+2. `note-article-flow`: coffee / AI / MBTI を分ける。coffee next は `高くなったコーヒーで、豆選びを3基準に絞る`、MBTI next は `診断結果を恋愛の会話に変える3つの聞き方`。
+3. `note-article-flow`: MBTI紹介noteは `2026-05-20 14:10 JST` 以降に24h反応を回収し、続編/更新判断へ使う。
+4. `short-video-ops-os`: `AgentRunShowcaseShort` は追加制作せず、既存素材で公開し、URL/time/platform/reactions/24h/72h/outreachを記録する。
+5. `web-service-new-product`: 初回案は `ひとり事業の次アクション整理ボード`。昼は静的プロトタイプまたは最小設計までに絞る。
+6. External note research: `/Users/uryuatsuya/note/articles/research/2026-05-20-morning-brief.md` は `NOT_WRITABLE_OR_MISSING` のため、`company/marketing/content-plan/note-research-2026-05-20.md` を正本にする。
 
 ## 2026-05-19 User Policy Update
 

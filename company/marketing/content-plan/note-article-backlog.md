@@ -62,6 +62,22 @@ tags: [note, backlog, editorial]
 - 公開・計測後のAI次候補は `スマホからCodexを動かせる時代の仕事ログ`。OpenAIのCodex mobile previewと、companyの朝昼夜ログ運用を接続する。
 - コーヒー次候補は `高くなったコーヒーで、豆選びを3基準に絞る`。UCC価格改定と全日本コーヒー協会の2026年1-3月速報を背景にできるが、既公開コーヒー記事の反応実測後に着手する。
 
+## 2026-05-20 朝会更新
+
+- 今日のAI `next` は `AI時代に、毎日の仕事ログを残す理由`。状態は `ready_not_published` のため、新規本文ではなくnote公開、公開URL、公開時刻、タグ、初動反応、24h/72h計測予定の記録を最優先にする。
+- 今日のcoffee `next` は `高くなったコーヒーで、豆選びを3基準に絞る`。AI説明を混ぜず、価格上昇、毎日飲める価格、失敗しにくい味、仕事前に合う抽出の3基準に絞る。
+- 今日のMBTI `next` は `診断結果を恋愛の会話に変える3つの聞き方`。`MBTI×ラブタイプ診断は、相性の答えより会話の入口になる` の24h反応を先に回収し、結果を続編/更新へ反映する。
+- coffee / AI / MBTI の3レーンを分ける。bridge記事は今日の基本型にしない。
+- 外部research保存先は `NOT_WRITABLE_OR_MISSING` のため、朝ブリーフ正本は `company/marketing/content-plan/note-research-2026-05-20.md`。
+
+## 2026-05-20 next candidates
+
+| レーン | タイトル案 | 柱 | 証拠素材 | 読者への約束 | 状態 |
+|---|---|---|---|---|---|
+| AI | AI時代に、毎日の仕事ログを残す理由 | AI Solo Company OS / Log To Asset | `company/marketing/content-plan/note/AI/2026-05-15-ai-work-log-reason.md`, company朝昼夜ログ, 公開済みnote URL | AI時代に毎日の仕事ログを残す意味と3行ログの始め方が分かる | next / ready_not_published |
+| coffee | 高くなったコーヒーで、豆選びを3基準に絞る | Coffee Lifestyle | 既公開コーヒー記事、購入/抽出メモ、UCC/全日本コーヒー協会の背景情報 | 値上がり局面でも豆選びで迷わない3基準が分かる | next |
+| MBTI | 診断結果を恋愛の会話に変える3つの聞き方 | MBTI / Love Type | `https://mbti-lovetype.com/`, 診断ページ, 記事一覧, 2026-05-19公開記事の24h反応 | 診断結果を決めつけではなく会話に変える聞き方が分かる | next |
+
 ## 2026-05-19 方針更新
 
 - 今後の記事ファイルは `company/marketing/content-plan/note/` 配下で分類する。
