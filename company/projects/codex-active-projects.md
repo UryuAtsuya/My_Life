@@ -9,7 +9,7 @@ Last updated: 2026-05-21
 | 1 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-20のcoffee/AI/MBTI 3記事は `ready_not_published` | Measure the AI work-log note at 24h/72h, collect MBTI/coffee reactions, then decide whether to publish `スマホからCodexを動かせる時代の仕事ログ` |
 | 2 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 3 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
-| 4 | Web Service New Product | planning | `ひとり事業の次アクション整理ボード` を `Projects/solo-business-today-board/` の最小成果物へ落とす |
+| 4 | Web Service New Product | prototype | `Projects/solo-business-today-board/index.html` をブラウザ表示確認し、次の最小coding taskを1つ決める |
 
 ## Managed Projects
 
@@ -24,6 +24,14 @@ Last updated: 2026-05-21
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | `AI時代に、毎日の仕事ログを残す理由` の24h/72h反応、MBTI紹介note、既存note/coffee実測を回収する。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | `Projects/solo-business-today-board/index.html` を夜に画面確認し、Vault TODO自動生成に進むか判断する。 |
+
+## 2026-05-21 Evening Closeout
+
+1. `note-article-flow`: `AI時代に、毎日の仕事ログを残す理由` は公開済み。24h計測は `2026-05-22 15:04 JST`、72h計測は `2026-05-24 15:04 JST`。
+2. `note-article-flow`: MBTI紹介note24h反応、MBTI紹介note72h反応、既存note/coffee管理画面実測は未回収。明日は同じ表で回収する。
+3. `note-article-flow`: `スマホからCodexを動かせる時代の仕事ログ` はAI仕事ログ記事の24h反応確認後に公開判断する。
+4. `short-video-ops-os`: `AgentRunShowcaseShort` の公開URL、時刻、投稿先、初動反応、outreach送付記録は未入力。2026-05-22へcarry-over。
+5. `web-service-new-product`: `Projects/solo-business-today-board/README.md` と `index.html` は作成済み。次はブラウザ表示確認と、手動更新かVault TODO自動生成かの選択。
 
 ## 2026-05-21 Midday Production Update
 

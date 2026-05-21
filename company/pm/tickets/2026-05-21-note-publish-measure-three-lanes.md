@@ -61,3 +61,10 @@ project: note-article-flow
   - 計測予定: 24h `2026-05-22 15:04 JST`、72h `2026-05-24 15:04 JST`
 - 公開後のページ確認で本文中URLの末尾バッククォート混入を発見し、編集・更新後に再検証した。
 - 次アクション: MBTI紹介note24h反応、既存note/coffee管理画面実測、`AgentRunShowcaseShort` 公開を優先する。AI follow-up記事は同日連投リスクと初期反応を見て判断する。
+
+## 2026-05-21 Evening Closeout
+
+- Done: AI仕事ログ記事の公開とVaultへの公開後記録は完了。
+- Not done: MBTI紹介note24h反応、既存note/coffee管理画面実測、AI follow-up/coffee/MBTI新稿の追加公開。
+- Decision: AI follow-up `スマホからCodexを動かせる時代の仕事ログ` は、2026-05-22 15:04 JSTのAI仕事ログ24h反応を見て判断する。
+- Carry-over: 2026-05-22は、AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を先に回収する。
