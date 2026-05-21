@@ -95,6 +95,16 @@ tags: [note, backlog, editorial]
 | coffee | 高くなったコーヒーで、豆選びを3基準に絞る | Coffee Lifestyle | キーコーヒー価格改定, 全日本コーヒー協会統計, 既公開コーヒー記事, 抽出メモ | 値上がり局面でも豆選びで迷わない3基準が分かる | next / ready_not_published |
 | MBTI | MBTI×ラブタイプ診断の結果を、会話に変える3つの聞き方 | MBTI / Love Type | `https://mbti-lovetype.com/`, `/diagnosis`, `/articles`, 2026-05-19公開記事の24h反応 | 診断結果を決めつけではなく会話に変える聞き方が分かる | next / ready_not_published |
 
+## 2026-05-21 昼制作更新
+
+- `AI時代に、毎日の仕事ログを残す理由` を再確認した。スコア86/100、状態 `ready_not_published`、公開前チェックは維持。Chrome Computer Useが `approval denied` のため、note転記、下書き保存、投稿、公開URL取得は未実施。
+- coffee記事 `高くなったコーヒーで、豆選びを3基準に絞る` はスコア84/100、状態 `ready_not_published`。タイトル、導入、タグ、CTAを再確認し、coffee単体記事として公開可能。
+- AI follow-up記事 `スマホからCodexを動かせる時代の仕事ログ` はスコア86/100、状態 `ready_not_published`。既存AI仕事ログ記事の続編として扱い、同時公開は避ける。
+- MBTI記事 `MBTI×ラブタイプ診断の結果を、会話に変える3つの聞き方` はスコア83/100、状態 `ready_not_published`。参照URL、確認日、追加サイテーション、未確認事項は記事ファイルに維持。
+- 外部構造化ドラフト `/Users/uryuatsuya/note/articles/drafts/` は現在の書き込み許可範囲外のため未保存。
+- 今日の公開順: 1. `AI時代に、毎日の仕事ログを残す理由` 2. `スマホからCodexを動かせる時代の仕事ログ` 3. `高くなったコーヒーで、豆選びを3基準に絞る` 4. `MBTI×ラブタイプ診断の結果を、会話に変える3つの聞き方`。MBTIは紹介note24h反応回収後に出す。
+- 次アクション: Chrome操作権限または手動経路でAI仕事ログ記事を公開し、公開URL、共有URL、公開時刻、タグ、初期反応、24h/72h計測予定を戻す。
+
 ## 2026-05-19 方針更新
 
 - 今後の記事ファイルは `company/marketing/content-plan/note/` 配下で分類する。

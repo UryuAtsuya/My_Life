@@ -79,3 +79,11 @@ status: active
 - 状態は `ready_not_published` のまま。公開URL、共有URL、公開時刻、公開タグ、初動反応、24h/72h計測予定は未入力。
 - 本文、CTA、タグ候補、参考リンク、アイキャッチ案、採点86/100、公開前チェックは維持。
 - 次アクション: 2026-05-21にnoteへ転記・公開し、公開後記録を記事ファイル、backlog、このチケットへ戻す。
+
+## 2026-05-21 Midday Production Update
+
+- 2026-05-21 13:33 JST時点で再確認。記事本文、CTA、タグ候補、参考リンク、アイキャッチ案、採点86/100、公開前チェックは維持。
+- Google Chrome Computer Useは `Computer Use approval denied via MCP elicitation for app 'com.google.Chrome'.` のため、note編集画面を開けず、転記、下書き保存、投稿、公開URL取得は未実施。
+- `/Users/uryuatsuya/note/articles/drafts/20260515-ai-work-log-reason.md` は現在の書き込み許可範囲外のため未保存。
+- 状態は `ready_not_published` のまま。公開URL、共有URL、公開時刻、公開タグ、初動反応、24h/72h計測予定は未入力。
+- 次アクション: Chrome操作権限または手動経路でこの記事を公開し、公開後記録をこの記事ファイル、backlog、2026-05-21 TODOへ戻す。

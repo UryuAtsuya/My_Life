@@ -23,7 +23,15 @@ Last updated: 2026-05-21
 | `ai-inspiration-board` | planning | Pinterest-style AI board for collecting references and generating briefs. | Create wireframes and dummy Pin data. |
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | `AI時代に、毎日の仕事ログを残す理由` を公開し、公開済み記事の24h/72h反応を計測する。 |
-| `web-service-new-product` | planning | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | `Projects/solo-business-today-board/` に静的プロトタイプまたはREADME付き最小設計を作る。 |
+| `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | `Projects/solo-business-today-board/index.html` を夜に画面確認し、Vault TODO自動生成に進むか判断する。 |
+
+## 2026-05-21 Midday Production Update
+
+1. `note-article-flow`: `AI時代に、毎日の仕事ログを残す理由` はスコア86/100、状態 `ready_not_published`、公開前チェック維持。Chrome Computer Useが `approval denied` のため、note転記・投稿・公開URL取得は未実施。
+2. `note-article-flow`: 2026-05-20制作のcoffee/AI follow-up/MBTI 3記事は最終確認済み。公開順は既存AI仕事ログ記事を先頭にする。
+3. `note-article-flow`: MBTI紹介note24h反応、公開済みnote/coffee管理画面実測はChrome操作不可のため未回収。実測なしで改善判断を確定しない。
+4. `web-service-new-product`: `Projects/solo-business-today-board/README.md` と `Projects/solo-business-today-board/index.html` を作成し、Top 3、note公開/計測カード、次にやる1手、ブロッカーを1画面にまとめた。
+5. Next action: AI仕事ログ記事を手動または権限復旧後に公開し、夜にToday Boardの画面確認と次改善を1つ決める。
 
 ## 2026-05-21 Morning Business Meeting Update
 

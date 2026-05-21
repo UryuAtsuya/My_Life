@@ -38,3 +38,14 @@ project: note-article-flow
 - 公開した記事のURL、時刻、タグ、初期反応、24h/72h計測予定がVaultへ戻っている。
 - 実測できなかった項目は、理由と次アクションが残っている。
 - AI/coffee/MBTIの公開順が明記されている。
+
+## 2026-05-21 Midday Production Update
+
+- AI仕事ログ記事 `AI時代に、毎日の仕事ログを残す理由` は再確認済み。スコア86/100、状態 `ready_not_published`、公開前チェックは維持。
+- 2026-05-20制作の3レーン記事は最終確認済み。
+  - AI follow-up: `スマホからCodexを動かせる時代の仕事ログ`、86/100、`ready_not_published`
+  - coffee: `高くなったコーヒーで、豆選びを3基準に絞る`、84/100、`ready_not_published`
+  - MBTI: `MBTI×ラブタイプ診断の結果を、会話に変える3つの聞き方`、83/100、`ready_not_published`
+- Google Chrome Computer Useが `approval denied` のため、note転記、下書き保存、投稿、公開URL取得、管理画面実測は未実施。
+- 公開順は `AI時代に、毎日の仕事ログを残す理由` → `スマホからCodexを動かせる時代の仕事ログ` → coffee → MBTI。MBTIは紹介note24h反応を回収してから公開判断する。
+- 次アクション: 手動または権限復旧後にAI仕事ログ記事を公開し、公開後記録をVaultへ戻す。
