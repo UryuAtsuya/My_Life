@@ -21,8 +21,8 @@ project: note-article-flow
 
 ## Tasks
 
-- [ ] `AI時代に、毎日の仕事ログを残す理由` をnoteへ公開する。
-- [ ] 公開URL、共有URL、公開時刻、タグ、初期反応、24h/72h計測予定を記事ファイルとbacklogへ戻す。
+- [x] `AI時代に、毎日の仕事ログを残す理由` をnoteへ公開する。
+- [x] 公開URL、共有URL、公開時刻、タグ、初期反応、24h/72h計測予定を記事ファイルとbacklogへ戻す。
 - [ ] MBTI紹介note `https://note.com/glad_shrew1020/n/neaf5658d3765` の24h反応を回収する。
 - [ ] 公開済みnote/coffee記事の管理画面実測を同じ表で回収する。
 - [ ] `スマホからCodexを動かせる時代の仕事ログ` を続編として公開するか、翌日に送るか決める。
@@ -49,3 +49,15 @@ project: note-article-flow
 - Google Chrome Computer Useが `approval denied` のため、note転記、下書き保存、投稿、公開URL取得、管理画面実測は未実施。
 - 公開順は `AI時代に、毎日の仕事ログを残す理由` → `スマホからCodexを動かせる時代の仕事ログ` → coffee → MBTI。MBTIは紹介note24h反応を回収してから公開判断する。
 - 次アクション: 手動または権限復旧後にAI仕事ログ記事を公開し、公開後記録をVaultへ戻す。
+
+## 2026-05-21 Publish Follow-up
+
+- AI仕事ログ記事 `AI時代に、毎日の仕事ログを残す理由` を公開した。
+  - 公開URL: `https://note.com/glad_shrew1020/n/n4c24cc339e2a`
+  - 共有URL: `https://note.com/glad_shrew1020/n/n4c24cc339e2a?sub_rt=share_pb`
+  - 公開時刻: `2026-05-21 15:04 JST`
+  - 公開タグ: `#note`, `#生成AI`, `#AI活用`, `#仕事術`, `#発信`, `#個人事業`
+  - 初動反応: 公開ページ上は数値表示なし。管理画面詳細は未計測。
+  - 計測予定: 24h `2026-05-22 15:04 JST`、72h `2026-05-24 15:04 JST`
+- 公開後のページ確認で本文中URLの末尾バッククォート混入を発見し、編集・更新後に再検証した。
+- 次アクション: MBTI紹介note24h反応、既存note/coffee管理画面実測、`AgentRunShowcaseShort` 公開を優先する。AI follow-up記事は同日連投リスクと初期反応を見て判断する。

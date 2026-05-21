@@ -6,7 +6,7 @@ Last updated: 2026-05-21
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | note article flow | 既存AI work-log記事と2026-05-20のcoffee/AI/MBTI 3記事が `ready_not_published` | Publish `AI時代に、毎日の仕事ログを残す理由` first, then log URL/time/tags/reactions and use `スマホからCodexを動かせる時代の仕事ログ` as the follow-up |
+| 1 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-20のcoffee/AI/MBTI 3記事は `ready_not_published` | Measure the AI work-log note at 24h/72h, collect MBTI/coffee reactions, then decide whether to publish `スマホからCodexを動かせる時代の仕事ログ` |
 | 2 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 3 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
 | 4 | Web Service New Product | planning | `ひとり事業の次アクション整理ボード` を `Projects/solo-business-today-board/` の最小成果物へ落とす |
@@ -22,7 +22,7 @@ Last updated: 2026-05-21
 | `job-hunting-support-site` | planning | Job-hunting support prototype that turns anxiety into one next action. | Review the first user flow. |
 | `ai-inspiration-board` | planning | Pinterest-style AI board for collecting references and generating briefs. | Create wireframes and dummy Pin data. |
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
-| `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | `AI時代に、毎日の仕事ログを残す理由` を公開し、公開済み記事の24h/72h反応を計測する。 |
+| `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | `AI時代に、毎日の仕事ログを残す理由` の24h/72h反応、MBTI紹介note、既存note/coffee実測を回収する。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | `Projects/solo-business-today-board/index.html` を夜に画面確認し、Vault TODO自動生成に進むか判断する。 |
 
 ## 2026-05-21 Midday Production Update
@@ -32,6 +32,14 @@ Last updated: 2026-05-21
 3. `note-article-flow`: MBTI紹介note24h反応、公開済みnote/coffee管理画面実測はChrome操作不可のため未回収。実測なしで改善判断を確定しない。
 4. `web-service-new-product`: `Projects/solo-business-today-board/README.md` と `Projects/solo-business-today-board/index.html` を作成し、Top 3、note公開/計測カード、次にやる1手、ブロッカーを1画面にまとめた。
 5. Next action: AI仕事ログ記事を手動または権限復旧後に公開し、夜にToday Boardの画面確認と次改善を1つ決める。
+
+## 2026-05-21 Publish Follow-up
+
+1. `note-article-flow`: `AI時代に、毎日の仕事ログを残す理由` を公開済み。公開URLは `https://note.com/glad_shrew1020/n/n4c24cc339e2a`、公開時刻は `2026-05-21 15:04 JST`。
+2. `note-article-flow`: タグは `#note`, `#生成AI`, `#AI活用`, `#仕事術`, `#発信`, `#個人事業`。公開ページ上は数値表示なし、管理画面詳細は未計測。
+3. `note-article-flow`: 24h計測は `2026-05-22 15:04 JST`、72h計測は `2026-05-24 15:04 JST`。
+4. `note-article-flow`: 公開後に本文URL表記のバッククォート混入を修正し、公開ページ再検証済み。
+5. Next action: MBTI紹介note24h反応、既存note/coffee管理画面実測、`AgentRunShowcaseShort` 公開を先に閉じる。AI follow-upは同日連投せず反応確認後に判断する。
 
 ## 2026-05-21 Morning Business Meeting Update
 

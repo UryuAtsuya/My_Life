@@ -70,12 +70,30 @@ status: complete_with_blockers
 
 ## 未解決
 
-- `AI時代に、毎日の仕事ログを残す理由` のnote公開、公開URL、共有URL、公開時刻、タグ、初期反応、24h/72h計測予定は未入力。
 - MBTI紹介noteの24h反応と公開済みnote/coffee管理画面実測は未回収。
 - `Projects/solo-business-today-board/index.html` のブラウザ表示確認とスクリーンショット取得は未実施。
 
 ## 午後以降の上位TODO
 
-1. Chrome操作権限または手動経路で `AI時代に、毎日の仕事ログを残す理由` を公開し、公開後記録をVaultへ戻す。
-2. MBTI紹介note24h反応と公開済みnote/coffee管理画面実測を回収し、改善箇所を1つに絞る。
+1. MBTI紹介note24h反応と公開済みnote/coffee管理画面実測を回収し、改善箇所を1つに絞る。
+2. `AgentRunShowcaseShort` を公開し、1件outreach送付記録まで残す。
 3. `Projects/solo-business-today-board/index.html` をブラウザ表示確認し、夜に次の改善点を1つ決める。
+
+## 2026-05-21 公開フォローアップ
+
+- 実行時刻: `2026-05-21 15:04 JST`
+- `AI時代に、毎日の仕事ログを残す理由` をnoteへ公開した。
+  - 公開URL: `https://note.com/glad_shrew1020/n/n4c24cc339e2a`
+  - 共有URL: `https://note.com/glad_shrew1020/n/n4c24cc339e2a?sub_rt=share_pb`
+  - 公開タグ: `#note`, `#生成AI`, `#AI活用`, `#仕事術`, `#発信`, `#個人事業`
+  - 初動反応: 公開ページ上は数値表示なし。管理画面詳細は未計測。
+  - 次回計測: 24h `2026-05-22 15:04 JST`、72h `2026-05-24 15:04 JST`
+- 公開直後に公開ページを検証し、本文中URLに末尾バッククォートが混ざっていたため、公開済み記事を編集・更新した。
+- 再検証で、公開ページのタイトル、本文、タグ、公開時刻、URLリンク修正反映を確認した。
+- 外部構造化ドラフトを `/Users/uryuatsuya/note/articles/drafts/20260515-ai-work-log-reason.md` へ保存した。
+
+## 公開後の残タスク
+
+1. MBTI紹介note24h反応と既存note/coffee管理画面実測を回収する。
+2. `AgentRunShowcaseShort` を公開し、1件outreach送付記録まで残す。
+3. `Projects/solo-business-today-board/index.html` をブラウザ表示確認し、夜に次改善を1つ決める。

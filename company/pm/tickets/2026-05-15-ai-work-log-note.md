@@ -3,7 +3,7 @@ created: "2026-05-15"
 project: "note-article-flow"
 assignee: "codex"
 priority: high
-status: active
+status: complete
 ---
 
 # AI単体noteを昼枠で公開候補にする
@@ -18,8 +18,8 @@ status: active
 - [x] タイトル、リード、本文、CTA、タグ、アイキャッチ案、alt textを含める
 - [x] note-growth-editor の採点で80点以上にする
 - [x] 参考リンクと証拠素材を記事ファイルへ残す
-- [ ] `/Users/uryuatsuya/note/articles/drafts/20260515-ai-work-log-reason.md` へ構造化ドラフトを保存する（サンドボックス外書き込み拒否のため未完了）
-- [ ] noteへ転記し、公開URL、公開時刻、タグ、初期反応、24h/72h計測予定を記録する
+- [x] `/Users/uryuatsuya/note/articles/drafts/20260515-ai-work-log-reason.md` へ構造化ドラフトを保存する
+- [x] noteへ転記し、公開URL、公開時刻、タグ、初期反応、24h/72h計測予定を記録する
 
 ## 判断ルール
 
@@ -87,3 +87,15 @@ status: active
 - `/Users/uryuatsuya/note/articles/drafts/20260515-ai-work-log-reason.md` は現在の書き込み許可範囲外のため未保存。
 - 状態は `ready_not_published` のまま。公開URL、共有URL、公開時刻、公開タグ、初動反応、24h/72h計測予定は未入力。
 - 次アクション: Chrome操作権限または手動経路でこの記事を公開し、公開後記録をこの記事ファイル、backlog、2026-05-21 TODOへ戻す。
+
+## 2026-05-21 Publish Follow-up
+
+- 状態: `published`
+- 公開URL: `https://note.com/glad_shrew1020/n/n4c24cc339e2a`
+- 共有URL: `https://note.com/glad_shrew1020/n/n4c24cc339e2a?sub_rt=share_pb`
+- 公開時刻: `2026-05-21 15:04 JST`
+- 公開タグ: `#note`, `#生成AI`, `#AI活用`, `#仕事術`, `#発信`, `#個人事業`
+- 初動反応: 公開完了モーダルと公開ページ表示を確認。公開ページ上は数値表示なし。管理画面詳細は未計測。
+- 計測予定: 24h `2026-05-22 15:04 JST`、72h `2026-05-24 15:04 JST`
+- 検証: 公開ページでタイトル、本文、タグ、公開時刻を確認。公開後に本文URL表記のバッククォート混入を修正し、再検証済み。
+- 外部構造化ドラフト: `/Users/uryuatsuya/note/articles/drafts/20260515-ai-work-log-reason.md` へ保存済み。

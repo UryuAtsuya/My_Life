@@ -28,7 +28,7 @@ tags: [note, backlog, editorial]
 | 優先 | タイトル案 | 柱 | 証拠素材 | 読者への約束 | 収益化接続 | 状態 |
 |---:|---|---|---|---|---|---|
 | 1 | 毎朝のコーヒーを、仕事前の小さなリセットにする | Coffee Lifestyle | 朝のコーヒールーティン、抽出メモ、作業開始前の状態、`2026-05-14-morning-coffee-reset.md` | 朝の1杯を仕事前の整え方として真似できる | コーヒー連載、生活習慣系読者の獲得 | published |
-| 2 | AI時代に、毎日の仕事ログを残す理由 | AI Work Style | company TODO、朝会/昼会/夕会ログ、公開後計測ログ、`2026-05-15-ai-work-log-reason.md` | AIを使う前に残すべき仕事ログの型が分かる | AI運用テンプレ、個別相談 | next |
+| 2 | AI時代に、毎日の仕事ログを残す理由 | AI Work Style | company TODO、朝会/昼会/夕会ログ、公開後計測ログ、`2026-05-15-ai-work-log-reason.md` | AIを使う前に残すべき仕事ログの型が分かる | AI運用テンプレ、個別相談 | published |
 | 3 | AIで始めたnote運用で、公開後ログまで見て初めて分かったこと | Publish And Measure / AI Solo Company OS | 公開済みnote2本、2026-05-13の計測試行、`note-research-2026-05-13.md` | AIで作った記事を公開後ログと次の改善へつなげる型が分かる | note編集部OS、反応ログテンプレ、個別相談 | published |
 | 4 | note投稿をブラウザ操作で自動化してみた | Practical AI Production Notes | `2026-05-11-note-browser-publishing-automation.md` と公開URL | note投稿自動化の現実的な手順が分かる | 自動化相談、テンプレ | published |
 | 5 | AIで作るより難しい、公開後の反応ログ設計 | Publish And Measure | `short-video-ops-os-publishing-log.md`、公開済みnote2本、2026-05-12 24h計測 | 投稿後に何を見るべきか分かる | 投稿運用OS、反応ログテンプレ | published |
@@ -104,6 +104,20 @@ tags: [note, backlog, editorial]
 - 外部構造化ドラフト `/Users/uryuatsuya/note/articles/drafts/` は現在の書き込み許可範囲外のため未保存。
 - 今日の公開順: 1. `AI時代に、毎日の仕事ログを残す理由` 2. `スマホからCodexを動かせる時代の仕事ログ` 3. `高くなったコーヒーで、豆選びを3基準に絞る` 4. `MBTI×ラブタイプ診断の結果を、会話に変える3つの聞き方`。MBTIは紹介note24h反応回収後に出す。
 - 次アクション: Chrome操作権限または手動経路でAI仕事ログ記事を公開し、公開URL、共有URL、公開時刻、タグ、初期反応、24h/72h計測予定を戻す。
+
+## 2026-05-21 AI仕事ログ公開更新
+
+- 記事: `AI時代に、毎日の仕事ログを残す理由`
+- 記事ファイル: `company/marketing/content-plan/note/AI/2026-05-15-ai-work-log-reason.md`
+- 状態: `published`
+- 公開URL: `https://note.com/glad_shrew1020/n/n4c24cc339e2a`
+- 共有URL: `https://note.com/glad_shrew1020/n/n4c24cc339e2a?sub_rt=share_pb`
+- 公開時刻: `2026-05-21 15:04 JST`
+- 公開タグ: `#note`, `#生成AI`, `#AI活用`, `#仕事術`, `#発信`, `#個人事業`
+- 初動反応: 公開完了モーダルと公開ページ表示を確認。公開ページ上は数値表示なし。管理画面詳細は未計測。
+- 計測予定: 24h `2026-05-22 15:04 JST`、72h `2026-05-24 15:04 JST`
+- 検証: 公開ページでタイトル、本文、タグ、時刻を確認。本文中URLの末尾バッククォート混入を公開後に修正し、再検証で `%60` 混入なしを確認。
+- 次アクション: MBTI紹介note24h反応と既存note/coffee管理画面実測を回収し、`スマホからCodexを動かせる時代の仕事ログ` の公開可否を決める。
 
 ## 2026-05-19 方針更新
 
