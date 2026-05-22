@@ -6,7 +6,7 @@ Last updated: 2026-05-22
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-20のcoffee/AI/MBTI 3記事は `ready_not_published` | Measure the AI work-log note at 24h/72h, collect MBTI/coffee reactions, then decide whether to publish `スマホからCodexを動かせる時代の仕事ログ` |
+| 1 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | 15:04 JST以降にAI仕事ログ24h、MBTI紹介note72h、既存coffee実測を回収し、公開順を1本だけ決める |
 | 2 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 3 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
 | 4 | Web Service New Product | prototype | `Projects/solo-business-today-board/index.html` をブラウザ表示確認し、次の最小coding taskを1つ決める |
@@ -34,6 +34,15 @@ Last updated: 2026-05-22
 5. `short-video-ops-os`: `AgentRunShowcaseShort` は追加制作せず、公開URL/time/platform/reactions/24h/72h/outreach送付記録を埋める。
 6. `web-service-new-product`: Today Board v0は作成済み。今日はブラウザ表示確認後、手動更新を2日続けるか、Vault TODOからTop 3を生成する小スクリプトへ進むかを決める。
 7. External note research: `/Users/uryuatsuya/note/articles/research/2026-05-22-morning-brief.md` は `operation not permitted` のため、`company/marketing/content-plan/note-research-2026-05-22.md` を正本にする。
+
+## 2026-05-22 Midday Production Update
+
+1. `note-article-flow`: 2026-05-22版のAI/coffee/MBTI記事を作成した。AIは `2026-05-22-codex-mobile-work-log.md`、coffeeは `2026-05-22-coffee-bean-three-criteria.md`、MBTIは `2026-05-22-love-type-three-questions.md`。
+2. `note-article-flow`: スコアはAI 86/100、coffee 84/100、MBTI 84/100。3本とも `ready_not_published`。
+3. `note-article-flow`: `note.com` はDNS解決不可。MBTI紹介note72h、AI仕事ログ24h、既存coffee実測、note転記・公開は未実施。
+4. `note-article-flow`: `/Users/uryuatsuya/note/articles/drafts/` は `not_writable`。外部構造化ドラフトは未保存。
+5. `web-service-new-product`: Today Boardは `tidy` 検証エラーなし。ただしChrome Computer Useが `approval denied` のため、実ブラウザ表示確認は未完了。
+6. Next action: `2026-05-22 15:04 JST` 以降にAI仕事ログ24hを回収し、MBTI/coffee実測と合わせて公開順を1本だけ決める。
 
 ## 2026-05-21 Evening Closeout
 

@@ -135,6 +135,28 @@ tags: [note, backlog, editorial]
 | coffee | 高くなったコーヒーで、豆選びを3基準に絞る | Coffee Lifestyle | UCC価格改定, キーコーヒー価格改定, 既公開coffee記事, 抽出メモ | 値上がり局面でも豆選びで迷わない3基準が分かる | next / ready_not_published |
 | MBTI | MBTI×ラブタイプ診断の結果を、会話に変える3つの聞き方 | MBTI / Love Type | `https://mbti-lovetype.com/`, `/diagnosis`, 既公開MBTI紹介note72h反応 | 診断結果を決めつけではなく会話に変える聞き方が分かる | next_after_72h_measurement / ready_not_published |
 
+## 2026-05-22 昼制作更新
+
+- AI記事 `スマホからCodexを動かせる時代に、仕事ログへ残すこと` を作成した。
+  - 記事ファイル: `company/marketing/content-plan/note/AI/2026-05-22-codex-mobile-work-log.md`
+  - スコア: `86/100`
+  - 状態: `ready_not_published`
+  - 参考リンク: OpenAI Codex mobile更新、ChatGPT Release Notes、公開済みAI仕事ログ記事、company朝昼夜ログ。
+- coffee記事 `高くなったコーヒーで、豆選びを3基準に絞る` を作成した。
+  - 記事ファイル: `company/marketing/content-plan/note/coffee/2026-05-22-coffee-bean-three-criteria.md`
+  - スコア: `84/100`
+  - 状態: `ready_not_published`
+  - 参考リンク: UCC価格改定、キーコーヒー価格改定、全日本コーヒー協会統計、既公開coffee記事。
+- MBTI記事 `MBTI×ラブタイプ診断の結果を、会話に変える3つの聞き方` を作成した。
+  - 記事ファイル: `company/marketing/content-plan/note/MBTI/2026-05-22-love-type-three-questions.md`
+  - スコア: `84/100`
+  - 状態: `ready_not_published`
+  - 参考リンク: `https://mbti-lovetype.com/`, `/diagnosis`, `/articles`, `/about`, `/terms`, 既公開MBTI紹介note。
+  - 確認日、追加サイテーション、未確認事項は記事ファイル内へ記録済み。
+- MBTI紹介note72h時刻は到達済みだが、`note.com` はDNS解決不可で実測未回収。AI仕事ログ24hは昼制作時点では未到達。
+- `/Users/uryuatsuya/note/articles/drafts/` は `not_writable` のため、外部構造化ドラフト保存は未実施。
+- 次アクション: 15:04 JST以降にAI仕事ログ24h、MBTI紹介note72h、既存coffee実測を回収し、公開順を1本だけ確定する。
+
 ## 2026-05-19 方針更新
 
 - 今後の記事ファイルは `company/marketing/content-plan/note/` 配下で分類する。
