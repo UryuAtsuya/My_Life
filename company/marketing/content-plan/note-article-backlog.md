@@ -119,6 +119,22 @@ tags: [note, backlog, editorial]
 - 検証: 公開ページでタイトル、本文、タグ、時刻を確認。本文中URLの末尾バッククォート混入を公開後に修正し、再検証で `%60` 混入なしを確認。
 - 次アクション: MBTI紹介note24h反応と既存note/coffee管理画面実測を回収し、`スマホからCodexを動かせる時代の仕事ログ` の公開可否を決める。
 
+## 2026-05-22 朝会更新
+
+- 今日のAI `next` は `スマホからCodexを動かせる時代の仕事ログ`。ただし状態は `next_after_measurement` とし、`AI時代に、毎日の仕事ログを残す理由` の24h反応 `2026-05-22 15:04 JST` を回収してから公開判断する。
+- 今日のcoffee `next` は `高くなったコーヒーで、豆選びを3基準に絞る`。値上げニュースまとめではなく、毎日飲める価格、失敗しにくい味、仕事前に合う抽出の3基準へ絞る。
+- 今日のMBTI `next` は `MBTI×ラブタイプ診断の結果を、会話に変える3つの聞き方`。状態は `next_after_72h_measurement` とし、MBTI紹介noteの72h反応 `2026-05-22 14:10 JST` を回収してから公開判断する。
+- 今日の最初の仕事は新規本文追加ではなく、AI仕事ログ24h、MBTI紹介note72h、既存note/coffee管理画面実測を同じ表で回収すること。
+- 実測なしで公開順を確定しない。仮順は `AI follow-up -> coffee -> MBTI`。AI仕事ログ24hが弱い場合は、AI follow-upを延期し、coffee記事を先に公開する。
+
+## 2026-05-22 next candidates
+
+| レーン | タイトル案 | 柱 | 証拠素材 | 読者への約束 | 状態 |
+|---|---|---|---|---|---|
+| AI | スマホからCodexを動かせる時代の仕事ログ | AI Work Style / Codex Operations | OpenAI Codex mobile remote access, ChatGPT mobile app, company朝昼夜ログ, `AI時代に、毎日の仕事ログを残す理由` 24h反応 | AIエージェント作業を止めないための承認、差分、ログの残し方が分かる | next_after_measurement / ready_not_published |
+| coffee | 高くなったコーヒーで、豆選びを3基準に絞る | Coffee Lifestyle | UCC価格改定, キーコーヒー価格改定, 既公開coffee記事, 抽出メモ | 値上がり局面でも豆選びで迷わない3基準が分かる | next / ready_not_published |
+| MBTI | MBTI×ラブタイプ診断の結果を、会話に変える3つの聞き方 | MBTI / Love Type | `https://mbti-lovetype.com/`, `/diagnosis`, 既公開MBTI紹介note72h反応 | 診断結果を決めつけではなく会話に変える聞き方が分かる | next_after_72h_measurement / ready_not_published |
+
 ## 2026-05-19 方針更新
 
 - 今後の記事ファイルは `company/marketing/content-plan/note/` 配下で分類する。

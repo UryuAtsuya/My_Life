@@ -1,6 +1,6 @@
 # Codex Active Projects
 
-Last updated: 2026-05-21
+Last updated: 2026-05-22
 
 ## Main Focus
 
@@ -22,8 +22,18 @@ Last updated: 2026-05-21
 | `job-hunting-support-site` | planning | Job-hunting support prototype that turns anxiety into one next action. | Review the first user flow. |
 | `ai-inspiration-board` | planning | Pinterest-style AI board for collecting references and generating briefs. | Create wireframes and dummy Pin data. |
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
-| `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | `AI時代に、毎日の仕事ログを残す理由` の24h/72h反応、MBTI紹介note、既存note/coffee実測を回収する。 |
-| `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | `Projects/solo-business-today-board/index.html` を夜に画面確認し、Vault TODO自動生成に進むか判断する。 |
+| `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-22はAI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を先に回収し、AI/coffee/MBTIの公開順を決める。 |
+| `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | `Projects/solo-business-today-board/index.html` をブラウザ表示確認し、手動更新継続かVault TODO生成スクリプトかを1つ選ぶ。 |
+
+## 2026-05-22 Morning Business Meeting Update
+
+1. `note-article-flow`: 今日の最優先は、MBTI紹介note72h `2026-05-22 14:10 JST`、AI仕事ログ24h `2026-05-22 15:04 JST`、既存note/coffee管理画面実測の回収。
+2. `note-article-flow`: AI next は `スマホからCodexを動かせる時代の仕事ログ`。Codex mobile機能紹介ではなく、承認、差分、テスト結果、仕事ログを残す話に寄せる。
+3. `note-article-flow`: coffee next は `高くなったコーヒーで、豆選びを3基準に絞る`。価格改定を背景にしつつ、毎日飲める価格、失敗しにくい味、仕事前に合う抽出へ落とす。
+4. `note-article-flow`: MBTI next は `MBTI×ラブタイプ診断の結果を、会話に変える3つの聞き方`。診断断定ではなく会話の入口として扱う。
+5. `short-video-ops-os`: `AgentRunShowcaseShort` は追加制作せず、公開URL/time/platform/reactions/24h/72h/outreach送付記録を埋める。
+6. `web-service-new-product`: Today Board v0は作成済み。今日はブラウザ表示確認後、手動更新を2日続けるか、Vault TODOからTop 3を生成する小スクリプトへ進むかを決める。
+7. External note research: `/Users/uryuatsuya/note/articles/research/2026-05-22-morning-brief.md` は `operation not permitted` のため、`company/marketing/content-plan/note-research-2026-05-22.md` を正本にする。
 
 ## 2026-05-21 Evening Closeout
 
