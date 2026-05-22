@@ -44,6 +44,14 @@ Last updated: 2026-05-22
 5. `web-service-new-product`: Today Boardは `tidy` 検証エラーなし。ただしChrome Computer Useが `approval denied` のため、実ブラウザ表示確認は未完了。
 6. Next action: `2026-05-22 15:04 JST` 以降にAI仕事ログ24hを回収し、MBTI/coffee実測と合わせて公開順を1本だけ決める。
 
+## 2026-05-22 Evening Closeout
+
+1. `note-article-flow`: 2026-05-22版AI/coffee/MBTI記事3本は作成済みで、状態はすべて `ready_not_published`。公開済み扱いにはしない。
+2. `note-article-flow`: AI仕事ログ24h、MBTI紹介note72h、既存note/coffee管理画面実測は未回収。ローカル `curl` は `note.com` をDNS解決できず、管理画面値の証拠もない。
+3. `short-video-ops-os`: `AgentRunShowcaseShort` の公開URL、時刻、投稿先、初動反応、outreach送付記録は未入力のまま。
+4. `web-service-new-product`: Today Boardは `tidy` 検証エラーなし。実ブラウザ表示、モバイル幅、スクリーンショットは未確認。
+5. Next action: 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。Today BoardはHTML上部へ手動更新用dataセクションを寄せる。
+
 ## 2026-05-21 Evening Closeout
 
 1. `note-article-flow`: `AI時代に、毎日の仕事ログを残す理由` は公開済み。24h計測は `2026-05-22 15:04 JST`、72h計測は `2026-05-24 15:04 JST`。

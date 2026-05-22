@@ -157,6 +157,13 @@ tags: [note, backlog, editorial]
 - `/Users/uryuatsuya/note/articles/drafts/` は `not_writable` のため、外部構造化ドラフト保存は未実施。
 - 次アクション: 15:04 JST以降にAI仕事ログ24h、MBTI紹介note72h、既存coffee実測を回収し、公開順を1本だけ確定する。
 
+## 2026-05-22 夕会更新
+
+- 2026-05-22版のAI/coffee/MBTI記事3本は `ready_not_published` のまま。公開URL、公開時刻、公開タグ、初期反応、24h/72h計測予定は未入力。
+- AI仕事ログ記事24h、MBTI紹介note72h、既存note/coffee管理画面実測は未回収。ローカル `curl` は `note.com` をDNS解決できず、管理画面値の証拠もない。
+- 実測がないため公開順は確定しない。明日はまず計測表を埋め、公開候補を1本だけ決める。
+- 明日の仮順: AI follow-upを第一候補にするが、AI仕事ログ24hが弱い場合はcoffee記事を先に出す。MBTI続編は72h反応を見て判断する。
+
 ## 2026-05-19 方針更新
 
 - 今後の記事ファイルは `company/marketing/content-plan/note/` 配下で分類する。
