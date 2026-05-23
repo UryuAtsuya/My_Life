@@ -11,6 +11,20 @@ tags: [monorepo, nextjs, express, supabase, stripe]
 
 Next.jsフロントエンド、Express API、共通型定義、仕様書を1つの `xguard/` モノレポとして管理する。
 
+## ローカル実装場所
+
+- 実装ディレクトリ: `/Users/uryuatsuya/XGuard/xguard`
+- MyLife Vaultの役割: 要件、調査、PM、レビュー、意思決定の正本
+- XGuard実装ディレクトリの役割: 実際のNext.js/Expressコード、shared types、docs
+
+## Daily Automation Loop
+
+| 時間帯 | automation | 役割 | 主な成果物 |
+|---|---|---|---|
+| 朝 | `morning-company-business-meeting` | X BAN、X API、規約、料金、競合、市場調査。昼の実装スコープ決定。 | 調査メモ、当日Top 3、実装スコープ |
+| 昼 | `midday-company-production-session` | `/Users/uryuatsuya/XGuard/xguard` でモノレポ作成・実装。 | frontend/backend/shared/docs、検証結果、実装メモ |
+| 夜 | `evening-company-closeout-review` | コードレビュー、修正案、翌日TODO整理。 | review note、修正案、翌日Top 3 |
+
 ## 想定ディレクトリ
 
 ```text

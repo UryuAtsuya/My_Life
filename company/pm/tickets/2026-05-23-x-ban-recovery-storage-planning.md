@@ -18,6 +18,7 @@ XアカウントがBANまたは凍結された人向けに、平常時のXデー
 - [x] 要件定義、環境案、データ要件、復元フローをmdに保存する
 - [x] 既存のweb-service優先順位を更新し、この開発・運用を最優先にする
 - [x] XGuardのモノレポ開発想定を専用ディレクトリに分けて保存する
+- [x] 朝調査・昼実装・夜コードレビューのautomationへ切り替える
 - [ ] X APIの取得可能データ、料金、規約リスクを調査する
 - [ ] Supabase前提のv0 DBスキーマを作る
 - [ ] HP/LP制作前に、表現を「BAN復活」ではなく「BAN後の再起動支援」に固定する
@@ -43,3 +44,10 @@ XアカウントがBANまたは凍結された人向けに、平常時のXデー
 - Saved: `company/projects/x-ban-recovery-storage/technical/monorepo-plan.md`
 - Saved: `company/projects/x-ban-recovery-storage/technical/shared-types-draft.md`
 - Decision: まだ実装は開始せず、まずはX API規約、料金、取得可能データを確認する。
+
+## 2026-05-23 automation update
+
+- Morning: X BAN保護、X API、規約、料金、競合、市場シグナルを調査し、昼の実装スコープを決める。
+- Midday: `/Users/uryuatsuya/XGuard/xguard` を別ローカルディレクトリとして作成または再利用し、Next.js + ExpressのXGuard実装を進める。
+- Evening: XGuardのコードレビュー、修正案の洗い出し、小さな安全修正、翌日Top 3整理を行う。
+- Note: MyLife Vaultは会社運用・計画の正本、XGuard実装コードは別ディレクトリで管理する。
