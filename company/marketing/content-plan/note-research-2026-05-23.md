@@ -94,3 +94,112 @@ source_run: "2026-05-22 evening closeout"
 - `https://mbti-lovetype.com/`
 - `https://mbti-lovetype.com/diagnosis`
 - `https://note.com/hashtag/MBTI`
+
+---
+
+# note morning brief - 2026-05-23
+
+## 実行確認
+
+- 実行日: `2026-05-23`
+- 実行時刻: `2026-05-23 08:01:32 JST`
+- 外部保存先: `/Users/uryuatsuya/note/articles/research/2026-05-23-morning-brief.md` は `not_writable`
+- 正本: `company/marketing/content-plan/note-research-2026-05-23.md`
+- 方針: coffee / AI / MBTI を混ぜず、昼はまず実測を回収してから公開候補を1本だけ確定する。
+
+## Market Signals
+
+### AI / note
+
+| Source | URL | One-line summary | Why it matters |
+|---|---|---|---|
+| OpenAI `Work with Codex from anywhere` | `https://openai.com/index/work-with-codex-from-anywhere/` | 2026-05-14に、ChatGPT mobile appからCodexのactive threads、approvals、diffs、test resultsなどを扱えるpreviewが示された。 | AI記事候補を機能紹介で終わらせず、「スマホでも判断できる仕事ログ設計」へ寄せる根拠になる。 |
+| OpenAI Help `ChatGPT Release Notes` | `https://help.openai.com/en/articles/6825453-chatgpt-release-notes` | ChatGPT側の更新履歴を確認する補助ソース。 | Codex mobileの公開時期や機能表現を記事前に再確認するための参照先。 |
+| note `#AI活用` | `https://note.com/hashtag/AI%E6%B4%BB%E7%94%A8` | 関連タグに `#生成AI`, `#ChatGPT`, `#業務効率化`, `#Gemini` が並び、人気記事はAI副業、画像生成、note運営、実務テンプレ寄り。 | `AI使ってみた` だけでは埋もれやすい。自分の一次情報である朝昼夜ログ、承認、差分、計測へ寄せる必要がある。 |
+
+### Coffee / note
+
+| Source | URL | One-line summary | Why it matters |
+|---|---|---|---|
+| UCC上島珈琲 `業務用、家庭用レギュラーコーヒー製品の一部価格改定について` | `https://www.ucc.co.jp/company/news/2025/rel251222.html` | 2026-03-01出荷分から、業務用・家庭用レギュラーコーヒー製品の一部価格改定を発表。 | 値上げニュースを背景にしつつ、記事は生活者の豆選び基準へ落とす。 |
+| キーコーヒー `家庭用コーヒー製品の価格改定について` | `https://www.keycoffee.co.jp/news/detail/news_251212` | 2026-03-01納品分から一部家庭用コーヒー製品の価格改定を発表し、実質店頭価格の上昇見込みにも触れている。 | `高くなったから我慢` ではなく、`高くなったから選ぶ基準を減らす` という読者行動につなげられる。 |
+| 全日本コーヒー協会 `統計資料` | `https://coffee.ajca.or.jp/data/statistics/` | 消費・輸入などの統計確認先。 | 本文で数値を書く場合の根拠確認先。朝会時点では数値断定に使わない。 |
+| note `#コーヒー` | `https://note.com/hashtag/%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC` | 関連タグに `#カフェ`, `#私のコーヒー時間`, `#珈琲`, `#noteコーヒー部` が並び、日記・習慣・カフェ体験の文脈が強い。 | 価格改定の硬い話より、朝の行動、習慣、選び方に寄せたほうがnote読者に合う。 |
+
+### MBTI / love-type
+
+| Source | URL | One-line summary | Why it matters |
+|---|---|---|---|
+| AI Love Matcher | `https://mbti-lovetype.com/` | MBTIとラブタイプを使った相性診断サイト。 | MBTI記事の対象サイト。紹介記事から続編記事へ内部導線を作る。 |
+| AI Love Matcher `無料相性診断` | `https://mbti-lovetype.com/diagnosis` | 診断結果を出す入口。 | 診断結果を保証せず、会話の補助線として扱うための確認先。 |
+| AI Love Matcher `恋愛・相性コラム` | `https://mbti-lovetype.com/articles` | 関連コラムの入口。 | サイテーション強化と追加記事導線の確認先。 |
+| note `#MBTI` | `https://note.com/hashtag/MBTI` | 関連タグに `#MBTI診断`, `#16タイプ性格診断`, `#恋愛`, `#性格診断` が並ぶ。 | 恋愛・自己理解の需要はあるが、断定型やランキング型に寄りすぎると信頼を損ねる。 |
+
+## Promising AI Topics
+
+1. `スマホからCodexを動かせる時代に、仕事ログへ残すこと`
+   - Target reader: AIエージェントに作業を任せ始めた個人開発者、ひとり事業者、発信者。
+   - Proof artifacts: OpenAI Codex mobile発表、ChatGPT Release Notes、公開済みAI仕事ログ記事、company朝昼夜ログ、2026-05-22作成記事。
+   - Outline:
+     1. スマホでAI作業を見られるようになった変化。
+     2. 便利さより怖いのは、承認・差分・検証の記録が残らないこと。
+     3. 6行仕事ログ: 目的、変更ファイル、検証、承認待ち、触らない差分、次に見る数字。
+     4. note運用での線引き。
+     5. CTA: 今日のAI作業を6行で残す。
+   - Tags: `#生成AI`, `#AI活用`, `#Codex`, `#仕事術`, `#個人事業`, `#ワークフロー`
+   - Eyecatch direction: スマホのCodexスレッド、PCのdiff、6項目チェックリストを並べる。
+   - Why today: Codex mobileの外部鮮度が残っており、公開済みAI仕事ログ記事の24h遅延計測と接続できる。
+
+## Promising Coffee Topics
+
+1. `高くなったコーヒーで、豆選びを3基準に絞る`
+   - Target reader: 毎日コーヒーを飲むが、値上げや選択肢の多さで迷う生活者。
+   - Proof artifacts: UCC価格改定、キーコーヒー価格改定、全日本コーヒー協会統計、既公開coffee記事、抽出メモ。
+   - Outline:
+     1. 値上げで豆選びが重くなる。
+     2. 情報を増やすより基準を減らす。
+     3. 基準1: 毎日用か特別用か。
+     4. 基準2: すっきり、甘い、苦め。
+     5. 基準3: 仕事前、休憩、休日のどこで飲むか。
+     6. CTA: 買う前に1行基準を書く。
+   - Tags: `#コーヒー`, `#コーヒー豆`, `#私のコーヒー時間`, `#暮らし`, `#朝活`, `#習慣`
+   - Eyecatch direction: `毎日用 / 味 / 場面` の3カードと朝のカップ。
+   - Why today: 価格改定の背景が明確で、既存coffee記事の実測が弱くても単体生活記事として出せる。
+
+## Promising MBTI Topics
+
+1. `MBTI×ラブタイプ診断の結果を、会話に変える3つの聞き方`
+   - Target reader: MBTIやラブタイプ診断を恋愛の話題にしたいが、決めつけにならない使い方を知りたい読者。
+   - Proof artifacts: AI Love Matcher、診断ページ、記事一覧、既公開MBTI紹介note、2026-05-22作成記事。
+   - Outline:
+     1. 診断結果を結論にすると雑になる。
+     2. 質問1: どこが当たっている？
+     3. 質問2: どんな距離感が楽？
+     4. 質問3: 不安なとき、どうしてほしい？
+     5. 注意: タイプだけで恋愛は決まらない。
+     6. CTA: 結果より会話を残す。
+   - Tags: `#MBTI`, `#ラブタイプ`, `#恋愛`, `#相性診断`, `#自己理解`, `#コミュニケーション`
+   - Eyecatch direction: 2人のプロフィールカードと3つの質問カード。
+   - Why today: MBTI紹介noteの72h遅延計測と合わせて、続編公開か既存記事導線改善を判断できる。
+
+## Rejected Topics
+
+- `AI副業ロードマップ`: note上の需要はあるが、現時点の一次情報が弱く、汎用記事になりやすい。
+- `ChatGPT画像生成だけの記事`: 人気はあるが、今日の証拠素材とnote成長導線に直結しにくい。
+- `コーヒー価格改定ニュースまとめ`: 根拠はあるが、読者の明日の行動に落ちにくい。
+- `MBTI相性ランキング`: 流入は見込めるが、診断断定に寄りやすく、サイテーションと信頼性の方針に合わない。
+
+## Recommended Articles For Today
+
+| Lane | Recommended article | Status | Today action |
+|---|---|---|---|
+| AI | `スマホからCodexを動かせる時代に、仕事ログへ残すこと` | `next_after_measurement / ready_not_published` | AI仕事ログ24h遅延実測が取れたら公開候補。弱ければタイトル/冒頭/CTA改善に回す。 |
+| coffee | `高くなったコーヒーで、豆選びを3基準に絞る` | `next / ready_not_published` | AI実測が弱い、または計測が取れない場合の第一公開候補。生活記事として単体で出せる。 |
+| MBTI | `MBTI×ラブタイプ診断の結果を、会話に変える3つの聞き方` | `next_after_72h_measurement / ready_not_published` | MBTI紹介note72h反応が確認できたら続編公開。未確認なら既存記事の導線改善を先にする。 |
+
+## Midday Handoff
+
+1. note管理画面または手動経路で、AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を同じ表へ入れる。
+2. 公開候補は1本だけ決める。初期仮説は `AI follow-up -> coffee -> MBTI` だが、実測なしで確定しない。
+3. 公開したらURL、公開時刻、タグ、初動反応、24h/72h計測予定を記事ファイル、backlog、PMチケットへ戻す。
+4. 外部research保存先は使えないため、このcompanyファイルを昼制作の正本にする。

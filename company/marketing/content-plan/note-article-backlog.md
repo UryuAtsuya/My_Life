@@ -164,6 +164,22 @@ tags: [note, backlog, editorial]
 - 実測がないため公開順は確定しない。明日はまず計測表を埋め、公開候補を1本だけ決める。
 - 明日の仮順: AI follow-upを第一候補にするが、AI仕事ログ24hが弱い場合はcoffee記事を先に出す。MBTI続編は72h反応を見て判断する。
 
+## 2026-05-23 朝会更新
+
+- 今日のAI `next` は `スマホからCodexを動かせる時代に、仕事ログへ残すこと`。状態は `next_after_measurement / ready_not_published` とし、AI仕事ログ24h遅延実測が一定以上なら公開候補にする。弱い場合はタイトル、冒頭、CTA改善を先にする。
+- 今日のcoffee `next` は `高くなったコーヒーで、豆選びを3基準に絞る`。状態は `next / ready_not_published`。AI実測が弱い、または未回収なら第一公開候補にする。
+- 今日のMBTI `next` は `MBTI×ラブタイプ診断の結果を、会話に変える3つの聞き方`。状態は `next_after_72h_measurement / ready_not_published`。MBTI紹介note72h反応が確認できた場合だけ続編公開を判断する。
+- 今日もcoffee / AI / MBTIを混ぜない。ただし公開は1本だけにし、公開後記録を記事ファイル、backlog、PMチケットへ戻す。
+- 外部research保存先は `not_writable` のため、朝ブリーフ正本は `company/marketing/content-plan/note-research-2026-05-23.md`。
+
+## 2026-05-23 next candidates
+
+| レーン | タイトル案 | 柱 | 証拠素材 | 読者への約束 | 状態 |
+|---|---|---|---|---|---|
+| AI | スマホからCodexを動かせる時代に、仕事ログへ残すこと | AI Work Style / Codex Operations | OpenAI Codex mobile発表、ChatGPT Release Notes、公開済みAI仕事ログ記事、company朝昼夜ログ | AIエージェント作業を止めないための承認、差分、検証、次に見る数字の残し方が分かる | next_after_measurement / ready_not_published |
+| coffee | 高くなったコーヒーで、豆選びを3基準に絞る | Coffee Lifestyle | UCC価格改定、キーコーヒー価格改定、全日本コーヒー協会統計、既公開coffee記事、抽出メモ | 値上がり局面でも、毎日飲める価格、失敗しにくい味、仕事前に合う抽出で迷わない | next / ready_not_published |
+| MBTI | MBTI×ラブタイプ診断の結果を、会話に変える3つの聞き方 | MBTI / Love Type | AI Love Matcher、診断ページ、記事一覧、既公開MBTI紹介note、確認日付きサイテーション | 診断結果を決めつけではなく、連絡頻度、距離感、不安の扱い方を話す入口にできる | next_after_72h_measurement / ready_not_published |
+
 ## 2026-05-19 方針更新
 
 - 今後の記事ファイルは `company/marketing/content-plan/note/` 配下で分類する。

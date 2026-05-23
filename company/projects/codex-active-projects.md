@@ -1,15 +1,15 @@
 # Codex Active Projects
 
-Last updated: 2026-05-22
+Last updated: 2026-05-23
 
 ## Main Focus
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | 15:04 JST以降にAI仕事ログ24h、MBTI紹介note72h、既存coffee実測を回収し、公開順を1本だけ決める |
+| 1 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
 | 2 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 3 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
-| 4 | Web Service New Product | prototype | `Projects/solo-business-today-board/index.html` をブラウザ表示確認し、次の最小coding taskを1つ決める |
+| 4 | Web Service New Product | prototype | `Projects/solo-business-today-board/index.html` の手動更新用dataセクションを上部へ寄せ、今日版Top 3を差し替えやすくする |
 
 ## Managed Projects
 
@@ -22,8 +22,18 @@ Last updated: 2026-05-22
 | `job-hunting-support-site` | planning | Job-hunting support prototype that turns anxiety into one next action. | Review the first user flow. |
 | `ai-inspiration-board` | planning | Pinterest-style AI board for collecting references and generating briefs. | Create wireframes and dummy Pin data. |
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
-| `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-22はAI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を先に回収し、AI/coffee/MBTIの公開順を決める。 |
-| `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | `Projects/solo-business-today-board/index.html` をブラウザ表示確認し、手動更新継続かVault TODO生成スクリプトかを1つ選ぶ。 |
+| `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
+| `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardの手動更新用dataセクションをHTML上部へ寄せる。 |
+
+## 2026-05-23 Morning Business Meeting Update
+
+1. `note-article-flow`: 今日の最優先は、AI仕事ログ24h、MBTI紹介note72h、既存note/coffee管理画面実測の回収。
+2. `note-article-flow`: 3レーンは維持するが、今日公開する記事は実測後に1本だけ選ぶ。実測なしで3本公開しない。
+3. `note-article-flow`: AI next は `スマホからCodexを動かせる時代に、仕事ログへ残すこと`。AI仕事ログ24hが一定以上なら公開候補、弱ければ改善へ回す。
+4. `note-article-flow`: coffee next は `高くなったコーヒーで、豆選びを3基準に絞る`。AI実測が弱い、または未回収なら第一公開候補。
+5. `note-article-flow`: MBTI next は `MBTI×ラブタイプ診断の結果を、会話に変える3つの聞き方`。MBTI紹介note72h確認後に続編公開を判断する。
+6. `web-service-new-product`: Today Boardの今日のscopeは、手動更新用dataセクションをHTML上部へ寄せること。Vault TODO自動生成スクリプトは明日以降。
+7. External note research: `/Users/uryuatsuya/note/articles/research/2026-05-23-morning-brief.md` は `not_writable` のため、`company/marketing/content-plan/note-research-2026-05-23.md` を正本にする。
 
 ## 2026-05-22 Morning Business Meeting Update
 
