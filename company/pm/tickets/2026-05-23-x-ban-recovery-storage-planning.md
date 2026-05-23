@@ -65,3 +65,17 @@ XアカウントがBANまたは凍結された人向けに、平常時のXデー
 1. `/Users/uryuatsuya/XGuard/xguard` への書き込み権限または作業ルートを解決する。
 2. 解決後、`frontend/`, `backend/`, `shared/`, `docs/` を作り、`shared/types.ts` と `docs/ARCHITECTURE.md` から着手する。
 3. X APIの取得可能データ、料金、規約リスクを調査し、`supabase-v0-schema.sql` の保存範囲を絞り直す。
+
+## 2026-05-23 evening code review update
+
+- Reviewed: `company/projects/x-ban-recovery-storage/technical/supabase-v0-schema.sql`
+- Reviewed: `company/projects/x-ban-recovery-storage/technical/monorepo-plan.md`
+- Reviewed: `company/projects/x-ban-recovery-storage/technical/shared-types-draft.md`
+- Reviewed: `/Users/uryuatsuya/XGuard/xguard`
+- Result: XGuard実装ディレクトリは空で、git repoではない。コードレビュー対象はMyLife側の設計ドキュメントに限定した。
+- P0: X OAuth tokenの保管・更新・失効設計が未定義。
+- P0: X APIの取得可能データ、料金、保存・再公開可否、規約リスクが未確認。
+- P1: `tweet_snapshots` の一意制約が、時系列snapshotとtweet単位upsertのどちらを採るか曖昧。
+- P1: 証明ページの公開/非公開、取り下げ、redaction方針が未定義。
+- P1: Stripe webhookの冪等性テーブルが未設計。
+- Next: 明日は実装初期化より先に、X APIデータ範囲表とOAuth token保管設計を作る。
