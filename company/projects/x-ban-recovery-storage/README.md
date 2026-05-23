@@ -168,10 +168,10 @@ TEST_MODE=true
 
 ## 次アクション
 
-1. X APIの取得可能データ、料金、規約リスクを調査する。
-2. `/Users/uryuatsuya/XGuard/xguard` への書き込み権限または作業ルートを解決し、モノレポを初期化する。
-3. HP制作前に、LPの約束を「BAN復活」ではなく「BAN後の再起動」に固定する。
-4. `detectBan`、`generateProofPage`、バックアップジョブの最小設計を書く。
+1. Developer ConsoleでX APIのendpoint別単価を確認し、v0の月次原価を見積もる。
+2. `/Users/uryuatsuya/XGuard/xguard` をgit repoとして初期化し、まず `docs/X_API_SCOPE.md` とDB schema v1 draftを作る。
+3. HP制作前に、LPの約束を「BAN復活」ではなく「BAN後の再起動支援」「証明ページ生成」に固定する。
+4. OAuth token保管、proof DTO、compliance delete queue、backup jobの最小設計を書く。
 
 ## 2026-05-23 midday implementation update
 
@@ -179,3 +179,12 @@ TEST_MODE=true
 - `/Users/uryuatsuya/XGuard/xguard` の作成は `Operation not permitted` で失敗した。
 - 実装コードはMyLife Vaultへ迂回せず、指定のVault外ワークスペース権限を解決してから作る。
 - 通知機能は自動DMではなく、手動レビュー用の `manual_notification_queue` として扱う。
+
+## 2026-05-23 development element scan
+
+- 初期調査: `research/2026-05-23-x-api-development-elements.md`
+- 実装前ゲート: `technical/pre-implementation-gate.md`
+- XGuard repo初期docs: `/Users/uryuatsuya/XGuard/xguard/docs/X_API_SCOPE.md`, `/Users/uryuatsuya/XGuard/xguard/docs/IMPLEMENTATION_GATE.md`
+- v0はread-only OAuth接続、投稿/プロフィール取得、proof用DTO生成、compliance delete queueを優先する。
+- 自動DM、自動follow/unfollow、raw payload公開、BAN回避に見える機能はv0から外す。
+- X API価格はPay-per-use前提。endpoint別の実単価はDeveloper Consoleで確認してから月額3,000円の原価を判断する。

@@ -79,3 +79,14 @@ XアカウントがBANまたは凍結された人向けに、平常時のXデー
 - P1: 証明ページの公開/非公開、取り下げ、redaction方針が未定義。
 - P1: Stripe webhookの冪等性テーブルが未設計。
 - Next: 明日は実装初期化より先に、X APIデータ範囲表とOAuth token保管設計を作る。
+
+## 2026-05-23 development element scan
+
+- Saved: `company/projects/x-ban-recovery-storage/research/2026-05-23-x-api-development-elements.md`
+- Saved: `company/projects/x-ban-recovery-storage/technical/pre-implementation-gate.md`
+- Finding: X APIはPay-per-use前提で、rate limitとbillingは別。月額3,000円モデルは、ユーザー単位のAPI消費見積もりなしに進めない。
+- Finding: OAuth 2.0 PKCE + refresh token前提で、`x_oauth_connections` と暗号化token保管が必要。
+- Finding: v0はread-only scopeに寄せる。`tweet.write`, `follows.write`, DM write系scopeは使わない。
+- Finding: 証明ページはraw payloadを直接公開しない。公開用DTOとredaction方針を先に作る。
+- Done: `/Users/uryuatsuya/XGuard/xguard` をgit repo化し、`README.md`, `docs/X_API_SCOPE.md`, `docs/IMPLEMENTATION_GATE.md` を作成した。
+- Next: Supabase schema v1 draftでOAuth token保管、API使用量、proof page公開制御、compliance queue、Stripe webhook冪等性を追加する。
