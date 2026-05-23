@@ -75,8 +75,10 @@ export interface AccountHealthCheck {
   id: string;
   xAccountId: string;
   status: XAccountStatus;
+  reason?: "ok" | "not_found" | "forbidden" | "auth_failed" | "rate_limited" | "api_error" | "network_error" | "unknown";
   httpStatus?: number;
   errorCode?: string;
+  errorMessage?: string;
   checkedAt: string;
 }
 
@@ -91,3 +93,9 @@ export interface RecoverySession {
   completedAt?: string;
 }
 ```
+
+## 2026-05-23 midday alignment
+
+- v0 DBスキーマは `technical/supabase-v0-schema.sql` に保存した。
+- `AccountHealthCheck.reason` はBAN候補、認証切れ、レート制限、API障害を分けるために追加する。
+- 自動DM送信は型に入れず、必要な場合も手動レビュー用の通知キューとして扱う。

@@ -6,7 +6,7 @@ Last updated: 2026-05-23
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | X BAN Recovery Storage | planning / new highest priority | X APIの取得可能データ、料金、規約リスクを調査し、Supabase前提のv0 DBスキーマを作る |
+| 1 | X BAN Recovery Storage | planning / implementation blocked on local path | X APIの取得可能データ、料金、規約リスクを調査し、`/Users/uryuatsuya/XGuard/xguard` の書き込み権限を解決してモノレポを初期化する |
 | 2 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
 | 3 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 4 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
@@ -25,7 +25,7 @@ Last updated: 2026-05-23
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
-| `x-ban-recovery-storage` | planning | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | X APIの取得可能データ、料金、規約リスクを調査し、Supabase前提のv0 DBスキーマを作る。 |
+| `x-ban-recovery-storage` | planning / implementation blocked | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | v0 DBスキーマは作成済み。次はX API調査と、指定ローカル実装パスの書き込み権限解決。 |
 
 ## 2026-05-23 Priority Change
 
@@ -33,6 +33,13 @@ Last updated: 2026-05-23
 2. Scope now: HP制作へ進む前に、要件定義、環境案、データ要件、復元フロー、規約リスクを整理する。
 3. Positioning: 「BANされたアカウントの自動復活」ではなく、「保存済みデータを使った新アカウント再起動支援」として扱う。
 4. Web service priority: Today Boardの改善は保留し、X BAN Recovery StorageのAPI調査、DB設計、LP約束整理を先に進める。
+
+## 2026-05-23 Midday XGuard Implementation Update
+
+1. `x-ban-recovery-storage`: v0 DBスキーマを `company/projects/x-ban-recovery-storage/technical/supabase-v0-schema.sql` に追加した。
+2. `x-ban-recovery-storage`: `/Users/uryuatsuya/XGuard/xguard` の作成は `Operation not permitted` で失敗したため、Next.js/Expressモノレポ作成は未実施。
+3. `x-ban-recovery-storage`: 自動DM送信、一括フォロー、BAN回避に見える処理は含めず、通知候補は手動レビューキューとして扱う。
+4. Next action: 指定パスの書き込み権限解決後、`shared/types.ts`、`docs/ARCHITECTURE.md`、`GET /health` から着手する。
 
 ## 2026-05-23 Morning Business Meeting Update
 

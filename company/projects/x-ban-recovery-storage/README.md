@@ -169,6 +169,13 @@ TEST_MODE=true
 ## 次アクション
 
 1. X APIの取得可能データ、料金、規約リスクを調査する。
-2. v0のDBスキーマをSQLで起こす。
+2. `/Users/uryuatsuya/XGuard/xguard` への書き込み権限または作業ルートを解決し、モノレポを初期化する。
 3. HP制作前に、LPの約束を「BAN復活」ではなく「BAN後の再起動」に固定する。
 4. `detectBan`、`generateProofPage`、バックアップジョブの最小設計を書く。
+
+## 2026-05-23 midday implementation update
+
+- v0 DBスキーマを `technical/supabase-v0-schema.sql` に追加した。
+- `/Users/uryuatsuya/XGuard/xguard` の作成は `Operation not permitted` で失敗した。
+- 実装コードはMyLife Vaultへ迂回せず、指定のVault外ワークスペース権限を解決してから作る。
+- 通知機能は自動DMではなく、手動レビュー用の `manual_notification_queue` として扱う。

@@ -3,7 +3,7 @@ created: "2026-05-23"
 project: "x-ban-recovery-storage"
 assignee: "codex"
 priority: high
-status: open
+status: active
 ---
 
 # X BAN Recovery Storage の要件定義と環境整理
@@ -20,7 +20,7 @@ XアカウントがBANまたは凍結された人向けに、平常時のXデー
 - [x] XGuardのモノレポ開発想定を専用ディレクトリに分けて保存する
 - [x] 朝調査・昼実装・夜コードレビューのautomationへ切り替える
 - [ ] X APIの取得可能データ、料金、規約リスクを調査する
-- [ ] Supabase前提のv0 DBスキーマを作る
+- [x] Supabase前提のv0 DBスキーマを作る
 - [ ] HP/LP制作前に、表現を「BAN復活」ではなく「BAN後の再起動支援」に固定する
 - [ ] 最小プロトタイプの技術構成を確定する
 
@@ -51,3 +51,17 @@ XアカウントがBANまたは凍結された人向けに、平常時のXデー
 - Midday: `/Users/uryuatsuya/XGuard/xguard` を別ローカルディレクトリとして作成または再利用し、Next.js + ExpressのXGuard実装を進める。
 - Evening: XGuardのコードレビュー、修正案の洗い出し、小さな安全修正、翌日Top 3整理を行う。
 - Note: MyLife Vaultは会社運用・計画の正本、XGuard実装コードは別ディレクトリで管理する。
+
+## 2026-05-23 midday implementation update
+
+- Attempted: `/Users/uryuatsuya/XGuard/xguard` の作成。
+- Result: `mkdir: /Users/uryuatsuya/XGuard: Operation not permitted` のため、指定パスに実装モノレポを作成できなかった。
+- Decision: 実装コードをMyLife Vault内へ迂回配置しない。Vaultは計画・PM・判断ログの正本に留める。
+- Completed: `company/projects/x-ban-recovery-storage/technical/supabase-v0-schema.sql` にv0 DBスキーマを保存した。
+- Safety: 自動DM送信、一括フォロー、BAN回避に見える処理は含めず、通知は `manual_notification_queue` の手動レビュー前提にした。
+
+## 次の最小タスク - 更新
+
+1. `/Users/uryuatsuya/XGuard/xguard` への書き込み権限または作業ルートを解決する。
+2. 解決後、`frontend/`, `backend/`, `shared/`, `docs/` を作り、`shared/types.ts` と `docs/ARCHITECTURE.md` から着手する。
+3. X APIの取得可能データ、料金、規約リスクを調査し、`supabase-v0-schema.sql` の保存範囲を絞り直す。
