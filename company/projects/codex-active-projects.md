@@ -6,10 +6,11 @@ Last updated: 2026-05-23
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
-| 2 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
-| 3 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
-| 4 | Web Service New Product | prototype | `Projects/solo-business-today-board/index.html` の手動更新用dataセクションを上部へ寄せ、今日版Top 3を差し替えやすくする |
+| 1 | X BAN Recovery Storage | planning / new highest priority | X APIの取得可能データ、料金、規約リスクを調査し、Supabase前提のv0 DBスキーマを作る |
+| 2 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
+| 3 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
+| 4 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
+| 5 | Web Service New Product | prototype | Today Boardは保留。X BAN Recovery Storageの要件、環境、API調査を先に進める |
 
 ## Managed Projects
 
@@ -23,7 +24,15 @@ Last updated: 2026-05-23
 | `ai-inspiration-board` | planning | Pinterest-style AI board for collecting references and generating briefs. | Create wireframes and dummy Pin data. |
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
-| `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardの手動更新用dataセクションをHTML上部へ寄せる。 |
+| `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
+| `x-ban-recovery-storage` | planning | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | X APIの取得可能データ、料金、規約リスクを調査し、Supabase前提のv0 DBスキーマを作る。 |
+
+## 2026-05-23 Priority Change
+
+1. User decision: `x-ban-recovery-storage` を新規プロジェクトとして追加し、開発・運用の最優先にする。
+2. Scope now: HP制作へ進む前に、要件定義、環境案、データ要件、復元フロー、規約リスクを整理する。
+3. Positioning: 「BANされたアカウントの自動復活」ではなく、「保存済みデータを使った新アカウント再起動支援」として扱う。
+4. Web service priority: Today Boardの改善は保留し、X BAN Recovery StorageのAPI調査、DB設計、LP約束整理を先に進める。
 
 ## 2026-05-23 Morning Business Meeting Update
 
