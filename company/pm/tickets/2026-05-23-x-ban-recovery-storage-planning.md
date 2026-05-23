@@ -90,3 +90,14 @@ XアカウントがBANまたは凍結された人向けに、平常時のXデー
 - Finding: 証明ページはraw payloadを直接公開しない。公開用DTOとredaction方針を先に作る。
 - Done: `/Users/uryuatsuya/XGuard/xguard` をgit repo化し、`README.md`, `docs/X_API_SCOPE.md`, `docs/IMPLEMENTATION_GATE.md` を作成した。
 - Next: Supabase schema v1 draftでOAuth token保管、API使用量、proof page公開制御、compliance queue、Stripe webhook冪等性を追加する。
+
+## 2026-05-24 morning research update
+
+- Saved: `company/projects/x-ban-recovery-storage/requirements/2026-05-24-x-ban-research.md`
+- Saved: `company/projects/x-ban-recovery-storage/notes/2026-05-24-morning-planning.md`
+- Decision: XGuard v0はread-onlyの事前バックアップと証明ページ生成に限定する。
+- Decision: 自動DM、自動follow/unfollow、自動投稿、bulk outreach、BAN回避に見える導線はv0から外す。
+- Finding: X APIはPay-per-use。Owned Readsは$0.001/resourceだが、followers/following/mediaまで広げると月額3,000円の原価管理が必要。
+- Finding: X Contentの削除・変更・protected化・withheld・ユーザー削除要求に追従するcompliance queueが必須。
+- Next: 昼は `/Users/uryuatsuya/XGuard/xguard` に `supabase/schema.sql`, `shared/types.ts`, `docs/ARCHITECTURE.md`, `docs/API_COST_MODEL.md`, `docs/COMPLIANCE.md` を作る。
+- Verification: 朝runではproduction codeを実装しない。
