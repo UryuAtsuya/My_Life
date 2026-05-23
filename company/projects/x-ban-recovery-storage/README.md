@@ -1,16 +1,33 @@
 ---
 created: "2026-05-23"
-project: "x-ban-recovery-storage"
+project: "xguard"
 status: planning
 priority: highest
 tags: [x, sns, backup, recovery, supabase, web-service]
 ---
 
-# X BAN Recovery Storage
+# XGuard
 
 ## 目的
 
 XアカウントがBANまたは凍結された人向けに、平常時から投稿、プロフィール、フォロワー/フォロー中の履歴、メディア、活動実績をDBへ保管し、BAN後に新アカウントで素早く再起動できる状態を作る。
+
+## ディレクトリ構成
+
+| パス | 用途 |
+|---|---|
+| `requirements/` | サービス要件、機能要件、収益モデル |
+| `notes/` | ユーザーからの想定、メモ、判断ログ |
+| `technical/` | 技術スタック、モノレポ構成、開発手順 |
+
+## 現在の開発想定
+
+- サービス名: `XGuard`
+- 想定価格: 月額3,000円
+- 実装方針: Next.js 14 + Node.js Express + Supabase + Stripe + X API
+- リポジトリ案: `xguard/` モノレポ
+- デプロイ想定: フロントVercel、バックエンドRailway
+- 現段階: 実装前の要件定義・技術メモ整理
 
 ## 重要な前提
 

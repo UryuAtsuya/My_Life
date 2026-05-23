@@ -17,6 +17,7 @@ XアカウントがBANまたは凍結された人向けに、平常時のXデー
 - [x] 新規プロジェクトディレクトリを作成する
 - [x] 要件定義、環境案、データ要件、復元フローをmdに保存する
 - [x] 既存のweb-service優先順位を更新し、この開発・運用を最優先にする
+- [x] XGuardのモノレポ開発想定を専用ディレクトリに分けて保存する
 - [ ] X APIの取得可能データ、料金、規約リスクを調査する
 - [ ] Supabase前提のv0 DBスキーマを作る
 - [ ] HP/LP制作前に、表現を「BAN復活」ではなく「BAN後の再起動支援」に固定する
@@ -34,3 +35,11 @@ XアカウントがBANまたは凍結された人向けに、平常時のXデー
 1. X APIで取得できる投稿、プロフィール、フォロワー/フォロー中、メディア、アカウント状態を調査する。
 2. `x_accounts`、`tweet_snapshots`、`profile_snapshots`、`account_health_checks`、`recovery_sessions` のDB設計を作る。
 3. LPのファーストビュー文言案を3つ作る。
+
+## 2026-05-23 XGuard monorepo assumption
+
+- Saved: `company/projects/x-ban-recovery-storage/requirements/service-requirements.md`
+- Saved: `company/projects/x-ban-recovery-storage/notes/2026-05-23-xguard-monorepo-assumption.md`
+- Saved: `company/projects/x-ban-recovery-storage/technical/monorepo-plan.md`
+- Saved: `company/projects/x-ban-recovery-storage/technical/shared-types-draft.md`
+- Decision: まだ実装は開始せず、まずはX API規約、料金、取得可能データを確認する。
