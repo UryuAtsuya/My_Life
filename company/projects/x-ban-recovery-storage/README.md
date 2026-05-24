@@ -209,3 +209,13 @@ TEST_MODE=true
 
 - 今後のXGuard coding automationでは、実装完了後に `UryuAtsuya/Xguard` へpushまで行う。
 - 昼会・夜会automation promptにも、XGuard実装repoのcommit/pushを必須の通常手順として追記した。
+
+## 2026-05-25 morning research update
+
+- 調査メモ: `requirements/2026-05-25-x-ban-research.md`
+- 朝会引き継ぎ: `notes/2026-05-25-morning-planning.md`
+- 今日の優先はdocs gate、build gate、Supabase token repositoryの順にする。
+- v0初期scopeは `tweet.read`, `users.read`, `offline.access` のみに維持する。
+- X API原価はPay-per-usageとDeveloper Console実画面確認を正とし、`Owned Reads` の低単価枠を第三者ユーザー向けSaaSの主前提にしない。
+- proof pageはraw X API payloadを公開せず、公開DTO、取り下げ、redaction、X Content削除追従を必須にする。
+- `/Users/uryuatsuya/XGuard/xguard` は存在し、git statusはclean。ただし朝run時点のCodexサンドボックスからは `NOT_WRITABLE` のため、昼run冒頭で書き込み可否を確認する。
