@@ -101,3 +101,14 @@ XアカウントがBANまたは凍結された人向けに、平常時のXデー
 - Finding: X Contentの削除・変更・protected化・withheld・ユーザー削除要求に追従するcompliance queueが必須。
 - Next: 昼は `/Users/uryuatsuya/XGuard/xguard` に `supabase/schema.sql`, `shared/types.ts`, `docs/ARCHITECTURE.md`, `docs/API_COST_MODEL.md`, `docs/COMPLIANCE.md` を作る。
 - Verification: 朝runではproduction codeを実装しない。
+
+## 2026-05-24 midday implementation update
+
+- Checked: `/Users/uryuatsuya/XGuard/xguard` は既存Git repoで、最新ローカルcommitは `606eb77 Initialize XGuard docs`。
+- Checked: 既存ファイルは `README.md`, `docs/X_API_SCOPE.md`, `docs/IMPLEMENTATION_GATE.md`。
+- Blocked: Codex実行環境からは `test -w /Users/uryuatsuya/XGuard/xguard` が `not_writable`。`mkdir -p /Users/uryuatsuya/XGuard/xguard/supabase` と `mkdir -p /Users/uryuatsuya/XGuard/xguard/shared` は `Operation not permitted`。
+- Decision: 実装コードをMyLife Vault内へ迂回配置しない。Vault側には適用用ドラフトと実績ログだけを残す。
+- Completed: `company/projects/x-ban-recovery-storage/technical/supabase-v1-schema-draft.sql` を作成し、OAuth token暗号化保管、API使用量、backup run、proof page公開制御、content compliance、Stripe webhook冪等性を入れた。
+- Completed: `company/projects/x-ban-recovery-storage/technical/shared-types-v1-draft.md` を作成し、`ProofPublicPayload`、`BackupRunStatus`、`ProofPageVisibility`、`ContentComplianceEventType`、`ApiUsageEvent` を入れた。
+- Not completed: XGuard repo内の `supabase/schema.sql`, `shared/types.ts`, `docs/ARCHITECTURE.md`, `docs/API_COST_MODEL.md`, `docs/COMPLIANCE.md` 作成。
+- Next: XGuard workspaceを書き込み可能にしてから、v1 draftを実repoへ適用し、`git diff --check` とTypeScript検証を走らせる。

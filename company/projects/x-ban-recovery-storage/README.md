@@ -188,3 +188,10 @@ TEST_MODE=true
 - v0はread-only OAuth接続、投稿/プロフィール取得、proof用DTO生成、compliance delete queueを優先する。
 - 自動DM、自動follow/unfollow、raw payload公開、BAN回避に見える機能はv0から外す。
 - X API価格はPay-per-use前提。endpoint別の実単価はDeveloper Consoleで確認してから月額3,000円の原価を判断する。
+
+## 2026-05-24 midday implementation update
+
+- XGuard repoは `/Users/uryuatsuya/XGuard/xguard` に存在し、`README.md`, `docs/X_API_SCOPE.md`, `docs/IMPLEMENTATION_GATE.md` がある。
+- ただしCodex実行環境からは書き込み不可。`test -w /Users/uryuatsuya/XGuard/xguard` は `not_writable`、`supabase/` と `shared/` の作成は `Operation not permitted`。
+- 実装コードはVault内へ迂回しない。代わりに適用用ドラフトとして `technical/supabase-v1-schema-draft.sql` と `technical/shared-types-v1-draft.md` を保存した。
+- 次はXGuard repoの書き込み権限を解決し、ドラフトを `/Users/uryuatsuya/XGuard/xguard/supabase/schema.sql` と `/Users/uryuatsuya/XGuard/xguard/shared/types.ts` へ配置する。
