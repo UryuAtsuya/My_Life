@@ -1,12 +1,12 @@
 # Codex Active Projects
 
-Last updated: 2026-05-23
+Last updated: 2026-05-24
 
 ## Main Focus
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | X BAN Recovery Storage | planning / implementation blocked on local path | X APIの取得可能データ、料金、規約リスクを調査し、`/Users/uryuatsuya/XGuard/xguard` の書き込み権限を解決してモノレポを初期化する |
+| 1 | X BAN Recovery Storage | backend prototype pushed / docs gate open | `docs/ARCHITECTURE.md`, `docs/API_COST_MODEL.md`, `docs/COMPLIANCE.md` を作り、build設定とSupabase repository層へ進む |
 | 2 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
 | 3 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 4 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
@@ -25,7 +25,14 @@ Last updated: 2026-05-23
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
-| `x-ban-recovery-storage` | planning / implementation blocked | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | v0 DBスキーマは作成済み。次はX API調査と、指定ローカル実装パスの書き込み権限解決。 |
+| `x-ban-recovery-storage` | backend prototype pushed | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | docs gate、build設定、Supabase repository層を順に閉じる。 |
+
+## 2026-05-24 Evening XGuard Code Review
+
+1. `x-ban-recovery-storage`: `/Users/uryuatsuya/XGuard/xguard` にbackend-first prototypeが作成され、`ba98160` を `UryuAtsuya/Xguard` `origin/main` へpush済み。
+2. `x-ban-recovery-storage`: v0初期OAuth scopeは `tweet.read`, `users.read`, `offline.access` に絞り、`follows.read` はP1まで外す。
+3. `x-ban-recovery-storage`: `git diff --check`, `npx tsc -p tsconfig.json --noEmit`, `npx vitest run --configLoader runner` は通過。`npm run check` はこの環境の `dist/` emit制限で失敗。
+4. Next action: `docs/ARCHITECTURE.md`, `docs/API_COST_MODEL.md`, `docs/COMPLIANCE.md` とbuild設定を先に閉じ、Supabase repository層へ進む。
 
 ## 2026-05-23 Priority Change
 

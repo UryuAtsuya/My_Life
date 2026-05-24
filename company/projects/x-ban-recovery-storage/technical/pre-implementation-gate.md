@@ -56,3 +56,16 @@ status: draft
 - XGuard repo本体は存在するが、Codex実行環境からは書き込み不可。
 - `supabase/schema.sql` と `shared/types.ts` へ直接配置する前段として、MyLife側に適用用draftを保存した。
 - 次のGo条件は、`/Users/uryuatsuya/XGuard/xguard` をwritableにした上でdraftを実repoへ配置し、`git diff --check` とTypeScript検証を実行すること。
+
+## 2026-05-24 evening gate update
+
+- XGuard repo本体へ `supabase/schema.sql`, `shared/types.ts`, backend prototype, `docs/API_SPEC.md` を配置し、`ba98160` まで `origin/main` へpush済み。
+- v0初期OAuth scopeは `tweet.read`, `users.read`, `offline.access` に固定した。`follows.read` はP1まで入れない。
+- Go継続条件:
+  - `docs/ARCHITECTURE.md`, `docs/API_COST_MODEL.md`, `docs/COMPLIANCE.md` を作る。
+  - `npm run check` が通常環境で通るようにbuild設定を分ける。
+  - Supabase repository層はservice role + Vault/encryption前提で実装する。
+- まだNo-Go:
+  - `follows.read` を初期scopeへ戻すこと。
+  - 自動DM、自動follow/unfollow、自動投稿、raw payload公開。
+  - Developer Console確認なしに月額3,000円の原価を確定扱いにすること。

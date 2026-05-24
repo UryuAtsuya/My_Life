@@ -112,3 +112,16 @@ XアカウントがBANまたは凍結された人向けに、平常時のXデー
 - Completed: `company/projects/x-ban-recovery-storage/technical/shared-types-v1-draft.md` を作成し、`ProofPublicPayload`、`BackupRunStatus`、`ProofPageVisibility`、`ContentComplianceEventType`、`ApiUsageEvent` を入れた。
 - Not completed: XGuard repo内の `supabase/schema.sql`, `shared/types.ts`, `docs/ARCHITECTURE.md`, `docs/API_COST_MODEL.md`, `docs/COMPLIANCE.md` 作成。
 - Next: XGuard workspaceを書き込み可能にしてから、v1 draftを実repoへ適用し、`git diff --check` とTypeScript検証を走らせる。
+
+## 2026-05-24 evening code review update
+
+- Reviewed: `/Users/uryuatsuya/XGuard/xguard` backend-first prototype.
+- Completed: XGuard repoへ `supabase/schema.sql`, `shared/types.ts`, backend mock API, `docs/API_SPEC.md` が作成済み。
+- Fixed: v0初期OAuth scopeから `follows.read` を外し、`tweet.read`, `users.read`, `offline.access` に絞った。
+- Fixed: mock backup run stateをmodule globalからapp instance内へ移した。
+- Fixed: supertest listen依存を避け、no-listenで通るroute境界/サービス境界テストへ寄せた。
+- Verification: `git diff --check` pass, `npx tsc -p tsconfig.json --noEmit` pass, `npx vitest run --configLoader runner` pass 2 files / 3 tests.
+- Blocked: `npm run check` はこのサンドボックスでは `dist/` emitが `EPERM`。`npm audit` は `registry.npmjs.org` DNS解決不可。
+- XGuard push: `ba98160 Document minimum OAuth scope` を `UryuAtsuya/Xguard` `origin/main` へpush済み。
+- Not completed: `docs/ARCHITECTURE.md`, `docs/API_COST_MODEL.md`, `docs/COMPLIANCE.md`, Developer Console実画面確認、Supabase repository実装、Stripe webhook handler。
+- Next: 2026-05-25はdocs gate、build設定、Supabase repository層の順に進める。
