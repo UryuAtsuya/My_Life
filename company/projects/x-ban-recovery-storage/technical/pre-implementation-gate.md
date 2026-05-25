@@ -76,3 +76,13 @@ status: draft
 - `npm run check` は一時clone `/private/tmp/xguard-midday-2026-05-25` でpass。3 files / 5 tests passed。
 - 指定パス `/Users/uryuatsuya/XGuard/xguard` は書き込み不可のため、夜レビューでは同パスを `b3bd37c` へ同期してから再検証する。
 - 残るGate: Developer Console実画面でendpoint別単価/Spending limitを確認する。`backup_runs` + `api_usage_events` transaction serviceを実装する。Stripe webhook handlerを冪等化する。
+
+## 2026-05-25 evening gate update
+
+- 指定パス `/Users/uryuatsuya/XGuard/xguard` のlocal HEADは `91229db`、tracking `origin/main` は `ba98160`。昼メモ上のremote commit `b3bd37c` と夜の指定パス履歴が揃っていない。
+- `git push -v origin main` はremote先行のため `fetch first` で拒否。`git fetch origin main` は `.git/FETCH_HEAD` 書き込み不可で失敗。
+- `npx vitest run --configLoader runner` はpass。`npx tsc -p tsconfig.json --noEmit` は `tokenRepository.test.ts` のmock fetch型不一致でfail。
+- 次のGo条件:
+  - 書き込み可能な環境でremoteをfetchし、`b3bd37c` とlocal `91229db` を統合してpushする。
+  - `tokenRepository.test.ts` の型修正と `findXToken()` read path scope検査を入れ、`npm run check` をpassに戻す。
+  - Developer Console実値を確認してから原価・上限・停止ルールを確定する。

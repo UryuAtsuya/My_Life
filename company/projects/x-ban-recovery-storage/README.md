@@ -218,6 +218,14 @@ TEST_MODE=true
 - v0初期scopeは `tweet.read`, `users.read`, `offline.access` のみに維持する。
 - X API原価はPay-per-usageとDeveloper Console実画面確認を正とし、`Owned Reads` の低単価枠を第三者ユーザー向けSaaSの主前提にしない。
 - proof pageはraw X API payloadを公開せず、公開DTO、取り下げ、redaction、X Content削除追従を必須にする。
+
+## 2026-05-25 evening review update
+
+- 夜レビュー: `notes/2026-05-25-evening-code-review.md`
+- XGuard local HEADは `91229db Exclude revoked token refs`。ただしremote先行のため夜runではpush不可。
+- `git push -v origin main` は `fetch first`、`git fetch origin main` は `.git/FETCH_HEAD` 書き込み不可で失敗。
+- `npx vitest run --configLoader runner` はpass、`npx tsc -p tsconfig.json --noEmit` は `tokenRepository.test.ts` のmock fetch型不一致でfail。
+- 明日はremote統合、TypeScript復旧、Developer Console原価確認を最優先にする。
 - `/Users/uryuatsuya/XGuard/xguard` は存在し、git statusはclean。ただし朝run時点のCodexサンドボックスからは `NOT_WRITABLE` のため、昼run冒頭で書き込み可否を確認する。
 
 ## 2026-05-25 midday implementation update

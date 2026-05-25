@@ -27,6 +27,13 @@ Last updated: 2026-05-25
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
 | `x-ban-recovery-storage` | docs/build/token repository pushed | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | Developer Console原価確認、指定パス同期、backup/API usage transaction serviceへ進む。 |
 
+## 2026-05-25 Evening XGuard Review
+
+1. `x-ban-recovery-storage`: 指定パス `/Users/uryuatsuya/XGuard/xguard` のlocal HEADは `91229db`、tracking `origin/main` は `ba98160`。昼メモ上のpush済みcommit `b3bd37c` と夜の指定パスが同期できていない。
+2. `x-ban-recovery-storage`: `git push -v origin main` はremote先行で `fetch first`。`git fetch origin main` は `.git/FETCH_HEAD` 書き込み不可で失敗した。
+3. `x-ban-recovery-storage`: `npx vitest run --configLoader runner` はpass。`npx tsc -p tsconfig.json --noEmit` は `tokenRepository.test.ts` のmock fetch型不一致でfail。
+4. Next action: remote統合、TypeScript復旧、Developer Console原価確認を先に閉じてから、backup/API usage transaction serviceまたはStripe webhook冪等handlerへ進む。
+
 ## 2026-05-25 Midday XGuard Implementation
 
 1. `x-ban-recovery-storage`: `/Users/uryuatsuya/XGuard/xguard` は読み取り可能だが、Codexサンドボックスからは書き込み不可だった。
