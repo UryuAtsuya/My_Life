@@ -1,12 +1,12 @@
 # Codex Active Projects
 
-Last updated: 2026-05-24
+Last updated: 2026-05-25
 
 ## Main Focus
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | X BAN Recovery Storage | backend prototype pushed / docs gate open | `docs/ARCHITECTURE.md`, `docs/API_COST_MODEL.md`, `docs/COMPLIANCE.md` を作り、build設定とSupabase repository層へ進む |
+| 1 | X BAN Recovery Storage | docs/build/token repository pushed | Developer Console原価確認、指定パス同期、`backup_runs` + `api_usage_events` transaction serviceへ進む |
 | 2 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
 | 3 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 4 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
@@ -25,7 +25,16 @@ Last updated: 2026-05-24
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
-| `x-ban-recovery-storage` | backend prototype pushed | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | docs gate、build設定、Supabase repository層を順に閉じる。 |
+| `x-ban-recovery-storage` | docs/build/token repository pushed | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | Developer Console原価確認、指定パス同期、backup/API usage transaction serviceへ進む。 |
+
+## 2026-05-25 Midday XGuard Implementation
+
+1. `x-ban-recovery-storage`: `/Users/uryuatsuya/XGuard/xguard` は読み取り可能だが、Codexサンドボックスからは書き込み不可だった。
+2. `x-ban-recovery-storage`: Vaultへ実装コードを迂回せず、`/private/tmp/xguard-midday-2026-05-25` の一時cloneで実装・検証・pushした。
+3. `x-ban-recovery-storage`: `docs/ARCHITECTURE.md`, `docs/API_COST_MODEL.md`, `docs/COMPLIANCE.md`, `tsconfig.build.json`, `SupabaseTokenRepository` contract、token repository testsを追加した。
+4. `x-ban-recovery-storage`: `npm run check` pass、`git diff --check` pass、`git diff --cached --check` pass。
+5. XGuard push: `b3bd37c Add token repository contract and docs gates` を `UryuAtsuya/Xguard` `origin/main` へpush済み。
+6. Next action: 指定パス作業ツリーを `b3bd37c` へ同期し、Developer Console原価確認後に `backup_runs` + `api_usage_events` transaction serviceを実装する。
 
 ## 2026-05-24 Evening XGuard Code Review
 

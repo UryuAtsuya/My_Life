@@ -219,3 +219,13 @@ TEST_MODE=true
 - X API原価はPay-per-usageとDeveloper Console実画面確認を正とし、`Owned Reads` の低単価枠を第三者ユーザー向けSaaSの主前提にしない。
 - proof pageはraw X API payloadを公開せず、公開DTO、取り下げ、redaction、X Content削除追従を必須にする。
 - `/Users/uryuatsuya/XGuard/xguard` は存在し、git statusはclean。ただし朝run時点のCodexサンドボックスからは `NOT_WRITABLE` のため、昼run冒頭で書き込み可否を確認する。
+
+## 2026-05-25 midday implementation update
+
+- `/Users/uryuatsuya/XGuard/xguard` は読み取り可能だが、昼run時点のCodexサンドボックスからは書き込み不可。`mkdir .codex-write-test` は `Operation not permitted`。
+- 実装コードをVaultへ置かず、`/private/tmp/xguard-midday-2026-05-25` の一時cloneでXGuard repoを更新した。
+- XGuard commit: `b3bd37c Add token repository contract and docs gates`
+- Push先: `UryuAtsuya/Xguard` `origin/main`
+- 追加/更新: `docs/ARCHITECTURE.md`, `docs/API_COST_MODEL.md`, `docs/COMPLIANCE.md`, `tsconfig.build.json`, `backend/src/repositories/supabaseTokenRepository.ts`, `backend/src/repositories/tokenRepository.ts`, `backend/src/__tests__/tokenRepository.test.ts`
+- 検証: `npm run check` pass、`git diff --check` pass、`git diff --cached --check` pass。
+- 次はDeveloper Console実画面確認、指定パス作業ツリーの同期、`backup_runs` + `api_usage_events` transaction service、Stripe webhook handlerの順に進める。

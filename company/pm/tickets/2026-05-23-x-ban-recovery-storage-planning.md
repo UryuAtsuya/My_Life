@@ -125,3 +125,16 @@ XアカウントがBANまたは凍結された人向けに、平常時のXデー
 - XGuard push: `ba98160 Document minimum OAuth scope` を `UryuAtsuya/Xguard` `origin/main` へpush済み。
 - Not completed: `docs/ARCHITECTURE.md`, `docs/API_COST_MODEL.md`, `docs/COMPLIANCE.md`, Developer Console実画面確認、Supabase repository実装、Stripe webhook handler。
 - Next: 2026-05-25はdocs gate、build設定、Supabase repository層の順に進める。
+
+## 2026-05-25 midday implementation update
+
+- Checked: `/Users/uryuatsuya/XGuard/xguard` は読み取り可能だが、現在のCodexサンドボックスからは書き込み不可。`mkdir .codex-write-test` は `Operation not permitted`。
+- Decision: 実装コードをMyLife Vaultへ迂回配置しない。今回は `/private/tmp/xguard-midday-2026-05-25` の一時cloneで実装し、GitHubへpushした。
+- Completed: `docs/ARCHITECTURE.md`, `docs/API_COST_MODEL.md`, `docs/COMPLIANCE.md` をXGuard repoへ追加。
+- Completed: `tsconfig.build.json` と `package.json` 更新でbuild/testを分離し、`npm run check` を通した。
+- Completed: `TokenRepository` に `auth_expired` 遷移とtoken削除導線を追加し、`SupabaseTokenRepository` contractを追加。
+- Completed: token repository境界テストを追加。token ref保存、`auth_expired`、revoked row read除外を確認。
+- Verification: `npm run check` pass。3 files / 5 tests passed。`git diff --check` と `git diff --cached --check` pass。
+- XGuard push: `b3bd37c Add token repository contract and docs gates` を `UryuAtsuya/Xguard` `origin/main` へpush済み。
+- Not completed: Developer Console実画面確認、Stripe webhook handler、`backup_runs` + `api_usage_events` transaction service、指定パス `/Users/uryuatsuya/XGuard/xguard` のローカル同期。
+- Next: 夜レビューで `b3bd37c` をレビューし、指定パスを同期できる状態なら同パスで `npm run check` を再実行する。

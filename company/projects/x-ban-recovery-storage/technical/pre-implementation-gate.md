@@ -19,9 +19,9 @@ status: draft
 
 - [x] OAuth tokenは平文保存しない設計をDB draftへ入れる。Evidence: `technical/supabase-v1-schema-draft.sql`
 - [x] access token / refresh token / scope / expires_at / revoked_at を `x_oauth_connections` で管理する設計を作る。Evidence: `technical/supabase-v1-schema-draft.sql`
-- [ ] フロントエンドにservice role keyやtokenを返さない。
-- [ ] token失効時は `x_accounts.status = auth_expired` にする。
-- [ ] token削除とユーザーデータ削除の導線を用意する。
+- [x] フロントエンドにservice role keyやtokenを返さない。Evidence: XGuard `b3bd37c` の `SupabaseTokenRepository` contractはtoken refだけを返す。
+- [x] token失効時は `x_accounts.status = auth_expired` にする。Evidence: XGuard `b3bd37c` の `TokenRepository.markAuthExpired`。
+- [x] token削除とユーザーデータ削除の導線を用意する。Evidence: XGuard `b3bd37c` の `TokenRepository.deleteXToken` とrevoked row read除外テスト。
 
 ## Gate 3: 規約・公開制御
 
@@ -29,7 +29,7 @@ status: draft
 - [x] 公開用DTOを `proof_pages.public_payload` として生成する設計を作る。Evidence: `technical/supabase-v1-schema-draft.sql`
 - [x] `visibility`, `published_at`, `revoked_at`, `redaction_policy_version` を持たせる設計を作る。Evidence: `technical/supabase-v1-schema-draft.sql`
 - [x] 削除・protected化・suspended・withheld・ユーザー要求に追従する `content_compliance_events` を持たせる設計を作る。Evidence: `technical/supabase-v1-schema-draft.sql`
-- [ ] 自動DM、自動follow/unfollow、BAN回避と見える機能はv0に入れない。
+- [x] 自動DM、自動follow/unfollow、BAN回避と見える機能はv0に入れない。Evidence: `docs/COMPLIANCE.md`
 
 ## Gate 4: 課金・コスト
 
@@ -69,3 +69,10 @@ status: draft
   - `follows.read` を初期scopeへ戻すこと。
   - 自動DM、自動follow/unfollow、自動投稿、raw payload公開。
   - Developer Console確認なしに月額3,000円の原価を確定扱いにすること。
+
+## 2026-05-25 midday gate update
+
+- Go継続: docs gate、build gate、token repository contractは `b3bd37c` で完了。
+- `npm run check` は一時clone `/private/tmp/xguard-midday-2026-05-25` でpass。3 files / 5 tests passed。
+- 指定パス `/Users/uryuatsuya/XGuard/xguard` は書き込み不可のため、夜レビューでは同パスを `b3bd37c` へ同期してから再検証する。
+- 残るGate: Developer Console実画面でendpoint別単価/Spending limitを確認する。`backup_runs` + `api_usage_events` transaction serviceを実装する。Stripe webhook handlerを冪等化する。
