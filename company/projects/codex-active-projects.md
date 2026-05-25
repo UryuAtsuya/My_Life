@@ -1,12 +1,12 @@
 # Codex Active Projects
 
-Last updated: 2026-05-25
+Last updated: 2026-05-26
 
 ## Main Focus
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | X BAN Recovery Storage | docs/build/token repository pushed | Developer Console原価確認、指定パス同期、`backup_runs` + `api_usage_events` transaction serviceへ進む |
+| 1 | X BAN Recovery Storage | remote sync / validation recovery planned | 指定パスまたは一時cloneでremote統合、TypeScript復旧、Developer Console原価確認、usage/cost ledgerへ進む |
 | 2 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
 | 3 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 4 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
@@ -25,7 +25,14 @@ Last updated: 2026-05-25
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
-| `x-ban-recovery-storage` | docs/build/token repository pushed | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | Developer Console原価確認、指定パス同期、backup/API usage transaction serviceへ進む。 |
+| `x-ban-recovery-storage` | remote sync / validation recovery planned | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | 指定パスまたは一時cloneでremote統合、TypeScript復旧、Developer Console原価確認、usage/cost ledgerへ進む。 |
+
+## 2026-05-26 Morning XGuard Research
+
+1. `x-ban-recovery-storage`: X API公式docsではPay-per-useが前提。Post readは `$0.005/resource`、User/Followers readは `$0.010/resource`、Owned Readsは `$0.001/resource` だが、第三者ユーザー向けSaaSに使えるかはDeveloper Console確認まで保守的に扱う。
+2. `x-ban-recovery-storage`: v0初期scopeは `tweet.read`, `users.read`, `offline.access` を維持し、`follows.read` とDM/write/follow系scopeは入れない。
+3. `x-ban-recovery-storage`: 競合/隣接はTwibird、Xportkit、SocialVault、FeedMirror、Twex、Buffer。一般投稿予約ではなく、X特化の事前backup + proof page + compliance追従で差別化する。
+4. Next action: remote `b3bd37c` とlocal `f60be3e`/`91229db` 相当を統合し、`tokenRepository.test.ts` 型修正、`findXToken()` scope再検査、Developer Console原価確認、usage/cost ledger最小contractを進める。
 
 ## 2026-05-25 Evening XGuard Review
 

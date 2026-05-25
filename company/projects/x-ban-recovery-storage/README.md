@@ -237,3 +237,12 @@ TEST_MODE=true
 - 追加/更新: `docs/ARCHITECTURE.md`, `docs/API_COST_MODEL.md`, `docs/COMPLIANCE.md`, `tsconfig.build.json`, `backend/src/repositories/supabaseTokenRepository.ts`, `backend/src/repositories/tokenRepository.ts`, `backend/src/__tests__/tokenRepository.test.ts`
 - 検証: `npm run check` pass、`git diff --check` pass、`git diff --cached --check` pass。
 - 次はDeveloper Console実画面確認、指定パス作業ツリーの同期、`backup_runs` + `api_usage_events` transaction service、Stripe webhook handlerの順に進める。
+
+## 2026-05-26 morning research update
+
+- 調査メモ: `requirements/2026-05-26-x-ban-research.md`
+- 朝会引き継ぎ: `notes/2026-05-26-morning-planning.md`
+- 今日の優先はremote同期、TypeScript検証復旧、Developer Console原価確認、usage/cost ledger最小contractの順にする。
+- v0初期scopeは `tweet.read`, `users.read`, `offline.access` のみに維持する。
+- `Owned Reads` の低単価は第三者ユーザー向けSaaSに適用できると確認できるまで主前提にしない。
+- 朝run確認では `/Users/uryuatsuya/XGuard/xguard` は存在するが `writable=no`、Git状態は `main...origin/main [ahead 2]`。
