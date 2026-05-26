@@ -246,3 +246,14 @@ TEST_MODE=true
 - v0初期scopeは `tweet.read`, `users.read`, `offline.access` のみに維持する。
 - `Owned Reads` の低単価は第三者ユーザー向けSaaSに適用できると確認できるまで主前提にしない。
 - 朝run確認では `/Users/uryuatsuya/XGuard/xguard` は存在するが `writable=no`、Git状態は `main...origin/main [ahead 2]`。
+
+## 2026-05-26 midday implementation update
+
+- 実装メモ: `company/notes/2026-05-26-midday-xguard-implementation.md`
+- Project note: `notes/2026-05-26-midday-implementation.md`
+- 指定パス `/Users/uryuatsuya/XGuard/xguard` は昼runでも `NOT_WRITABLE`。Vaultへ実装コードを置かず `/private/tmp/xguard-midday-2026-05-26` の一時cloneで実装した。
+- XGuard commit: `c7a315c Add API usage ledger contract`
+- Push先: `UryuAtsuya/Xguard` `origin/main`
+- 追加/更新: `backend/src/services/apiUsageLedger.ts`, `backend/src/__tests__/apiUsageLedger.test.ts`, token repository scope再検査、`docs/API_COST_MODEL.md`, `docs/API_SPEC.md`, `docs/ARCHITECTURE.md`, `docs/DEPLOY.md`
+- 検証: `tsc --noEmit` pass、`vitest` pass（4 files / 9 tests）、`npm run check` pass、`git diff --check` pass、`git diff --cached --check` pass。
+- 次は指定パスの権限解消と `origin/main` `c7a315c` への同期、Developer Console実値確認、Supabase transaction repository化を進める。

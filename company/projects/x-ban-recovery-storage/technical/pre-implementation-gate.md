@@ -86,3 +86,14 @@ status: draft
   - 書き込み可能な環境でremoteをfetchし、`b3bd37c` とlocal `91229db` を統合してpushする。
   - `tokenRepository.test.ts` の型修正と `findXToken()` read path scope検査を入れ、`npm run check` をpassに戻す。
   - Developer Console実値を確認してから原価・上限・停止ルールを確定する。
+
+## 2026-05-26 midday gate update
+
+- `/Users/uryuatsuya/XGuard/xguard` は昼runでも `NOT_WRITABLE`。一時clone `/private/tmp/xguard-midday-2026-05-26` で実装し、Vaultへコードを迂回配置しなかった。
+- XGuard `origin/main` は `c7a315c Add API usage ledger contract` までpush済み。
+- Go継続: `SupabaseTokenRepository.findXToken()` のscope再検査、TypeScript検証復旧、usage/cost ledger最小contract、docs更新は完了。
+- 検証: `./node_modules/.bin/tsc -p tsconfig.json --noEmit` pass、`./node_modules/.bin/vitest run --configLoader runner` pass、`npm run check` pass、`git diff --check` pass。
+- 残るGate:
+  - 指定パスの権限を解消し、`origin/main` `c7a315c` と作業ツリーを同期する。
+  - Developer Consoleでendpoint別単価、spending limit、Usage endpoint、Owned Reads適用条件を実画面確認する。
+  - `ApiUsageLedgerService` のin-memory repositoryをSupabase transaction repositoryへ置き換え、`monthly_api_cost_limit_usd` 超過前停止を実装する。
