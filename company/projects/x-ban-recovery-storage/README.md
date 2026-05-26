@@ -257,3 +257,12 @@ TEST_MODE=true
 - 追加/更新: `backend/src/services/apiUsageLedger.ts`, `backend/src/__tests__/apiUsageLedger.test.ts`, token repository scope再検査、`docs/API_COST_MODEL.md`, `docs/API_SPEC.md`, `docs/ARCHITECTURE.md`, `docs/DEPLOY.md`
 - 検証: `tsc --noEmit` pass、`vitest` pass（4 files / 9 tests）、`npm run check` pass、`git diff --check` pass、`git diff --cached --check` pass。
 - 次は指定パスの権限解消と `origin/main` `c7a315c` への同期、Developer Console実値確認、Supabase transaction repository化を進める。
+
+## 2026-05-26 evening review update
+
+- 夜レビュー: `notes/2026-05-26-evening-code-review.md`
+- push済み一時clone `/private/tmp/xguard-midday-2026-05-26` は `c7a315c Add API usage ledger contract` でclean、`npm run check` pass（4 files / 9 tests）。
+- 指定パス `/Users/uryuatsuya/XGuard/xguard` はlocal HEAD `0991eeb`、tracking `origin/main` `ba98160`、`main...origin/main [ahead 3]` のままで、まだpush済み `c7a315c` と同期できていない。
+- `git ls-remote origin refs/heads/main` はDNS失敗。GitHub live確認は次回に回す。
+- 追加指摘: `ApiUsageLedgerService` に非負整数validationと失敗テストを入れ、負のusage/costを防ぐ。
+- 明日は指定パス同期、ledger validation、Developer Console実値確認をTop 3にする。

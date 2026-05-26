@@ -97,3 +97,13 @@ status: draft
   - 指定パスの権限を解消し、`origin/main` `c7a315c` と作業ツリーを同期する。
   - Developer Consoleでendpoint別単価、spending limit、Usage endpoint、Owned Reads適用条件を実画面確認する。
   - `ApiUsageLedgerService` のin-memory repositoryをSupabase transaction repositoryへ置き換え、`monthly_api_cost_limit_usd` 超過前停止を実装する。
+
+## 2026-05-26 evening gate update
+
+- push済み一時clone `/private/tmp/xguard-midday-2026-05-26` は `npm run check` pass、`tsc --noEmit` pass、`vitest` pass（4 files / 9 tests）、`git diff --check` pass。
+- 指定パス `/Users/uryuatsuya/XGuard/xguard` はlocal HEAD `0991eeb`、tracking `origin/main` `ba98160`、`main...origin/main [ahead 3]` のまま。`XGUARD_NOT_WRITABLE` かつ `.git` も書き込み不可。
+- `git ls-remote origin refs/heads/main` はDNS失敗で、夜run中のlive remote確認は未完了。
+- 次のGo条件:
+  - 指定パスをGitHub `origin/main` の `c7a315c` 以降へ同期する。
+  - `ApiUsageLedgerService` に非負整数validationと失敗テストを追加する。
+  - Developer Console実値確認後、Supabase transaction repositoryと月次上限stop ruleを実装する。
