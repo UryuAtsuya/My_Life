@@ -258,6 +258,16 @@ TEST_MODE=true
 - 検証: `tsc --noEmit` pass、`vitest` pass（4 files / 9 tests）、`npm run check` pass、`git diff --check` pass、`git diff --cached --check` pass。
 - 次は指定パスの権限解消と `origin/main` `c7a315c` への同期、Developer Console実値確認、Supabase transaction repository化を進める。
 
+## 2026-05-27 morning research update
+
+- 調査メモ: `requirements/2026-05-27-x-ban-research.md`
+- 朝会引き継ぎ: `notes/2026-05-27-morning-planning.md`
+- 今日の優先は指定パス同期、`ApiUsageLedgerService` 非負整数validation、Developer Console原価確認の順にする。
+- v0初期scopeは `tweet.read`, `users.read`, `offline.access` のみに維持する。
+- `Owned Reads` の低単価は第三者ユーザー向けSaaSに適用できると確認できるまで主前提にしない。
+- 朝run確認では `/Users/uryuatsuya/XGuard/xguard` は存在するが `writable=no`、Git状態は `main...origin/main [ahead 4, behind 2]`。
+- production codeは朝runでは触らず、昼runで `/Users/uryuatsuya/XGuard/xguard` または `/private/tmp/xguard-midday-2026-05-27` を使う。
+
 ## 2026-05-26 evening review update
 
 - 夜レビュー: `notes/2026-05-26-evening-code-review.md`

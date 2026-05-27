@@ -1,12 +1,12 @@
 # Codex Active Projects
 
-Last updated: 2026-05-26
+Last updated: 2026-05-27
 
 ## Main Focus
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | X BAN Recovery Storage | ledger verified / specified path sync blocked | 指定パスを `c7a315c` 以降へ同期し、ledger validation、Developer Console原価確認、Supabase transaction repositoryへ進む |
+| 1 | X BAN Recovery Storage | morning handoff ready / specified path sync blocked | 指定パスを `c7a315c` 以降へ同期し、ledger validation、Developer Console原価確認へ進む |
 | 2 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
 | 3 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 4 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
@@ -25,7 +25,15 @@ Last updated: 2026-05-26
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
-| `x-ban-recovery-storage` | ledger verified / specified path sync blocked | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | 指定パスを `c7a315c` 以降へ同期し、ledger validation、Developer Console原価確認、Supabase transaction repositoryへ進む。 |
+| `x-ban-recovery-storage` | morning handoff ready / specified path sync blocked | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | 指定パスを `c7a315c` 以降へ同期し、ledger validation、Developer Console原価確認へ進む。 |
+
+## 2026-05-27 Morning XGuard Research
+
+1. `x-ban-recovery-storage`: XGuardは今日も事業最優先。v0は `tweet.read`, `users.read`, `offline.access` のread-only backupとproof pageに限定する。
+2. `x-ban-recovery-storage`: 朝run時点で `/Users/uryuatsuya/XGuard/xguard` は `writable=no`、Git状態は `main...origin/main [ahead 4, behind 2]`。指定パス同期を昼run最初のgateにする。
+3. `x-ban-recovery-storage`: X APIはPay-per-useで、Post/User/Followers read原価、Usage endpoint、spending limit、Owned Reads条件が事業性に直結する。
+4. `x-ban-recovery-storage`: `Owned Reads` は第三者ユーザー向けSaaSに適用できるとDeveloper Consoleで確認できるまで主前提にしない。
+5. Next action: 指定パスを `c7a315c` 以降へ同期し、`ApiUsageLedgerService` の非負整数validation、Developer Console実値確認、`docs/API_COST_MODEL.md` 更新を進める。
 
 ## 2026-05-26 Evening XGuard Review
 
