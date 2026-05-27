@@ -258,6 +258,18 @@ TEST_MODE=true
 - 検証: `tsc --noEmit` pass、`vitest` pass（4 files / 9 tests）、`npm run check` pass、`git diff --check` pass、`git diff --cached --check` pass。
 - 次は指定パスの権限解消と `origin/main` `c7a315c` への同期、Developer Console実値確認、Supabase transaction repository化を進める。
 
+## 2026-05-27 midday implementation update
+
+- 実装メモ: `company/notes/2026-05-27-midday-xguard-implementation.md`
+- Project note: `notes/2026-05-27-midday-implementation.md`
+- 指定パス `/Users/uryuatsuya/XGuard/xguard` は昼runでも `NOT_WRITABLE`。作業ツリーに未解決conflictがあり、直接編集しなかった。
+- 実装コードをVaultへ置かず、`/private/tmp/xguard-midday-2026-05-27` の一時checkoutでXGuard repoを更新した。
+- XGuard commit: `3528e26 Validate API usage ledger inputs`
+- Push先: `UryuAtsuya/Xguard` `origin/main`
+- 追加/更新: `ApiUsageLedgerService` の非負整数validation、負値・小数・`NaN`・`Infinity` の失敗テスト、`docs/API_COST_MODEL.md`, `docs/API_SPEC.md`, `docs/ARCHITECTURE.md`
+- 検証: `npm ci` pass、`tsc --noEmit` pass、`vitest` pass（4 files / 29 tests）、`npm run check` pass、`git diff --check` pass、`git diff --cached --check` pass。
+- 次は指定パスの権限とconflictを解消して `origin/main` `3528e26` へ同期し、Developer Console実値確認、Supabase transaction repository化を進める。
+
 ## 2026-05-27 morning research update
 
 - 調査メモ: `requirements/2026-05-27-x-ban-research.md`
