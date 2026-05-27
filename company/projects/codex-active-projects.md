@@ -37,7 +37,7 @@ Last updated: 2026-05-27
 
 ## 2026-05-27 Midday XGuard Implementation
 
-1. `x-ban-recovery-storage`: 指定パス `/Users/uryuatsuya/XGuard/xguard` は `NOT_WRITABLE` かつ未解決conflictあり。直接編集せず、一時checkout `/private/tmp/xguard-midday-2026-05-27` で実装した。
+1. `x-ban-recovery-storage`: 指定パス `/Users/uryuatsuya/XGuard/xguard` は `NOT_WRITABLE`。最終確認では clean / `main...origin/main [ahead 1]`、HEAD `e750d04`、tracking `origin/main` `045d2d2` で、push済み正本 `3528e26` とは未同期。一時checkout `/private/tmp/xguard-midday-2026-05-27` で実装した。
 2. `x-ban-recovery-storage`: `ApiUsageLedgerService` に `tweetLimit`, `resourceCount`, rate-limit counters, `tweetsCaptured`, `profilesCaptured` の非負整数validationを追加した。
 3. `x-ban-recovery-storage`: 負値、小数、`NaN`, `Infinity` の失敗テストと、ledger validation docsを追加した。
 4. XGuard push: `3528e26 Validate API usage ledger inputs` を `UryuAtsuya/Xguard` `origin/main` へpush済み。

@@ -9,7 +9,7 @@ status: partial
 
 ## 進捗
 
-- 指定パス `/Users/uryuatsuya/XGuard/xguard` は昼runでも `NOT_WRITABLE`。作業ツリーには未解決conflictがあるため、ここでは直接編集しなかった。
+- 指定パス `/Users/uryuatsuya/XGuard/xguard` は昼runでも `NOT_WRITABLE`。昼run初回確認では未解決conflict表示だったが、最終確認では clean / `main...origin/main [ahead 1]`、HEAD `e750d04`、tracking `origin/main` `045d2d2`。push済み正本 `3528e26` とは未同期のため、ここでは直接編集しなかった。
 - Vaultへ実装コードを迂回配置せず、`/private/tmp/xguard-midday-2026-05-27` で実装した。
 - `ApiUsageLedgerService` に非負整数validationを追加した。
 - 負値、小数、`NaN`, `Infinity` を拒否するテストを追加した。

@@ -16,7 +16,7 @@ status: partial
 ## 実装内容
 
 - 作業ディレクトリ: `/private/tmp/xguard-midday-2026-05-27`
-- 指定パス状態: `/Users/uryuatsuya/XGuard/xguard` は `NOT_WRITABLE`、作業ツリーに未解決conflictあり。
+- 指定パス状態: `/Users/uryuatsuya/XGuard/xguard` は `NOT_WRITABLE`。昼run初回確認では未解決conflict表示だったが、最終確認では clean / `main...origin/main [ahead 1]`、HEAD `e750d04`、tracking `origin/main` `045d2d2`。push済み正本 `3528e26` とは未同期。
 - 追加実装:
   - `backend/src/services/apiUsageLedger.ts`
     - `tweetLimit`, `resourceCount`, `rateLimitLimit`, `rateLimitRemaining`, `tweetsCaptured`, `profilesCaptured` を非負整数として検証。
@@ -44,12 +44,12 @@ status: partial
 
 ## 未完了
 
-- `/Users/uryuatsuya/XGuard/xguard` 自体は未同期。書き込み不可と未解決conflictが残っている。
+- `/Users/uryuatsuya/XGuard/xguard` 自体は未同期。書き込み不可のため `origin/main` `3528e26` へ揃えられていない。
 - Developer Consoleでのendpoint別単価、spending limit、Usage endpoint、Owned Reads適用条件の実画面確認は未実施。
 - `ApiUsageLedgerService` はまだin-memory repository。Supabase transaction repository化は次工程。
 
 ## 夜レビューへ渡す上位TODO
 
-1. `/Users/uryuatsuya/XGuard/xguard` の権限とconflictを解消し、`origin/main` `3528e26` へ同期する。
+1. `/Users/uryuatsuya/XGuard/xguard` の権限を解消し、`origin/main` `3528e26` へ同期する。
 2. Developer Console実画面で単価、spending limit、Usage endpoint、Owned Reads条件を確認し、`docs/API_COST_MODEL.md` とcompany gateへ反映する。
 3. `ApiUsageLedgerService` をSupabase transaction repositoryへ置き換え、`monthly_api_cost_limit_usd` 超過前停止を実装する。

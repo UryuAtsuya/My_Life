@@ -262,13 +262,13 @@ TEST_MODE=true
 
 - 実装メモ: `company/notes/2026-05-27-midday-xguard-implementation.md`
 - Project note: `notes/2026-05-27-midday-implementation.md`
-- 指定パス `/Users/uryuatsuya/XGuard/xguard` は昼runでも `NOT_WRITABLE`。作業ツリーに未解決conflictがあり、直接編集しなかった。
+- 指定パス `/Users/uryuatsuya/XGuard/xguard` は昼runでも `NOT_WRITABLE`。最終確認では clean / `main...origin/main [ahead 1]`、HEAD `e750d04`、tracking `origin/main` `045d2d2` で、push済み正本 `3528e26` とは未同期。
 - 実装コードをVaultへ置かず、`/private/tmp/xguard-midday-2026-05-27` の一時checkoutでXGuard repoを更新した。
 - XGuard commit: `3528e26 Validate API usage ledger inputs`
 - Push先: `UryuAtsuya/Xguard` `origin/main`
 - 追加/更新: `ApiUsageLedgerService` の非負整数validation、負値・小数・`NaN`・`Infinity` の失敗テスト、`docs/API_COST_MODEL.md`, `docs/API_SPEC.md`, `docs/ARCHITECTURE.md`
 - 検証: `npm ci` pass、`tsc --noEmit` pass、`vitest` pass（4 files / 29 tests）、`npm run check` pass、`git diff --check` pass、`git diff --cached --check` pass。
-- 次は指定パスの権限とconflictを解消して `origin/main` `3528e26` へ同期し、Developer Console実値確認、Supabase transaction repository化を進める。
+- 次は指定パスの権限を解消して `origin/main` `3528e26` へ同期し、Developer Console実値確認、Supabase transaction repository化を進める。
 
 ## 2026-05-27 morning research update
 
