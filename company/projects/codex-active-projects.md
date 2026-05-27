@@ -6,7 +6,7 @@ Last updated: 2026-05-27
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | X BAN Recovery Storage | ledger validation pushed / specified path sync blocked | 指定パスを `3528e26` へ同期し、Developer Console原価確認、Supabase ledger repository化へ進む |
+| 1 | X BAN Recovery Storage | ledger validation verified / specified path still blocked | 指定パスを `3528e26` へ同期し、Developer Console原価確認、Supabase ledger repository化へ進む |
 | 2 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
 | 3 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 4 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
@@ -25,7 +25,15 @@ Last updated: 2026-05-27
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
-| `x-ban-recovery-storage` | ledger validation pushed / specified path sync blocked | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | 指定パスを `3528e26` へ同期し、Developer Console原価確認、Supabase ledger repository化へ進む。 |
+| `x-ban-recovery-storage` | ledger validation verified / specified path still blocked | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | 指定パスを `3528e26` へ同期し、Developer Console原価確認、Supabase ledger repository化へ進む。 |
+
+## 2026-05-27 Evening XGuard Review
+
+1. `x-ban-recovery-storage`: push済み正本は `/private/tmp/xguard-midday-2026-05-27` の `3528e26 Validate API usage ledger inputs`。`git push -v origin main` は `Everything up-to-date`。
+2. `x-ban-recovery-storage`: 指定パス `/Users/uryuatsuya/XGuard/xguard` は `not_writable`、`main...origin/main [ahead 1]`、HEAD `e750d04`。`.git/FETCH_HEAD` 更新は `Operation not permitted`。
+3. `x-ban-recovery-storage`: `e750d04` は正本 `3528e26` と完全一致せず、`docs/API_SPEC.md` 追記や一部docs/test網羅が不足するため、そのままpushしない。
+4. 検証: 指定パスは `git diff --check`, `tsc --noEmit`, `vitest`（4 files / 11 tests）pass、`npm run check` は `dist/` 書き込み `EPERM`。一時checkoutは `npm run check` pass（4 files / 29 tests）。
+5. Next action: 指定パスを `3528e26` へ同期し、Developer Console実画面確認、Supabase transaction repository化を進める。
 
 ## 2026-05-27 Morning XGuard Research
 

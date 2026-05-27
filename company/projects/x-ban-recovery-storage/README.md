@@ -258,6 +258,15 @@ TEST_MODE=true
 - 検証: `tsc --noEmit` pass、`vitest` pass（4 files / 9 tests）、`npm run check` pass、`git diff --check` pass、`git diff --cached --check` pass。
 - 次は指定パスの権限解消と `origin/main` `c7a315c` への同期、Developer Console実値確認、Supabase transaction repository化を進める。
 
+## 2026-05-27 evening review update
+
+- 夜レビュー: `notes/2026-05-27-evening-code-review.md`
+- XGuard push済み正本は `/private/tmp/xguard-midday-2026-05-27` の `3528e26 Validate API usage ledger inputs`。夜runの `git push -v origin main` は `Everything up-to-date`。
+- 指定パス `/Users/uryuatsuya/XGuard/xguard` は `not_writable`、`main...origin/main [ahead 1]`、HEAD `e750d04`。`.git/FETCH_HEAD` は `Operation not permitted` で更新不可。
+- `e750d04` は正本 `3528e26` と完全一致しないため、そのままpushしない。
+- 検証: 指定パスは `git diff --check`, `tsc --noEmit`, `vitest`（4 files / 11 tests）pass、`npm run check` は `dist/` 書き込み `EPERM`。一時checkoutは `npm run check` pass（4 files / 29 tests）。
+- 次は指定パスを `3528e26` へ同期し、Developer Console実値確認、Supabase transaction repository化を進める。
+
 ## 2026-05-27 midday implementation update
 
 - 実装メモ: `company/notes/2026-05-27-midday-xguard-implementation.md`

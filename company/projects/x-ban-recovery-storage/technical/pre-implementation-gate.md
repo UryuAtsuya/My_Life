@@ -107,3 +107,14 @@ status: draft
   - 指定パスをGitHub `origin/main` の `c7a315c` 以降へ同期する。
   - `ApiUsageLedgerService` に非負整数validationと失敗テストを追加する。
   - Developer Console実値確認後、Supabase transaction repositoryと月次上限stop ruleを実装する。
+
+## 2026-05-27 evening gate update
+
+- XGuard push済み正本は `/private/tmp/xguard-midday-2026-05-27` の `3528e26 Validate API usage ledger inputs`。`UryuAtsuya/Xguard` `origin/main` へのpush確認は `Everything up-to-date`。
+- Go継続: `ApiUsageLedgerService` の非負整数validationと失敗テストは正本で完了し、`npm run check` pass。
+- 指定パス `/Users/uryuatsuya/XGuard/xguard` は `not_writable`、`main...origin/main [ahead 1]`、local HEAD `e750d04`。`.git/FETCH_HEAD` は `Operation not permitted` で更新不可。
+- `e750d04` は正本 `3528e26` と完全一致しないため、そのままpushしない。
+- 残るGate:
+  - 指定パスを `origin/main` `3528e26` へ同期する。
+  - Developer Consoleでendpoint別単価、spending limit、Usage endpoint、Owned Reads適用条件を実画面確認する。
+  - Supabase transaction repositoryと `monthly_api_cost_limit_usd` 超過前停止を実装する。
