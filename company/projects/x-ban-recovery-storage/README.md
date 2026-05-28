@@ -258,6 +258,16 @@ TEST_MODE=true
 - 検証: `tsc --noEmit` pass、`vitest` pass（4 files / 9 tests）、`npm run check` pass、`git diff --check` pass、`git diff --cached --check` pass。
 - 次は指定パスの権限解消と `origin/main` `c7a315c` への同期、Developer Console実値確認、Supabase transaction repository化を進める。
 
+## 2026-05-29 morning research update
+
+- 調査メモ: `requirements/2026-05-29-x-ban-research.md`
+- 朝会引き継ぎ: `notes/2026-05-29-morning-planning.md`
+- 今日の優先はrepo状態の確定、`9be85a1` と `c0a7dcd` のledger差分比較、real OAuth configured mode確認、Developer Console原価確認の順にする。
+- 朝run確認では `/Users/uryuatsuya/XGuard/xguard` は `exists=yes`, `writable=no`, `main...origin/main`, HEAD `455718c`。
+- 昨日の一時clone `/private/tmp/xguard-midday-2026-05-28` は `main...origin/main [ahead 1]`, HEAD `9be85a1`。そのままpushせず、remote最新・指定パス実装との差分を見て未反映分だけ扱う。
+- v0初期scopeは `tweet.read`, `users.read`, `offline.access` のみに維持する。
+- `Owned Reads` の低単価は第三者ユーザー向けSaaSに適用できると確認できるまで主前提にしない。
+
 ## 2026-05-28 midday implementation follow-up
 
 - 実装メモ: `company/notes/2026-05-28-midday-xguard-implementation.md`
