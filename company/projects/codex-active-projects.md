@@ -6,7 +6,7 @@ Last updated: 2026-05-28
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | X BAN Recovery Storage | morning planned / specified path still blocked | 指定パスを `3528e26` へ同期し、Developer Console原価確認、Supabase ledger repository化へ進む |
+| 1 | X BAN Recovery Storage | runtime OAuth config pushed / env gate open | `X_CLIENT_ID` 等の実envを入れてconfigured modeを確認し、Developer Console原価確認、Supabase ledger repository化へ進む |
 | 2 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
 | 3 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 4 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
@@ -25,7 +25,15 @@ Last updated: 2026-05-28
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
-| `x-ban-recovery-storage` | morning planned / specified path still blocked | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | 指定パスを `3528e26` へ同期し、Developer Console原価確認、Supabase ledger repository化へ進む。 |
+| `x-ban-recovery-storage` | runtime OAuth config pushed / env gate open | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | `X_CLIENT_ID` 等の実envを入れてconfigured modeを確認し、Developer Console原価確認、Supabase ledger repository化へ進む。 |
+
+## 2026-05-28 Midday XGuard Implementation
+
+1. `x-ban-recovery-storage`: 指定パス `/Users/uryuatsuya/XGuard/xguard` は今日は writable。`origin/main` `3528e26` とlocal `e750d04` をmergeし、XGuard `18676f0 Add runtime OAuth configuration` を `UryuAtsuya/Xguard` `origin/main` へpush済み。
+2. `x-ban-recovery-storage`: `backend/src/config/runtimeConfig.ts` を追加し、`X_CLIENT_ID`, `X_CALLBACK_URL`, `X_CLIENT_SECRET`, `APP_BASE_URL`, `PORT` のruntime config境界を作った。
+3. `x-ban-recovery-storage`: `/api/x/oauth/start` はenv未設定ならmock mode、`X_CLIENT_ID` 設定時はconfigured OAuth URLを返す。callbackの実token exchangeはまだ未実装。
+4. 検証: `git diff --check`, `git diff --cached --check`, `npm run check`, Vitest（4 files / 30 tests）pass。
+5. Next action: 実env導入でconfigured modeを確認し、Developer Console原価確認、Supabase transaction repository化へ進む。
 
 ## 2026-05-28 Morning XGuard Research
 
