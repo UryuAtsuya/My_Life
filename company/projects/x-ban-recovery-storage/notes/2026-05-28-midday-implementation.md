@@ -31,3 +31,22 @@ XGuard push: `18676f0 Add runtime OAuth configuration` -> `UryuAtsuya/Xguard` `o
 1. Add real X OAuth env values and confirm `/api/x/oauth/start` reports configured mode.
 2. Confirm Developer Console pricing, Usage endpoint, spending controls, and Owned Reads applicability.
 3. Implement the Supabase usage ledger repository transaction and monthly cost-limit guard.
+
+## 13:40 JST Follow-up
+
+The current Codex sandbox could not write to `/Users/uryuatsuya/XGuard/xguard`, so implementation continued in `/private/tmp/xguard-midday-2026-05-28` instead of placing code in the MyLife Vault.
+
+Added `SupabaseApiUsageLedgerRepository`, a Postgres `record_api_usage_event_with_monthly_limit` function, and repository tests for row mapping, rollup, and monthly cost-limit rejection before persistence.
+
+Verification passed:
+
+- `npm ci`
+- `./node_modules/.bin/tsc -p tsconfig.json --noEmit`
+- `./node_modules/.bin/vitest run --configLoader runner backend/src/__tests__/supabaseApiUsageLedgerRepository.test.ts`（1 file / 2 tests）
+- `npm run check`（5 files / 32 tests）
+- `git diff --check`
+- `git diff --cached --check`
+
+XGuard local commit is `9be85a1 Add Supabase API usage ledger repository`, but it is not pushed. `git push origin main` was rejected with `fetch first`; `git fetch origin main` and `git ls-remote origin refs/heads/main` then failed with `Could not resolve host: github.com`.
+
+Next action: fetch the current `origin/main`, rebase/merge `9be85a1`, and push before treating this implementation slice as remote-complete.

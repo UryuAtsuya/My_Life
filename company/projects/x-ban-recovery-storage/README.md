@@ -258,6 +258,17 @@ TEST_MODE=true
 - 検証: `tsc --noEmit` pass、`vitest` pass（4 files / 9 tests）、`npm run check` pass、`git diff --check` pass、`git diff --cached --check` pass。
 - 次は指定パスの権限解消と `origin/main` `c7a315c` への同期、Developer Console実値確認、Supabase transaction repository化を進める。
 
+## 2026-05-28 midday implementation follow-up
+
+- 実装メモ: `company/notes/2026-05-28-midday-xguard-implementation.md`
+- Project note: `notes/2026-05-28-midday-implementation.md`
+- 13:31 JSTの実行環境では `/Users/uryuatsuya/XGuard/xguard` は `writable=no`。Vaultへ実装コードを置かず `/private/tmp/xguard-midday-2026-05-28` で実装した。
+- XGuard local commit: `9be85a1 Add Supabase API usage ledger repository`
+- 追加/更新: `backend/src/repositories/supabaseApiUsageLedgerRepository.ts`, `backend/src/__tests__/supabaseApiUsageLedgerRepository.test.ts`, `supabase/schema.sql`, `docs/API_COST_MODEL.md`, `docs/API_SPEC.md`, `docs/ARCHITECTURE.md`, `docs/DEPLOY.md`
+- 検証: `npm ci` pass、`tsc --noEmit` pass、対象Vitest pass（1 file / 2 tests）、`npm run check` pass（5 files / 32 tests）、`git diff --check` pass、`git diff --cached --check` pass。
+- Push状態: 未push。`git push origin main` は `fetch first`、`git fetch origin main` / `git ls-remote origin refs/heads/main` は `Could not resolve host: github.com`。
+- 次はGitHub DNSが通る環境でremote先行commitを取り込み、`9be85a1` を `UryuAtsuya/Xguard` `origin/main` へpushする。
+
 ## 2026-05-27 evening review update
 
 - 夜レビュー: `notes/2026-05-27-evening-code-review.md`

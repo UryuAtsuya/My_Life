@@ -6,7 +6,7 @@ Last updated: 2026-05-28
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | X BAN Recovery Storage | runtime OAuth config pushed / env gate open | `X_CLIENT_ID` 等の実envを入れてconfigured modeを確認し、Developer Console原価確認、Supabase ledger repository化へ進む |
+| 1 | X BAN Recovery Storage | Supabase ledger repo local / push blocked by fetch | GitHub DNS復旧後に `9be85a1` をremote先行commitへrebase/mergeしてpushし、Developer Console原価確認へ進む |
 | 2 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
 | 3 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 4 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
@@ -25,9 +25,17 @@ Last updated: 2026-05-28
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
-| `x-ban-recovery-storage` | runtime OAuth config pushed / env gate open | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | `X_CLIENT_ID` 等の実envを入れてconfigured modeを確認し、Developer Console原価確認、Supabase ledger repository化へ進む。 |
+| `x-ban-recovery-storage` | Supabase ledger repo local / push blocked by fetch | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | GitHub DNS復旧後に `9be85a1` をremote先行commitへrebase/mergeしてpushし、Developer Console原価確認へ進む。 |
 
 ## 2026-05-28 Midday XGuard Implementation
+
+### 13:40 Supabase Ledger Follow-up
+
+1. `x-ban-recovery-storage`: 指定パス `/Users/uryuatsuya/XGuard/xguard` はこのsandboxでは `writable=no`。Vaultへコードを置かず `/private/tmp/xguard-midday-2026-05-28` で実装した。
+2. `x-ban-recovery-storage`: `SupabaseApiUsageLedgerRepository` と `record_api_usage_event_with_monthly_limit` を追加し、月次原価上限超過時に `api_usage_events` をinsert前に拒否する境界を作った。
+3. 検証: `npm ci`, `tsc --noEmit`, 対象Vitest（1 file / 2 tests）, `npm run check`（5 files / 32 tests）, `git diff --check`, `git diff --cached --check` pass。
+4. XGuard local commit: `9be85a1 Add Supabase API usage ledger repository`。`git push origin main` は `fetch first`、fetch/ls-remoteは `Could not resolve host: github.com` で未push。
+5. Next action: GitHub DNSが通る環境でremote先行commitを取り込み、`9be85a1` を `UryuAtsuya/Xguard` `origin/main` へpushする。
 
 1. `x-ban-recovery-storage`: 指定パス `/Users/uryuatsuya/XGuard/xguard` は今日は writable。`origin/main` `3528e26` とlocal `e750d04` をmergeし、XGuard `18676f0 Add runtime OAuth configuration` を `UryuAtsuya/Xguard` `origin/main` へpush済み。
 2. `x-ban-recovery-storage`: `backend/src/config/runtimeConfig.ts` を追加し、`X_CLIENT_ID`, `X_CALLBACK_URL`, `X_CLIENT_SECRET`, `APP_BASE_URL`, `PORT` のruntime config境界を作った。

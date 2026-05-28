@@ -22,15 +22,15 @@ XGuard指定パスをpush済み正本へ同期し、Developer Console実値をco
 
 ## 完了条件
 
-- [ ] `/Users/uryuatsuya/XGuard/xguard` の書き込み可否を昼run冒頭で確認する。
-- [ ] 書き込み可能なら、指定パスを `origin/main` `3528e26` 以降へ同期する。
-- [ ] 書き込み不可なら、Vaultに実装コードを置かず `/private/tmp/xguard-midday-2026-05-28` の一時cloneで作業する。
+- [x] `/Users/uryuatsuya/XGuard/xguard` の書き込み可否を昼run冒頭で確認する。
+- [x] 書き込み可能なら、指定パスを `origin/main` `3528e26` 以降へ同期する。
+- [x] 書き込み不可なら、Vaultに実装コードを置かず `/private/tmp/xguard-midday-2026-05-28` の一時cloneで作業する。
 - [ ] Developer Consoleでendpoint別単価、credit/spending設定、Usage endpoint、Owned Reads条件を確認し、`docs/API_COST_MODEL.md` へ反映する。
-- [ ] `backend/src/repositories/supabaseApiUsageLedgerRepository.ts` を追加する。
-- [ ] `api_usage_events` 記録、`backup_runs` rollup、`monthly_api_cost_limit_usd` 超過前停止をtransactionで検証する。
-- [ ] `git diff --check`, `npx tsc -p tsconfig.json --noEmit`, `npx vitest run --configLoader runner`, `npm run check` を実行する。
+- [x] `backend/src/repositories/supabaseApiUsageLedgerRepository.ts` を追加する。
+- [x] `api_usage_events` 記録、`backup_runs` rollup、`monthly_api_cost_limit_usd` 超過前停止をtransactionで検証する。
+- [x] `git diff --check`, `npx tsc -p tsconfig.json --noEmit`, `npx vitest run --configLoader runner`, `npm run check` を実行する。
 - [ ] meaningfulなXGuard実装変更を `UryuAtsuya/Xguard` `origin/main` へcommit/pushする。
-- [ ] MyLife側へ昼実装メモとcommit hashを報告する。
+- [x] MyLife側へ昼実装メモとcommit hashを報告する。
 
 ## 判断ルール
 
@@ -39,3 +39,12 @@ XGuard指定パスをpush済み正本へ同期し、Developer Console実値をco
 - API原価は通常read単価で保守的に見積もり、`Owned Reads` はDeveloper Consoleで適用条件を確認するまで主前提にしない。
 - 自動DM、自動follow/unfollow、自動投稿、bulk outreach、BAN回避導線は作らない。
 - 実装コードはMyLife Vaultへ迂回配置しない。
+
+## 2026-05-28 13:40 進捗
+
+- 13:31 JSTの再確認では `/Users/uryuatsuya/XGuard/xguard` は `writable=no`。Vaultへコードを置かず `/private/tmp/xguard-midday-2026-05-28` で実装した。
+- XGuard local commit: `9be85a1 Add Supabase API usage ledger repository`
+- 実装: `SupabaseApiUsageLedgerRepository`, `record_api_usage_event_with_monthly_limit`, repository tests, docs更新。
+- 検証: `npm ci`, `tsc --noEmit`, 対象Vitest（1 file / 2 tests）, `npm run check`（5 files / 32 tests）, `git diff --check`, `git diff --cached --check` はpass。
+- push blocker: `git push origin main` は `fetch first`。続く `git fetch origin main` / `git ls-remote origin refs/heads/main` は `Could not resolve host: github.com`。
+- 次: DNSが通る環境でremote先行commitを取り込み、`9be85a1` をrebase/mergeしてpushする。
