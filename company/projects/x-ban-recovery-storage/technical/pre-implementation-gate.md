@@ -118,3 +118,14 @@ status: draft
   - 指定パスを `origin/main` `3528e26` へ同期する。
   - Developer Consoleでendpoint別単価、spending limit、Usage endpoint、Owned Reads適用条件を実画面確認する。
   - Supabase transaction repositoryと `monthly_api_cost_limit_usd` 超過前停止を実装する。
+
+## 2026-05-29 evening gate update
+
+- Go継続: 指定パス `/Users/uryuatsuya/XGuard/xguard` は writable に回復し、`UryuAtsuya/Xguard` `origin/main` は `d30fc48 Harden Supabase usage ledger boundary` までpush済み。
+- `record_api_usage_event_with_monthly_limit` は `service_role` 実行境界、user/X account/backup run所有関係検証、同一Xアカウント整合性、負値拒否を持つ。
+- Repository boundaryはSupabase `numeric` stringをdomain DTOのnumberへ変換する。
+- 検証: `git diff --check`, `tsc --noEmit`, targeted Vitest（1 file / 4 tests）, `npm run check`（6 files / 37 tests）, `git diff --cached --check` pass。
+- 残るGate:
+  - 実Supabase/Postgres migration testでSQL functionの権限と拒否条件を確認する。
+  - real OAuth configured modeをsecret非表示で確認する。
+  - Developer Consoleでendpoint別単価、spending limit、Usage endpoint、Owned Reads適用条件を実画面確認する。

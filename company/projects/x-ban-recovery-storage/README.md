@@ -219,6 +219,14 @@ TEST_MODE=true
 - X API原価はPay-per-usageとDeveloper Console実画面確認を正とし、`Owned Reads` の低単価枠を第三者ユーザー向けSaaSの主前提にしない。
 - proof pageはraw X API payloadを公開せず、公開DTO、取り下げ、redaction、X Content削除追従を必須にする。
 
+## 2026-05-29 evening review update
+
+- XGuard repo正本は `/Users/uryuatsuya/XGuard/xguard`。夜runで writable に回復し、`UryuAtsuya/Xguard` `origin/main` へpushできた。
+- 最新XGuard commit: `d30fc48 Harden Supabase usage ledger boundary`
+- 反映内容: `record_api_usage_event_with_monthly_limit` の所有関係検証、同一Xアカウント整合性、負値拒否、`service_role` grant、Supabase numeric string mapping。
+- 検証: `git diff --check`, `tsc --noEmit`, targeted Vitest（1 file / 4 tests）, `npm run check`（6 files / 37 tests）, `git diff --cached --check` pass。
+- 残る最重要: 実Supabase/Postgres migration test、real OAuth configured mode、Developer Console原価実値確認。
+
 ## 2026-05-25 evening review update
 
 - 夜レビュー: `notes/2026-05-25-evening-code-review.md`
