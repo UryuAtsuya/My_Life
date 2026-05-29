@@ -6,7 +6,7 @@ Last updated: 2026-05-29
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | X BAN Recovery Storage | Repo reconcile / OAuth configured mode / cost evidence | 指定パス `455718c` と一時clone `9be85a1` / 指定パス `c0a7dcd` を比較し、未反映分だけ取り込んでDeveloper Console原価確認へ進む |
+| 1 | X BAN Recovery Storage | Local ledger hardening complete / push blocked | `3120411` をremote先行分へrebase/mergeしてpushし、実Supabase testとDeveloper Console原価確認へ進む |
 | 2 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
 | 3 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 4 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
@@ -25,7 +25,7 @@ Last updated: 2026-05-29
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
-| `x-ban-recovery-storage` | Repo reconcile / OAuth configured mode / cost evidence | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | 指定パス `455718c` と一時clone `9be85a1` / 指定パス `c0a7dcd` を比較し、未反映分だけ取り込んでDeveloper Console原価確認へ進む。 |
+| `x-ban-recovery-storage` | Local ledger hardening complete / push blocked | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | `3120411` をremote先行分へrebase/mergeしてpushし、実Supabase testとDeveloper Console原価確認へ進む。 |
 
 ## 2026-05-29 Morning XGuard Research
 
@@ -34,6 +34,14 @@ Last updated: 2026-05-29
 3. `x-ban-recovery-storage`: 昨日の一時clone `/private/tmp/xguard-midday-2026-05-28` は `main...origin/main [ahead 1]`, HEAD `9be85a1 Add Supabase API usage ledger repository`。そのままpushせず、`c0a7dcd` と差分比較する。
 4. `x-ban-recovery-storage`: X APIはPay-per-use、Usage endpoint、spending limit、rate-limit header、Developer Console実値確認が原価管理の中心。`Owned Reads` は第三者SaaS適用確認まで主前提にしない。
 5. Next action: 指定パスまたは `/private/tmp/xguard-midday-2026-05-29` でremote最新を確認し、ledger差分整理、real OAuth configured mode、Developer Console原価確認を進める。
+
+## 2026-05-29 Midday XGuard Implementation
+
+1. `x-ban-recovery-storage`: 指定パス `/Users/uryuatsuya/XGuard/xguard` は `XGUARD_NOT_WRITABLE`。`.git/FETCH_HEAD` 書き込み不可のため、Vaultへ実装コードを置かず `/private/tmp/xguard-midday-2026-05-29-localref` で作業した。
+2. `x-ban-recovery-storage`: `9be85a1` はそのままpushせず、`c0a7dcd` に未反映だったproduction boundaryだけを取り込み、`3120411 Harden Supabase usage ledger boundary` とした。
+3. `x-ban-recovery-storage`: `record_api_usage_event_with_monthly_limit` をservice-role専用、月次上限insert前拒否、所有関係と同一Xアカウント検証、負値拒否つきで追加した。
+4. 検証: `npm ci`, `tsc --noEmit`, targeted Vitest（4 files / 34 tests）, `npm run check`（6 files / 37 tests）, `git diff --check`, `git diff --cached --check` pass。
+5. XGuard push: 未完了。`git push origin main` は `fetch first`、`git fetch origin main` / `git ls-remote origin refs/heads/main` は `Could not resolve host: github.com`。Next actionはremote先行分をfetchして `3120411` をrebase/mergeしpushすること。
 
 ## 2026-05-28 Midday XGuard Implementation
 
