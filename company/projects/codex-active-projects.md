@@ -1,12 +1,12 @@
 # Codex Active Projects
 
-Last updated: 2026-05-29
+Last updated: 2026-05-30
 
 ## Main Focus
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | X BAN Recovery Storage | Ledger boundary pushed / OAuth-cost pending | 実Supabase test、real OAuth configured mode、Developer Console原価確認を閉じる |
+| 1 | X BAN Recovery Storage | Ledger boundary pushed / Supabase-OAuth-cost verification pending | 実Supabase migration test、real OAuth configured mode、Developer Console原価確認を閉じる |
 | 2 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
 | 3 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 4 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
@@ -25,7 +25,16 @@ Last updated: 2026-05-29
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
-| `x-ban-recovery-storage` | Ledger boundary pushed / OAuth-cost pending | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | 実Supabase test、real OAuth configured mode、Developer Console原価確認を閉じる。 |
+| `x-ban-recovery-storage` | Ledger boundary pushed / Supabase-OAuth-cost verification pending | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | 実Supabase migration test、real OAuth configured mode、Developer Console原価確認を閉じる。 |
+
+## 2026-05-30 Morning XGuard Research
+
+1. `x-ban-recovery-storage`: XGuardは今日も事業最優先。v0は `tweet.read`, `users.read`, `offline.access` のread-only backupとproof pageに限定する。
+2. `x-ban-recovery-storage`: 朝run時点で `/Users/uryuatsuya/XGuard/xguard` は `exists=yes`, `writable=no`, `main...origin/main`, HEAD `d30fc48`。昨日夜push済みの `d30fc48 Harden Supabase usage ledger boundary` を正本として扱う。
+3. `x-ban-recovery-storage`: 昼runは実Supabase/Postgres migration testで `service_role` 専用実行、`authenticated` 拒否、所有関係、同一Xアカウント整合性、月次上限超過、負値拒否を確認する。
+4. `x-ban-recovery-storage`: real OAuth configured modeはsecret非表示で、callback URLとscopeが `tweet.read`, `users.read`, `offline.access` のままか確認する。
+5. `x-ban-recovery-storage`: X APIはDeveloper Console実値確認を正とする。Owned Readsは第三者SaaS適用確認まで主前提にしない。
+6. Next action: 指定パスwrite/fetchを再確認し、書けなければ `/private/tmp/xguard-midday-2026-05-30` をremote最新から作る。
 
 ## 2026-05-29 Morning XGuard Research
 

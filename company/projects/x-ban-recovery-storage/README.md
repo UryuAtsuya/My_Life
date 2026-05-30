@@ -227,6 +227,16 @@ TEST_MODE=true
 - 検証: `git diff --check`, `tsc --noEmit`, targeted Vitest（1 file / 4 tests）, `npm run check`（6 files / 37 tests）, `git diff --cached --check` pass。
 - 残る最重要: 実Supabase/Postgres migration test、real OAuth configured mode、Developer Console原価実値確認。
 
+## 2026-05-30 morning research update
+
+- 調査メモ: `requirements/2026-05-30-x-ban-research.md`
+- 朝会引き継ぎ: `notes/2026-05-30-morning-planning.md`
+- 今日の優先は、実Supabase/Postgres migration test、real OAuth configured mode、Developer Console原価確認の順にする。
+- v0初期scopeは `tweet.read`, `users.read`, `offline.access` のみに維持する。
+- 朝run確認では `/Users/uryuatsuya/XGuard/xguard` は存在するが `writable=no`、Git状態は `main...origin/main`、HEADは `d30fc48`。
+- 指定パスが昼runでも書き込み不可なら、Vaultへ実装コードを置かず `/private/tmp/xguard-midday-2026-05-30` をremote最新から作る。
+- `Owned Reads` は第三者ユーザー向けSaaSに適用できるとDeveloper Consoleで確認できるまで主前提にしない。
+
 ## 2026-05-25 evening review update
 
 - 夜レビュー: `notes/2026-05-25-evening-code-review.md`
