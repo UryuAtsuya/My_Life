@@ -18,7 +18,7 @@ status: completed-with-push-blocked
 - local commit: `09ff660 Add OAuth status endpoint`
 - 作業場所: `/private/tmp/xguard-midday-2026-05-31`
 - 反映先予定: `UryuAtsuya/Xguard` `origin/main`
-- push状態: `Could not resolve host: github.com` で未push
+- push状態: push再試行時にremote先行で `fetch first` 拒否。その後のfetchは `Could not resolve host: github.com` で失敗。force pushなし。
 
 ## API仕様
 
@@ -57,6 +57,6 @@ v0 scopesは `tweet.read`, `users.read`, `offline.access` のみ。`tweet.write`
 
 ## 次アクション
 
-1. GitHub DNS復旧後、`09ff660` を `origin/main` へpushする。
+1. GitHub DNS復旧後、remote先行分をfetch確認し、`09ff660` をrebase/cherry-pickして `origin/main` へpushする。
 2. 指定パス `/Users/uryuatsuya/XGuard/xguard` を書き込み可能に戻し、正本側で `npm run check` を再実行する。
 3. 実Supabase/Postgres migration testとDeveloper Console原価確認へ戻る。
