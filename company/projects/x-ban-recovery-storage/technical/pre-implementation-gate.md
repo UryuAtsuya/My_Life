@@ -154,3 +154,17 @@ status: draft
   - `552f2e5` がlive remote `origin/main` に存在するかDNS/権限復旧後に確認する。
   - 一時clone `09ff660` を `552f2e5` と比較し、必要差分だけ扱う。
   - 実Supabase/Postgres migration testとDeveloper Console原価確認を閉じる。
+
+## 2026-06-01 morning gate update
+
+- 朝runではproduction codeを実装しない。
+- 指定パス `/Users/uryuatsuya/XGuard/xguard` は `writable=no`、Git状態は `main...origin/main`、local `HEAD` / local `origin/main` は `2655267 Filter revoked tweet snapshots from proof DTO`。
+- `git ls-remote origin refs/heads/main` は `Could not resolve host: github.com`、`git fetch origin main` は `.git/FETCH_HEAD: Operation not permitted`。live remote確認は未完了。
+- Go継続:
+  - `2655267` がlive remote `origin/main` と一致するか確認する。
+  - 実Supabase/Postgres migration testでSQL functionの権限と拒否条件を確認する。
+  - Developer Consoleでendpoint別単価、spending limit、Usage endpoint、Owned Reads適用条件を実画面確認する。
+- まだNo-Go:
+  - `follows.read`, DM/write/follow系scope追加。
+  - 自動DM、自動follow/unfollow、自動投稿、bulk outreach。
+  - `Owned Reads` を第三者ユーザー向けSaaSの主前提にすること。

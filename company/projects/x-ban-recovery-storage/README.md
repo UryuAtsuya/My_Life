@@ -257,6 +257,17 @@ TEST_MODE=true
 - 未完了: GitHub live remote確認はDNS失敗、canonical fetchは `.git/FETCH_HEAD` 書き込み不可。実Supabase/Postgres migration testとDeveloper Console原価実値確認は未完了。
 - 残る最重要: `552f2e5` のlive remote確認、`09ff660` の破棄/統合判断、実Supabase/Postgres migration test、Developer Console原価確認。
 
+## 2026-06-01 morning research update
+
+- 調査メモ: `requirements/2026-06-01-x-ban-research.md`
+- 朝会引き継ぎ: `notes/2026-06-01-morning-planning.md`
+- 今日の優先は、live remote確認、実Supabase/Postgres migration test、Developer Console原価確認の順にする。
+- 朝run確認では `/Users/uryuatsuya/XGuard/xguard` は存在するが `writable=no`、Git状態は `main...origin/main`、local `HEAD` / local `origin/main` は `2655267 Filter revoked tweet snapshots from proof DTO`。
+- `git ls-remote origin refs/heads/main` は `Could not resolve host: github.com`、`git fetch origin main` は `.git/FETCH_HEAD: Operation not permitted`。live remote確認は昼runへ持ち越す。
+- v0初期scopeは `tweet.read`, `users.read`, `offline.access` のみに維持する。
+- `Owned Reads` は第三者ユーザー向けSaaSに適用できるとDeveloper Consoleで確認できるまで主前提にしない。
+- 指定パスが昼runでも書き込み不可なら、Vaultへ実装コードを置かず `/private/tmp/xguard-midday-2026-06-01` を使う。
+
 ## 2026-05-25 evening review update
 
 - 夜レビュー: `notes/2026-05-25-evening-code-review.md`
