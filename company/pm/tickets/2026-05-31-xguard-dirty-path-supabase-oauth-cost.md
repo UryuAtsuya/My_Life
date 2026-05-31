@@ -42,6 +42,7 @@ status: in_progress
 - 実装場所: `/private/tmp/xguard-midday-2026-05-31`
 - XGuard local commit: `09ff660 Add OAuth status endpoint`
 - push状態: `git push origin main` は再試行時にremote先行で `fetch first` 拒否。その後の `git fetch origin main` は `Could not resolve host: github.com` で失敗。force pushなし。
+- 指定パス最終確認: `/Users/uryuatsuya/XGuard/xguard` はcleanで `552f2e5 Add OAuth status diagnostic endpoint`。local tracking `origin/main` も `552f2e5`。live remote再読込はDNS失敗。
 - 追加API: `GET /api/x/oauth/status`。real envの実機確認は未完了。
 - 返却: `mode`, `callbackUrl`, `scopes`, `clientIdConfigured`, `clientSecretConfigured`, `writesEnabled`, `missingEnv`
 - 非返却: `X_CLIENT_SECRET` 値、OAuth token material、`clientId` 値、`authorizationUrl`

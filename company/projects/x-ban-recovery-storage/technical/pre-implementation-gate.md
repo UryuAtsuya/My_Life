@@ -138,7 +138,8 @@ status: draft
 - 検証: `git diff --check`, targeted Vitest（1 file / 6 tests）, `tsc --noEmit`, `npm run check`（6 files / 39 tests）, `git diff --cached --check` pass。
 - 指定パス `/Users/uryuatsuya/XGuard/xguard` は `writable=no`、`.git/FETCH_HEAD` 更新不可のため未反映。
 - `git push origin main` は再試行時にremote先行で `fetch first` 拒否。その後の `git fetch origin main` は `Could not resolve host: github.com` で失敗。force pushなし。
+- 最終確認では、指定パス `/Users/uryuatsuya/XGuard/xguard` はcleanで `552f2e5 Add OAuth status diagnostic endpoint`。local tracking `origin/main` も `552f2e5`。live remote再読込はDNS失敗。
 - 残るGate:
-  - DNS/権限復旧後にremote先行分を確認し、`09ff660` をrebase/cherry-pickして `UryuAtsuya/Xguard` `origin/main` へpushする。
-  - 指定パスを正本repo状態へ同期し、正本側で再検証する。
+  - DNS復旧後に `552f2e5` がlive remote `origin/main` と一致するか確認する。
+  - 一時cloneの `09ff660` は、`552f2e5` と同等または下位差分なら破棄し、必要差分があればcherry-pickで統合する。
   - 実Supabase/Postgres migration testとDeveloper Console原価確認を閉じる。

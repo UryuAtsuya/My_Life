@@ -13,6 +13,8 @@ status: completed-with-push-blocked
 
 XGuard local commit は `09ff660 Add OAuth status endpoint`。`UryuAtsuya/Xguard` `origin/main` へのpushは再試行時に `fetch first` で拒否され、その後の `git fetch origin main` は `Could not resolve host: github.com` で失敗した。force pushはしない。
 
+最終確認では、指定パス `/Users/uryuatsuya/XGuard/xguard` はcleanで、local `HEAD` とlocal tracking `origin/main` は `552f2e5 Add OAuth status diagnostic endpoint` だった。live remoteの再読込はDNS失敗で未確認。`552f2e5` は同じOAuth status endpointスライスを含み、`09ff660` よりsecret非露出テストとdocs caveatが厚い。
+
 ## サブエージェント担当
 
 | Role | 実行形態 | 結果 |
@@ -50,11 +52,12 @@ XGuard local commit は `09ff660 Add OAuth status endpoint`。`UryuAtsuya/Xguard
 ## 未完了
 
 - XGuard push: `git push origin main` はremote先行で拒否。その後のfetchはDNS失敗で未完了。
+- XGuard正本確認: `/Users/uryuatsuya/XGuard/xguard` はcleanで `552f2e5`。live remote再読込はDNS失敗。
 - 指定パス反映: `/Users/uryuatsuya/XGuard/xguard` は書き込み不可のため、local commit `09ff660` は指定パスへ未反映。
 - 実Supabase/Postgres migration test、Developer Console原価実値確認は未完了。
 
 ## 夜レビューへの上位TODO
 
-1. GitHub DNSが復旧した環境で `/private/tmp/xguard-midday-2026-05-31` をfetchし、remote先行分を確認してから `09ff660` をrebase/cherry-pickしてpushする。
-2. `/Users/uryuatsuya/XGuard/xguard` の書き込み権限を回復し、`09ff660` 相当を正本へ同期して再検証する。
+1. GitHub DNSが復旧した環境で `/Users/uryuatsuya/XGuard/xguard` の `552f2e5` がlive remote `origin/main` と一致するか再読込確認する。
+2. `/private/tmp/xguard-midday-2026-05-31` の `09ff660` は、`552f2e5` と同等または下位差分なら破棄し、必要差分があればcherry-pickで統合する。
 3. 実Supabase/Postgres migration testとDeveloper Console原価実値確認を継続する。

@@ -19,6 +19,7 @@ status: completed-with-push-blocked
 - 作業場所: `/private/tmp/xguard-midday-2026-05-31`
 - 反映先予定: `UryuAtsuya/Xguard` `origin/main`
 - push状態: push再試行時にremote先行で `fetch first` 拒否。その後のfetchは `Could not resolve host: github.com` で失敗。force pushなし。
+- 正本最終確認: `/Users/uryuatsuya/XGuard/xguard` はcleanで、local `HEAD` / local `origin/main` は `552f2e5 Add OAuth status diagnostic endpoint`。live remote再読込はDNS失敗。
 
 ## API仕様
 
@@ -57,6 +58,6 @@ v0 scopesは `tweet.read`, `users.read`, `offline.access` のみ。`tweet.write`
 
 ## 次アクション
 
-1. GitHub DNS復旧後、remote先行分をfetch確認し、`09ff660` をrebase/cherry-pickして `origin/main` へpushする。
-2. 指定パス `/Users/uryuatsuya/XGuard/xguard` を書き込み可能に戻し、正本側で `npm run check` を再実行する。
+1. GitHub DNS復旧後、指定パスの `552f2e5` がlive remote `origin/main` と一致するか再確認する。
+2. 一時cloneの `09ff660` は、`552f2e5` と同等または下位差分なら破棄し、必要差分があればcherry-pickで統合する。
 3. 実Supabase/Postgres migration testとDeveloper Console原価確認へ戻る。
