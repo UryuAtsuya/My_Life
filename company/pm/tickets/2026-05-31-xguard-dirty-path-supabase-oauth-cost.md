@@ -3,7 +3,7 @@ created: "2026-05-31"
 project: "xguard"
 assignee: "codex"
 priority: high
-status: planned
+status: in_progress
 ---
 
 # XGuard dirty path / Supabase / OAuth / cost verification
@@ -23,17 +23,30 @@ status: planned
 
 ## 完了条件
 
-- [ ] `/Users/uryuatsuya/XGuard/xguard` のwrite/fetch/remote HEADを昼run冒頭で確認する。
-- [ ] 未コミット変更4ファイルの差分を読み、今日のOAuth/API検証に必要な変更か、別作業として避ける変更かを記録する。
-- [ ] 書き込み不可なら `/private/tmp/xguard-midday-2026-05-31` をremote最新から作り、Vaultへ実装コードを置かない。
+- [x] `/Users/uryuatsuya/XGuard/xguard` のwrite/fetch/remote HEADを昼run冒頭で確認する。
+- [x] 未コミット変更4ファイルの差分を読み、今日のOAuth/API検証に必要な変更か、別作業として避ける変更かを記録する。
+- [x] 書き込み不可なら `/private/tmp/xguard-midday-2026-05-31` をremote最新から作り、Vaultへ実装コードを置かない。
 - [ ] 実Supabase/Postgres migration testで `record_api_usage_event_with_monthly_limit` の `service_role` 実行可、`authenticated` 実行不可を確認する。
 - [ ] 実Supabase/Postgres migration testで異user、異Xアカウント、存在しないbackup_run、負値、月次上限超過が拒否されることを確認する。
 - [ ] real envを使って `/api/x/oauth/start` のconfigured modeを確認する。secret値はログやcompany文書に残さない。
 - [ ] callback URLとscopeが `tweet.read`, `users.read`, `offline.access` のままか記録する。
 - [ ] Developer Consoleでendpoint別単価、credit/spending設定、Usage endpoint、Owned Reads条件を確認し、`docs/API_COST_MODEL.md` へ反映する。
-- [ ] `git diff --check`, `npx tsc -p tsconfig.json --noEmit`, targeted Vitest、`npm run check`, `git diff --cached --check` を実行する。
+- [x] `git diff --check`, `npx tsc -p tsconfig.json --noEmit`, targeted Vitest、`npm run check`, `git diff --cached --check` を実行する。
 - [ ] meaningfulなXGuard実装変更があれば `UryuAtsuya/Xguard` `origin/main` へcommit/pushする。
 - [ ] MyLife側へ昼実装メモ、XGuard commit hash、MyLife sync commit hashを分けて報告する。
+
+## 2026-05-31 昼run更新
+
+- 指定パス `/Users/uryuatsuya/XGuard/xguard` は `writable=no`。`git fetch origin main` は `.git/FETCH_HEAD: Operation not permitted`。
+- 未コミット変更4ファイルはOAuth status endpoint、test、API/DEPLOY docsで、今日のOAuth/API検証範囲に取り込んだ。
+- 実装場所: `/private/tmp/xguard-midday-2026-05-31`
+- XGuard local commit: `09ff660 Add OAuth status endpoint`
+- push状態: `git push origin main` は `Could not resolve host: github.com` で未完了。
+- 追加API: `GET /api/x/oauth/status`。real envの実機確認は未完了。
+- 返却: `mode`, `callbackUrl`, `scopes`, `clientIdConfigured`, `clientSecretConfigured`, `writesEnabled`, `missingEnv`
+- 非返却: `X_CLIENT_SECRET` 値、OAuth token material、`clientId` 値、`authorizationUrl`
+- 検証: `git diff --check`, targeted Vitest（1 file / 6 tests）, `tsc --noEmit`, `npm run check`（6 files / 39 tests）, `git diff --cached --check` pass。
+- Review: P0/P1なし。P2としてExpress内部構造に依存するroute testの脆さあり。sandboxでHTTP listenが `EPERM` になるため今回は許容。
 
 ## 判断ルール
 

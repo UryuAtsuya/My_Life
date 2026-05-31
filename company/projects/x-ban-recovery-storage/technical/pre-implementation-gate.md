@@ -129,3 +129,16 @@ status: draft
   - 実Supabase/Postgres migration testでSQL functionの権限と拒否条件を確認する。
   - real OAuth configured modeをsecret非表示で確認する。
   - Developer Consoleでendpoint別単価、spending limit、Usage endpoint、Owned Reads適用条件を実画面確認する。
+
+## 2026-05-31 midday gate update
+
+- Go継続: 一時clone `/private/tmp/xguard-midday-2026-05-31` で `09ff660 Add OAuth status endpoint` を作成し、`GET /api/x/oauth/status` を追加した。
+- `GET /api/x/oauth/status` は `mode`, `callbackUrl`, `scopes`, `clientIdConfigured`, `clientSecretConfigured`, `writesEnabled`, `missingEnv` のみ返し、`X_CLIENT_SECRET` 値、OAuth token material、`clientId` 値、`authorizationUrl` は返さない。
+- v0 scopeは `tweet.read`, `users.read`, `offline.access` のみに維持した。
+- 検証: `git diff --check`, targeted Vitest（1 file / 6 tests）, `tsc --noEmit`, `npm run check`（6 files / 39 tests）, `git diff --cached --check` pass。
+- 指定パス `/Users/uryuatsuya/XGuard/xguard` は `writable=no`、`.git/FETCH_HEAD` 更新不可のため未反映。
+- `git push origin main` は `Could not resolve host: github.com` で未完了。
+- 残るGate:
+  - DNS/権限復旧後に `09ff660` を `UryuAtsuya/Xguard` `origin/main` へpushする。
+  - 指定パスを正本repo状態へ同期し、正本側で再検証する。
+  - 実Supabase/Postgres migration testとDeveloper Console原価確認を閉じる。
