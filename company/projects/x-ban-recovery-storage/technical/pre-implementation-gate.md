@@ -143,3 +143,14 @@ status: draft
   - DNS復旧後に `552f2e5` がlive remote `origin/main` と一致するか確認する。
   - 一時cloneの `09ff660` は、`552f2e5` と同等または下位差分なら破棄し、必要差分があればcherry-pickで統合する。
   - 実Supabase/Postgres migration testとDeveloper Console原価確認を閉じる。
+
+## 2026-05-31 evening gate update
+
+- 夜レビューでは `/Users/uryuatsuya/XGuard/xguard` がcleanで、local `HEAD` / local `origin/main` は `552f2e5 Add OAuth status diagnostic endpoint`。
+- `GET /api/x/oauth/status` はsecret/token/client id値を返さず、v0 scopeは `tweet.read`, `users.read`, `offline.access` のまま。
+- 検証: `git diff --check`, `tsc --noEmit`, targeted Vitestはpass。canonical pathの `npm run check` は `dist/` write `EPERM`、`/private/tmp` ローカルクローンでは `npm run check` pass（6 files / 39 tests）。
+- Review gate: `/api/x/oauth/status` を本番公開する場合はadmin認証付きhealth checkまたはdeployment-only routeへ寄せる。real OAuthはまだ静的state/mock PKCE/mock callback refs段階。
+- 残るGate:
+  - `552f2e5` がlive remote `origin/main` に存在するかDNS/権限復旧後に確認する。
+  - 一時clone `09ff660` を `552f2e5` と比較し、必要差分だけ扱う。
+  - 実Supabase/Postgres migration testとDeveloper Console原価確認を閉じる。

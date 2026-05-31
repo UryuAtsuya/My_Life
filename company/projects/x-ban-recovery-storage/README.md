@@ -248,6 +248,15 @@ TEST_MODE=true
 - 指定パスが昼runでも書き込み不可なら、Vaultへ実装コードを置かず `/private/tmp/xguard-midday-2026-05-31` をremote最新から作る。
 - `Owned Reads` は第三者ユーザー向けSaaSに適用できるとDeveloper Consoleで確認できるまで主前提にしない。
 
+## 2026-05-31 evening review update
+
+- XGuard repo正本は `/Users/uryuatsuya/XGuard/xguard`。夜runではworking tree clean、local `HEAD` / local `origin/main` は `552f2e5 Add OAuth status diagnostic endpoint`。
+- `GET /api/x/oauth/status` は `mode`, `callbackUrl`, `scopes`, `clientIdConfigured`, `clientSecretConfigured`, `writesEnabled`, `missingEnv` のみ返し、secret/token/client id値や `authorizationUrl` は返さない。
+- v0 scopeは `tweet.read`, `users.read`, `offline.access` に維持した。
+- 検証: `git diff --check`, `tsc --noEmit`, targeted Vitest、`/private/tmp` ローカルクローンでの `npm run check` pass（6 files / 39 tests）。
+- 未完了: GitHub live remote確認はDNS失敗、canonical fetchは `.git/FETCH_HEAD` 書き込み不可。実Supabase/Postgres migration testとDeveloper Console原価実値確認は未完了。
+- 残る最重要: `552f2e5` のlive remote確認、`09ff660` の破棄/統合判断、実Supabase/Postgres migration test、Developer Console原価確認。
+
 ## 2026-05-25 evening review update
 
 - 夜レビュー: `notes/2026-05-25-evening-code-review.md`

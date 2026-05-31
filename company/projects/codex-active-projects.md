@@ -6,7 +6,7 @@ Last updated: 2026-05-31
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | X BAN Recovery Storage | Dirty path detected / Supabase-OAuth-cost verification pending | 指定パス差分を確認し、実Supabase migration test、real OAuth configured mode、Developer Console原価確認を閉じる |
+| 1 | X BAN Recovery Storage | OAuth status endpoint verified / remote-Supabase-cost pending | `552f2e5` のGitHub live remote確認、`09ff660` の破棄/統合判断、実Supabase migration test、Developer Console原価確認を閉じる |
 | 2 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
 | 3 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 4 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
@@ -25,7 +25,15 @@ Last updated: 2026-05-31
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
-| `x-ban-recovery-storage` | Dirty path detected / Supabase-OAuth-cost verification pending | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | 指定パス差分を確認し、実Supabase migration test、real OAuth configured mode、Developer Console原価確認を閉じる。 |
+| `x-ban-recovery-storage` | OAuth status endpoint verified / remote-Supabase-cost pending | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | `552f2e5` のlive remote確認、`09ff660` の破棄/統合判断、実Supabase migration test、Developer Console原価確認を閉じる。 |
+
+## 2026-05-31 Evening XGuard Review
+
+1. `x-ban-recovery-storage`: 指定パス `/Users/uryuatsuya/XGuard/xguard` はcleanで、local `HEAD` / local `origin/main` は `552f2e5 Add OAuth status diagnostic endpoint`。
+2. `x-ban-recovery-storage`: `GET /api/x/oauth/status` はsecret/token/client id値を返さず、v0 scopeは `tweet.read`, `users.read`, `offline.access` のまま。
+3. 検証: `git diff --check`, `tsc --noEmit`, targeted Vitestはpass。canonical pathの `npm run check` は `dist/` write `EPERM` で失敗したが、`/private/tmp` ローカルクローンでは `npm run check` pass（6 files / 39 tests）。
+4. 未完了: GitHub live remote確認はDNS失敗、canonical fetchは `.git/FETCH_HEAD` 書き込み不可。実Supabase/Postgres migration testとDeveloper Console原価確認も未完了。
+5. Next action: `552f2e5` のlive remote確認、`09ff660` の破棄/統合判断、実Supabase migration test、Developer Console原価確認。
 
 ## 2026-05-31 Morning XGuard Research
 

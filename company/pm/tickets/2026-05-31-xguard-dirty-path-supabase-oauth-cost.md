@@ -33,7 +33,7 @@ status: in_progress
 - [ ] Developer Consoleでendpoint別単価、credit/spending設定、Usage endpoint、Owned Reads条件を確認し、`docs/API_COST_MODEL.md` へ反映する。
 - [x] `git diff --check`, `npx tsc -p tsconfig.json --noEmit`, targeted Vitest、`npm run check`, `git diff --cached --check` を実行する。
 - [ ] meaningfulなXGuard実装変更があれば `UryuAtsuya/Xguard` `origin/main` へcommit/pushする。
-- [ ] MyLife側へ昼実装メモ、XGuard commit hash、MyLife sync commit hashを分けて報告する。
+- [x] MyLife側へ昼実装メモ、夜レビュー、XGuard commit hash、MyLife sync commit hashを分けて報告する。
 
 ## 2026-05-31 昼run更新
 
@@ -48,6 +48,14 @@ status: in_progress
 - 非返却: `X_CLIENT_SECRET` 値、OAuth token material、`clientId` 値、`authorizationUrl`
 - 検証: `git diff --check`, targeted Vitest（1 file / 6 tests）, `tsc --noEmit`, `npm run check`（6 files / 39 tests）, `git diff --cached --check` pass。
 - Review: P0/P1なし。P2としてExpress内部構造に依存するroute testの脆さあり。sandboxでHTTP listenが `EPERM` になるため今回は許容。
+
+## 2026-05-31 夜レビュー更新
+
+- 指定パス `/Users/uryuatsuya/XGuard/xguard` は夜run時点でclean。local `HEAD` / local `origin/main` は `552f2e5 Add OAuth status diagnostic endpoint`。
+- `git fetch origin main` は `.git/FETCH_HEAD: Operation not permitted`。`git ls-remote origin refs/heads/main` は `Could not resolve host: github.com`。live remote確認は未完了。
+- canonical pathの `npm run check` は `dist/` write `EPERM` で失敗。代替として `/private/tmp/xguard-evening-check-20260531-YdDOVH/repo` のローカルクローンで `npm run check` pass（6 files / 39 tests）。
+- 夜レビュー主要指摘: P0なし。P1は `/api/x/oauth/status` の無認証診断公開リスクと、real OAuthがまだ静的state/mock PKCE/mock callback段階である点。P2は `missingEnv` の運用性とExpress内部構造依存test。
+- 明日は `552f2e5` のGitHub live remote確認、`09ff660` の破棄/統合判断、実Supabase/Postgres migration test、Developer Console原価確認を優先する。
 
 ## 判断ルール
 
