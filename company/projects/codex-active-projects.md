@@ -6,7 +6,7 @@ Last updated: 2026-06-01
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | X BAN Recovery Storage | proof DTO revocation filter local / live remote-Supabase-cost pending | `2655267` のGitHub live remote確認、実Supabase migration test、Developer Console原価確認を閉じる |
+| 1 | X BAN Recovery Storage | usage ledger schema contract local / push-Supabase-cost pending | `8cf029c` のpush、実Supabase migration test、Developer Console原価確認を閉じる |
 | 2 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
 | 3 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 4 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
@@ -25,7 +25,16 @@ Last updated: 2026-06-01
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
-| `x-ban-recovery-storage` | proof DTO revocation filter local / live remote-Supabase-cost pending | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | `2655267` のlive remote確認、実Supabase migration test、Developer Console原価確認を閉じる。 |
+| `x-ban-recovery-storage` | usage ledger schema contract local / push-Supabase-cost pending | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | `8cf029c` のpush、実Supabase migration test、Developer Console原価確認を閉じる。 |
+
+## 2026-06-01 Midday XGuard Implementation
+
+1. `x-ban-recovery-storage`: 指定パス `/Users/uryuatsuya/XGuard/xguard` は `writable=no`。`git fetch origin main` は `.git/FETCH_HEAD: Operation not permitted`、`git ls-remote origin refs/heads/main` は `Could not resolve host: github.com`。
+2. `x-ban-recovery-storage`: Vaultへ実装コードを置かず、`/private/tmp/xguard-midday-2026-06-01-1331` で `8cf029c Harden usage ledger schema contract` を作成した。
+3. `x-ban-recovery-storage`: `record_api_usage_event_with_monthly_limit` で `backup_run_id` 付きusage eventの `x_account_id` を必須化し、同一Xアカウント整合性とnon-negative DB checkを強化した。
+4. 検証: `git diff --check`, targeted Vitest（1 file / 3 tests）, `tsc --noEmit`, `npm run check`（7 files / 43 tests）, `git diff --cached --check` pass。
+5. XGuard push: 未完了。`git push origin main` は `Could not resolve host: github.com`。
+6. Next action: `8cf029c` をpushし、実Supabase/Postgres migration testとDeveloper Console原価確認を閉じる。
 
 ## 2026-06-01 Morning XGuard Research
 

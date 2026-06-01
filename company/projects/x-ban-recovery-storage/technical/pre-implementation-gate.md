@@ -168,3 +168,18 @@ status: draft
   - `follows.read`, DM/write/follow系scope追加。
   - 自動DM、自動follow/unfollow、自動投稿、bulk outreach。
   - `Owned Reads` を第三者ユーザー向けSaaSの主前提にすること。
+
+## 2026-06-01 midday gate update
+
+- 指定パス `/Users/uryuatsuya/XGuard/xguard` は昼runでも `writable=no`。`git fetch origin main` は `.git/FETCH_HEAD: Operation not permitted`、`git ls-remote origin refs/heads/main` は `Could not resolve host: github.com`。
+- Vaultへ実装コードを置かず、`/private/tmp/xguard-midday-2026-06-01-1331` で作業した。
+- XGuard local commit は `8cf029c Harden usage ledger schema contract`。`git push origin main` はDNS失敗で未push。
+- Go継続:
+  - `record_api_usage_event_with_monthly_limit` のlocal schema contract testを追加し、`service_role` grant、`public` / `anon` / `authenticated` revoke、user profile lock、monthly cost-limit insert前拒否、ownership、backup run同一Xアカウント整合性、負値拒否を検知できるようにした。
+  - `backup_run_id` 付き usage event は `x_account_id` 必須にした。
+  - `api_usage_events` と `backup_runs` のcost / metering系にnon-negative `check` を追加した。
+- 検証: `git diff --check`, targeted Vitest（1 file / 3 tests）, `tsc --noEmit`, `npm run check`（7 files / 43 tests）, `git diff --cached --check` pass。
+- 残るGate:
+  - GitHub DNS復旧後、`8cf029c` をfetch/rebase確認してpushする。
+  - 実Supabase/Postgres migration testでrole別RPC、grant/revoke、RLS、check constraint、拒否条件を確認する。
+  - Developer Consoleでendpoint別単価、spending limit、Usage endpoint、Owned Reads適用条件を実画面確認する。

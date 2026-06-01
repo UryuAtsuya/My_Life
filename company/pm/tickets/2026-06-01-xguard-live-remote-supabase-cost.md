@@ -27,13 +27,22 @@ status: in_progress
 - [ ] `/Users/uryuatsuya/XGuard/xguard` のwrite/fetch/live remote HEADを昼run冒頭で確認する。
 - [ ] `2655267` が `UryuAtsuya/Xguard` live remote `origin/main` と一致するか確認する。
 - [ ] 一時clone `09ff660 Add OAuth status endpoint` を `2655267` 系列と比較し、必要差分がなければ破棄、必要差分があればcherry-pickで統合する。
+- [x] local schema contract testで `record_api_usage_event_with_monthly_limit` の `security definer`、`search_path`、`service_role` grant、`authenticated` revoke、ownership、月次上限、負値拒否を検知できるようにする。Evidence: XGuard local commit `8cf029c`。
 - [ ] 実Supabase/Postgres migration testで `record_api_usage_event_with_monthly_limit` の `service_role` 実行可、`authenticated` 実行不可を確認する。
-- [ ] 実Supabase/Postgres migration testで異user、異Xアカウント、存在しない `backup_run`、負値、月次上限超過が拒否されることを確認する。
+- [ ] 実Supabase/Postgres migration testで異user、異Xアカウント、`backup_run_id` 付きで `x_account_id` なし、存在しない `backup_run`、負値、月次上限超過が拒否されることを確認する。
 - [ ] Developer Consoleでendpoint別単価、credit/spending設定、Usage endpoint、Owned Reads条件を確認し、`docs/API_COST_MODEL.md` へ反映する。
-- [ ] `/api/x/oauth/status` の本番公開条件をadmin認証付きhealth checkまたはdeployment-only routeとしてdocsへ反映する。
-- [ ] `git diff --check`, `npx tsc -p tsconfig.json --noEmit`, targeted Vitest、`npm run check`, `git diff --cached --check` を実行する。
+- [x] `/api/x/oauth/status` の本番公開条件をadmin認証付きhealth checkまたはdeployment-only routeとしてdocsへ反映する。
+- [x] `git diff --check`, `npx tsc -p tsconfig.json --noEmit`, targeted Vitest、`npm run check`, `git diff --cached --check` を実行する。
 - [ ] meaningfulなXGuard実装変更があれば `UryuAtsuya/Xguard` `origin/main` へcommit/pushする。
 - [ ] MyLife側へ昼実装メモ、夜レビュー、XGuard commit hash、MyLife sync commit hashを分けて報告する。
+
+## 2026-06-01 昼実装結果
+
+- `/Users/uryuatsuya/XGuard/xguard` は `writable=no`。`git fetch origin main` は `.git/FETCH_HEAD: Operation not permitted`、`git ls-remote origin refs/heads/main` は `Could not resolve host: github.com`。
+- 実装場所は `/private/tmp/xguard-midday-2026-06-01-1331`。Vaultへ実装コードは置いていない。
+- XGuard local commit: `8cf029c Harden usage ledger schema contract`。
+- XGuard push: 未完了。`git push origin main` は `Could not resolve host: github.com`。
+- 検証: `git diff --check`、targeted Vitest、`npx tsc -p tsconfig.json --noEmit`、`npm run check`（7 files / 43 tests）、`git diff --cached --check` pass。
 
 ## 判断ルール
 
