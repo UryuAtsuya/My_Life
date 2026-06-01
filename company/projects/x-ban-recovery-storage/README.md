@@ -377,3 +377,11 @@ TEST_MODE=true
 - `git ls-remote origin refs/heads/main` はDNS失敗。GitHub live確認は次回に回す。
 - 追加指摘: `ApiUsageLedgerService` に非負整数validationと失敗テストを入れ、負のusage/costを防ぐ。
 - 明日は指定パス同期、ledger validation、Developer Console実値確認をTop 3にする。
+
+## 2026-06-01 evening review update
+
+- 夜レビュー: `notes/2026-06-01-evening-code-review.md`
+- XGuard push: `8aa0910 Require X account for backup usage events` を `UryuAtsuya/Xguard` `main` へpush済み。
+- `backup_run_id` 付きusage eventで `x_account_id` を必須化し、backup runとX accountの同一性検証を曖昧にしない方針にした。
+- 検証: `/private/tmp/xguard-evening-20260601-5YPt9Z` で `git diff --check`, targeted Vitest, `tsc --noEmit`, `npm run check`, `git diff --cached --check` pass。
+- 残るGate: 実Supabase/Postgres integration test、OAuth state / S256 PKCE / token schema整合、Developer Console原価確認。

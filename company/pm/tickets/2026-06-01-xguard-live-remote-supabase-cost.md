@@ -33,7 +33,7 @@ status: in_progress
 - [ ] Developer Consoleでendpoint別単価、credit/spending設定、Usage endpoint、Owned Reads条件を確認し、`docs/API_COST_MODEL.md` へ反映する。
 - [x] `/api/x/oauth/status` の本番公開条件をadmin認証付きhealth checkまたはdeployment-only routeとしてdocsへ反映する。
 - [x] `git diff --check`, `npx tsc -p tsconfig.json --noEmit`, targeted Vitest、`npm run check`, `git diff --cached --check` を実行する。
-- [ ] meaningfulなXGuard実装変更があれば `UryuAtsuya/Xguard` `origin/main` へcommit/pushする。
+- [x] meaningfulなXGuard実装変更があれば `UryuAtsuya/Xguard` `origin/main` へcommit/pushする。Evidence: `8aa0910 Require X account for backup usage events`
 - [ ] MyLife側へ昼実装メモ、夜レビュー、XGuard commit hash、MyLife sync commit hashを分けて報告する。
 
 ## 2026-06-01 昼実装結果
@@ -43,6 +43,15 @@ status: in_progress
 - XGuard local commit: `8cf029c Harden usage ledger schema contract`。
 - XGuard push: 未完了。`git push origin main` は `Could not resolve host: github.com`。
 - 検証: `git diff --check`、targeted Vitest、`npx tsc -p tsconfig.json --noEmit`、`npm run check`（7 files / 43 tests）、`git diff --cached --check` pass。
+
+## 2026-06-01 夜レビュー結果
+
+- `2655267 Filter revoked tweet snapshots from proof DTO` は現在の `main` 履歴に含まれていた。
+- `4e6258c Merge remote-tracking branch 'origin/main'` まで正本に取り込まれていたため、夜レビューでは `backup_run_id` 付きusage eventの `x_account_id` 必須化だけを追加した。
+- XGuard commit: `8aa0910 Require X account for backup usage events`
+- XGuard push: 完了。`UryuAtsuya/Xguard` `main` へ `4e6258c..8aa0910` を反映。
+- 検証: `/private/tmp/xguard-evening-20260601-5YPt9Z` で `git diff --check`、targeted Vitest、`tsc --noEmit`、`npm run check`（7 files passed / 1 skipped、41 passed / 2 skipped）、`git diff --cached --check` pass。
+- canonical `/Users/uryuatsuya/XGuard/xguard` は `writable=no` のまま。`npm run check` は `dist/` write `EPERM`、`git fetch origin main` は `.git/FETCH_HEAD: Operation not permitted`。
 
 ## 判断ルール
 

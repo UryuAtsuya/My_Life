@@ -183,3 +183,17 @@ status: draft
   - GitHub DNS復旧後、`8cf029c` をfetch/rebase確認してpushする。
   - 実Supabase/Postgres migration testでrole別RPC、grant/revoke、RLS、check constraint、拒否条件を確認する。
   - Developer Consoleでendpoint別単価、spending limit、Usage endpoint、Owned Reads適用条件を実画面確認する。
+
+## 2026-06-01 evening gate update
+
+- Go継続: `8aa0910 Require X account for backup usage events` を `UryuAtsuya/Xguard` `main` へpush済み。
+- `backup_run_id` 付きusage eventは `x_account_id` 必須とし、`backup_runs.x_account_id = p_x_account_id` を常に要求する。
+- 検証: `/private/tmp/xguard-evening-20260601-5YPt9Z` で `git diff --check`, targeted Vitest, `tsc --noEmit`, `npm run check`, `git diff --cached --check` pass。
+- まだNo-Go:
+  - 実Supabase/Postgresで `RUN_SUPABASE_SQL_INTEGRATION_TESTS=1` を実行しないままreleaseすること。
+  - OAuth configured modeを静的state/plain PKCE/mock callback refsのまま実運用へ出すこと。
+  - token repositoryとSupabase schemaの保存契約がズレたまま実Supabase storeへ接続すること。
+- 残るGate:
+  - 実Supabase/Postgres integration test。
+  - OAuth state / S256 PKCE / callback validation。
+  - Developer Console原価実値確認。
