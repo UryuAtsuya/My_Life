@@ -385,3 +385,15 @@ TEST_MODE=true
 - `backup_run_id` 付きusage eventで `x_account_id` を必須化し、backup runとX accountの同一性検証を曖昧にしない方針にした。
 - 検証: `/private/tmp/xguard-evening-20260601-5YPt9Z` で `git diff --check`, targeted Vitest, `tsc --noEmit`, `npm run check`, `git diff --cached --check` pass。
 - 残るGate: 実Supabase/Postgres integration test、OAuth state / S256 PKCE / token schema整合、Developer Console原価確認。
+
+## 2026-06-02 morning research update
+
+- 調査メモ: `requirements/2026-06-02-x-ban-research.md`
+- 朝会引き継ぎ: `notes/2026-06-02-morning-planning.md`
+- 今日の優先は、canonical checkoutのdirty差分とlive remote正本照合、実Supabase/Postgres integration test、OAuth configured mode安全化、Developer Console原価確認の順にする。
+- v0初期scopeは `tweet.read`, `users.read`, `offline.access` のみに維持する。
+- 朝run確認では `/Users/uryuatsuya/XGuard/xguard` は存在するが `writable=no`、Git状態は `main...origin/main`、local `HEAD` / local `origin/main` は `4e6258c`。
+- 未コミット変更は `supabase/schema.sql`, `backend/src/__tests__/supabaseSqlApiUsageLedger.integration.test.ts`。未追跡は `backend/src/__tests__/supabaseSchemaContract.test.ts`。
+- `git fetch origin main` は `.git/FETCH_HEAD: Operation not permitted`、`git ls-remote origin refs/heads/main` は `Could not resolve host: github.com`。
+- 指定パスが昼runでも書き込み不可なら、Vaultへ実装コードを置かず `/private/tmp/xguard-midday-2026-06-02` をremote最新から作る。
+- `Owned Reads` は第三者ユーザー向けSaaSに適用できるとDeveloper Consoleで確認できるまで主前提にしない。
