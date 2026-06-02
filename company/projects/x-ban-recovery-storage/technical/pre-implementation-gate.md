@@ -215,3 +215,19 @@ status: draft
   - `follows.read`, DM/write/follow系scope追加。
   - 自動DM、自動follow/unfollow、自動投稿、bulk outreach。
   - `Owned Reads` を第三者ユーザー向けSaaSの主前提にすること。
+
+## 2026-06-02 midday gate update
+
+- 指定パス `/Users/uryuatsuya/XGuard/xguard` は昼runでも `writable=no`。Vaultへ実装コードを置かず、`/private/tmp/xguard-midday-2026-06-02-1331` で作業した。
+- XGuard local commit は `33cae26 Require X account for backup usage events`。
+- Go継続:
+  - `backup_run_id` 付きusage eventは `x_account_id` を必須とし、`backup_runs.x_account_id = p_x_account_id` を常に要求する。
+  - SQL integration gateに `backup_run_id` あり / `x_account_id` なし拒否ケースを追加した。
+  - 静的schema contract testを追加し、該当SQL guardの削除や旧条件の復帰を検知できるようにした。
+- 検証: `git diff --check`, targeted Vitest, `tsc --noEmit`, `build:api`, `vite build --configLoader runner`, `npm run test`, `git diff --cached --check` pass。
+- `npm run check` は Vite既定config loaderが symlink `node_modules/.vite-temp` へ書けず `EPERM`。代替web buildはpass。
+- XGuard pushは未完了。`git push origin main` は `fetch first`、`git fetch origin main` は `Could not resolve host: github.com`。force pushなし。
+- 残るGate:
+  - `33cae26` をremote先行分へrebase/cherry-pickしてpushする。
+  - 実Supabase/Postgres integration testをcredential付きで実行する。
+  - OAuth state / S256 PKCE / callback validationとDeveloper Console原価実値確認を閉じる。

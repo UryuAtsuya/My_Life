@@ -25,18 +25,25 @@ status: in_progress
 
 ## 完了条件
 
-- [ ] `/Users/uryuatsuya/XGuard/xguard` のdirty差分を読み、`8aa0910` と同等か追加修正が混ざっているか判定する。
+- [x] `/Users/uryuatsuya/XGuard/xguard` のdirty差分を読み、`8aa0910` と同等か追加修正が混ざっているか判定する。昼runでは `backup_run_id` 付きusage eventの `x_account_id` 必須化スライスとして扱った。
 - [ ] `git fetch origin main` または `git ls-remote origin refs/heads/main` でlive remote HEADを確認する。
-- [ ] 指定パスが書けない場合、Vaultへ実装コードを置かず `/private/tmp/xguard-midday-2026-06-02` で一時cloneを作る。
-- [ ] dirty差分を巻き戻さず、必要差分だけremote正本へrebase/cherry-pickする。
+- [x] 指定パスが書けない場合、Vaultへ実装コードを置かず `/private/tmp/xguard-midday-2026-06-02` で一時cloneを作る。実作業場所は `/private/tmp/xguard-midday-2026-06-02-1331`。
+- [ ] dirty差分を巻き戻さず、必要差分だけremote正本へrebase/cherry-pickする。local commit `33cae26` は作成済みだが、remote先行とDNS失敗で未push。
 - [ ] 実Supabase/Postgresで `RUN_SUPABASE_SQL_INTEGRATION_TESTS=1` を実行し、`service_role` 実行可、`authenticated` 実行不可を確認する。
 - [ ] 実Supabase/Postgresで異user、異Xアカウント、`backup_run_id` 付きで `x_account_id` なし、存在しない `backup_run`、負値、月次上限超過が拒否されることを確認する。
 - [ ] OAuth configured modeの静的 `state`、plain/mock PKCE、callback未照合を解消する。
 - [ ] token repositoryとSupabase schemaの保存契約を一本化する。
 - [ ] Developer Consoleでendpoint別単価、credit/spending設定、Usage endpoint、Owned Reads条件を確認し、`docs/API_COST_MODEL.md` へ反映する。
-- [ ] `git diff --check`, `npx tsc -p tsconfig.json --noEmit`, targeted Vitest、integration test、`npm run check`, `git diff --cached --check` を実行する。
-- [ ] meaningfulなXGuard実装変更があれば `UryuAtsuya/Xguard` `origin/main` へcommit/pushする。
-- [ ] MyLife側へ昼実装メモ、夜レビュー、XGuard commit hash、MyLife sync commit hashを分けて報告する。
+- [x] `git diff --check`, `npx tsc -p tsconfig.json --noEmit`, targeted Vitest、integration test、`npm run check`, `git diff --cached --check` を実行する。`npm run check` はVite既定config loaderの `EPERM` で未完、代替web buildとfull testはpass。実DB integration本体はDB envなしでskip。
+- [ ] meaningfulなXGuard実装変更があれば `UryuAtsuya/Xguard` `origin/main` へcommit/pushする。`33cae26` はlocal commit済み、pushは `fetch first` で拒否。
+- [x] MyLife側へ昼実装メモ、夜レビュー、XGuard commit hash、MyLife sync commit hashを分けて報告する。
+
+## 2026-06-02 Midday update
+
+- XGuard local commit: `33cae26 Require X account for backup usage events`
+- Push status: 未push。`git push origin main` は `fetch first`、`git fetch origin main` は `Could not resolve host: github.com`。
+- Verification: targeted Vitest pass、`tsc --noEmit` pass、`build:api` pass、`vite build --configLoader runner` pass、`npm run test` pass、`git diff --check` pass、`git diff --cached --check` pass。
+- Blocker: 実Supabase/Postgres credentialなし、GitHub remote fetch不可、canonical checkout `writable=no`。
 
 ## 判断ルール
 

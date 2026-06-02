@@ -6,7 +6,7 @@ Last updated: 2026-06-02
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | X BAN Recovery Storage | canonical dirty / Supabase-OAuth-cost pending | dirty差分とlive remoteを照合し、実Supabase test、OAuth PKCE/state、Developer Console原価確認を閉じる |
+| 1 | X BAN Recovery Storage | XGuard commit push blocked / Supabase-OAuth-cost pending | `33cae26` をremote先行分へ統合してpushし、実Supabase test、OAuth PKCE/state、Developer Console原価確認を閉じる |
 | 2 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
 | 3 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 4 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
@@ -25,7 +25,16 @@ Last updated: 2026-06-02
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
-| `x-ban-recovery-storage` | canonical dirty / Supabase-OAuth-cost pending | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | dirty差分とlive remoteを照合し、実Supabase test、OAuth PKCE/state、Developer Console原価確認を閉じる。 |
+| `x-ban-recovery-storage` | XGuard commit push blocked / Supabase-OAuth-cost pending | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | `33cae26` をremote先行分へ統合してpushし、実Supabase test、OAuth PKCE/state、Developer Console原価確認を閉じる。 |
+
+## 2026-06-02 Midday XGuard Implementation
+
+1. `x-ban-recovery-storage`: 指定パス `/Users/uryuatsuya/XGuard/xguard` は `writable=no`。Vaultへ実装コードを置かず `/private/tmp/xguard-midday-2026-06-02-1331` で作業した。
+2. `x-ban-recovery-storage`: `backup_run_id` 付きusage eventに `x_account_id` を必須化し、`backup_runs.x_account_id = p_x_account_id` を常に要求するSQL境界へ寄せた。
+3. XGuard local commit: `33cae26 Require X account for backup usage events`。pushは `fetch first` で拒否され、その後のfetchはDNS失敗。
+4. 検証: targeted Vitest pass、`tsc --noEmit` pass、`build:api` pass、`vite build --configLoader runner` pass、`npm run test` pass、`git diff --check` pass、`git diff --cached --check` pass。
+5. 未完了: 実Supabase/Postgres integration test本体、OAuth state / S256 PKCE / callback validation、Developer Console原価確認。
+6. Next action: GitHub fetch可能な環境でremote先行分を取り込み、`33cae26` をrebase/cherry-pickしてpushする。
 
 ## 2026-06-02 Morning XGuard Research
 
