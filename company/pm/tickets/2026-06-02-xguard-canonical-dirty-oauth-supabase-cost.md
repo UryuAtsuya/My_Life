@@ -45,6 +45,17 @@ status: in_progress
 - Verification: targeted Vitest pass、`tsc --noEmit` pass、`build:api` pass、`vite build --configLoader runner` pass、`npm run test` pass、`git diff --check` pass、`git diff --cached --check` pass。
 - Blocker: 実Supabase/Postgres credentialなし、GitHub remote fetch不可、canonical checkout `writable=no`。
 
+## 2026-06-02 Evening update
+
+- XGuard指定パス最終状態: `HEAD=origin/main=95e6392 Merge remote-tracking branch 'origin/main'`、working tree clean。
+- `86a71fb Require X account for backup usage events` と `8aa0910 Require X account for backup usage events` は `95e6392` でmerge済み。
+- `git diff --check` と `git ls-files -u` はpass / unmerged entryなし。途中でconflict疑いの報告があったが、Coordinator最終確認では未解決conflictなし。
+- Verification: `npx tsc -p tsconfig.json --noEmit` pass、targeted Vitest pass、`npm run test` pass、`npm run build` pass。
+- `npm run check` は `dist/backend/...` 上書きが `EPERM` で失敗。コード失敗ではなく権限ブロッカーとして扱う。
+- Live remote確認: `git ls-remote origin refs/heads/main` は `Could not resolve host: github.com`、`git fetch origin main` は `.git/FETCH_HEAD: Operation not permitted`。次回再確認が必要。
+- Review P1: `/api/x/oauth/status` はproductionでadmin-onlyまたはdeployment-onlyへ寄せる。
+- 残: 実Supabase/Postgres integration test、OAuth state / S256 PKCE / callback validation、token repositoryとSupabase schema契約一本化、Developer Console原価確認。
+
 ## 判断ルール
 
 - v0初期scopeは `tweet.read`, `users.read`, `offline.access` のみ。

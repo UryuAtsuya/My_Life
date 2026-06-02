@@ -6,7 +6,7 @@ Last updated: 2026-06-02
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | X BAN Recovery Storage | XGuard commit push blocked / Supabase-OAuth-cost pending | `33cae26` をremote先行分へ統合してpushし、実Supabase test、OAuth PKCE/state、Developer Console原価確認を閉じる |
+| 1 | X BAN Recovery Storage | XGuard local origin synced / Supabase-OAuth-cost pending | `95e6392` のlive remote確認、実Supabase test、OAuth PKCE/state、Developer Console原価確認を閉じる |
 | 2 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
 | 3 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 4 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
@@ -25,7 +25,15 @@ Last updated: 2026-06-02
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
-| `x-ban-recovery-storage` | XGuard commit push blocked / Supabase-OAuth-cost pending | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | `33cae26` をremote先行分へ統合してpushし、実Supabase test、OAuth PKCE/state、Developer Console原価確認を閉じる。 |
+| `x-ban-recovery-storage` | XGuard local origin synced / Supabase-OAuth-cost pending | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | `95e6392` のlive remote確認、実Supabase test、OAuth PKCE/state、Developer Console原価確認を閉じる。 |
+
+## 2026-06-02 Evening XGuard Review
+
+1. `x-ban-recovery-storage`: 指定パス `/Users/uryuatsuya/XGuard/xguard` は夜run最終状態で `HEAD=origin/main=95e6392`、working tree clean。
+2. `x-ban-recovery-storage`: `86a71fb` と `8aa0910` の `backup_run_id` / `x_account_id` 境界修正系列は `95e6392` でmerge済み。
+3. 検証: `git diff --check`, `tsc --noEmit`, targeted Vitest, `npm run test`, `npm run build` pass。`npm run check` は `dist/backend/...` write `EPERM`。
+4. 未完了: live GitHubの独立確認、実Supabase/Postgres integration test、OAuth state / S256 PKCE / callback validation、token schema契約、Developer Console原価確認。
+5. Next action: `95e6392` をlive remoteで再確認し、OAuth status production blockerを閉じる。
 
 ## 2026-06-02 Midday XGuard Implementation
 

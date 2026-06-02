@@ -231,3 +231,21 @@ status: draft
   - `33cae26` をremote先行分へrebase/cherry-pickしてpushする。
   - 実Supabase/Postgres integration testをcredential付きで実行する。
   - OAuth state / S256 PKCE / callback validationとDeveloper Console原価実値確認を閉じる。
+
+## 2026-06-02 evening gate update
+
+- Go継続: 指定パス `/Users/uryuatsuya/XGuard/xguard` は夜run最終状態で `HEAD=origin/main=95e6392`、working tree clean。
+- `86a71fb` と `8aa0910` の `backup_run_id` / `x_account_id` 境界修正系列は `95e6392 Merge remote-tracking branch 'origin/main'` で統合済み。
+- 検証: `git diff --check`, `git ls-files -u`, `npx tsc -p tsconfig.json --noEmit`, targeted Vitest, `npm run test`, `npm run build` pass。
+- `npm run check` は `dist/backend/...` 上書きが `EPERM` で失敗。コード失敗ではなく、このsandboxの権限ブロッカーとして扱う。
+- live GitHub確認は未完了。`git ls-remote origin refs/heads/main` はDNS失敗、`git fetch origin main` は `.git/FETCH_HEAD` 書き込み不可。
+- まだNo-Go:
+  - `/api/x/oauth/status` を無認証production endpointとして公開すること。
+  - 実Supabase/Postgres integration testなしでSQL boundaryを完了扱いにすること。
+  - OAuth configured modeを静的 `state` / plain PKCE / callback未照合のまま実運用へ出すこと。
+- 残るGate:
+  - `95e6392` のlive remote確認。
+  - 実Supabase/Postgres integration test。
+  - OAuth state / S256 PKCE / callback validation。
+  - token repositoryとSupabase schema契約一本化。
+  - Developer Console原価実値確認。

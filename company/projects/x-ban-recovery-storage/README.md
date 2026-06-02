@@ -219,6 +219,14 @@ TEST_MODE=true
 - X API原価はPay-per-usageとDeveloper Console実画面確認を正とし、`Owned Reads` の低単価枠を第三者ユーザー向けSaaSの主前提にしない。
 - proof pageはraw X API payloadを公開せず、公開DTO、取り下げ、redaction、X Content削除追従を必須にする。
 
+## 2026-06-02 evening review update
+
+- XGuard指定パス `/Users/uryuatsuya/XGuard/xguard` は夜run最終状態で `HEAD=origin/main=95e6392`、working tree clean。
+- `backup_run_id` 付きusage eventに `x_account_id` を必須化する境界修正は `95e6392` へ統合済み。
+- live GitHubの独立確認はDNS失敗で未完了。次回 `git ls-remote origin refs/heads/main` と `git fetch origin main` を再確認する。
+- Review P1: `/api/x/oauth/status` はproductionでadmin-onlyまたはdeployment-onlyへ寄せる。
+- 残るGate: 実Supabase/Postgres integration test、OAuth state / S256 PKCE / callback validation、token repositoryとSupabase schema契約一本化、Developer Console原価確認。
+
 ## 2026-05-29 evening review update
 
 - XGuard repo正本は `/Users/uryuatsuya/XGuard/xguard`。夜runで writable に回復し、`UryuAtsuya/Xguard` `origin/main` へpushできた。
