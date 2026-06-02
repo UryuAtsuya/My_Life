@@ -227,6 +227,16 @@ TEST_MODE=true
 - Review P1: `/api/x/oauth/status` はproductionでadmin-onlyまたはdeployment-onlyへ寄せる。
 - 残るGate: 実Supabase/Postgres integration test、OAuth state / S256 PKCE / callback validation、token repositoryとSupabase schema契約一本化、Developer Console原価確認。
 
+## 2026-06-03 morning research update
+
+- 調査メモ: `requirements/2026-06-03-x-ban-research.md`
+- 朝会引き継ぎ: `notes/2026-06-03-morning-planning.md`
+- 今日の優先は、`95e6392` のlive remote確認、実Supabase/Postgres integration test、OAuth state / S256 PKCE / callback validation、Developer Console原価確認の順にする。
+- v0初期scopeは `tweet.read`, `users.read`, `offline.access` のみに維持する。
+- 朝run確認では `/Users/uryuatsuya/XGuard/xguard` は存在するが `writable=no`、Git状態は `main...origin/main`、HEADは `95e6392`。
+- 指定パスが昼runでも書き込み不可なら、Vaultへ実装コードを置かず `/private/tmp/xguard-midday-2026-06-03` を使う。
+- `Owned Reads` は第三者ユーザー向けSaaSに適用できるとDeveloper Consoleで確認できるまで主前提にしない。
+
 ## 2026-05-29 evening review update
 
 - XGuard repo正本は `/Users/uryuatsuya/XGuard/xguard`。夜runで writable に回復し、`UryuAtsuya/Xguard` `origin/main` へpushできた。

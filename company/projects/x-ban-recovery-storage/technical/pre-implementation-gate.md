@@ -249,3 +249,19 @@ status: draft
   - OAuth state / S256 PKCE / callback validation。
   - token repositoryとSupabase schema契約一本化。
   - Developer Console原価実値確認。
+
+## 2026-06-03 morning gate update
+
+- 朝runではproduction codeを実装しない。
+- 指定パス `/Users/uryuatsuya/XGuard/xguard` は `writable=no`、Git状態は `main...origin/main`、local `HEAD` / local `origin/main` は `95e6392`。
+- Go継続:
+  - `95e6392` がlive remote `origin/main` と一致するか確認する。
+  - 実Supabase/Postgresで `RUN_SUPABASE_SQL_INTEGRATION_TESTS=1` を実行し、SQL functionの権限と拒否条件を確認する。
+  - OAuth configured modeの静的 `state`、plain/mock PKCE、callback未照合を解消する。
+  - token repositoryとSupabase schemaの保存契約を一本化する。
+  - Developer Consoleでendpoint別単価、spending limit、Usage endpoint、Owned Reads適用条件を実画面確認する。
+- まだNo-Go:
+  - `/api/x/oauth/status` を無認証production endpointとして公開すること。
+  - `follows.read`, DM/write/follow系scope追加。
+  - 自動DM、自動follow/unfollow、自動投稿、bulk outreach。
+  - `Owned Reads` を第三者ユーザー向けSaaSの主前提にすること。
