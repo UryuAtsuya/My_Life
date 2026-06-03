@@ -294,3 +294,21 @@ status: draft
   - token repositoryとSupabase schema契約一本化。
   - Developer Console原価実値確認。
 - 最終追記: `6024667 Restrict production CORS origins` を検出。production CORSは `APP_BASE_URL` / `CORS_ORIGINS` ベースへ寄せる方向で進展済み。
+
+## 2026-06-04 morning gate update
+
+- 朝runではproduction codeを実装しない。
+- 指定パス `/Users/uryuatsuya/XGuard/xguard` は `writable=no`、Git状態は `main...origin/main`、local `HEAD` / local `origin/main` は `6024667 Restrict production CORS origins`。
+- `git ls-remote origin refs/heads/main` は `Could not resolve host: github.com`、`git fetch origin main` は `.git/FETCH_HEAD: Operation not permitted`。
+- Go継続:
+  - `deployment_diagnostic` 有効時の `/api/x/oauth/status` を認証・secret付きまたはprivate health checkに限定する。
+  - 実Supabase/Postgres integration testでSQL functionの権限と拒否条件を確認する。
+  - OAuth configured modeの固定 `state`、plain/mock PKCE、callback未照合を解消する。
+  - `docs/API_COST_MODEL.md` で通常read単価を使い、`Owned Reads` を複数顧客向け原価前提から外す。
+  - 公開有料ローンチ前にEnterprise適用要否を確認する。
+  - X Content削除・変更追従の24時間SLAと、API access終了時の全削除runbookを用意する。
+- まだNo-Go:
+  - `deployment_diagnostic` 有効時に診断endpointを無認証公開すること。
+  - 実Supabase/Postgres integration testなしでDB境界を完了扱いにすること。
+  - `Owned Reads` を複数顧客向けXGuardの主原価前提にすること。
+  - `follows.read`, DM/write/follow系scope、自動DM、自動follow/unfollow、自動投稿、bulk outreach、BAN回避導線を追加すること。

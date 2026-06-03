@@ -229,6 +229,16 @@ TEST_MODE=true
 - 次: 診断endpoint制限、実Supabase/Postgres integration test、OAuth PKCE/state、Developer Console原価確認。
 - 最終追記: `6024667 Restrict production CORS origins` を検出。production CORSは `APP_BASE_URL` / `CORS_ORIGINS` ベースへ進展し、追加検証もpass。
 
+## 2026-06-04 morning research update
+
+- 調査メモ: `requirements/2026-06-04-x-ban-research.md`
+- 朝会引き継ぎ: `notes/2026-06-04-morning-planning.md`
+- XGuard指定パスは `writable=no`、local `HEAD` / local `origin/main` は `6024667 Restrict production CORS origins`。
+- 昼の最初の実装は、`deployment_diagnostic` 有効時の `/api/x/oauth/status` をheader secret、admin auth、またはprivate health checkへ限定すること。
+- `Owned Reads` はdeveloper app owner本人に限定されるため、複数顧客向けXGuardの原価前提には使わない。
+- 公開有料ローンチ前にEnterprise適用要否を確認し、X Content削除・変更追従の24時間SLAとAPI access終了時の全削除runbookをrelease gateにする。
+- v0 scopeは `tweet.read`, `users.read`, `offline.access` のみに維持する。
+
 ## 2026-06-02 evening review update
 
 - XGuard指定パス `/Users/uryuatsuya/XGuard/xguard` は夜run最終状態で `HEAD=origin/main=95e6392`、working tree clean。
