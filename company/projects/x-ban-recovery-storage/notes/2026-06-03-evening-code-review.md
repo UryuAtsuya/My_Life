@@ -37,3 +37,9 @@ release gateはまだ閉じない。診断endpointを明示有効化した場合
 1. `deployment_diagnostic` 有効時の診断endpoint制限を入れる。
 2. 実Supabase/Postgres SQL integration testを実行する。
 3. OAuth `state` / S256 PKCE / callback validation / token schema契約とDeveloper Console原価確認を閉じる。
+
+## 最終追記
+
+- 最終確認で `/Users/uryuatsuya/XGuard/xguard` は `HEAD=origin/main=6024667 Restrict production CORS origins` へ進んでいた。
+- `6024667` はproduction CORSを `APP_BASE_URL` / `CORS_ORIGINS` ベースへ寄せるcommitで、CORSのP2は進展。
+- 追加検証: `git diff --check`、`tsc --noEmit`、targeted Vitest（12 tests）、`npm run test`（47 passed / 2 skipped）pass。

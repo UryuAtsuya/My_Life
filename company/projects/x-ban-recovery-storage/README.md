@@ -227,6 +227,7 @@ TEST_MODE=true
 - P1残: `deployment_diagnostic` 有効時の診断endpoint無認証公開、OAuth `state` / S256 PKCE / callback validation未実装。
 - 検証: `git diff --check`、`git diff --cached --check`、targeted Vitest、`tsc --noEmit`、`npm run test` はpass。`build:api` / `build:web` は `dist/` 権限blocker。
 - 次: 診断endpoint制限、実Supabase/Postgres integration test、OAuth PKCE/state、Developer Console原価確認。
+- 最終追記: `6024667 Restrict production CORS origins` を検出。production CORSは `APP_BASE_URL` / `CORS_ORIGINS` ベースへ進展し、追加検証もpass。
 
 ## 2026-06-02 evening review update
 

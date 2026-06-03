@@ -293,3 +293,4 @@ status: draft
   - OAuth `state` / S256 PKCE / callback validation。
   - token repositoryとSupabase schema契約一本化。
   - Developer Console原価実値確認。
+- 最終追記: `6024667 Restrict production CORS origins` を検出。production CORSは `APP_BASE_URL` / `CORS_ORIGINS` ベースへ寄せる方向で進展済み。

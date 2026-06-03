@@ -35,6 +35,7 @@ Last updated: 2026-06-03
 4. 検証: `git diff --check`, `git diff --cached --check`, targeted Vitest, `tsc --noEmit`, `npm run test` pass。`build:api` と `build:web` は `dist/` write/rm `EPERM`。
 5. XGuard push: local差分なしのためpush対象なし。live remote確認はfetch/DNS/`.git/FETCH_HEAD` blockerで未完了。
 6. Next action: 診断endpoint制限、実Supabase test、OAuth PKCE/state、Developer Console原価確認。
+7. Final addendum: 最終確認で `HEAD=origin/main=6024667 Restrict production CORS origins` を検出。production CORSは `APP_BASE_URL` / `CORS_ORIGINS` ベースへ進展し、追加で `tsc --noEmit`, targeted Vitest, `npm run test` pass。
 
 ## 2026-06-03 Midday XGuard Implementation
 

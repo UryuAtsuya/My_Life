@@ -149,3 +149,4 @@ XアカウントがBANまたは凍結された人向けに、平常時のXデー
 - Verification: `git diff --check`, `git diff --cached --check`, targeted Vitest, `tsc --noEmit`, `npm run test` pass。`build:api` / `build:web` は `dist/` 権限blocker。
 - XGuard push: local差分なしのためpush対象なし。live remote確認はfetch/DNS/`.git/FETCH_HEAD` blockerで未完了。
 - Next: 診断endpoint制限、実Supabase/Postgres integration test、OAuth PKCE/state、Developer Console原価確認をTop 3で進める。
+- Final addendum: 最終確認で `HEAD=origin/main=6024667 Restrict production CORS origins`。CORSは `APP_BASE_URL` / `CORS_ORIGINS` ベースへ進展し、`tsc --noEmit`, targeted Vitest, `npm run test` pass。

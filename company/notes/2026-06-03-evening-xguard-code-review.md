@@ -71,3 +71,10 @@ status: reviewed
 - Verification agent: 実サブエージェント使用。local clean、`HEAD=origin/main=03ecd2f`。targeted/typecheck/testは通過。fetch/ls-remote/buildは環境・権限blocker。
 - Documentation/Sync agent: 実サブエージェント使用。MyLife更新対象、明日Top 3、未解決事項を整理。
 - Implementation agent: 夜runでは使用しない判断。小修正候補はあるが、実装repoがcleanかつbuild/push権限blockerがあるため明日タスク化した。
+
+## final addendum
+
+- 最終確認時点で指定パスは `HEAD=origin/main=6024667 Restrict production CORS origins` へ進んでいた。これは夜run中のCodex編集ではなく、既存commitとして検出した。
+- `6024667` はproduction CORSを `APP_BASE_URL` または `CORS_ORIGINS` に制限し、関連テストを追加している。
+- 追加検証: `git diff --check` pass、`tsc --noEmit` pass、targeted Vitest `backend/src/__tests__/api.test.ts` pass（12 tests）、`npm run test` pass（47 passed / 2 skipped）。
+- CORSのP2は進展したが、`deployment_diagnostic` 有効時の診断endpoint制限とOAuth PKCE/stateは未完了のまま。
