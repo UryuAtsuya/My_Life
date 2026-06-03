@@ -279,3 +279,17 @@ status: draft
   - `follows.read`, DM/write/follow系scope追加。
   - 自動DM、自動follow/unfollow、自動投稿、bulk outreach。
   - `Owned Reads` を第三者ユーザー向けSaaSの主前提にすること。
+
+## 2026-06-03 evening gate update
+
+- Go継続: 指定パス `/Users/uryuatsuya/XGuard/xguard` は `HEAD=origin/main=03ecd2f Default OAuth status diagnostic to disabled`、working tree clean。
+- `03ecd2f` は `X_OAUTH_STATUS_EXPOSURE` 未設定時に `/api/x/oauth/status` を404へ倒すため、既定公開blockerは解消した。
+- ただし `deployment_diagnostic` 明示時の診断endpointは無認証のままなので、header secret、admin auth、private health checkのいずれかで制限するまでrelease gateは閉じない。
+- 検証: `git diff --check`, `git diff --cached --check`, targeted Vitest, `tsc --noEmit`, `npm run test` pass。`build:api` / `build:web` は `dist/` write/rm `EPERM`。
+- XGuard push: local差分なし。live remote確認は `.git/FETCH_HEAD` 権限とDNS blockerで未完了。
+- 残るGate:
+  - `deployment_diagnostic` 有効時の診断endpoint制限。
+  - 実Supabase/Postgres integration test。
+  - OAuth `state` / S256 PKCE / callback validation。
+  - token repositoryとSupabase schema契約一本化。
+  - Developer Console原価実値確認。

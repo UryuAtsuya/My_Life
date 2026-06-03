@@ -219,6 +219,15 @@ TEST_MODE=true
 - X API原価はPay-per-usageとDeveloper Console実画面確認を正とし、`Owned Reads` の低単価枠を第三者ユーザー向けSaaSの主前提にしない。
 - proof pageはraw X API payloadを公開せず、公開DTO、取り下げ、redaction、X Content削除追従を必須にする。
 
+## 2026-06-03 evening code review update
+
+- XGuard指定パス `/Users/uryuatsuya/XGuard/xguard` は `HEAD=origin/main=03ecd2f Default OAuth status diagnostic to disabled`、working tree clean。
+- `03ecd2f` は `/api/x/oauth/status` を未設定時に404へ倒しており、既定公開blockerは解消した。
+- 昼の一時commit `9e8b7c5 Guard OAuth status diagnostic in production` は丸ごとpushしない。
+- P1残: `deployment_diagnostic` 有効時の診断endpoint無認証公開、OAuth `state` / S256 PKCE / callback validation未実装。
+- 検証: `git diff --check`、`git diff --cached --check`、targeted Vitest、`tsc --noEmit`、`npm run test` はpass。`build:api` / `build:web` は `dist/` 権限blocker。
+- 次: 診断endpoint制限、実Supabase/Postgres integration test、OAuth PKCE/state、Developer Console原価確認。
+
 ## 2026-06-02 evening review update
 
 - XGuard指定パス `/Users/uryuatsuya/XGuard/xguard` は夜run最終状態で `HEAD=origin/main=95e6392`、working tree clean。

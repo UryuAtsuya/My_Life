@@ -138,3 +138,14 @@ XアカウントがBANまたは凍結された人向けに、平常時のXデー
 - XGuard push: `b3bd37c Add token repository contract and docs gates` を `UryuAtsuya/Xguard` `origin/main` へpush済み。
 - Not completed: Developer Console実画面確認、Stripe webhook handler、`backup_runs` + `api_usage_events` transaction service、指定パス `/Users/uryuatsuya/XGuard/xguard` のローカル同期。
 - Next: 夜レビューで `b3bd37c` をレビューし、指定パスを同期できる状態なら同パスで `npm run check` を再実行する。
+
+## 2026-06-03 evening review update
+
+- Reviewed: `/Users/uryuatsuya/XGuard/xguard` at `HEAD=origin/main=03ecd2f Default OAuth status diagnostic to disabled`。
+- Status: activeのまま。既定では `/api/x/oauth/status` が404へ倒れるため、昼のproduction status公開blockerは解消。
+- Decision: 昼の一時commit `9e8b7c5 Guard OAuth status diagnostic in production` は丸ごとpushしない。必要差分だけ `03ecd2f` の上で扱う。
+- P1: `X_OAUTH_STATUS_EXPOSURE=deployment_diagnostic` 有効時の診断endpointが無認証。header secret、admin auth、private health checkのいずれかで閉じる。
+- P1: OAuth `state` / S256 PKCE / callback validationが未実装。
+- Verification: `git diff --check`, `git diff --cached --check`, targeted Vitest, `tsc --noEmit`, `npm run test` pass。`build:api` / `build:web` は `dist/` 権限blocker。
+- XGuard push: local差分なしのためpush対象なし。live remote確認はfetch/DNS/`.git/FETCH_HEAD` blockerで未完了。
+- Next: 診断endpoint制限、実Supabase/Postgres integration test、OAuth PKCE/state、Developer Console原価確認をTop 3で進める。

@@ -6,7 +6,7 @@ Last updated: 2026-06-03
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | X BAN Recovery Storage | XGuard live remote / Supabase-OAuth-cost pending | `95e6392` のlive remote確認、実Supabase test、OAuth PKCE/state、Developer Console原価確認を閉じる |
+| 1 | X BAN Recovery Storage | XGuard status diagnostic / Supabase-OAuth-cost pending | `03ecd2f` を正として診断endpoint制限、実Supabase test、OAuth PKCE/state、Developer Console原価確認を閉じる |
 | 2 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
 | 3 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 4 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
@@ -25,7 +25,16 @@ Last updated: 2026-06-03
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
-| `x-ban-recovery-storage` | XGuard live remote / Supabase-OAuth-cost pending | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | `95e6392` のlive remote確認、実Supabase test、OAuth PKCE/state、Developer Console原価確認を閉じる。 |
+| `x-ban-recovery-storage` | XGuard status diagnostic / Supabase-OAuth-cost pending | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | `03ecd2f` を正として診断endpoint制限、実Supabase test、OAuth PKCE/state、Developer Console原価確認を閉じる。 |
+
+## 2026-06-03 Evening XGuard Review
+
+1. `x-ban-recovery-storage`: 指定パス `/Users/uryuatsuya/XGuard/xguard` は `HEAD=origin/main=03ecd2f Default OAuth status diagnostic to disabled`、working tree clean。
+2. `x-ban-recovery-storage`: `03ecd2f` は `/api/x/oauth/status` を未設定時に404へ倒しており、既定公開blockerは解消。昼の `9e8b7c5` は丸ごとpushしない。
+3. Review: P0なし。P1は `deployment_diagnostic` 有効時の無認証公開とOAuth `state` / S256 PKCE / callback未照合。
+4. 検証: `git diff --check`, `git diff --cached --check`, targeted Vitest, `tsc --noEmit`, `npm run test` pass。`build:api` と `build:web` は `dist/` write/rm `EPERM`。
+5. XGuard push: local差分なしのためpush対象なし。live remote確認はfetch/DNS/`.git/FETCH_HEAD` blockerで未完了。
+6. Next action: 診断endpoint制限、実Supabase test、OAuth PKCE/state、Developer Console原価確認。
 
 ## 2026-06-03 Midday XGuard Implementation
 
