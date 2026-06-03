@@ -237,6 +237,14 @@ TEST_MODE=true
 - 指定パスが昼runでも書き込み不可なら、Vaultへ実装コードを置かず `/private/tmp/xguard-midday-2026-06-03` を使う。
 - `Owned Reads` は第三者ユーザー向けSaaSに適用できるとDeveloper Consoleで確認できるまで主前提にしない。
 
+## 2026-06-03 midday implementation update
+
+- `/api/x/oauth/status` をproductionで `X_OAUTH_STATUS_DIAGNOSTIC_TOKEN` と `x-xguard-diagnostic-token` header一致時だけ返すdiagnostic endpointへ寄せた。
+- 作業場所は `/private/tmp/xguard-midday-2026-06-03-1339`。指定パス `/Users/uryuatsuya/XGuard/xguard` は昼runでも `writable=no`。
+- XGuard local commit: `9e8b7c5 Guard OAuth status diagnostic in production`。
+- XGuard pushは未完了。`git push origin main` は `fetch first`、`git fetch origin main` / `git ls-remote origin refs/heads/main` はDNS失敗。force pushなし。
+- 検証は targeted Vitest、`tsc --noEmit`、`build:api`、runner版 `build:web`、`npm run test` がpass。`npm run check` は Vite temp write `EPERM`。
+
 ## 2026-05-29 evening review update
 
 - XGuard repo正本は `/Users/uryuatsuya/XGuard/xguard`。夜runで writable に回復し、`UryuAtsuya/Xguard` `origin/main` へpushできた。

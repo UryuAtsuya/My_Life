@@ -40,3 +40,12 @@ status: in_progress
 - API原価は通常read単価で保守的に見積もり、`Owned Reads` はDeveloper Consoleで適用条件を確認するまで主前提にしない。
 - 自動DM、自動follow/unfollow、自動投稿、bulk outreach、BAN回避導線は作らない。
 - 実装コードはMyLife Vaultへ迂回配置しない。
+
+## 2026-06-03 midday update
+
+- [x] `/Users/uryuatsuya/XGuard/xguard` は昼runでも `writable=no`。Vaultへ実装コードを置かず `/private/tmp/xguard-midday-2026-06-03-1339` で作業した。
+- [x] `/api/x/oauth/status` をproductionで `X_OAUTH_STATUS_DIAGNOSTIC_TOKEN` と `x-xguard-diagnostic-token` header一致時だけ返すdiagnostic endpointへ寄せた。
+- [x] `docs/API_SPEC.md` / `docs/DEPLOY.md` にproduction access条件とbackend runtime secretを反映した。
+- [x] XGuard local commit `9e8b7c5 Guard OAuth status diagnostic in production` を作成した。
+- [ ] `9e8b7c5` は未push。`git push origin main` は `fetch first`、その後の `git fetch origin main` / `git ls-remote origin refs/heads/main` はDNS失敗。
+- [ ] 実Supabase/Postgres integration test、OAuth `state` / S256 PKCE / callback validation、token schema契約、Developer Console原価確認は未完了。

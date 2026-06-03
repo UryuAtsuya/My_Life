@@ -27,6 +27,15 @@ Last updated: 2026-06-03
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
 | `x-ban-recovery-storage` | XGuard live remote / Supabase-OAuth-cost pending | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | `95e6392` のlive remote確認、実Supabase test、OAuth PKCE/state、Developer Console原価確認を閉じる。 |
 
+## 2026-06-03 Midday XGuard Implementation
+
+1. `x-ban-recovery-storage`: 指定パス `/Users/uryuatsuya/XGuard/xguard` は `writable=no`。Vaultへ実装コードを置かず `/private/tmp/xguard-midday-2026-06-03-1339` で作業した。
+2. `x-ban-recovery-storage`: `/api/x/oauth/status` をproductionで `X_OAUTH_STATUS_DIAGNOSTIC_TOKEN` と `x-xguard-diagnostic-token` header一致時だけ返すdiagnostic endpointへ寄せた。
+3. XGuard local commit: `9e8b7c5 Guard OAuth status diagnostic in production`。pushは `fetch first` で拒否され、その後のfetch/ls-remoteはDNS失敗。
+4. 検証: `git diff --check`, `git diff --cached --check`, targeted Vitest, `tsc --noEmit`, `build:api`, runner版 `build:web`, `npm run test` pass。`npm run check` は `node_modules/.vite-temp` write `EPERM`。
+5. 未完了: 実Supabase/Postgres integration test、OAuth state / S256 PKCE / callback validation、token schema契約、Developer Console原価確認。
+6. Next action: remote先行分をfetchし、`9e8b7c5` をrebase/cherry-pickしてpushする。
+
 ## 2026-06-03 Morning XGuard Research
 
 1. `x-ban-recovery-storage`: XGuardは今日も事業最優先。v0は `tweet.read`, `users.read`, `offline.access` のread-only backupとproof pageに限定する。

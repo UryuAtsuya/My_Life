@@ -258,8 +258,21 @@ status: draft
   - `95e6392` がlive remote `origin/main` と一致するか確認する。
   - 実Supabase/Postgresで `RUN_SUPABASE_SQL_INTEGRATION_TESTS=1` を実行し、SQL functionの権限と拒否条件を確認する。
   - OAuth configured modeの静的 `state`、plain/mock PKCE、callback未照合を解消する。
-  - token repositoryとSupabase schemaの保存契約を一本化する。
-  - Developer Consoleでendpoint別単価、spending limit、Usage endpoint、Owned Reads適用条件を実画面確認する。
+
+## 2026-06-03 midday gate update
+
+- Go継続: `/api/x/oauth/status` はproductionで `X_OAUTH_STATUS_DIAGNOSTIC_TOKEN` と `x-xguard-diagnostic-token` header一致時だけstatus responseを返すようにした。
+- XGuard local commit: `9e8b7c5 Guard OAuth status diagnostic in production`。
+- 作業場所: `/private/tmp/xguard-midday-2026-06-03-1339`。指定パス `/Users/uryuatsuya/XGuard/xguard` は `writable=no` のため直接編集していない。
+- 検証: `git diff --check`, `git diff --cached --check`, targeted Vitest, `tsc --noEmit`, `build:api`, runner版 `build:web`, `npm run test` pass。
+- `npm run check` は Vite既定config loaderの `node_modules/.vite-temp` write `EPERM` で失敗。runner版web buildと全体testはpass。
+- XGuard pushは未完了。`git push origin main` は `fetch first`、fetch/ls-remoteはDNS失敗。force pushしない。
+- 残るGate:
+  - remote先行分をfetchし、`9e8b7c5` をrebase/cherry-pickしてpushする。
+  - 実Supabase/Postgres integration test。
+  - OAuth `state` / S256 PKCE / callback validation。
+  - token repositoryとSupabase schema契約一本化。
+  - Developer Console原価実値確認。
 - まだNo-Go:
   - `/api/x/oauth/status` を無認証production endpointとして公開すること。
   - `follows.read`, DM/write/follow系scope追加。
