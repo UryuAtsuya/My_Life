@@ -244,6 +244,7 @@ TEST_MODE=true
 - XGuard local commit: `9e8b7c5 Guard OAuth status diagnostic in production`。
 - XGuard pushは未完了。`git push origin main` は `fetch first`、`git fetch origin main` / `git ls-remote origin refs/heads/main` はDNS失敗。force pushなし。
 - 検証は targeted Vitest、`tsc --noEmit`、`build:api`、runner版 `build:web`、`npm run test` がpass。`npm run check` は Vite temp write `EPERM`。
+- 最終確認で指定パス `/Users/uryuatsuya/XGuard/xguard` は `HEAD=origin/main=03ecd2f Default OAuth status diagnostic to disabled`。`03ecd2f` は未設定時にstatus endpointを404にする方式なので、次回はこれを正として `9e8b7c5` の必要差分だけ確認する。
 
 ## 2026-05-29 evening review update
 

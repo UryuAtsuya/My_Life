@@ -48,4 +48,5 @@ status: in_progress
 - [x] `docs/API_SPEC.md` / `docs/DEPLOY.md` にproduction access条件とbackend runtime secretを反映した。
 - [x] XGuard local commit `9e8b7c5 Guard OAuth status diagnostic in production` を作成した。
 - [ ] `9e8b7c5` は未push。`git push origin main` は `fetch first`、その後の `git fetch origin main` / `git ls-remote origin refs/heads/main` はDNS失敗。
+- [x] 最終確認で指定パス `/Users/uryuatsuya/XGuard/xguard` は `HEAD=origin/main=03ecd2f Default OAuth status diagnostic to disabled`。`03ecd2f` を正として扱い、`9e8b7c5` は丸ごとpushしない。
 - [ ] 実Supabase/Postgres integration test、OAuth `state` / S256 PKCE / callback validation、token schema契約、Developer Console原価確認は未完了。

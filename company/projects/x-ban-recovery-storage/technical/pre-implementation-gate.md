@@ -267,8 +267,9 @@ status: draft
 - 検証: `git diff --check`, `git diff --cached --check`, targeted Vitest, `tsc --noEmit`, `build:api`, runner版 `build:web`, `npm run test` pass。
 - `npm run check` は Vite既定config loaderの `node_modules/.vite-temp` write `EPERM` で失敗。runner版web buildと全体testはpass。
 - XGuard pushは未完了。`git push origin main` は `fetch first`、fetch/ls-remoteはDNS失敗。force pushしない。
+- 最終確認で指定パス `/Users/uryuatsuya/XGuard/xguard` は `HEAD=origin/main=03ecd2f Default OAuth status diagnostic to disabled` へ進んでいた。`03ecd2f` は `X_OAUTH_STATUS_EXPOSURE` 未設定時にstatus endpointを404にし、`deployment_diagnostic` 明示時だけ有効化する方式。`9e8b7c5` は丸ごとpushせず、必要差分だけ比較する。
 - 残るGate:
-  - remote先行分をfetchし、`9e8b7c5` をrebase/cherry-pickしてpushする。
+  - `03ecd2f` と `9e8b7c5` の差分を確認し、必要差分だけ扱う。
   - 実Supabase/Postgres integration test。
   - OAuth `state` / S256 PKCE / callback validation。
   - token repositoryとSupabase schema契約一本化。

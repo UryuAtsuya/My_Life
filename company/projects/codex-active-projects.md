@@ -31,10 +31,10 @@ Last updated: 2026-06-03
 
 1. `x-ban-recovery-storage`: 指定パス `/Users/uryuatsuya/XGuard/xguard` は `writable=no`。Vaultへ実装コードを置かず `/private/tmp/xguard-midday-2026-06-03-1339` で作業した。
 2. `x-ban-recovery-storage`: `/api/x/oauth/status` をproductionで `X_OAUTH_STATUS_DIAGNOSTIC_TOKEN` と `x-xguard-diagnostic-token` header一致時だけ返すdiagnostic endpointへ寄せた。
-3. XGuard local commit: `9e8b7c5 Guard OAuth status diagnostic in production`。pushは `fetch first` で拒否され、その後のfetch/ls-remoteはDNS失敗。
+3. XGuard local commit: `9e8b7c5 Guard OAuth status diagnostic in production`。pushは `fetch first` で拒否され、その後のfetch/ls-remoteはDNS失敗。最終確認では指定パスが `HEAD=origin/main=03ecd2f Default OAuth status diagnostic to disabled` へ進んでいたため、`03ecd2f` を正として扱う。
 4. 検証: `git diff --check`, `git diff --cached --check`, targeted Vitest, `tsc --noEmit`, `build:api`, runner版 `build:web`, `npm run test` pass。`npm run check` は `node_modules/.vite-temp` write `EPERM`。
 5. 未完了: 実Supabase/Postgres integration test、OAuth state / S256 PKCE / callback validation、token schema契約、Developer Console原価確認。
-6. Next action: remote先行分をfetchし、`9e8b7c5` をrebase/cherry-pickしてpushする。
+6. Next action: `03ecd2f` と `9e8b7c5` を比較し、必要差分だけ扱う。`9e8b7c5` は丸ごとpushしない。
 
 ## 2026-06-03 Morning XGuard Research
 
