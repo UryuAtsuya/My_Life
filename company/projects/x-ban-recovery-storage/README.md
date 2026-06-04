@@ -239,6 +239,14 @@ TEST_MODE=true
 - 公開有料ローンチ前にEnterprise適用要否を確認し、X Content削除・変更追従の24時間SLAとAPI access終了時の全削除runbookをrelease gateにする。
 - v0 scopeは `tweet.read`, `users.read`, `offline.access` のみに維持する。
 
+## 2026-06-04 midday implementation update
+
+- `/api/x/oauth/status` の `deployment_diagnostic` 無認証公開を、32文字以上のheader secret gateで解消した。
+- disabled、token未設定、header欠落、不一致は同じ404、成功・拒否responseは `Cache-Control: no-store` とした。
+- Review最終判定はP0/P1/P2なし。`npm run check` pass。
+- XGuard local commitは `e31510b Guard OAuth deployment diagnostic`。GitHub DNS解決失敗のため未push。
+- 残る主要Gateはlive remote照合・push、実Supabase/Postgres integration test、OAuth `state` / S256 PKCE / callback validation、cost/compliance docs反映。
+
 ## 2026-06-02 evening review update
 
 - XGuard指定パス `/Users/uryuatsuya/XGuard/xguard` は夜run最終状態で `HEAD=origin/main=95e6392`、working tree clean。

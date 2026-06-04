@@ -14,8 +14,8 @@ status: in_progress
 
 ## 完了条件
 
-- [ ] `deployment_diagnostic` 有効時の `/api/x/oauth/status` をheader secret、admin auth、またはprivate health checkに限定する。
-- [ ] `/api/x/oauth/status` の無効、認証失敗、認証成功をHTTP境界テストで確認する。
+- [x] `deployment_diagnostic` 有効時の `/api/x/oauth/status` を32文字以上のheader secret必須に限定する。
+- [x] `/api/x/oauth/status` の無効、token未設定、header欠落、不一致、成功をHTTPテストとsandbox fallbackで確認する。
 - [ ] 実Supabase/Postgresで `RUN_SUPABASE_SQL_INTEGRATION_TESTS=1` を実行し、role、ownership、同一Xアカウント、存在しない `backup_run`、`x_account_id` 必須、負値、月次上限超過を確認する。
 - [ ] OAuth configured modeの一回限り `state`、S256 PKCE、callback validationを実装する。
 - [ ] token repositoryとSupabase schemaの保存契約を一本化する。
@@ -31,3 +31,12 @@ status: in_progress
 - `Owned Reads` を複数顧客向けSaaSの原価前提にしない。
 - `follows.read`, DM/write/follow系scope、自動DM、自動follow/unfollow、自動投稿、bulk outreach、BAN回避導線は追加しない。
 - 指定パスが書き込み不可なら `/private/tmp/xguard-midday-2026-06-04` を使い、MyLife Vaultへproduction codeを置かない。
+
+## 2026-06-04 midday update
+
+- [x] `/private/tmp/xguard-midday-2026-06-04-UdD2dZ` で診断endpointのheader secret gateを実装した。
+- [x] 32文字未満の診断tokenをruntime config errorで拒否し、SHA-256 digestと `timingSafeEqual` で比較する。
+- [x] 成功・拒否responseの両方へ `Cache-Control: no-store` を追加した。
+- [x] 最終ReviewはP0/P1/P2なし。`npm run check` はpass。
+- [ ] XGuard commit `e31510b Guard OAuth deployment diagnostic` はDNS解決失敗で未push。force pushしない。
+- [ ] 実Supabase/Postgres、OAuth安全化、token schema、cost/compliance docsは未完了。

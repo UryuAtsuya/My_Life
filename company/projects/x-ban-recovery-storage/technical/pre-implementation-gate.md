@@ -312,3 +312,15 @@ status: draft
   - 実Supabase/Postgres integration testなしでDB境界を完了扱いにすること。
   - `Owned Reads` を複数顧客向けXGuardの主原価前提にすること。
   - `follows.read`, DM/write/follow系scope、自動DM、自動follow/unfollow、自動投稿、bulk outreach、BAN回避導線を追加すること。
+
+## 2026-06-04 midday gate update
+
+- Go継続: `deployment_diagnostic` 有効時の `/api/x/oauth/status` は32文字以上の `X_OAUTH_STATUS_DIAGNOSTIC_TOKEN` と `x-xguard-diagnostic-token` header一致時だけ応答する。
+- disabled、token未設定、header欠落、token不一致は同じ404へ寄せ、成功・拒否responseは `Cache-Control: no-store` を返す。
+- 比較はSHA-256 digestと `timingSafeEqual` を使い、診断token、client ID、client secret、token materialをresponseやlogへ出さない。
+- Review最終判定: P0/P1/P2なし。`npm run check` pass。
+- XGuard local commit: `e31510b Guard OAuth deployment diagnostic`。DNS解決失敗のため未push。
+- 残るNo-Go:
+  - 実Supabase/Postgres integration testなしでDB境界を完了扱いにすること。
+  - OAuth configured modeを固定 `state` / plain PKCE / callback未照合のまま実運用へ出すこと。
+  - DNS復旧後のlive remote照合なしで `e31510b` をpush済み扱いにすること。
