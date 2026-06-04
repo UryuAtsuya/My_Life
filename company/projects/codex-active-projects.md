@@ -6,7 +6,7 @@ Last updated: 2026-06-04
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | X BAN Recovery Storage | XGuard diagnostic / compliance / Supabase-OAuth pending | `6024667` を正として診断endpoint制限、実Supabase test、OAuth PKCE/state、商用compliance gateを閉じる |
+| 1 | X BAN Recovery Storage | XGuard diagnostic HTTP tested / production No-Go | `394a3c3` を正としてOAuth安全化、backup/proof所有権、実Supabase、商用compliance gateを閉じる |
 | 2 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
 | 3 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 4 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
@@ -25,7 +25,15 @@ Last updated: 2026-06-04
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
-| `x-ban-recovery-storage` | XGuard diagnostic / compliance / Supabase-OAuth pending | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | `6024667` を正として診断endpoint制限、実Supabase test、OAuth PKCE/state、商用compliance gateを閉じる。 |
+| `x-ban-recovery-storage` | XGuard diagnostic HTTP tested / production No-Go | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | `394a3c3` を正としてOAuth安全化、backup/proof所有権、実Supabase、商用compliance gateを閉じる。 |
+
+## 2026-06-04 Evening XGuard Review
+
+1. `x-ban-recovery-storage`: 指定パスは `HEAD=origin/main=394a3c3 Add OAuth diagnostic HTTP boundary tests`、working tree clean。診断endpointの無認証公開は解消し、HTTP境界テストをpush済み。
+2. Review: P0なし。P1はOAuth固定 `state` / plain PKCE / callback未照合、backup/proof認証・所有権、実Supabase/Postgres、商用compliance gate。
+3. 検証: `git diff --check`, `git diff --cached --check`, `tsc --noEmit`, `npm run test` pass。全testは `50 passed / 4 skipped`。
+4. `npm run build` / `npm run check` は `dist/backend/...` write `EPERM`。
+5. production releaseはNo-Go。次はOAuth安全化、API所有権境界、実DB/cost/complianceを閉じる。
 
 ## 2026-06-04 Morning XGuard Research
 

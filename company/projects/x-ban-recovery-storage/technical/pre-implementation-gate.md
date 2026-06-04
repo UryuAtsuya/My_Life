@@ -324,3 +324,14 @@ status: draft
   - 実Supabase/Postgres integration testなしでDB境界を完了扱いにすること。
   - OAuth configured modeを固定 `state` / plain PKCE / callback未照合のまま実運用へ出すこと。
   - DNS復旧後のlive remote照合なしで `e31510b` をpush済み扱いにすること。
+
+## 2026-06-04 evening gate update
+
+- 指定パスは `HEAD=origin/main=394a3c3 Add OAuth diagnostic HTTP boundary tests`、working tree clean。診断endpointの無認証公開は解消済みとして扱う。
+- HTTP境界テストとAPI仕様の認証列を追加し、`UryuAtsuya/Xguard` `origin/main` へpush済み。
+- 検証: `git diff --check`, `git diff --cached --check`, `tsc --noEmit`, `npm run test` pass。全testは `50 passed / 4 skipped`。build/checkは `dist/` write `EPERM`。
+- まだNo-Go:
+  - OAuth configured modeを固定 `state` / plain PKCE / callback未照合のまま実運用へ出すこと。
+  - backup / proof APIを認証・user ownership・proof visibility/revocation境界なしで実データへ接続すること。
+  - 実Supabase/Postgres integration testなしでDB境界を完了扱いにすること。
+  - 24時間削除・変更追従、API access終了時の全削除runbook、Enterprise適用要否を閉じずに公開有料ローンチすること。
