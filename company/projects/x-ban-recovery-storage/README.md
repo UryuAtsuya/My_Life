@@ -239,6 +239,16 @@ TEST_MODE=true
 - 公開有料ローンチ前にEnterprise適用要否を確認し、X Content削除・変更追従の24時間SLAとAPI access終了時の全削除runbookをrelease gateにする。
 - v0 scopeは `tweet.read`, `users.read`, `offline.access` のみに維持する。
 
+## 2026-06-05 morning research update
+
+- 調査メモ: `requirements/2026-06-05-x-ban-research.md`
+- 朝会引き継ぎ: `notes/2026-06-05-morning-planning.md`
+- XGuard指定パスは `writable=no`、local `HEAD` / local `origin/main` は `394a3c3 Add OAuth diagnostic HTTP boundary tests`。
+- `git ls-remote origin refs/heads/main` はDNS失敗、`git fetch origin main` は `.git/FETCH_HEAD` 書き込み不可で未完了。
+- 診断endpointの無認証公開は解消済みとして、昼の最初の実装はOAuth configured modeの一回限り `state`、S256 PKCE、callback validation、TTL、replay防止にする。
+- 次点でbackup / proof APIの認証・所有権・visibility/revocation境界、実Supabase/Postgres検証、cost/compliance docs反映を進める。
+- v0 scopeは `tweet.read`, `users.read`, `offline.access` に維持し、自動DM、自動follow/unfollow、自動投稿、bulk outreach、BAN回避導線は作らない。
+
 ## 2026-06-04 midday implementation update
 
 - `/api/x/oauth/status` の `deployment_diagnostic` 無認証公開を、32文字以上のheader secret gateで解消した。

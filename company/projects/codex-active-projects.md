@@ -1,12 +1,12 @@
 # Codex Active Projects
 
-Last updated: 2026-06-04
+Last updated: 2026-06-05
 
 ## Main Focus
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | X BAN Recovery Storage | XGuard diagnostic HTTP tested / production No-Go | `394a3c3` を正としてOAuth安全化、backup/proof所有権、実Supabase、商用compliance gateを閉じる |
+| 1 | X BAN Recovery Storage | XGuard OAuth/proof/compliance gate planned / production No-Go | `394a3c3` を正としてOAuth one-time state / S256 PKCE、backup/proof所有権、実Supabase、商用compliance gateを閉じる |
 | 2 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
 | 3 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 4 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
@@ -25,7 +25,17 @@ Last updated: 2026-06-04
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
-| `x-ban-recovery-storage` | XGuard diagnostic HTTP tested / production No-Go | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | `394a3c3` を正としてOAuth安全化、backup/proof所有権、実Supabase、商用compliance gateを閉じる。 |
+| `x-ban-recovery-storage` | XGuard OAuth/proof/compliance gate planned / production No-Go | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | `394a3c3` を正としてOAuth one-time state / S256 PKCE、backup/proof所有権、実Supabase、商用compliance gateを閉じる。 |
+
+## 2026-06-05 Morning XGuard Research
+
+1. XGuardは今日も事業最優先。v0は `tweet.read`, `users.read`, `offline.access` のread-only backupとproof pageに限定する。
+2. 指定パス `/Users/uryuatsuya/XGuard/xguard` は `writable=no`、local `HEAD` / local `origin/main` は `394a3c3 Add OAuth diagnostic HTTP boundary tests`。
+3. `git ls-remote origin refs/heads/main` はDNS失敗、`git fetch origin main` は `.git/FETCH_HEAD` 書き込み不可。昼runで再試行し、force pushしない。
+4. 診断endpointの無認証公開は解消済み。昼はOAuth configured modeの一回限り `state`、S256 PKCE、callback validation、TTL、replay防止を最初に閉じる。
+5. 次点でbackup / proof APIの認証・所有権・visibility/revocation境界、実Supabase/Postgres、`docs/API_COST_MODEL.md` / `docs/COMPLIANCE.md` を進める。
+6. `Owned Reads` は複数顧客向け主原価に使わず、通常read単価、Usage endpoint、spending limit、24時間削除SLA、API access終了時全削除runbookをrelease gateにする。
+7. Next action: `/Users/uryuatsuya/XGuard/xguard` または `/private/tmp/xguard-midday-2026-06-05` で実装し、XGuardとMyLifeのcommit/push状態を分けて記録する。
 
 ## 2026-06-04 Evening XGuard Review
 
