@@ -257,6 +257,15 @@ TEST_MODE=true
 - 価格仮説は `Free診断 / 1,980円 Personal / 2,980円 Pro / 4,980円 Concierge検証枠`。単一3,000円案はPro案へ寄せる。
 - backup単体は980円前後に見えやすいため、XGuardは日次backupだけでなく、停止時に見せられるproof page、代表post保全、外部リンク導線、手動再起動支援で差別化する。
 
+## 2026-06-06 morning research update
+
+- 調査メモ: `requirements/2026-06-06-x-ban-research.md`
+- 朝会引き継ぎ: `notes/2026-06-06-morning-planning.md`
+- XGuard指定パスは `writable=no`、local `HEAD` は `2b96993 Add OAuth state and PKCE guard`。未追跡 `output/playwright/` は実装前に扱いを確認する。
+- 今日のTop 1はbackup / proof APIの認証・所有権・visibility/revocation境界。proof pageのIDOR、private/revoked proof公開、raw payload/token漏洩を先に潰す。
+- X APIはpay-per-usage、Usage endpoint、spending limit、rate limit header、Developer Console実値確認を原価管理の中心にする。`Owned Reads` は複数顧客向け主原価に使わない。
+- 24時間削除・変更追従、API access終了時全削除runbook、Enterprise適用要否確認をproduction release gateにする。
+
 ## 2026-06-04 midday implementation update
 
 - `/api/x/oauth/status` の `deployment_diagnostic` 無認証公開を、32文字以上のheader secret gateで解消した。

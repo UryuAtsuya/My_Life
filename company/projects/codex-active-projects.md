@@ -6,7 +6,7 @@ Last updated: 2026-06-06
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | X BAN Recovery Storage | XGuard `2b96993` review済み / proof/Supabase/compliance gate未完 / production No-Go | backup/proof API認証・所有権・revocation境界と実Supabase test、docs release gateを閉じる |
+| 1 | X BAN Recovery Storage | XGuard `2b96993` review済み / proof/Supabase/compliance gate未完 / production No-Go | backup/proof API認証・所有権・revocation境界をTop 1で閉じ、その後に実Supabase testとdocs release gateへ進む |
 | 2 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
 | 3 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 4 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
@@ -25,7 +25,16 @@ Last updated: 2026-06-06
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
-| `x-ban-recovery-storage` | XGuard OAuth state/PKCE review済み / production No-Go | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | `2b96993` を正としてbackup/proof所有権、実Supabase、商用compliance gateを閉じる。 |
+| `x-ban-recovery-storage` | XGuard OAuth state/PKCE review済み / production No-Go | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | `2b96993` を正としてbackup/proof auth boundary、実Supabase、商用compliance gateを閉じる。 |
+
+## 2026-06-06 Morning XGuard Research
+
+1. `x-ban-recovery-storage`: XGuardは今日も事業最優先。OAuth `state` / S256 PKCE は `2b96993 Add OAuth state and PKCE guard` で反映済みとして扱う。
+2. `x-ban-recovery-storage`: 今日のTop 1はbackup / proof APIの認証・所有権・visibility/revocation境界。proof pageのIDOR、private/revoked proof公開、raw payload/token漏洩を先に潰す。
+3. `x-ban-recovery-storage`: X APIはpay-per-usage、Usage endpoint、spending limit、rate limit header、Developer Console実値確認を原価管理の中心にする。`Owned Reads` は複数顧客向け主原価に使わない。
+4. `x-ban-recovery-storage`: X Content削除・変更・非公開・停止への24時間追従、API access終了時全削除runbook、Enterprise適用要否確認をproduction release gateにする。
+5. `x-ban-recovery-storage`: 昼実装は `/Users/uryuatsuya/XGuard/xguard` を第一候補、書き込み不可なら `/private/tmp/xguard-midday-2026-06-06`。MyLife Vaultへproduction codeを置かない。
+6. PM ticket: `company/pm/tickets/2026-06-06-xguard-proof-auth-supabase-compliance.md`
 
 ## 2026-06-06 Evening XGuard Review
 
