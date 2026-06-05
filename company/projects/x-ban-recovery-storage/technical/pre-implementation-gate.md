@@ -238,6 +238,7 @@ status: draft
 - `86a71fb` と `8aa0910` の `backup_run_id` / `x_account_id` 境界修正系列は `95e6392 Merge remote-tracking branch 'origin/main'` で統合済み。
 - 検証: `git diff --check`, `git ls-files -u`, `npx tsc -p tsconfig.json --noEmit`, targeted Vitest, `npm run test`, `npm run build` pass。
 - `npm run check` は `dist/backend/...` 上書きが `EPERM` で失敗。コード失敗ではなく、このsandboxの権限ブロッカーとして扱う。
+
 - live GitHub確認は未完了。`git ls-remote origin refs/heads/main` はDNS失敗、`git fetch origin main` は `.git/FETCH_HEAD` 書き込み不可。
 - まだNo-Go:
   - `/api/x/oauth/status` を無認証production endpointとして公開すること。
@@ -335,3 +336,16 @@ status: draft
   - backup / proof APIを認証・user ownership・proof visibility/revocation境界なしで実データへ接続すること。
   - 実Supabase/Postgres integration testなしでDB境界を完了扱いにすること。
   - 24時間削除・変更追従、API access終了時の全削除runbook、Enterprise適用要否を閉じずに公開有料ローンチすること。
+
+## 2026-06-05 midday gate update
+
+- Go継続: 一時clone `/private/tmp/xguard-midday-2026-06-05` で `9374f4e Add one-time OAuth state and S256 PKCE` を作成した。
+- OAuth configured modeは一回限り `state`、S256 PKCE、TTL、callback state validation、replay拒否を持つ。
+- `code_verifier` はbackend repositoryに保存し、API responseへ返さない。v0 scopeは `tweet.read`, `users.read`, `offline.access` に維持した。
+- 検証: `git diff --check`, `git diff --cached --check`, `tsc --noEmit`, targeted Vitest, 全Vitest, `npm run build`, `build:api`, runner指定web buildはpass。
+- `npm run check` は symlinked `node_modules/.vite-temp` 書き込み `EPERM` で未完。通常writable checkoutまたはCIで再実行する。
+- pushは未完。`git push origin main` は `Could not resolve host: github.com`。
+- 残るGate:
+  - `9374f4e` をremote先行分確認後にpushする。
+  - backup / proof APIの認証、user ownership、proof visibility/revocation境界を実装する。
+  - 実Supabase/Postgres integration testとDeveloper Console原価確認、cost/compliance docs更新を閉じる。
