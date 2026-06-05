@@ -27,6 +27,14 @@ Last updated: 2026-06-05
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
 | `x-ban-recovery-storage` | XGuard OAuth/proof/compliance gate planned / production No-Go | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | `394a3c3` を正としてOAuth one-time state / S256 PKCE、backup/proof所有権、実Supabase、商用compliance gateを閉じる。 |
 
+## 2026-06-05 XGuard Persona / Pricing Research
+
+1. 初期ICPは「Xが売上導線・告知導線・信用導線になっている人」に絞る。
+2. 優先セグメントは、X中心の個人クリエイター/個人事業者、仕事用Xアカウントを使う小規模店舗・サロン・講座販売者、凍結リスクが高い創作・成人向け/グレー領域クリエイター。
+3. 初期LPではセンシティブ属性を前面に出さず、「仕事用アカウント保険」「証明ページ」「再起動導線」に寄せる。
+4. 価格仮説は `Free診断 / 1,980円 Personal / 2,980円 Pro / 4,980円 Concierge検証枠`。単一3,000円案はPro案へ寄せる。
+5. PM ticket: `company/pm/tickets/2026-06-05-xguard-persona-pricing-validation.md`
+
 ## 2026-06-05 Morning XGuard Research
 
 1. XGuardは今日も事業最優先。v0は `tweet.read`, `users.read`, `offline.access` のread-only backupとproof pageに限定する。

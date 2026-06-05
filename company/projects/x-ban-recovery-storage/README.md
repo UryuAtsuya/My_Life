@@ -249,6 +249,14 @@ TEST_MODE=true
 - 次点でbackup / proof APIの認証・所有権・visibility/revocation境界、実Supabase/Postgres検証、cost/compliance docs反映を進める。
 - v0 scopeは `tweet.read`, `users.read`, `offline.access` に維持し、自動DM、自動follow/unfollow、自動投稿、bulk outreach、BAN回避導線は作らない。
 
+## 2026-06-05 persona / pricing research update
+
+- 調査メモ: `requirements/2026-06-05-persona-pricing-research.md`
+- 初期ICPは、X中心の個人クリエイター/個人事業者、仕事用Xアカウントを使う小規模店舗・サロン・講座販売者、凍結リスクが高い創作・成人向け・グレー領域クリエイター。
+- 初期LPではセンシティブ属性を前面に出さず、「仕事用アカウント保険」「証明ページ」「再起動導線」に寄せる。
+- 価格仮説は `Free診断 / 1,980円 Personal / 2,980円 Pro / 4,980円 Concierge検証枠`。単一3,000円案はPro案へ寄せる。
+- backup単体は980円前後に見えやすいため、XGuardは日次backupだけでなく、停止時に見せられるproof page、代表post保全、外部リンク導線、手動再起動支援で差別化する。
+
 ## 2026-06-04 midday implementation update
 
 - `/api/x/oauth/status` の `deployment_diagnostic` 無認証公開を、32文字以上のheader secret gateで解消した。
