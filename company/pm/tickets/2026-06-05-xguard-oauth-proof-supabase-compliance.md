@@ -3,7 +3,7 @@ created: "2026-06-05"
 project: "xguard"
 assignee: "codex"
 priority: high
-status: planned
+status: in-progress
 ---
 
 # XGuard OAuth / proof ownership / Supabase / compliance gate
@@ -26,6 +26,13 @@ status: planned
 - [ ] `git diff --check`, `tsc`, targeted Vitest、実DB test、全test、build、`npm run check`, `git diff --cached --check` を実行する。
 - [ ] meaningfulなXGuard実装変更があれば `UryuAtsuya/Xguard` `origin/main` へcommit/pushする。
 - [ ] XGuardとMyLifeのcommit/push状態を分けて記録する。
+
+## 昼実装フォーカス（12:45 handoff）
+
+**昼は Top 1 のみに集中する。** 詳細指示は下記を参照。
+
+- 実装指示書: `company/notes/2026-06-05-claude-code-codex-handoff.md`
+- 理由: OAuth CSRF/replay 防止は P1 セキュリティ要件であり、Top 2 backup/proof 認証の前提になる。
 
 ## 判断ルール
 
