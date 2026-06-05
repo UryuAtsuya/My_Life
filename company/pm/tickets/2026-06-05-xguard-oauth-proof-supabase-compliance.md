@@ -24,8 +24,8 @@ status: in-progress
 - [ ] `docs/API_COST_MODEL.md` に通常read単価、`Owned Reads` 非適用、Usage endpoint、spending limit、月次上限前停止を反映する。
 - [ ] `docs/COMPLIANCE.md` にEnterprise適用要否確認、24時間削除・変更追従、API access終了時の全削除runbookを反映する。
 - [ ] `git diff --check`, `tsc`, targeted Vitest、実DB test、全test、build、`npm run check`, `git diff --cached --check` を実行する。実DB testはTop 3未実施。`npm run check` はsymlinked `node_modules/.vite-temp` 書き込み `EPERM` で未完。
-- [ ] meaningfulなXGuard実装変更があれば `UryuAtsuya/Xguard` `origin/main` へcommit/pushする。commit `9374f4e` 作成済み、pushはDNS失敗で未完。
-- [ ] XGuardとMyLifeのcommit/push状態を分けて記録する。
+- [x] meaningfulなXGuard実装変更があれば `UryuAtsuya/Xguard` `origin/main` へcommit/pushする。`2b96993 Add OAuth state and PKCE guard` が `origin/main` にpush済み（夜closeout時に確認）。
+- [x] XGuardとMyLifeのcommit/push状態を分けて記録する。XGuard: push済み `2b96993`。MyLife: evening closeout commit 予定。
 
 ## 2026-06-05 昼実装結果
 
