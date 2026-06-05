@@ -35,6 +35,16 @@ status: in-progress
 - Review agent: P0/P1なし。P2はHTTP境界再確認とproduction TTL cleanup。
 - Verification agent: `tsc`, targeted Vitest, 全Vitest, build, runner指定web buildはpass。`npm run check` は環境blocker。
 
+## 2026-06-06 夜レビュー追記
+
+- 正本 `/Users/uryuatsuya/XGuard/xguard` は local `HEAD=origin/main=2b96993 Add OAuth state and PKCE guard`。6/5昼のOAuth state / S256 PKCE差分は正本へ反映済み。
+- XGuard tracked差分なし。未追跡 `output/playwright/` は残存。
+- P0なし。P1はbackup / proof API認証・所有権・proof visibility/revocation、実Supabase/Postgres検証、cost/compliance release gate。
+- 検証pass: `git diff --check HEAD^ HEAD`, current/cached `git diff --check`, `npx tsc -p tsconfig.json --noEmit`, backend targeted Vitest, frontend targeted Vitest with `--testTimeout=20000`。
+- 検証blocker: full `npm run test` はfrontend 5秒timeout 1件で失敗。`npm run build:api` / `npm run build:web` は書き込み `EPERM`。実Supabase testはDB URL / `psql` なしでskip。
+- GitHub live確認blocker: `git ls-remote` はDNS失敗、`git fetch` は `.git/FETCH_HEAD` 書き込み不可。
+- 次の完了条件は、backup/proofのauth boundaryと拒否テストを先に閉じること。
+
 ## 昼実装フォーカス（12:45 handoff）
 
 **昼は Top 1 のみに集中する。** 詳細指示は下記を参照。

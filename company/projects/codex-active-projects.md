@@ -1,12 +1,12 @@
 # Codex Active Projects
 
-Last updated: 2026-06-05
+Last updated: 2026-06-06
 
 ## Main Focus
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | X BAN Recovery Storage | XGuard OAuth push済み / proof/Supabase/compliance gate未完 / production No-Go | backup/proof API認証・所有権・revocation境界と実Supabase test、docs release gateを閉じる |
+| 1 | X BAN Recovery Storage | XGuard `2b96993` review済み / proof/Supabase/compliance gate未完 / production No-Go | backup/proof API認証・所有権・revocation境界と実Supabase test、docs release gateを閉じる |
 | 2 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
 | 3 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 4 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
@@ -25,7 +25,14 @@ Last updated: 2026-06-05
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
-| `x-ban-recovery-storage` | XGuard OAuth/proof/compliance gate planned / production No-Go | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | `394a3c3` を正としてOAuth one-time state / S256 PKCE、backup/proof所有権、実Supabase、商用compliance gateを閉じる。 |
+| `x-ban-recovery-storage` | XGuard OAuth state/PKCE review済み / production No-Go | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | `2b96993` を正としてbackup/proof所有権、実Supabase、商用compliance gateを閉じる。 |
+
+## 2026-06-06 Evening XGuard Review
+
+1. `x-ban-recovery-storage`: 指定パス `/Users/uryuatsuya/XGuard/xguard` は local `HEAD=origin/main=2b96993 Add OAuth state and PKCE guard`、tracked差分なし。未追跡 `output/playwright/` は残存。
+2. Review: P0なし。P1はbackup/proof API無認証、proof visibility/revocation未実装、実Supabase/Postgres未検証、cost/compliance release gate未完。
+3. 検証: diff check、`tsc --noEmit`、backend targeted Vitest、frontend targeted Vitest with timeout延長はpass。full testはfrontend 5秒timeout、buildは書き込み `EPERM`、live remote確認はDNS/`.git/FETCH_HEAD` blocker。
+4. production releaseはNo-Go継続。次はbackup/proof API認証・所有権・revocation境界を最優先で閉じる。
 
 ## 2026-06-05 Evening Closeout
 
