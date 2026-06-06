@@ -48,3 +48,11 @@ handoff_at: "2026-06-06T12:45:00"
 - 完了: frontend contractを `proofPage.publicPayload` へ更新。
 - 検証pass: `tsc --noEmit`, targeted Vitest, `npm run check`, `git diff --check`, `git diff --cached --check`。
 - 未完了: 実Supabase/Postgres integration test、`docs/API_COST_MODEL.md`、`docs/COMPLIANCE.md`、GitHub push。
+
+## 2026-06-06 17:00 朝会再実行後の更新
+
+- 調査補強: X公式pricingではPost read `$0.005/resource`、User read `$0.010/resource`、`Owned Reads` はdeveloper app owner本人条件。XGuardの複数顧客原価は通常read単価で見積もる。
+- 残Top 1: `d5aa75e` のpush。DNS復旧後、`git fetch` / remote先行確認をしてからpushする。
+- 残Top 2: 実Supabase/Postgres integration test。実DB URL / `psql` がない場合はCIまたはwritable checkoutでの実行条件を明文化する。
+- 残Top 3: `docs/API_COST_MODEL.md` / `docs/COMPLIANCE.md` のrelease gate更新。
+- 次の実装agentは、prototype user headerを本番認証と誤認しない。productionではSupabase Auth/JWT + DB ownershipへ置換するまでNo-Go。

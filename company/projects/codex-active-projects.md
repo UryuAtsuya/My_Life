@@ -27,6 +27,13 @@ Last updated: 2026-06-06
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
 | `x-ban-recovery-storage` | XGuard OAuth state/PKCE review済み / production No-Go | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | `2b96993` を正としてbackup/proof auth boundary、実Supabase、商用compliance gateを閉じる。 |
 
+## 2026-06-06 17:00 XGuard Morning Rerun
+
+1. `x-ban-recovery-storage`: 同日昼実装で backup/proof ownership boundary は `d5aa75e Guard backup proof ownership boundaries` まで進んだ。現在の残Top 1はDNS復旧後のpush。
+2. `x-ban-recovery-storage`: X公式pricingではPost read `$0.005/resource`、User read `$0.010/resource`。`Owned Reads` はdeveloper app owner本人条件のため、複数顧客向け原価には通常read単価を使う。
+3. `x-ban-recovery-storage`: 次のrelease gateは実Supabase/Postgres integration test、`docs/API_COST_MODEL.md` / `docs/COMPLIANCE.md` 更新、prototype user headerのSupabase Auth/JWT置換。
+4. PM ticket: `company/pm/tickets/2026-06-06-xguard-proof-auth-supabase-compliance.md`
+
 ## 2026-06-06 Morning XGuard Research
 
 1. `x-ban-recovery-storage`: XGuardは今日も事業最優先。OAuth `state` / S256 PKCE は `2b96993 Add OAuth state and PKCE guard` で反映済みとして扱う。
