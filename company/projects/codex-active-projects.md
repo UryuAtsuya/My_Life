@@ -6,7 +6,7 @@ Last updated: 2026-06-06
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | X BAN Recovery Storage | XGuard `2b96993` review済み / proof/Supabase/compliance gate未完 / production No-Go | backup/proof API認証・所有権・revocation境界をTop 1で閉じ、その後に実Supabase testとdocs release gateへ進む |
+| 1 | X BAN Recovery Storage | XGuard `b03d9c8` push済み / unstaged changes あり / Supabase・compliance gate未完 / production No-Go | unstaged changes commit/push → 実Supabase integration test → docs release gate |
 | 2 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
 | 3 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 4 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
@@ -26,6 +26,13 @@ Last updated: 2026-06-06
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
 | `x-ban-recovery-storage` | XGuard OAuth state/PKCE review済み / production No-Go | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | `2b96993` を正としてbackup/proof auth boundary、実Supabase、商用compliance gateを閉じる。 |
+
+## 2026-06-06 19:00 Evening Closeout
+
+1. `x-ban-recovery-storage`: `b03d9c8 Protect backup and proof APIs` が `UryuAtsuya/Xguard` `origin/main` にpush済みと確認（`HEAD = origin/main = b03d9c8`）。夕方review時点（`2b96993`）からCodexが実装を進め、auth境界をpushした。今日のTop 1完了。
+2. `x-ban-recovery-storage`: 正本パスに unstaged changes 3ファイル: `backupProofAuth.test.ts`（テスト拡充）、`app.ts`（visibility private default修正）、`API_SPEC.md`（ドキュメント更新）。明日Codexが最初に commit/push。
+3. `x-ban-recovery-storage`: 残release gate: 実Supabase/Postgres integration test、`docs/API_COST_MODEL.md` / `docs/COMPLIANCE.md` 更新、prototype user headerのSupabase Auth/JWT置換。production No-Go継続。
+4. `2026-06-07-morning-planning.md` 起点commitを `b03d9c8` に更新済み。
 
 ## 2026-06-06 17:00 XGuard Morning Rerun
 

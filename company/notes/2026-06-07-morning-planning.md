@@ -6,11 +6,15 @@ type: morning-planning
 
 # 2026-06-07 朝会 — XGuard 朝会引き継ぎ
 
-## 昨日の終了状態（2026-06-06 夜会から）
+## 昨日の終了状態（2026-06-06 夜会 19:00 closeout から）
 
 - XGuard 正本 `/Users/uryuatsuya/XGuard/xguard`
-- local `HEAD` = local `origin/main` = `2b96993 Add OAuth state and PKCE guard`
-- tracked 差分なし、`output/playwright/` 未追跡あり
+- `HEAD = origin/main = b03d9c8 Protect backup and proof APIs`（push済み）
+- ⚠️ **未コミット unstaged changes あり**:
+  - `backend/src/__tests__/backupProofAuth.test.ts`（テスト拡充: private default確認テスト、public proof token非漏洩テスト追加）
+  - `backend/src/app.ts`（backup run visibility を `"public"` → `"private"` default に修正）
+  - `docs/API_SPEC.md`（backup/proof auth境界と private/revoked 404ルールをドキュメント化）
+- `output/playwright/` 未追跡あり
 - `npm run build:api` / `npm run build:web` は `EPERM`
 - `git ls-remote` DNS 失敗、`git fetch` `.git/FETCH_HEAD` 書き込み不可
 - 全 Vitest は frontend 5 秒 timeout 1 件で失敗（targeted では pass）
@@ -18,23 +22,21 @@ type: morning-planning
 
 ## 今日の優先順位
 
-### Top 1 — backup / proof API 認証・所有権・proof boundary（Codex 委譲）
+### Top 1 — unstaged changes の commit / push（Codex 委譲）
 
-**問題**: `POST /api/backup/run`、`GET /api/backup/status/:runId`、`GET /api/recovery/:runId/proof` が無認証。user ownership / proof visibility / revocation の拒否ロジックなし。
+**状態**: `b03d9c8 Protect backup and proof APIs` はpush済み。その後、正本パスに3ファイルの unstaged changes がある。
 
-**実装対象**:
-- auth middleware を backup / proof route へ適用し、`req.userId` を確立する。
-- `backupRun.userId !== req.userId` の場合は 403 を返す。
-- proof の `visibility === "private"` または `revokedAt != null` の場合は 404 を返す。
-- 他 user アクセス、private proof、revoked proof、存在しない run id の HTTP 境界テストを追加する。
+**作業対象**:
+- `backend/src/__tests__/backupProofAuth.test.ts`: テスト拡充（private default確認、public proof token非漏洩）を `git add` → commit → push する。
+- `backend/src/app.ts`: backup run の visibility default を `"private"` へ修正済み差分を含める。
+- `docs/API_SPEC.md`: auth境界ドキュメント更新差分を含める。
 
 **検証条件**:
 - `tsc --noEmit` pass
 - `git diff --check` pass
-- targeted Vitest（新規テストすべて pass）
-- `npm run check`（writable 環境なら full pass）
+- targeted Vitest（変更したテストファイルが pass）
 
-**完了条件**: auth boundary と拒否テストが pass し、P1 "無認証 backup/proof" が解消されること。
+**完了条件**: commit hash と push 状態を `company/notes/2026-06-07-midday-xguard-implementation.md` に記録すること。
 
 ### Top 2 — 実 Supabase/Postgres integration test（Codex 委譲）
 
@@ -57,7 +59,7 @@ RUN_SUPABASE_SQL_INTEGRATION_TESTS=1 npx vitest run --configLoader runner \
 | 項目 | 内容 |
 |------|------|
 | 対象リポジトリ | `UryuAtsuya/Xguard`（local: `/Users/uryuatsuya/XGuard/xguard`） |
-| 起点 commit | `2b96993 Add OAuth state and PKCE guard` |
+| 起点 commit | `b03d9c8 Protect backup and proof APIs`（push済み・unstaged changes あり） |
 | 書き込み不可の場合 | `/private/tmp/xguard-midday-2026-06-07` を remote 最新から clone して使う |
 | 変更候補 | `backend/src/routes/backup.ts`（または相当）、`backend/src/routes/recovery.ts`（または相当）、auth middleware、新規テストファイル |
 | 完了条件 | auth boundary + 拒否テスト pass、tsc pass、targeted Vitest pass |

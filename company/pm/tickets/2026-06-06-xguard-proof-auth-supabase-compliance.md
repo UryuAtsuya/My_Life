@@ -28,7 +28,7 @@ handoff_at: "2026-06-06T12:45:00"
 - [ ] `docs/COMPLIANCE.md` にEnterprise適用要否確認、24時間削除・変更追従、API access終了時の全削除runbookを反映する。
 - [ ] P2: owner management responseとHTTP境界テストを整理する。
 - [x] `git diff --check`, `npx tsc -p tsconfig.json --noEmit`, targeted Vitest、全test、build、`npm run check`, `git diff --cached --check` を実行する。Result: `tsc --noEmit`, targeted Vitest, full `npm run check`, `git diff --check`, `git diff --cached --check` pass。
-- [ ] meaningfulなXGuard実装変更があれば `UryuAtsuya/Xguard` `origin/main` へcommit/pushする。Blocked: `Could not resolve host: github.com`。
+- [x] meaningfulなXGuard実装変更があれば `UryuAtsuya/Xguard` `origin/main` へcommit/pushする。Evidence: `b03d9c8 Protect backup and proof APIs` push済み（19:00 closeout確認）。
 - [x] XGuardとMyLifeのcommit/push状態を分けて記録する。Evidence: `company/notes/2026-06-06-midday-xguard-implementation.md`
 
 ## 判断ルール
