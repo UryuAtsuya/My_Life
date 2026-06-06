@@ -51,6 +51,22 @@ status: draft
 - Go: read-only接続、OAuth token安全保管、proof DTO、compliance queueまで。
 - No-Go: write action、DM送信、一括follow、raw payload公開、規約未確認のLP訴求。
 
+## 2026-06-07 evening gate update
+
+- Go継続: XGuard `9ac4f2f Add proof visibility management route` を `UryuAtsuya/Xguard` `main` へpush済み。
+- backup / proof APIは認証済みowner境界、proof private default、private / revoked 404拒否まで前進した。
+- 検証: `git diff --check`, `git diff --cached --check`, `npx tsc -p tsconfig.json --noEmit`, targeted `backupProofAuth.test.ts`, Verification agentの `npm run test` pass。
+- blocker: `npm run check` は `dist/backend/...` 書き込み `EPERM`。実Supabase/Postgres integration testはDB URL / `psql` 条件不足でskip。
+- まだNo-Go:
+  - OAuth configured modeを実X token exchangeなしでproductionへ出すこと。
+  - 実Supabase/Postgresでusage ledger境界を確認しないままreleaseすること。
+  - cost/compliance gateをCI/runtimeで止めずに商用releaseすること。
+- 残るGate:
+  -  proof visibility endpointをcommit/pushする。
+  - configured OAuth token exchange + subject/account検証。
+  - 実Supabase/Postgres integration test。
+  - `docs/API_COST_MODEL.md` / `docs/COMPLIANCE.md` 更新とCI/runtime release gate化。
+
 ## 2026-05-24 midday gate update
 
 - XGuard repo本体は存在するが、Codex実行環境からは書き込み不可。

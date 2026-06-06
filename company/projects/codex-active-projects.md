@@ -6,7 +6,7 @@ Last updated: 2026-06-07
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | X BAN Recovery Storage | XGuard `b03d9c8` push済み / unstaged changes あり（3ファイル）/ Supabase・compliance gate未完 / production No-Go | unstaged changes commit/push → 実Supabase integration test → docs release gate |
+| 1 | X BAN Recovery Storage | XGuard `9ac4f2f` push済み / proof visibility endpoint push済み / OAuth実token exchange・Supabase・compliance gate未完 / production No-Go | OAuth実token exchange → 実Supabase/docs gate |
 | 2 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
 | 3 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 4 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
@@ -25,7 +25,14 @@ Last updated: 2026-06-07
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
-| `x-ban-recovery-storage` | XGuard OAuth state/PKCE review済み / production No-Go | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | `2b96993` を正としてbackup/proof auth boundary、実Supabase、商用compliance gateを閉じる。 |
+| `x-ban-recovery-storage` | XGuard proof visibility endpoint push済み / production No-Go | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | OAuth実token exchange、実Supabase、商用compliance gateを閉じる。 |
+
+## 2026-06-07 Evening XGuard Review
+
+1. `x-ban-recovery-storage`: XGuard `9ac4f2f Add proof visibility management route` を `UryuAtsuya/Xguard` `main` へpush済み。朝のunstaged 3ファイルは完了。
+2. `x-ban-recovery-storage`: proof visibility management endpointも `9ac4f2f` に含まれ、最終確認で `HEAD=origin/main=9ac4f2f`、tracked差分なし。
+3. `x-ban-recovery-storage`: Review agentがP0として、configured OAuth callbackが実X token exchangeなしでsessionを発行する点を指摘。production release No-Go継続。
+4. `x-ban-recovery-storage`: 明日のTop 3はOAuth実token exchange、実Supabase integration test、docs release gate。
 
 ## 2026-06-07 Morning XGuard Research
 

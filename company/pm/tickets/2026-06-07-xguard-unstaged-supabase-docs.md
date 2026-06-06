@@ -3,7 +3,7 @@ created: "2026-06-07"
 project: "xguard"
 assignee: "codex"
 priority: high
-status: open
+status: partially-completed
 handoff: "company/notes/2026-06-07-morning-planning.md"
 handoff_at: "2026-06-07T07:30:00"
 ---
@@ -25,11 +25,11 @@ XGuard 正本 `/Users/uryuatsuya/XGuard/xguard` の `HEAD = origin/main = b03d9c
 
 ## 完了条件
 
-- [ ] `tsc --noEmit` pass
-- [ ] `git diff --check` pass
-- [ ] targeted Vitest（`backupProofAuth.test.ts`）pass
-- [ ] `git add backend/src/__tests__/backupProofAuth.test.ts backend/src/app.ts docs/API_SPEC.md` → commit → push
-- [ ] push 結果（commit hash と状態）を `company/notes/2026-06-07-midday-xguard-implementation.md` に記録する
+- [x] `tsc --noEmit` pass. Evidence: 2026-06-07夜run `npx tsc -p tsconfig.json --noEmit` pass。
+- [x] `git diff --check` pass. Evidence: 2026-06-07夜run `git diff --check && git diff --cached --check` pass。
+- [x] targeted Vitest（`backupProofAuth.test.ts`）pass. Evidence: 1 file / 8 tests passed。
+- [x] `git add backend/src/__tests__/backupProofAuth.test.ts backend/src/app.ts docs/API_SPEC.md` → commit → push. Evidence: XGuard `9ac4f2f Add proof visibility management route` pushed to `UryuAtsuya/Xguard` `main`。
+- [x] push 結果（commit hash と状態）を記録する。Correction: 昼noteは未作成のため、夜レビュー `company/notes/2026-06-07-evening-xguard-code-review.md` に記録。
 - [ ] `RUN_SUPABASE_SQL_INTEGRATION_TESTS=1 npx vitest run --configLoader runner backend/src/__tests__/supabaseSqlApiUsageLedger.integration.test.ts` を実行し、結果を記録する
   - 確認項目: `service_role` 専用、`authenticated` 拒否、ownership、同一 X アカウント、存在しない `backup_run`、`x_account_id` 必須、負値拒否、月次上限超過
   - blocker 時は条件（DB URL / `psql`）と skip 理由を記録する
@@ -37,6 +37,17 @@ XGuard 正本 `/Users/uryuatsuya/XGuard/xguard` の `HEAD = origin/main = b03d9c
 - [ ] `docs/COMPLIANCE.md` 更新: Enterprise 適用要否チェックリスト、24 時間削除 SLA、API access 終了時全削除 runbook
 - [ ] 上記 docs 変更を commit/push する
 - [ ] `company/notes/2026-06-07-midday-xguard-implementation.md` を作成して全実装ログを残す
+
+## 2026-06-07 夜run結果
+
+- XGuard commit: `9ac4f2f Add proof visibility management route`
+- push: 成功。`git push origin main` -> `b03d9c8..9ac4f2f main -> main`
+- 検証pass: `git diff --check`, `git diff --cached --check`, `npx tsc -p tsconfig.json --noEmit`, targeted `backupProofAuth.test.ts`, Verification agentの `npm run test`
+- blocker: `npm run check` は `dist/backend/...` 書き込み `EPERM`
+- blocker: push後の `git ls-remote` はDNS失敗
+- 未完: 実Supabase/Postgres integration test、`docs/API_COST_MODEL.md` / `docs/COMPLIANCE.md`
+- 追加P0: configured OAuth callbackが実X token exchangeなしでsession発行するため、明日の上位タスクへ繰り上げる。
+- 追加完了: owner-only `PATCH /api/recovery/:runId/proof/visibility` は `9ac4f2f` に含まれる。`diff check`、`tsc --noEmit`、targeted Vitest 11件はpass。
 
 ## 判断ルール
 
