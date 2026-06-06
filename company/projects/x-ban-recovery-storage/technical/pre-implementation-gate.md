@@ -349,3 +349,19 @@ status: draft
   - `9374f4e` をremote先行分確認後にpushする。
   - backup / proof APIの認証、user ownership、proof visibility/revocation境界を実装する。
   - 実Supabase/Postgres integration testとDeveloper Console原価確認、cost/compliance docs更新を閉じる。
+
+## 2026-06-06 midday gate update
+
+- Go継続: `/private/tmp/xguard-midday-2026-06-06-1331` で `d5aa75e Guard backup proof ownership boundaries` を作成した。
+- backup / proof APIにprototype user header、owner check、private default proofPage、visibility update、revoke、private/revoked非公開境界を追加した。
+- productionではprototype headerを拒否し、本番header偽装リスクを閉じた。
+- frontend contractをbackend auth boundaryに合わせて更新した。
+- Review: P0なし。P1のfrontend破断と本番header偽装は修正済み。P2はowner management responseとHTTP境界テスト。
+- 検証: `tsc --noEmit`, targeted Vitest, full `npm run check`, `git diff --check`, `git diff --cached --check` pass。
+- pushは未完。`git push origin main` は `Could not resolve host: github.com`。
+- 残るGate:
+  - DNS復旧後に `d5aa75e` をremote先行分確認後にpushする。
+  - P2のowner management responseとHTTP境界テストを整理する。
+  - Supabase Auth/JWT + DB ownershipでprototype headerを置換する。
+  - 実Supabase/Postgres integration testでrole/ownership/同一Xアカウント/存在しないbackup_run/x_account_id必須/負値/月次上限超過を確認する。
+  - `docs/API_COST_MODEL.md` と `docs/COMPLIANCE.md` のrelease gateを閉じる。
