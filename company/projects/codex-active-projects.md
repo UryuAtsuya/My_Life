@@ -1,12 +1,12 @@
 # Codex Active Projects
 
-Last updated: 2026-06-06
+Last updated: 2026-06-07
 
 ## Main Focus
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | X BAN Recovery Storage | XGuard `b03d9c8` push済み / unstaged changes あり / Supabase・compliance gate未完 / production No-Go | unstaged changes commit/push → 実Supabase integration test → docs release gate |
+| 1 | X BAN Recovery Storage | XGuard `b03d9c8` push済み / unstaged changes あり（3ファイル）/ Supabase・compliance gate未完 / production No-Go | unstaged changes commit/push → 実Supabase integration test → docs release gate |
 | 2 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
 | 3 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 4 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
@@ -26,6 +26,16 @@ Last updated: 2026-06-06
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
 | `x-ban-recovery-storage` | XGuard OAuth state/PKCE review済み / production No-Go | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | `2b96993` を正としてbackup/proof auth boundary、実Supabase、商用compliance gateを閉じる。 |
+
+## 2026-06-07 Morning XGuard Research
+
+1. `x-ban-recovery-storage`: XGuard は今日も事業最優先。production release No-Go 継続。
+2. `x-ban-recovery-storage`: 朝確認時点で `/Users/uryuatsuya/XGuard/xguard` は `HEAD = origin/main = b03d9c8 Protect backup and proof APIs`（push 済み）。unstaged changes 3 ファイルあり: `backupProofAuth.test.ts`（テスト拡充）、`app.ts`（visibility private default 修正）、`docs/API_SPEC.md`（auth 境界ドキュメント化）。
+3. `x-ban-recovery-storage`: 今日の Top 1 は unstaged changes の commit/push。Codex は `tsc --noEmit`、`git diff --check`、targeted Vitest を通してから commit → push する。
+4. `x-ban-recovery-storage`: Top 2 は `RUN_SUPABASE_SQL_INTEGRATION_TESTS=1` による実 Supabase/Postgres usage ledger integration test。DB URL / `psql` が必要。sandbox では skip 理由を記録する。
+5. `x-ban-recovery-storage`: Top 3 は `docs/API_COST_MODEL.md`（通常 read 単価、`Owned Reads` 非適用、Usage endpoint、spending limit、月次上限前停止）と `docs/COMPLIANCE.md`（Enterprise 確認、24h 削除 SLA、全削除 runbook）の release gate 更新。
+6. `output/playwright/` 未追跡は今日触らない。Top 3 完了後に commit 対象か削除対象かを判断する。
+7. PM ticket: `company/pm/tickets/2026-06-07-xguard-unstaged-supabase-docs.md`
 
 ## 2026-06-06 19:00 Evening Closeout
 
