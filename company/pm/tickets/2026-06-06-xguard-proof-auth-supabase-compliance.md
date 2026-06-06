@@ -3,7 +3,9 @@ created: "2026-06-06"
 project: "xguard"
 assignee: "codex"
 priority: high
-status: todo
+status: in-progress
+handoff: "company/notes/2026-06-06-claude-code-codex-handoff.md"
+handoff_at: "2026-06-06T12:45:00"
 ---
 
 # XGuard proof auth / Supabase / compliance gate
