@@ -6,7 +6,7 @@ Last updated: 2026-06-07
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | X BAN Recovery Storage | XGuard `9ac4f2f` push済み / proof visibility endpoint push済み / OAuth実token exchange・Supabase・compliance gate未完 / production No-Go | OAuth実token exchange → 実Supabase/docs gate |
+| 1 | X BAN Recovery Storage | XGuard local `7e33e9f` が `ahead 1` / proof visibility endpoint push済み / docs gate push記録あり / Supabase未完 / production No-Go | remote整合確認 → `7e33e9f` push可否 → 実Supabase |
 | 2 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
 | 3 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 4 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
@@ -25,7 +25,16 @@ Last updated: 2026-06-07
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
-| `x-ban-recovery-storage` | XGuard proof visibility endpoint push済み / production No-Go | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | OAuth実token exchange、実Supabase、商用compliance gateを閉じる。 |
+| `x-ban-recovery-storage` | XGuard local `7e33e9f` ahead 1 / production No-Go | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | remote整合確認後にOAuth production boundaryをpushし、実Supabaseを閉じる。 |
+
+## 2026-06-07 Morning XGuard Research Rerun
+
+1. `x-ban-recovery-storage`: XGuardは今日も事業最優先。production releaseはNo-Go継続。
+2. `x-ban-recovery-storage`: 正本 `/Users/uryuatsuya/XGuard/xguard` は `HEAD=7e33e9f Guard production OAuth callback boundary`、`main...origin/main [ahead 1]`。未追跡は `output/playwright/` のみ。
+3. `x-ban-recovery-storage`: 6/7昼run記録では `c4403d8 Document XGuard release gates` がpush済みだが、現canonical checkoutのlocal trackingは `9ac4f2f`。次runは live remote を確認し、force pushせず整合する。
+4. `x-ban-recovery-storage`: 公式調査ではX APIは通常read単価、Usage endpoint、spending limitを前提にする。`Owned Reads` は複数顧客SaaSの主原価に使わない判断を維持。
+5. `x-ban-recovery-storage`: 次のTop 3は `7e33e9f` push可否確認、OAuth production boundaryの実token exchange/禁止gate確認、実Supabase/Postgres integration test。
+6. PM ticket: `company/pm/tickets/2026-06-07-xguard-unstaged-supabase-docs.md`
 
 ## 2026-06-07 Evening XGuard Review
 

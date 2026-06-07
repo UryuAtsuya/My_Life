@@ -3,7 +3,7 @@ created: "2026-06-07"
 project: "xguard"
 assignee: "codex"
 priority: high
-status: partially-completed
+status: in-progress-remote-reconcile
 handoff: "company/notes/2026-06-07-morning-planning.md"
 handoff_at: "2026-06-07T07:30:00"
 ---
@@ -66,6 +66,17 @@ XGuard 正本 `/Users/uryuatsuya/XGuard/xguard` の `HEAD = origin/main = b03d9c
 - 未完: 実Supabase/Postgres integration test、`docs/API_COST_MODEL.md` / `docs/COMPLIANCE.md`
 - 追加P0: configured OAuth callbackが実X token exchangeなしでsession発行するため、明日の上位タスクへ繰り上げる。
 - 追加完了: owner-only `PATCH /api/recovery/:runId/proof/visibility` は `9ac4f2f` に含まれる。`diff check`、`tsc --noEmit`、targeted Vitest 11件はpass。
+
+## 2026-06-07 朝会再整理
+
+- システム日付: `2026-06-07 17:02:19 JST`。
+- XGuard 正本: `/Users/uryuatsuya/XGuard/xguard`。
+- current local `HEAD`: `7e33e9f Guard production OAuth callback boundary`。
+- local git status: `main...origin/main [ahead 1]`、未追跡は `output/playwright/` のみ。
+- 注意: 昼run記録上は `c4403d8 Document XGuard release gates` が `UryuAtsuya/Xguard` `main` へpush済みだが、現canonical checkoutのlocal trackingは `9ac4f2f`。次のCodex実装は `git ls-remote` / `git fetch` / ahead-behind比較を最初に行い、remote側の `c4403d8` を上書きしない。
+- 次の実装Top 1: `7e33e9f` の remote 反映可否確認と、OAuth production boundaryの不足レビュー。
+- 次の実装Top 2: 実 X token exchangeのlive疎通証跡、または live credentials 不足時のproduction mock callback禁止 gate確認。
+- 次の実装Top 3: 実Supabase/Postgres integration test。
 
 ## 判断ルール
 

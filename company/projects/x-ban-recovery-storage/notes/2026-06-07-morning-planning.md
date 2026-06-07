@@ -2,23 +2,25 @@
 date: "2026-06-07"
 project: "xguard"
 type: "morning-planning"
-status: "ready-for-midday"
+status: "ready-for-midday-rerun"
 ---
 
 # 2026-06-07 XGuard 朝会
 
 ## 今日の方針
 
-XGuard を事業最優先にする。`b03d9c8 Protect backup and proof APIs` は `origin/main` への push 済み。今日の最初のタスクは正本パスの unstaged changes（3ファイル）を commit / push することで、その後 実 Supabase/Postgres integration test と docs release gate を閉じる。
+XGuard を事業最優先にする。朝時点の `b03d9c8` / unstaged 3ファイル前提は、その後 `9ac4f2f Add proof visibility management route`、`c4403d8 Document XGuard release gates`、local `7e33e9f Guard production OAuth callback boundary` まで進展している。
 
-## XGuard 正本の現在状態（朝確認）
+この朝会再整理では production code は実装しない。昼runの最初の仕事は、canonical checkoutの `7e33e9f` と remote 側の `c4403d8` / `9ac4f2f` の関係を確認し、force pushなしで整合させることにする。
+
+## XGuard 正本の現在状態（再確認）
 
 - パス: `/Users/uryuatsuya/XGuard/xguard`
-- `HEAD = origin/main = b03d9c8 Protect backup and proof APIs`（push 済み）
-- **unstaged changes（要 commit/push）**:
-  - `backend/src/__tests__/backupProofAuth.test.ts`: テスト拡充（private default、public proof token 非漏洩）
-  - `backend/src/app.ts`: backup run visibility default `"public"` → `"private"` 修正
-  - `docs/API_SPEC.md`: auth 境界と private/revoked 404 ルールのドキュメント化
+- `HEAD = 7e33e9f Guard production OAuth callback boundary`
+- local status: `main...origin/main [ahead 1]`
+- local tracking `origin/main`: `9ac4f2f Add proof visibility management route`
+- 6/7昼run記録: `c4403d8 Document XGuard release gates` は `UryuAtsuya/Xguard` `main` へpush成功記録あり。ただし現canonical checkoutには未反映に見えるため、昼runでremoteを再確認する。
+- **tracked changes**: なし
 - **untracked（今日は触らない）**:
   - `output/playwright/record-local-flow.mjs`
   - `output/playwright/videos/`
@@ -27,18 +29,25 @@ XGuard を事業最優先にする。`b03d9c8 Protect backup and proof APIs` は
 
 ## 今日の Top 3
 
-### Top 1 — unstaged changes の commit / push（Codex 委譲）
+### Top 1 — `7e33e9f` / remote 整合確認とpush（Codex 委譲）
 
-- `tsc --noEmit` → pass 確認
-- `git diff --check` → pass 確認
-- targeted Vitest（`backupProofAuth.test.ts`）→ pass 確認
-- `git add backend/src/__tests__/backupProofAuth.test.ts backend/src/app.ts docs/API_SPEC.md`
-- commit → push `origin/main`
-- blockerがある場合は commit hash と理由を記録して止める。
+- `git ls-remote origin refs/heads/main` で live remote の hash を確認する。
+- `git fetch origin main` が通る場合は fetch 後に `origin/main..HEAD` と `HEAD..origin/main` を比較する。
+- remote に `c4403d8` が存在する場合、`7e33e9f` と docs gate commitを競合させず、merge / rebase / cherry-pickの最小手順を選ぶ。
+- `git push origin main` は force しない。
+- `output/playwright/` は今回の対象外。
 
-**完了定義**: commit hash と push 状態が `company/notes/2026-06-07-midday-xguard-implementation.md` に記録される。
+**完了定義**: `7e33e9f` のpush可否、remote hash、`c4403d8` との関係が PM ticket と実装ログに記録される。
 
-### Top 2 — 実 Supabase/Postgres integration test（Codex 委譲）
+### Top 2 — OAuth configured mode 実token exchange境界（Codex 委譲）
+
+- `7e33e9f` の内容をレビューし、productionで mock callback/session 発行が禁止されているか確認する。
+- live X credentials がある場合は実 X token endpoint 交換、subject/account 検証、scope維持（`tweet.read`, `users.read`, `offline.access`）を確認する。
+- credentials がない場合は、実交換なしでproduction sessionが発行されない runtime gate と targeted test を証跡化する。
+
+**完了定義**: OAuth configured mode の production No-Go 条件がコード・テスト・docsで一致し、未確認事項が明記される。
+
+### Top 3 — 実 Supabase/Postgres integration test（Codex 委譲）
 
 ```bash
 RUN_SUPABASE_SQL_INTEGRATION_TESTS=1 npx vitest run --configLoader runner \
@@ -51,7 +60,7 @@ RUN_SUPABASE_SQL_INTEGRATION_TESTS=1 npx vitest run --configLoader runner \
 
 **完了定義**: テスト結果（pass / skip / fail 理由）が `company/notes/2026-06-07-midday-xguard-implementation.md` に記録される。
 
-### Top 3 — docs release gate 更新（Codex 委譲）
+### 完了済み扱い — docs release gate 更新
 
 - `docs/API_COST_MODEL.md`:
   - 通常 read 単価（Post: `$0.005/resource`、User: `$0.010/resource`）
@@ -64,21 +73,21 @@ RUN_SUPABASE_SQL_INTEGRATION_TESTS=1 npx vitest run --configLoader runner \
   - 24 時間削除・変更・非公開・停止 SLA
   - API access 終了時の全データ削除 runbook
 
-**完了定義**: 両ドキュメントの更新と commit が `company/notes/2026-06-07-midday-xguard-implementation.md` に記録される。
+**完了定義**: 6/7昼runで XGuard `c4403d8 Document XGuard release gates` としてpush済み記録あり。昼runでは remote 上の存在を再確認する。
 
 ## Codex 昼実装 handoff スコープ
 
 | 項目 | 内容 |
 |------|------|
 | 対象リポジトリ | `UryuAtsuya/Xguard`（local: `/Users/uryuatsuya/XGuard/xguard`） |
-| 起点 commit | `b03d9c8 Protect backup and proof APIs`（`HEAD = origin/main`） |
+| 起点 commit | local `7e33e9f Guard production OAuth callback boundary`。remote側に `c4403d8` がある可能性を先に確認する |
 | 書き込み不可の場合 | `/private/tmp/xguard-midday-2026-06-07` を remote 最新から clone して使う |
-| 変更候補 | `backend/src/__tests__/backupProofAuth.test.ts`、`backend/src/app.ts`、`docs/API_SPEC.md`、`docs/API_COST_MODEL.md`、`docs/COMPLIANCE.md` |
-| 完了条件 | unstaged commit/push + tsc pass + targeted Vitest pass |
-| 検証条件 | `git diff --check`、`tsc --noEmit`、targeted Vitest、可能なら `npm run check` |
+| 変更候補 | `backend/src/app.ts`、`backend/src/config/runtimeConfig.ts`、`backend/src/__tests__/api.test.ts`、`docs/API_SPEC.md`、`docs/DEPLOY.md`、必要なら `docs/API_COST_MODEL.md` / `docs/COMPLIANCE.md` |
+| 完了条件 | remote整合確認 + `7e33e9f` push可否確定 + OAuth production boundary検証 + Supabase実DB検証またはblocker記録 |
+| 検証条件 | `git diff --check`、`tsc --noEmit`、OAuth targeted Vitest、Supabase integration test、可能なら `npm run check` |
 | 戻し先 | `company/pm/tickets/2026-06-07-xguard-unstaged-supabase-docs.md` に実装結果を追記 |
 | 新規ノート | `company/notes/2026-06-07-midday-xguard-implementation.md` を作成して実装ログを残す |
-| push 先 | `UryuAtsuya/Xguard` `origin/main`（blocker の場合は commit hash・理由・次の操作を記録） |
+| push 先 | `UryuAtsuya/Xguard` `origin/main`（force push禁止。blocker の場合は commit hash・理由・次の操作を記録） |
 
 ## 判断ルール（引き継ぎ）
 

@@ -177,10 +177,10 @@ TEST_MODE=true
 
 ## 次アクション
 
-1. OAuth configured modeで実X token exchangeを実装し、取得tokenのsubject/account検証後だけsessionを発行する。
-2. OAuth configured modeで実X token exchangeを実装し、取得tokenのsubject/account検証後だけsessionを発行する。mock callback/session発行はproductionで起動禁止にする。
+1. `/Users/uryuatsuya/XGuard/xguard` の local `7e33e9f Guard production OAuth callback boundary` と remote の `c4403d8` / `9ac4f2f` 関係を確認し、force pushなしで整合する。
+2. OAuth configured modeで実X token exchangeを検証し、取得tokenのsubject/account検証後だけsessionを発行する。live credentials不足時はproduction mock callback/session発行禁止gateを証跡化する。
 3. 実Supabase/Postgres integration testを走らせ、usage ledger境界の証跡を残す。
-4. `docs/API_COST_MODEL.md` と `docs/COMPLIANCE.md` に通常read単価、`Owned Reads` 非適用、Usage endpoint、spending limit、24時間削除SLA、API access終了時削除runbookを反映する。
+4. `docs/API_COST_MODEL.md` と `docs/COMPLIANCE.md` のrelease gateをCI/runtime停止条件へ落とす。
 5. HP制作前に、LPの約束を「BAN復活」ではなく「BAN後の再起動支援」「証明ページ生成」に固定する。
 6. OAuth token保管、proof DTO、compliance delete queue、backup jobの最小設計を書く。
 
