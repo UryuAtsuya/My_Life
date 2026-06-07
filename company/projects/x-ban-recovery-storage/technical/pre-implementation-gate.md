@@ -67,6 +67,18 @@ status: draft
   - 実Supabase/Postgres integration test。
   - `docs/API_COST_MODEL.md` / `docs/COMPLIANCE.md` 更新とCI/runtime release gate化。
 
+## 2026-06-07 midday gate update
+
+- Go継続: XGuard `c4403d8 Document XGuard release gates` を `UryuAtsuya/Xguard` `main` へpush済み。
+- `docs/API_COST_MODEL.md` に通常 read 単価、`Owned Reads` 非適用、`GET https://api.x.com/2/usage/tweets`、Developer Console evidence、80%停止ルールを反映した。
+- `docs/COMPLIANCE.md` にEnterprise確認、24時間削除SLA、退会/削除とproof revokeの分離、API access終了時全削除runbookを反映した。
+- 検証: `git diff --check`, `git diff --cached --check`, `tsc --noEmit` pass。
+- blocker: `git ls-remote` は push 後にDNS失敗。push出力 `9ac4f2f..c4403d8 main -> main` を evidence とする。
+- 残るGate:
+  - configured OAuth token exchange + subject/account検証 + production mock callback禁止。
+  - 実Supabase/Postgres integration test。
+  - docs release gate を runtime/CI の停止条件へ落とし込む。
+
 ## 2026-05-24 midday gate update
 
 - XGuard repo本体は存在するが、Codex実行環境からは書き込み不可。

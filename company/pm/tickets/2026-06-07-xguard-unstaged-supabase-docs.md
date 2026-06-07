@@ -33,10 +33,21 @@ XGuard 正本 `/Users/uryuatsuya/XGuard/xguard` の `HEAD = origin/main = b03d9c
 - [ ] `RUN_SUPABASE_SQL_INTEGRATION_TESTS=1 npx vitest run --configLoader runner backend/src/__tests__/supabaseSqlApiUsageLedger.integration.test.ts` を実行し、結果を記録する
   - 確認項目: `service_role` 専用、`authenticated` 拒否、ownership、同一 X アカウント、存在しない `backup_run`、`x_account_id` 必須、負値拒否、月次上限超過
   - blocker 時は条件（DB URL / `psql`）と skip 理由を記録する
-- [ ] `docs/API_COST_MODEL.md` 更新: 通常 read 単価、`Owned Reads` 非適用根拠、Usage endpoint、spending limit、月次上限前停止
-- [ ] `docs/COMPLIANCE.md` 更新: Enterprise 適用要否チェックリスト、24 時間削除 SLA、API access 終了時全削除 runbook
-- [ ] 上記 docs 変更を commit/push する
-- [ ] `company/notes/2026-06-07-midday-xguard-implementation.md` を作成して全実装ログを残す
+- [x] `docs/API_COST_MODEL.md` 更新: 通常 read 単価、`Owned Reads` 非適用根拠、Usage endpoint、spending limit、月次上限前停止。Evidence: XGuard `c4403d8 Document XGuard release gates`。
+- [x] `docs/COMPLIANCE.md` 更新: Enterprise 適用要否チェックリスト、24 時間削除 SLA、API access 終了時全削除 runbook。Evidence: XGuard `c4403d8 Document XGuard release gates`。
+- [x] 上記 docs 変更を commit/push する。Evidence: `git push origin main` -> `9ac4f2f..c4403d8 main -> main`。
+- [x] `company/notes/2026-06-07-midday-xguard-implementation.md` を作成して全実装ログを残す。
+
+## 2026-06-07 昼run結果
+
+- 実装スライス: docs release gate 更新のみ。
+- 作業コピー: `/private/tmp/xguard-midday-2026-06-07-1331`
+- XGuard commit: `c4403d8 Document XGuard release gates`
+- push: 成功。`UryuAtsuya/Xguard` `main` へ `9ac4f2f..c4403d8`。
+- 検証pass: `git diff --check`, `git diff --cached --check`, `tsc --noEmit`。
+- blocker: `npx tsc` は temp clone に `node_modules` がなく、registry DNS `ENOTFOUND registry.npmjs.org`。正本 `node_modules` symlinkを一時利用して `tsc` pass。
+- Review対応: 削除/退会とproof revokeのSLA分離、user read / total spend / credit balance evidence追加、100万tweet readの内部threshold明記、Usage endpointを `api.x.com` に修正。
+- 未完: 実Supabase/Postgres integration test、OAuth configured mode 実token exchange。
 
 ## 2026-06-07 12:45 PM handoff メモ
 
