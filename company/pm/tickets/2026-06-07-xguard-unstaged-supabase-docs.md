@@ -38,6 +38,13 @@ XGuard 正本 `/Users/uryuatsuya/XGuard/xguard` の `HEAD = origin/main = b03d9c
 - [ ] 上記 docs 変更を commit/push する
 - [ ] `company/notes/2026-06-07-midday-xguard-implementation.md` を作成して全実装ログを残す
 
+## 2026-06-07 12:45 PM handoff メモ
+
+- Top 1（unstaged commit）は `9ac4f2f Add proof visibility management route` として完了済み。
+- Top 2（Supabase integration test）は DB URL / `psql` blocker のため昼 run でもスキップ見込み。次サイクルへ送る。
+- 昼 Codex の実装対象を **Top 3（docs gate）** に絞り、`company/notes/2026-06-07-claude-code-codex-handoff.md` を作成した。
+- `docs/API_COST_MODEL.md` / `docs/COMPLIANCE.md` 更新 → commit / push は Codex 昼 run へ委譲。
+
 ## 2026-06-07 夜run結果
 
 - XGuard commit: `9ac4f2f Add proof visibility management route`
