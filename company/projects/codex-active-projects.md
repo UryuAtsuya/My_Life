@@ -1,6 +1,6 @@
 # Codex Active Projects
 
-Last updated: 2026-06-07
+Last updated: 2026-06-08
 
 ## Main Focus
 
@@ -26,6 +26,15 @@ Last updated: 2026-06-07
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
 | `x-ban-recovery-storage` | XGuard local `7e33e9f` ahead 1 / production No-Go | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | remote整合確認後にOAuth production boundaryをpushし、実Supabaseを閉じる。 |
+
+## 2026-06-08 Evening Closeout
+
+1. `x-ban-recovery-storage`: Codex 昼実装・夕方レビュー run なし。実施証跡なし。
+2. `x-ban-recovery-storage`: XGuard local HEAD `7e33e9f Guard production OAuth callback boundary` は未 push 継続。remote origin/main は `c4403d8 Document XGuard release gates`。local と remote が `9ac4f2f` から diverge。
+3. `x-ban-recovery-storage`: 朝 handoff note `company/notes/2026-06-08-claude-code-codex-handoff.md` は作成済み。Codex 昼 run 対象は runtime gate（`PRICING_CONFIRMED` / `COMPLIANCE_CONFIRMED`）実装だったが未着手。
+4. `x-ban-recovery-storage`: production No-Go 継続。Top 3 全て未完了。
+5. 明日の Top 3: (1) `7e33e9f` rebase + verify + push、(2) runtime release gate 実装、(3) Supabase CLI 環境確保判断。
+6. CEO 決定: `company/decisions/2026-06-08.md` 参照。Supabase CLI 環境確保は 2026-06-10 目標（CEO 手動）。OAuth live credentials 検証は runtime gate 完了後へ。
 
 ## 2026-06-07 Morning XGuard Research Rerun
 
