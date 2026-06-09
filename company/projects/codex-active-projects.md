@@ -1,12 +1,12 @@
 # Codex Active Projects
 
-Last updated: 2026-06-09
+Last updated: 2026-06-10
 
 ## Main Focus
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | X BAN Recovery Storage | XGuard local `7e33e9f` が `ahead 1`（3日目未push） / Codex昼run 3日連続未実施 / runtime gate未着手 / production No-Go | `7e33e9f` rebase + push → runtime gate実装 → Supabase CLI確保（CEO手動・本日期限） |
+| 1 | X BAN Recovery Storage | XGuard local `7e33e9f` が `ahead 1`（**4日目**未push） / Codex昼run 4日連続未実施 / runtime gate未着手 / production No-Go | `7e33e9f` rebase（`c4403d8` 上）+ push → runtime gate実装 → Supabase CLI確保（CEO手動・本日最終期限） |
 | 2 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
 | 3 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 4 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
@@ -26,6 +26,15 @@ Last updated: 2026-06-09
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
 | `x-ban-recovery-storage` | XGuard local `7e33e9f` ahead 1 / production No-Go | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | remote整合確認後にOAuth production boundaryをpushし、実Supabaseを閉じる。 |
+
+## 2026-06-10 Morning XGuard Planning
+
+1. `x-ban-recovery-storage`: XGuard は今日も事業最優先。production release No-Go 継続。
+2. `x-ban-recovery-storage`: 本日 `git fetch origin` 成功。local HEAD `7e33e9f Guard production OAuth callback boundary`（4 日目未 push）。remote `c4403d8 Document XGuard release gates`。`9ac4f2f` から分岐、local ahead 1 / remote ahead 1。`git rebase origin/main` で統合可能な状態。
+3. `x-ban-recovery-storage`: Top 1（`7e33e9f` rebase + push）・Top 2（runtime gate 実装）は今日必ず完了させる。Codex 昼 run を実施する。
+4. `x-ban-recovery-storage`: Top 3 Supabase CLI 確保は本日が CEO 手動タスクの最終期限。未達成は 2026-06-12 延長 + 理由記録。
+5. `x-ban-recovery-storage`: Codex 昼 run が今日も未実施の場合は CEO が手動で rebase + push を実行する（`company/decisions/2026-06-10.md` 参照）。
+6. CEO 決定: `company/decisions/2026-06-10.md` 参照。
 
 ## 2026-06-09 Evening Closeout
 
