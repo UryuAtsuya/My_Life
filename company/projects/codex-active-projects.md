@@ -1,12 +1,12 @@
 # Codex Active Projects
 
-Last updated: 2026-06-10
+Last updated: 2026-06-11
 
 ## Main Focus
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | X BAN Recovery Storage | XGuard local `7e33e9f` が `ahead 1`（**4日目**未push） / Codex昼run 4日連続未実施 / runtime gate未着手 / production No-Go | `7e33e9f` rebase（`c4403d8` 上）+ push → runtime gate実装 → Supabase CLI確保（CEO手動・本日最終期限） |
+| 1 | X BAN Recovery Storage | XGuard HEAD = origin/main = `9a7a783`（rebase + push 完了）/ runtime gate 未実装 / Supabase CLI 未確保 / production No-Go | `PRICING_CONFIRMED` / `COMPLIANCE_CONFIRMED` gate 実装（Codex 委譲）→ Supabase CLI 確保（CEO 手動・2026-06-12 最終期限）→ integration test |
 | 2 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
 | 3 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 4 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
@@ -26,6 +26,15 @@ Last updated: 2026-06-10
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
 | `x-ban-recovery-storage` | XGuard local `7e33e9f` ahead 1 / production No-Go | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | remote整合確認後にOAuth production boundaryをpushし、実Supabaseを閉じる。 |
+
+## 2026-06-11 Evening Closeout
+
+1. `x-ban-recovery-storage`: XGuard HEAD = origin/main = `9a7a783 Harden production OAuth callback URL`。4 日間未 push だった `7e33e9f` は `0e9d5d1 Merge remote-tracking branch 'origin/main'` を経て解消済み。**Top 1 完了**。
+2. `x-ban-recovery-storage`: `PRICING_CONFIRMED` / `COMPLIANCE_CONFIRMED` gate は `runtimeConfig.ts` に存在しない。本日 midday implementation note なし → Codex 昼 run 実施証跡なし。Top 2 は未完了。
+3. `x-ban-recovery-storage`: Supabase CLI 環境確保は未達成。2026-06-12 へ延長（2026-06-10 決定通り）。
+4. `x-ban-recovery-storage`: production No-Go 継続。残 release gate: runtime gate、実 Supabase integration test、OAuth live 検証、`InMemoryOAuthStateRepository` 永続化、proof visibility audit。
+5. 週次計画 `company/notes/2026-06-11-weekly-xguard-planning.md` 作成済み。今週の実装 slice は 5 件定義済み。
+6. CEO 決定: `company/decisions/2026-06-11.md` 参照。
 
 ## 2026-06-10 Morning XGuard Planning
 
