@@ -42,3 +42,13 @@ GitHub (UryuAtsuya/My_Life) と同期し、履歴管理を行う。
 - リモート: `https://github.com/UryuAtsuya/My_Life`
 - `.gitignore` に `.obsidian/workspace.json`, `node_modules/` を含める
 - company Todo など共有すべき変更は、作業完了時に commit して push する
+
+## ハーネス運用ルール
+- automation は週次トークン予算を優先し、同じ調査・TODO・説明を無変更で再生成しない。
+- 実装系 automation は差分がある場合だけ重い検証や文書更新を行う。差分がなければ短い状態確認で終了する。
+- 1 run は原則1つの実装 slice、1つの検証結果、1つの簡潔な同期記録に絞る。
+- 同じ objective が未完了の場合、新しい日次計画を複製せず既存 run を継続する。
+- エラーは `code_failure`, `environment`, `network`, `permission`, `credential`, `external_service` に分類する。
+- 同じ原因が2回発生した場合、再発防止策を `company/engineering/error-patterns.md` に追加する。
+- 原因と対処が再利用可能なら、`harness-self-correction` に従ってルールまたは skill に昇格する。
+- automation memory は最新状態、未解決 blocker、次の1手だけを保持し、履歴全文を積み増さない。
