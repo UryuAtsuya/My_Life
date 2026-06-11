@@ -17,7 +17,7 @@ status: active
 
 | Automation | 頻度 | Reasoning | 役割 |
 |---|---:|---|---|
-| Morning planning | 月曜のみ | low | 週の優先順位と既存run確認 |
+| Morning planning | 月曜のみ | low | 週の優先順位、既存run確認、短い読み物2本 |
 | Midday implementation | 平日 | medium | 1日1 sliceの実装・検証 |
 | Evening closeout | 水曜・金曜 | low | 中間監査と週次closeout |
 
@@ -26,11 +26,13 @@ status: active
 - promptは参照型に短縮
 - memoryは履歴追記をやめ、現在状態だけに置換
 - 外部調査は前回情報が古いか、実装判断に必要な場合だけ実行
+- 月曜の読み物はITとコーヒーを各600〜1,000字、各3ソース以内に制限
 
 ## 週次ガード
 
 - 1 run で複数の大きな実装 sliceを扱わない
 - 同一 blocker は再調査せず、解除条件だけ確認する
+- 読み物は `company/reading/` に限定し、PM/TODO文書へ展開しない
 - 木曜終了時点で未完了が多い場合、金曜は新規着手せずcloseoutを優先する
 - token上限接近が疑われる場合、調査系runを止めて実装・検証runを優先する
 
