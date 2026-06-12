@@ -3,6 +3,8 @@ date: "2026-06-12"
 project: "xguard"
 type: midday-implementation
 status: completed
+owner: Implementation
+sync_status: awaiting_develop_merge
 ---
 
 # XGuard production confirmation gate
@@ -24,6 +26,11 @@ status: completed
 - XGuard commit: `f27ad55 Add production confirmation gates`
 - Push: `origin/feature/runtime-confirmation-gates` へ成功
 - Pull request: `https://github.com/UryuAtsuya/Xguard/pull/1`（base: `develop`）
+- Weekly closeout:
+  - `f27ad55` は `develop@030a916` より 1 commit ahead
+  - `develop == origin/develop == 030a916`（divergeなし）
+  - `main == origin/main == 030a916`（production変更なし）
+  - 次の状態遷移は PR #1 の `develop` merge。`main` 昇格は staging 検証後の別PRで行う
 - Remaining blockers:
   - Supabase CLI / 実 Postgres integration test
   - OAuth live token exchange 検証
