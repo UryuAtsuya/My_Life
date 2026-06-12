@@ -29,17 +29,20 @@
 1. 今日の日付と明日の日付を確認する。
 2. MyLife repo の git 状態を確認する。
 3. Codex の昼実装結果、検証結果、push 状態、夕方レビューの主要指摘を読む。
-4. 今日完了したこと、未完了のこと、判断が必要なことを分ける。
-5. CEO 判断が必要なものを `company/decisions/YYYY-MM-DD.md` に追記する。
-6. 今日の TODO を、証拠があるものだけ完了扱いにする。
-7. 明日の `company/todos/YYYY-MM-DD.md` を作成または更新し、Top 3 を明記する。
-8. 必要なら PM ticket と `company/projects/codex-active-projects.md` を更新する。
-9. Codex に戻すべき技術タスクと、Claude Code が持つべき判断タスクを分ける。
-10. 変更がある場合は、対象ファイルだけを commit / push する。push できない場合は理由と次の行動を残す。
+4. XGuardの `develop` / staging状態と `main` / production状態を分け、実装commitが `feature/*` または `develop` にあり、production昇格が必要かを確認する。
+5. Codex実装またはreview noteにagent結果表があるか確認する。表がないrunや稼働中agentが残るrunを、subagent確認済みまたはcloseout完了として扱わない。
+6. 今日完了したこと、未完了のこと、判断が必要なことを分ける。
+7. CEO 判断が必要なものを `company/decisions/YYYY-MM-DD.md` に追記する。
+8. 今日の TODO を、証拠があるものだけ完了扱いにする。
+9. 明日の `company/todos/YYYY-MM-DD.md` を作成または更新し、Top 3 を明記する。
+10. 必要なら PM ticket と `company/projects/codex-active-projects.md` を更新する。
+11. Codex に戻すべき技術タスクと、Claude Code が持つべき判断タスクを分ける。
+12. 変更がある場合は、対象ファイルだけを commit / push する。push できない場合は理由と次の行動を残す。
 
 ## 出力フォーマット
 - 今日完了したこと
 - 未完了 / ブロッカー
+- staging / production 状態
 - CEO 判断
 - 明日の Top 3
 - Codex に戻す技術タスク

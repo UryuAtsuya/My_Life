@@ -21,6 +21,8 @@ Claude Code を CEO / PM / 秘書寄りの判断と会社運用に使い、Codex
 - GitHub 同期先: `https://github.com/UryuAtsuya/My_Life`
 - XGuard 実装リポジトリ: `/Users/uryuatsuya/XGuard/xguard`
 - XGuard GitHub: `https://github.com/UryuAtsuya/Xguard`
+- XGuard staging branch: `develop`
+- XGuard production branch: `main`
 
 ## 共通ルール
 - まず `git pull --ff-only` または同等の同期確認を行い、remote 先行があれば無理に書かない。
@@ -28,3 +30,5 @@ Claude Code を CEO / PM / 秘書寄りの判断と会社運用に使い、Codex
 - 更新対象は `company/` の会社運用ドキュメントを中心にする。
 - 共有すべき変更がある場合は、対象ファイルだけを commit / push する。
 - 変更がない場合は、無理に空の記録を作らない。
+- XGuardの通常実装は `feature/*` または `develop` へ反映し、`main` へ直接実装pushしない。
+- production昇格はstaging検証済みの `develop` から `main` へのpull requestとして扱う。

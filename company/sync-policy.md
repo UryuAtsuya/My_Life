@@ -15,6 +15,12 @@
 - Claude Code は CEO / PM / 秘書寄りの判断、優先順位整理、会社運用、ドキュメント作成を主担当にする
 - Codex は開発、コードレビュー、技術検証、実装タスク、PR ベースの変更管理を主担当にする
 - 並行作業では Claude Code が「何をやるか」を整理し、Codex が「どう実装・検証するか」を具体化する
+- XGuard は `develop` をstaging、`main` をproductionとして扱い、通常実装を `feature/*` または `develop` へ反映する
+- XGuard の `main` には直接実装pushせず、staging検証済みの `develop` からproductionへ昇格する
+- Codex がsubagentを利用できる場合は、agent id、担当範囲、base SHA、status、成果物を記録し、write agentを分離されたworktree/branchで動かす。重複するfile ownershipを与えず、MyLife共有文書、統合、commit、pushはmain coordinatorが持つ
+- Sync担当は `Sync planner` として更新対象と反映案を返し、MyLife共有文書を直接編集しない
+- commit前に全agentを完了、失敗、timeoutのいずれかへ確定し、稼働中agentを残さない
+- subagentが利用不可または修正再試行後も失敗した場合は、順次role passへ切り替え、同一coordinatorによるfallbackで独立reviewではないことと理由を記録する
 - 片方の作業で発生した重要な判断・レビュー結果・未解決事項は `company/` 側へ戻し、次の担当が引き継げる状態にする
 - 共有すべき変更は作業完了時に `git commit` して `git push` する
 

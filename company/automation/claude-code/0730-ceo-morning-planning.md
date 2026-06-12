@@ -32,8 +32,9 @@
 4. 今日の Top 3 を決め、必要なら `company/todos/YYYY-MM-DD.md` を更新する。
 5. CEO 判断が必要なものを `company/decisions/YYYY-MM-DD.md` に追記する。
 6. Codex 昼実装へ渡すスコープを、対象リポジトリ、変更候補、完了条件、検証条件、戻してほしい記録先に分けて整理する。
-7. 実装コード、XGuard repo の変更、危険な自動操作は行わない。
-8. 変更がある場合は、対象ファイルだけを commit / push する。push できない場合は理由と次の行動を残す。
+7. XGuard handoffは `develop` をstaging、`main` をproductionとして扱い、通常実装を `feature/*` または `develop` へ反映する前提で書く。`main` への直接実装pushを指示しない。
+8. 実装コード、XGuard repo の変更、危険な自動操作は行わない。
+9. 変更がある場合は、対象ファイルだけを commit / push する。push できない場合は理由と次の行動を残す。
 
 ## 出力フォーマット
 - 今日の優先順位

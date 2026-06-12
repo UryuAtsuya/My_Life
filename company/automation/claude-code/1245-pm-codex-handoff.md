@@ -28,18 +28,22 @@
 4. 昼の Codex 実装対象を1つに絞る。複数ある場合は、完了しやすく、検証しやすく、ユーザー価値が高いものを優先する。
 5. Codex へ渡す入力を次の形で整理する。
    - 対象リポジトリ
+   - 作業branch（通常は `develop`、必要なら `develop` 起点の `feature/*`）
    - 触ってよいディレクトリ
    - 触らないもの
    - 期待する変更
    - 完了条件
    - 実行してほしい検証
    - MyLife 側へ戻す記録先
-6. 必要なら `company/notes/YYYY-MM-DD-claude-code-codex-handoff.md` を作成または追記する。
-7. TODO や PM ticket に不足があれば補う。
-8. 変更がある場合は、対象ファイルだけを commit / push する。push できない場合は理由と次の行動を残す。
+6. XGuardは `develop` をstaging、`main` をproductionとして扱う。通常実装は `feature/*` または `develop` へpushし、`main` への直接実装pushを指示しない。
+7. Codexには、利用可能なら重複しない担当範囲でImplementation、Review、Verification、Sync plannerのsubagentを使わせる。Implementationはchanged paths、Reviewはfinal diff SHAへのfindings、Verificationはcommandとexit code、Sync plannerはMyLife更新案を返す。write agentは分離されたworktree/branchを使い、Sync plannerはMyLifeを編集しない。commit前に全agentの終了状態を確定し、`role | mode | agent_id | base_sha | owned_paths | status | artifact | fallback_reason` の表を報告させる。MyLife共有文書と最終commit/pushはmain coordinatorだけが行う。利用不可時は、同一coordinatorによる順次role passで独立reviewではないこととfallback理由を報告させる。
+8. 必要なら `company/notes/YYYY-MM-DD-claude-code-codex-handoff.md` を作成または追記する。
+9. TODO や PM ticket に不足があれば補う。
+10. 変更がある場合は、対象ファイルだけを commit / push する。push できない場合は理由と次の行動を残す。
 
 ## 出力フォーマット
 - Codex に渡す実装対象
+- 作業branch
 - 完了条件
 - 検証条件
 - 更新した company ファイル
