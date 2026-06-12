@@ -1,12 +1,12 @@
 # Codex Active Projects
 
-Last updated: 2026-06-11
+Last updated: 2026-06-12
 
 ## Main Focus
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | X BAN Recovery Storage | XGuard HEAD = origin/main = `9a7a783`（rebase + push 完了）/ runtime gate 未実装 / Supabase CLI 未確保 / production No-Go | `PRICING_CONFIRMED` / `COMPLIANCE_CONFIRMED` gate 実装（Codex 委譲）→ Supabase CLI 確保（CEO 手動・2026-06-12 最終期限）→ integration test |
+| 1 | X BAN Recovery Storage | runtime gate完了 / feature branch push済み / staging未反映 / production No-Go | featureを`develop`へ反映してstaging検証 → CEOがSupabase環境を確保 → Codexが既存integration test runを再開 |
 | 2 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
 | 3 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 4 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
@@ -26,6 +26,14 @@ Last updated: 2026-06-11
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
 | `x-ban-recovery-storage` | XGuard local `7e33e9f` ahead 1 / production No-Go | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | remote整合確認後にOAuth production boundaryをpushし、実Supabaseを閉じる。 |
+
+## 2026-06-12 Friday Weekly Closeout
+
+1. Runtime confirmation gateは`f27ad55`で実装・検証・feature branchへのpushが完了。
+2. `develop = origin/develop = 030a9164`。divergeなし。ただしfeature commitは未反映のためstaging未検証。
+3. `main = origin/main = 030a9164`。staging検証済み`develop`からのproduction昇格候補はなし。
+4. ReviewはP0/P1/P2なし。targeted 29 tests、TypeScript、diff check、`npm run check`はpass。
+5. Production No-Go: 実Supabase/Postgres、OAuth live exchange、OAuth state永続化。新規TODOは作らず既存runのowner/statusを更新して継続する。
 
 ## 2026-06-11 Evening Closeout
 
