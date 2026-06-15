@@ -17,13 +17,13 @@ XGuardを今週も最優先とする。production releaseはNo-Goを維持し、
 - staging: `develop = origin/develop = 030a916`
 - production: `main = origin/main = 030a916`
 - 実装branch: `feature/runtime-confirmation-gates = origin/feature/runtime-confirmation-gates = f27ad55`
-- 作業中branch: `feature/proof-revocation-audit`（`develop`起点、未commitの2ファイルあり）
+- 作業branch: `feature/proof-revocation-audit = origin/feature/proof-revocation-audit = 303bd34`。proof revocation compliance event実装はpush済み、`develop`未統合。
 - `develop...origin/develop`、`main...origin/main`はいずれもahead 0 / behind 0。`f27ad55`は`develop`未統合。
 
 ## Blocker
 
 - PR #1の`develop`統合とstaging検証が未完了。
-- `feature/proof-revocation-audit`の実装が作業中のため、重複するproof監査sliceを新規に開始しない。
+- `feature/proof-revocation-audit`はfeature branchへpush済みのため、重複するproof監査sliceを新規に開始せずreview・`develop`統合待ちとして扱う。
 - 実Supabase/Postgres検証に必要なlocal Supabase、`DATABASE_URL`、`SUPABASE_SERVICE_ROLE_KEY`が未確認。
 - OAuth live token exchangeは実X credentialsとproduction callback URLが必要。
 - `InMemoryOAuthStateRepository`はmulti-instance/restart境界を閉じていない。
