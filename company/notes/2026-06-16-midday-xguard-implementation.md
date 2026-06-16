@@ -23,10 +23,10 @@ type: midday-implementation
 
 | role | mode | agent_id | base_sha | owned_paths | status | artifact | fallback_reason |
 |---|---|---|---|---|---|---|---|
-| Implementation | subagent isolated worktree | `019eceb3-c9fb-7811-b0e6-9aeb88112b8e` | `030a9164df301cf01a47bd5ecfbfe0033e973e9c` | `backend/src/config/runtimeConfig.ts`, `backend/src/__tests__/runtimeConfig.test.ts`, `backend/src/__tests__/api.test.ts` | completed | clean fast-forward、changed pathsはowned pathsのみ | none |
-| Review | subagent read-only | `019eceb4-169b-7241-9a54-709dff022fdd` | `030a9164df301cf01a47bd5ecfbfe0033e973e9c` | read-only focus files | completed | findingsなし、`npm run check` pass | none |
-| Verification | subagent verification-only | `019eceb4-59fe-7b23-a572-7a473a08f889` | `030a9164df301cf01a47bd5ecfbfe0033e973e9c` | verification-only | completed | diff check、typecheck、targeted Vitest pass | none |
-| Sync planner | subagent read-only | `019eceb4-7723-7691-9cf5-3013f6065109` | `030a9164df301cf01a47bd5ecfbfe0033e973e9c` | MyLife read-only plan | completed | weekly planと昼実装noteの最小同期を提案 | none |
+| Implementation | subagent isolated worktree | `019eceb3-ef00-7d71-9337-18f6ceda766f` | `030a9164df301cf01a47bd5ecfbfe0033e973e9c` | `backend/src/config/runtimeConfig.ts`, `backend/src/__tests__/runtimeConfig.test.ts`, `backend/src/__tests__/api.test.ts` | completed | clean fast-forward、changed pathsはowned pathsのみ | none |
+| Review | subagent read-only | `019eceb4-016c-7552-8438-78ae7f0b0115` | `030a9164df301cf01a47bd5ecfbfe0033e973e9c` | read-only focus files | completed | findingsなし | none |
+| Verification | subagent verification-only | `019eceb4-a24a-7020-a7b8-90ee10bb7130` | `030a9164df301cf01a47bd5ecfbfe0033e973e9c` | verification-only | completed | diff check、typecheck、targeted Vitest pass | none |
+| Sync planner | subagent read-only | `019eceb4-1590-7fb0-b3ed-a298984586d3` | `030a9164df301cf01a47bd5ecfbfe0033e973e9c` | MyLife read-only plan | completed | weekly planと昼実装noteの最小同期を提案 | none |
 
 ## Review Findings
 
