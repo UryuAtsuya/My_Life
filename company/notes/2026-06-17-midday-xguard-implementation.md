@@ -52,3 +52,16 @@ type: midday-implementation
 ## Blocker
 
 - production release No-Go継続: 実Supabase/Postgres integration test、OAuth live token exchange、`content_compliance_events` 永続化が未完了。
+
+## Evening closeout sync
+
+- branch: `feature/night-work-design-mockup`
+- base SHA: `f27ad55`
+- final SHA: `2c26485`
+- push: `origin/feature/night-work-design-mockup` と一致
+- staging: `develop = origin/develop = f27ad55`、featureは未統合
+- production: `main = origin/main = 030a916`、直接pushなし
+- 追加反映内容: 夜職persona向けUI mockup、prototype recovery flow console、backup proof repository境界、proof/recovery API hardening
+- Review: P0/P1/P2なし、XGuard scope rules違反なし
+- Verification: `git diff --check develop..HEAD` exit 0、`npm run check` exit 0
+- production release No-Go継続: 実Supabase/Postgres integration test、OAuth live token exchange、`content_compliance_events` 永続化、`develop`統合後のstaging検証が未完了

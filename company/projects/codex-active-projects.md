@@ -1,12 +1,12 @@
 # Codex Active Projects
 
-Last updated: 2026-06-12
+Last updated: 2026-06-17
 
 ## Main Focus
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | X BAN Recovery Storage | runtime gate完了 / feature branch push済み / staging未反映 / production No-Go | featureを`develop`へ反映してstaging検証 → CEOがSupabase環境を確保 → Codexが既存integration test runを再開 |
+| 1 | X BAN Recovery Storage | night-work design mockup feature push済み / staging未反映 / production No-Go | `feature/night-work-design-mockup`をreview後に`develop`へ反映してstaging検証 → CEOがSupabase環境を確保 → Codexが既存integration test runを再開 |
 | 2 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
 | 3 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 | 4 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
@@ -25,7 +25,16 @@ Last updated: 2026-06-12
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
-| `x-ban-recovery-storage` | XGuard local `7e33e9f` ahead 1 / production No-Go | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | remote整合確認後にOAuth production boundaryをpushし、実Supabaseを閉じる。 |
+| `x-ban-recovery-storage` | `feature/night-work-design-mockup = origin/feature/night-work-design-mockup = 2c26485` / staging未反映 / production No-Go | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | `develop = origin/develop = f27ad55`へfeatureを統合し、staging検証後にproduction昇格候補を判断する。 |
+
+## 2026-06-17 Wednesday Midweek Audit
+
+1. `feature/night-work-design-mockup = origin/feature/night-work-design-mockup = 2c26485`。`develop = origin/develop = f27ad55`から6 commits aheadで、まだstaging未反映。
+2. `develop = origin/develop = f27ad55`、`main = origin/main = 030a916`。どちらもdivergeなし。`main`への直接実装pushなし。
+3. `f27ad55..2c26485` の反映内容は local status check docs、夜職persona向けUI mockup、prototype recovery flow console、backup proof repository境界、proof/recovery API hardening。
+4. ReviewはP0/P1/P2なし。XGuard scope rules違反なし。
+5. Verificationは `git diff --check develop..HEAD` exit 0、`npm run check` exit 0。staging検証は未実施。
+6. Production No-Go継続: 実Supabase/Postgres integration test、OAuth live token exchange、`content_compliance_events` 永続化、`develop`統合後のstaging検証が未完了。
 
 ## 2026-06-12 Friday Weekly Closeout
 
