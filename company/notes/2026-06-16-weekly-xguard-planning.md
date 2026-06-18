@@ -13,18 +13,17 @@ XGuardを今週の最優先にする。production releaseはNo-Goを維持し、
 
 ## Branch状態
 
-- 現在checkout: `develop = origin/develop = f27ad55`
-- 通常作業: `develop = origin/develop = f27ad55`
-- staging: `develop = origin/develop = f27ad55`
+- 現在checkout: `feature/content-compliance-events-repository`（local in-progress）
+- 通常作業: `develop = origin/develop = cdcd5b4`
+- staging: `develop = origin/develop = cdcd5b4`
 - production: `main = origin/main = 030a916`
 - `develop...origin/develop`: ahead 0 / behind 0
 - `main...origin/main`: ahead 0 / behind 0
 - 統合済み: `feature/runtime-confirmation-gates = origin/feature/runtime-confirmation-gates = f27ad55`
-- 統合待ち: `feature/proof-revocation-audit = origin/feature/proof-revocation-audit = 303bd34`
+- 統合済み: `feature/proof-revocation-audit = origin/feature/proof-revocation-audit = 303bd34` -> `develop = cdcd5b4`
 
 ## Blocker
 
-- `feature/proof-revocation-audit`の`develop`統合、staging検証、昇格判断が未完了。
 - `feature/runtime-confirmation-gates`は`develop`へ統合済みだが、production昇格判断は未完了。
 - `content_compliance_events`は現在process-local in-memoryで、restart / multi-instance時に失われる。
 - 実Supabase/Postgres検証に必要なlocal Supabase、`psql`、`DATABASE_URL`、`SUPABASE_SERVICE_ROLE_KEY`が未確認。
@@ -34,7 +33,7 @@ XGuardを今週の最優先にする。production releaseはNo-Goを維持し、
 ## 今週の実装slice
 
 1. [x] `feature/runtime-confirmation-gates`を`develop`へ統合し、stagingでruntime confirmation gateを検証する。
-2. `feature/proof-revocation-audit`をreview後に`develop`へ統合し、proof revoke時のcompliance event記録をstagingで確認する。
+2. [x] `feature/proof-revocation-audit`をreview後に`develop`へ統合し、proof revoke時のcompliance event記録をstagingで確認する。
 3. `content_compliance_events`永続repositoryを実装し、proof revoke stateとcompliance eventを同一transactionで保存する。
 4. Supabase/Postgres integration環境を確保し、role、ownership、X account整合性、存在しないrun、負値、月次上限超過の拒否を確認する。
 5. staging検証がpassした同一commitだけを`develop`から`main`へ昇格PRとして準備する。`main`への直接実装pushは行わない。
