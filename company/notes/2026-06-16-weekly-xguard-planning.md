@@ -34,8 +34,9 @@ XGuardを今週の最優先にする。production releaseはNo-Goを維持し、
 
 1. [x] `feature/runtime-confirmation-gates`を`develop`へ統合し、stagingでruntime confirmation gateを検証する。
 2. [x] `feature/proof-revocation-audit`をreview後に`develop`へ統合し、proof revoke時のcompliance event記録をstagingで確認する。
-3. `content_compliance_events`永続repositoryを実装し、proof revoke stateとcompliance eventを同一transactionで保存する。
-4. Supabase/Postgres integration環境を確保し、role、ownership、X account整合性、存在しないrun、負値、月次上限超過の拒否を確認する。
-5. staging検証がpassした同一commitだけを`develop`から`main`へ昇格PRとして準備する。`main`への直接実装pushは行わない。
+3. [x] `content_compliance_events` repository境界を実装し、proof revokeの`proof_page_revoked`記録をrepository経由に移す。
+4. proof page state と compliance event の同一transaction化を、proof page永続repository統合時に確認する。
+5. Supabase/Postgres integration環境を確保し、role、ownership、X account整合性、存在しないrun、負値、月次上限超過の拒否を確認する。
+6. staging検証がpassした同一commitだけを`develop`から`main`へ昇格PRとして準備する。`main`への直接実装pushは行わない。
 
 Codexへのhandoffは、各runで上記から1 sliceだけを選び、`feature/*`で実装、`develop`統合、staging検証、`main`昇格PRの順に書く。
