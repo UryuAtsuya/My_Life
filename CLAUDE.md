@@ -22,6 +22,15 @@ GitHub (UryuAtsuya/My_Life) と同期し、履歴管理を行う。
 - **Claude Code** — プロジェクト管理・会社運用・意思決定支援・ドキュメント作成
 - **Codex** — Projects/ 内のコーディング・実装タスク（issue 駆動・PR ベース）
 
+## Loop Engineering 運用
+- recurring work は単発プロンプトではなく loop として扱う。正本は `company/engineering/docs/2026-06-22-loop-engineering-policy.md`。
+- Claude Code は What / Why / Priority / Record を主導し、Codex は How / Implementation / Verification を主導する。
+- loop は Discover → Triage → Execute → Verify → Record → Decide next の順で進める。
+- 1 loop は原則1 objective、1 slice、1 verification に絞り、未完了 objective の日次複製を避ける。
+- 完了条件は作業前に test / lint / diff / source / human review のいずれかで確認可能にする。
+- recurring context は prompt に貼り足さず、`AGENTS.md`、`CLAUDE.md`、skill、project docs、automation memory へ外出しする。
+- state は会話ではなく disk に残す。最新状態、未解決 blocker、次の1手は `company/`、対象 repo、`~/.codex/automations/*/memory.md` に戻す。
+
 ### Codex 連携ルール
 1. コーディングタスクは GitHub Issue として起票
 2. Codex に Issue を割り当て、実装を委譲
