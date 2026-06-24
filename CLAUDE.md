@@ -37,6 +37,12 @@ GitHub (UryuAtsuya/My_Life) と同期し、履歴管理を行う。
 3. PR が作成されたら Claude Code でレビュー
 4. マージ後、Projects/ 内のドキュメントを更新
 
+### GitHub / PR 運用
+- 共通ルールの正本は `company/engineering/docs/2026-06-24-github-pr-policy.md`。
+- 実装作業は原則として新しい `feature/*` / `fix/*` / `docs/*` branch で行い、完了後に push して PR を作成する。
+- PR 本文は日本語で「何をやったか」「なぜやったか」「確認したこと」「未解決事項」を書く。
+- merge は原則ユーザーが行う。Claude Code / Codex は merge 可能な状態を作り、PR URL と未解決事項を報告する。
+
 ## 関連 Vault
 - **EngineerBrain** (`~/Documents/ObsidianVault/EngineerBrain/`) — 技術ナレッジ・スキル・成長記録
 

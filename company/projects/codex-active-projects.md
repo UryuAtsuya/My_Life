@@ -1,16 +1,16 @@
 # Codex Active Projects
 
-Last updated: 2026-06-17
+Last updated: 2026-06-24
 
 ## Main Focus
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
 | 1 | X BAN Recovery Storage | night-work design mockup feature push済み / staging未反映 / production No-Go | `feature/night-work-design-mockup`をreview後に`develop`へ反映してstaging検証 → CEOがSupabase環境を確保 → Codexが既存integration test runを再開 |
-| 2 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
-| 3 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
-| 4 | AI Monetization Mindmap Video | posting-prep | Hold as the next post candidate; adjust only caption/CTA after first-post learning |
-| 5 | Web Service New Product | prototype | Today Boardは保留。X BAN Recovery Storageの要件、環境、API調査を先に進める |
+| 2 | Ontology AIO Service | 企画、調査、診断レポートテンプレート、URL診断プロトタイプあり。GitHub repo `UryuAtsuya/AIO` へ publish 済み | URL診断の精度改善、サンプルサイト評価、レポート出力の形を決める |
+| 3 | AIRS | AI 就活・キャリア診断サービス。現行 repo / UI 改善対象 | 現行 URL と直近で直したい機能を決める |
+| 4 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
+| 5 | Short Video Operations OS | validation / still blocked on posting evidence | Publish `AgentRunShowcaseShort`, record URL/time/platform/reactions, and send 1 focused outreach |
 
 ## Managed Projects
 
@@ -26,6 +26,16 @@ Last updated: 2026-06-17
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
 | `x-ban-recovery-storage` | `feature/night-work-design-mockup = origin/feature/night-work-design-mockup = 2c26485` / staging未反映 / production No-Go | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | `develop = origin/develop = f27ad55`へfeatureを統合し、staging検証後にproduction昇格候補を判断する。 |
+| `ontology-aio-service` | prototype | SEO / AIO / Entity / Structured Data の充足状況を URL 入力で診断するサービス案。`Projects/ontology-aio-service/prototype/` と GitHub repo `UryuAtsuya/AIO` に初期 prototype あり。 | 3サイト程度で診断結果を試し、レポート出力と改善提案の型を固める。 |
+| `airs` | priority | AI 就活サイト。就活・キャリア診断系のサービス改善プロジェクト。GitHub repo `UryuAtsuya/AIRS`、local path `/Users/uryuatsuya/MBTI_AI/mbti_ai`。 | 現行 URL、直近修正機能、診断結果 UI の優先度を確認する。 |
+
+## 2026-06-24 Project Inventory Refresh
+
+1. `Projects/README.md` を現行 project 一覧の入口にする。
+2. AIO は `Projects/ontology-aio-service/` に企画、調査、診断レポートテンプレート、prototype があり、実装 repo は `UryuAtsuya/AIO`。
+3. AIRS は `Projects/airs/README.md` を入口にし、実装 repo `UryuAtsuya/AIRS` と local path `/Users/uryuatsuya/MBTI_AI/mbti_ai` を確認対象にする。
+4. 新しい project / service を作ったら、`Projects/README.md` と必要に応じてこの一覧へ追加する。
+5. GitHub / PR 作業は `company/engineering/docs/2026-06-24-github-pr-policy.md` に従い、原則 branch 作成、push、PR、日本語説明、ユーザー merge とする。
 
 ## 2026-06-17 Wednesday Midweek Audit
 

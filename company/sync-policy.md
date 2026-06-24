@@ -24,6 +24,15 @@
 - 片方の作業で発生した重要な判断・レビュー結果・未解決事項は `company/` 側へ戻し、次の担当が引き継げる状態にする
 - 共有すべき変更は作業完了時に `git commit` して `git push` する
 
+## GitHub / PR 運用
+
+- 共通ルールの正本は `company/engineering/docs/2026-06-24-github-pr-policy.md`
+- 実装作業は原則として新しい `feature/*` / `fix/*` / `docs/*` branch を作って進める
+- 完了後は検証結果を残し、push して Pull Request を作成する
+- PR 本文は日本語で「何をやったか」「なぜやったか」「確認したこと」「未解決事項」を書く
+- merge は原則ユーザーが行う。agent は勝手に merge せず、PR URL と判断材料を返す
+- 直接 push は、ユーザーが明示した場合、緊急同期、automation memory など PR より即時反映が重要な小変更に限る
+
 ## 同期先
 
 - GitHub: `https://github.com/UryuAtsuya/My_Life`
