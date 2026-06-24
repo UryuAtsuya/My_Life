@@ -25,6 +25,7 @@ Last updated: 2026-06-24
 | `youtube-ops-codex` | planning | Experiment for running YouTube operations through Codex/company. | Create a one-video production checklist. |
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
+| `mbti_lovetype_diagnosis` | added | GitHub repository `UryuAtsuya/mbti_lovetype_diagnosis`。`matchchecker` は別名、アプリ名、または関連repo候補として扱う。 | GitHub上の正式repo名/default branch/latest commitを確認し、local checkout場所と最初のCodex sliceを決める。 |
 | `x-ban-recovery-storage` | `feature/night-work-design-mockup = origin/feature/night-work-design-mockup = 2c26485` / staging未反映 / production No-Go | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | `develop = origin/develop = f27ad55`へfeatureを統合し、staging検証後にproduction昇格候補を判断する。 |
 | `ontology-aio-service` | prototype | SEO / AIO / Entity / Structured Data の充足状況を URL 入力で診断するサービス案。`Projects/ontology-aio-service/prototype/` と GitHub repo `UryuAtsuya/AIO` に初期 prototype あり。 | 3サイト程度で診断結果を試し、レポート出力と改善提案の型を固める。 |
 | `airs` | priority | AI 就活サイト。就活・キャリア診断系のサービス改善プロジェクト。GitHub repo `UryuAtsuya/AIRS`、local path `/Users/uryuatsuya/MBTI_AI/mbti_ai`。 | 現行 URL、直近修正機能、診断結果 UI の優先度を確認する。 |
@@ -36,6 +37,14 @@ Last updated: 2026-06-24
 3. AIRS は `Projects/airs/README.md` を入口にし、実装 repo `UryuAtsuya/AIRS` と local path `/Users/uryuatsuya/MBTI_AI/mbti_ai` を確認対象にする。
 4. 新しい project / service を作ったら、`Projects/README.md` と必要に応じてこの一覧へ追加する。
 5. GitHub / PR 作業は `company/engineering/docs/2026-06-24-github-pr-policy.md` に従い、原則 branch 作成、push、PR、日本語説明、ユーザー merge とする。
+
+## 2026-06-24 mbti_lovetype_diagnosis Project Intake
+
+1. ユーザー依頼により、`mbti_lovetype_diagnosis` を Codex 管理対象プロジェクトとして追加した。
+2. GitHub repository は `UryuAtsuya/mbti_lovetype_diagnosis` として記録した。
+3. `matchchecker` は別名、アプリ名、または関連repo候補として扱い、正式関係は次回 GitHub 確認で確定する。
+4. Project note: `Projects/mbti_lovetype_diagnosis/README.md`
+5. Next action: GitHub 上の default branch、最新 commit、README / Issue / TODO を確認し、local checkout 場所と最初の1 sliceを決める。
 
 ## 2026-06-17 Wednesday Midweek Audit
 

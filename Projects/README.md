@@ -8,6 +8,7 @@ MyLife 内で扱う進行中プロジェクトとサービス案の一覧。
 | --- | --- | --- | --- |
 | `ontology-aio-service` | SEO / AIO / Entity 診断サービス | 企画、調査、URL診断プロトタイプあり | [README](ontology-aio-service/README.md), [prototype](ontology-aio-service/prototype/README.md) |
 | `airs` | AI 就活・キャリア診断サービス | 優先対応プロジェクト。現行 repo / UI 改善対象 | [README](airs/README.md) |
+| `mbti_lovetype_diagnosis` | MBTI / love type diagnosis / matching checker | GitHub repository 追加登録。`matchchecker` との正式関係は確認待ち | [README](mbti_lovetype_diagnosis/README.md) |
 | `solo-business-today-board` | ひとり事業向け静的プロトタイプ | v0 静的画面あり | [README](solo-business-today-board/README.md) |
 | `job-hunting-support-site` | 就活支援サイト静的プロトタイプ | static prototype あり | [README](job-hunting-support-site/README.md) |
 
