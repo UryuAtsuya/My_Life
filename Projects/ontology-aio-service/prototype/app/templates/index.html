@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AIO URL診断プロトタイプ</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/styles.css') }}">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Ontology AIO Service</p>
+          <h1>AIO URL診断プロトタイプ</h1>
+          <p class="lead">URLを入力すると、SEO基盤、Entity / Ontology、構造化データ、Content Graph の充足状況をルールベースで確認します。</p>
+        </div>
+        <form class="search" method="post" action="/analyze">
+          <label for="url">診断するURL</label>
+          <div class="search-row">
+            <input id="url" name="url" type="text" inputmode="url" placeholder="https://example.com" value="{{ url }}" required>
+            <button type="submit">調査する</button>
+          </div>
+          <p class="hint">sitemap.xml を優先し、なければ同一ドメインの主要リンクを解析します。外部APIは使いません。</p>
+        </form>
+      </section>
+
+      {% if error %}
+        <section class="alert">{{ error }}</section>
+      {% endif %}
+
+      {% if result %}
+        <section class="summary">
+          <div class="score-main">
+            <span class="score-label">Overall</span>
+            <strong>{{ result.overall_score }}</strong>
+            <span>/100</span>
+          </div>
+          <div class="summary-meta">
+            <p><strong>入力URL:</strong> {{ result.input_url }}</p>
+            <p><strong>正規化URL:</strong> <a href="{{ result.normalized_url }}" target="_blank" rel="noreferrer">{{ result.normalized_url }}</a></p>
+            <p><strong>解析元:</strong> {{ result.source }}{% if result.sitemap_url %} / {{ result.sitemap_url }}{% endif %}</p>
+            <p><strong>解析ページ数:</strong> {{ result.pages|length }}</p>
+          </div>
+        </section>
+
+        {% if result.warnings %}
+          <section class="warnings">
+            {% for warning in result.warnings %}
+              <p>{{ warning }}</p>
+            {% endfor %}
+          </section>
+        {% endif %}
+
+        <section class="grid scores">
+          {% for score in result.scores %}
+            <article class="card">
+              <div class="score-card-head">
+                <h2>{{ score.name }}</h2>
+                <span>{{ score.score }}/100</span>
+              </div>
+              <div class="bar"><i style="width: {{ score.score }}%"></i></div>
+              <p>{{ score.rationale }}</p>
+            </article>
+          {% endfor %}
+        </section>
+
+        <section class="panel">
+          <h2>充足チェック</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Status</th>
+                  <th>項目</th>
+                  <th>検出内容</th>
+                  <th>改善案</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for item in result.checks %}
+                  <tr>
+                    <td><span class="pill {{ item.status|lower }}">{{ item.status }}</span></td>
+                    <td>{{ item.label }}</td>
+                    <td>{{ item.detail }}</td>
+                    <td>{{ item.recommendation }}</td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2>SEO情報 → Entity / Ontology → schema.org候補</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>SEO情報</th>
+                  <th>現状</th>
+                  <th>Entity / Ontology</th>
+                  <th>Structured Data</th>
+                  <th>次の対応</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for row in result.seo_to_ontology %}
+                  <tr>
+                    <td>{{ row.seo }}</td>
+                    <td>{{ row.current }}</td>
+                    <td>{{ row.entity }}</td>
+                    <td>{{ row.schema }}</td>
+                    <td>{{ row.action }}</td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2>30日改善Backlog</h2>
+          {% if result.backlog %}
+            <div class="backlog">
+              {% for item in result.backlog %}
+                <article>
+                  <span class="priority">{{ item.priority }}</span>
+                  <h3>{{ item.title }}</h3>
+                  <p>{{ item.reason }}</p>
+                  <strong>{{ item.output }}</strong>
+                </article>
+              {% endfor %}
+            </div>
+          {% else %}
+            <p>重大な不足は検出されませんでした。次はAI answer simulationで実回答上の見え方を確認してください。</p>
+          {% endif %}
+        </section>
+
+        <section class="panel">
+          <h2>検出ページ</h2>
+          <div class="pages">
+            {% for page in result.pages %}
+              <article class="page-item">
+                <h3><a href="{{ page.url }}" target="_blank" rel="noreferrer">{{ page.title or page.url }}</a></h3>
+                {% if page.error %}
+                  <p class="error-text">{{ page.error }}</p>
+                {% else %}
+                  <dl>
+                    <dt>Status</dt><dd>{{ page.status_code }}</dd>
+                    <dt>Meta</dt><dd>{{ page.meta_description or "未検出" }}</dd>
+                    <dt>H1</dt><dd>{{ page.h1|join(" / ") or "未検出" }}</dd>
+                    <dt>Schema</dt><dd>{{ page.schema_types|join(", ") or "未検出" }}</dd>
+                    <dt>Internal Links</dt><dd>{{ page.internal_links|length }}</dd>
+                  </dl>
+                {% endif %}
+              </article>
+            {% endfor %}
+          </div>
+        </section>
+      {% endif %}
+    </main>
+  </body>
+</html>

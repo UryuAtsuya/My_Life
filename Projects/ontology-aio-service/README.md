@@ -12,6 +12,7 @@ Ontology と Knowledge Graph を使って、企業・商品・専門性を LLM /
 ## 企画書
 
 - [2026-06-18-consulting-plan.md](2026-06-18-consulting-plan.md)
+- [2026-06-19-research.md](2026-06-19-research.md)
 
 ## 仮説
 
