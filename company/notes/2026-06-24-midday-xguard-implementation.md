@@ -2,7 +2,7 @@
 date: "2026-06-24"
 project: "xguard"
 type: midday-implementation
-status: synced
+status: pr-ready
 ---
 
 # 2026-06-24 XGuard 昼実装
@@ -11,34 +11,36 @@ status: synced
 
 - base SHA: `08576f9b6ee0238f2e3030ff06c5e21472646788`
 - branch: `feature/content-compliance-db-contract`
-- XGuard commit: `e9aa6e1bf7b296bb0b0d8b79053e4c63c37bbabd`
+- XGuard commits:
+  - `e9aa6e1 Add content compliance schema contract`
+  - `6045125 Add content compliance DB contract test`
 - PR: `https://github.com/UryuAtsuya/Xguard/pull/7` -> `develop`
-- slice: `content_compliance_events` DB schema contract coverage
+- slice: `content_compliance_events` の Supabase/Postgres integration contract を最小追加。
 
 ## 変更概要
 
-- `backend/src/__tests__/supabaseSchemaContract.test.ts` に `content_compliance_events` の schema contract assertion を追加した。
-- `proof_page_revoked` enum、`x_account_id` / `proof_page_id` の ownership FK、`x_account_id, created_at desc` index、RLS、own-account select policy を live Supabase なしで検出できるようにした。
-- production code、token material、raw X API payload、frontend 公開面には触れていない。
+- `supabase/schema.sql` の `content_compliance_events` table / enum / index / RLS read policy を静的schema contractで確認するようにした。
+- 実Supabase/Postgres向けの skip-by-default integration test を追加し、明示フラグとDB URLがある時だけ次を確認できるようにした。
+  - authenticated user の直接insert拒否
+  - service-role による `proof_page_revoked` event insert
+  - authenticated user の own event read と other event 非表示
 
 ## Verification
 
 - `git diff --check`: pass
-- `git diff --cached --check`: pass
+- `git diff --no-index --check -- /dev/null backend/src/__tests__/supabaseSqlContentComplianceEvents.integration.test.ts`: whitespace outputなし
+- `npx vitest run --configLoader runner backend/src/__tests__/supabaseSchemaContract.test.ts backend/src/__tests__/supabaseSqlContentComplianceEvents.integration.test.ts`: pass, 2 passed / 1 skipped
 - `npx tsc -p tsconfig.json --noEmit`: pass
-- `npx vitest run backend/src/__tests__/supabaseSchemaContract.test.ts`: pass, 2 tests
-- Verification agent: same 3 commands pass, skipped verificationなし
-- Review agent: no findings
 
-## Agent
+## Review / Agents
 
-- Implementation agent: `019ef7e6-bad6-76c0-8861-46ad64a4c1c9`, owned `backend/src/__tests__/supabaseSchemaContract.test.ts`, completed
-- Review agent: `019ef7e7-e42f-75d0-b102-b495cd57adcd`, read-only final diff review, completed, no findings
-- Verification agent: `019ef7e7-fa35-7203-afcc-784a0114beb0`, read-only commands, completed
-- Sync planner: `019ef7e6-d401-77a0-b2b1-7e06926928ca`, proposed this single note, no TODO/project update
+- Implementation: completed。新規 integration test を追加。
+- Review: initial P2 2件を指摘。authenticated own-account insert拒否と authenticated read policy 検証を追加後、再reviewは no findings。
+- Verification: completed。実DB integration は env gate のため未実行。
+- Sync planner: completed。このnoteのみ作成を提案。
 
 ## Remaining
 
-- Supabase/Postgres 実環境での `content_compliance_events` insert/list 検証は別slice。`SUPABASE_DB_URL` / `POSTGRES_URL`、`SUPABASE_SERVICE_ROLE_KEY`、`psql` 等が必要。
-- 未追跡 `backend/src/__tests__/supabaseSqlContentComplianceEvents.integration.test.ts` は今回のcommit/PR対象外。内容は実DB integration寄りで、別sliceとしてreview/verifyする。
-- production No-Go 継続。`main` への直接pushなし。
+- 実Supabase/Postgres integrationは未実行。実行には `RUN_SUPABASE_SQL_INTEGRATION_TESTS=1`、`SUPABASE_DB_URL` または `POSTGRES_URL`、必要なら `PSQL_BIN` が必要。
+- production No-Go継続。実DBでの `content_compliance_events` 永続化確認、OAuth live token exchange、staging検証、runbookが未完了。
+- 既存未追跡の `.playwright-cli/` と `output/playwright/` は今回対象外として未変更。
