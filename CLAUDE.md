@@ -24,6 +24,7 @@ GitHub (UryuAtsuya/My_Life) と同期し、履歴管理を行う。
 
 ## Loop Engineering 運用
 - recurring work は単発プロンプトではなく loop として扱う。正本は `company/engineering/docs/2026-06-22-loop-engineering-policy.md`。
+- 部門横断の company work は stage 接続として扱う。正本は `company/engineering/docs/2026-06-24-company-harness-engineering-policy.md`。
 - Claude Code は What / Why / Priority / Record を主導し、Codex は How / Implementation / Verification を主導する。
 - loop は Discover → Triage → Execute → Verify → Record → Decide next の順で進める。
 - 1 loop は原則1 objective、1 slice、1 verification に絞り、未完了 objective の日次複製を避ける。

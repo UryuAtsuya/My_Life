@@ -24,6 +24,7 @@ GitHub (UryuAtsuya/My_Life) と同期し、履歴管理を行う。
 
 ## Loop Engineering 運用
 - MyLife の recurring work は、単発プロンプトではなく loop として設計する。正本は `company/engineering/docs/2026-06-22-loop-engineering-policy.md`。
+- 部門横断の company work は、Secretary → CEO → PM → Research / Engineering → Reviews → Record の stage として接続する。正本は `company/engineering/docs/2026-06-24-company-harness-engineering-policy.md`。
 - loop は Discover → Triage → Execute → Verify → Record → Decide next の順で進める。
 - 1 loop は原則1 objective、1 slice、1 verification に絞る。
 - 完了条件は作業前に test / lint / diff / source / human review のいずれかで確認可能にする。
@@ -61,6 +62,7 @@ GitHub (UryuAtsuya/My_Life) と同期し、履歴管理を行う。
 
 ## ハーネス運用ルール
 - automation は週次トークン予算を優先し、同じ調査・TODO・説明を無変更で再生成しない。
+- GitHub Issue や外部リンクから始まる依頼は、まず run objective、owner、success check、required artifacts に落としてから部門へ渡す。
 - 実装系 automation は差分がある場合だけ重い検証や文書更新を行う。差分がなければ短い状態確認で終了する。
 - 1 run は原則1つの実装 slice、1つの検証結果、1つの簡潔な同期記録に絞る。
 - 同じ objective が未完了の場合、新しい日次計画を複製せず既存 run を継続する。
