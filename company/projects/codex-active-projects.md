@@ -6,7 +6,7 @@ Last updated: 2026-06-24
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | X BAN Recovery Storage | night-work design mockup feature push済み / staging未反映 / production No-Go | `feature/night-work-design-mockup`をreview後に`develop`へ反映してstaging検証 → CEOがSupabase環境を確保 → Codexが既存integration test runを再開 |
+| 1 | X BAN Recovery Storage | `origin/develop = bfed1c6` / `origin/main = 04d81df` / content compliance DB contract反映済み / production No-Go | `SupabaseContentComplianceEventRepository`をruntimeへ配線し、実DB integrationとstaging smoke/runbook evidenceを確認する |
 | 2 | Ontology AIO Service | 企画、調査、診断レポートテンプレート、URL診断プロトタイプあり。GitHub repo `UryuAtsuya/AIO` へ publish 済み | URL診断の精度改善、サンプルサイト評価、レポート出力の形を決める |
 | 3 | AIRS | AI 就活・キャリア診断サービス。現行 repo / UI 改善対象 | 現行 URL と直近で直したい機能を決める |
 | 4 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
@@ -26,7 +26,7 @@ Last updated: 2026-06-24
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
 | `mbti_lovetype_diagnosis` | added | GitHub repository `UryuAtsuya/mbti_lovetype_diagnosis`。`matchchecker` は別名、アプリ名、または関連repo候補として扱う。 | GitHub上の正式repo名/default branch/latest commitを確認し、local checkout場所と最初のCodex sliceを決める。 |
-| `x-ban-recovery-storage` | `feature/night-work-design-mockup = origin/feature/night-work-design-mockup = 2c26485` / staging未反映 / production No-Go | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | `develop = origin/develop = f27ad55`へfeatureを統合し、staging検証後にproduction昇格候補を判断する。 |
+| `x-ban-recovery-storage` | `origin/develop = bfed1c6` / `origin/main = 04d81df` / content compliance DB contract反映済み / production No-Go | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | P1: `SupabaseContentComplianceEventRepository` がruntimeへ未配線。配線後に実Supabase/Postgres integration、OAuth live token exchange、staging smoke/runbook evidenceを確認する。 |
 | `ontology-aio-service` | prototype | SEO / AIO / Entity / Structured Data の充足状況を URL 入力で診断するサービス案。`Projects/ontology-aio-service/prototype/` と GitHub repo `UryuAtsuya/AIO` に初期 prototype あり。 | 3サイト程度で診断結果を試し、レポート出力と改善提案の型を固める。 |
 | `airs` | priority | AI 就活サイト。就活・キャリア診断系のサービス改善プロジェクト。GitHub repo `UryuAtsuya/AIRS`、local path `/Users/uryuatsuya/MBTI_AI/mbti_ai`。 | 現行 URL、直近修正機能、診断結果 UI の優先度を確認する。 |
 
