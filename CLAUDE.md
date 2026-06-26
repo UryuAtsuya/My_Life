@@ -23,8 +23,11 @@ GitHub (UryuAtsuya/My_Life) と同期し、履歴管理を行う。
 - **Codex** — Projects/ 内のコーディング・実装タスク（issue 駆動・PR ベース）
 
 ## Loop Engineering 運用
+- agent 指示は root に集約しすぎず、用途別 md に分ける。分割ルールの正本は `company/engineering/docs/2026-06-26-agent-instruction-map.md`。
 - recurring work は単発プロンプトではなく loop として扱う。正本は `company/engineering/docs/2026-06-22-loop-engineering-policy.md`。
+- 部門横断の company work は stage 接続として扱う。正本は `company/engineering/docs/2026-06-24-company-harness-engineering-policy.md`。
 - Claude Code は What / Why / Priority / Record を主導し、Codex は How / Implementation / Verification を主導する。
+- CEO は「何をやるか」「なぜ今やるか」「どこまでできたら十分か」を決め、production promotion、外部公開、費用発生、法務・規約リスクは Go / No-Go を明記する。
 - loop は Discover → Triage → Execute → Verify → Record → Decide next の順で進める。
 - 1 loop は原則1 objective、1 slice、1 verification に絞り、未完了 objective の日次複製を避ける。
 - 完了条件は作業前に test / lint / diff / source / human review のいずれかで確認可能にする。
@@ -33,9 +36,11 @@ GitHub (UryuAtsuya/My_Life) と同期し、履歴管理を行う。
 
 ### Codex 連携ルール
 1. コーディングタスクは GitHub Issue として起票
-2. Codex に Issue を割り当て、実装を委譲
-3. PR が作成されたら Claude Code でレビュー
-4. マージ後、Projects/ 内のドキュメントを更新
+2. 同じ目的の open Issue / PR がないか確認
+3. Codex に Issue を割り当て、実装を委譲
+4. PR が作成されたら Claude Code でレビュー
+5. Issue、PR、branch、commit、verification、未解決事項を証拠 md または project note に戻す
+6. マージ後、Projects/ 内のドキュメントを更新
 
 ### GitHub / PR 運用
 - 共通ルールの正本は `company/engineering/docs/2026-06-24-github-pr-policy.md`。

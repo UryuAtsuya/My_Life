@@ -11,6 +11,8 @@
 - company Todo は `company/todos/` と `company/secretary/todos/` に集約する
 - 意思決定は `company/decisions/`、会議・作業メモは `company/notes/` に残す
 - 進行中プロジェクトの管理メモは `company/projects/` に置く
+- agent 指示の分割方針は `company/engineering/docs/2026-06-26-agent-instruction-map.md` に従う
+- 部門横断の work は `company/engineering/docs/2026-06-24-company-harness-engineering-policy.md` に従い、Secretary、CEO、PM、Research、Engineering、Reviews、Marketing、Record の stage と handoff で接続する
 - Claude Code と Codex はこのディレクトリを共通の作業ルートとして扱う
 - Claude Code は CEO / PM / 秘書寄りの判断、優先順位整理、会社運用、ドキュメント作成を主担当にする
 - Codex は開発、コードレビュー、技術検証、実装タスク、PR ベースの変更管理を主担当にする
@@ -28,9 +30,11 @@
 
 - 共通ルールの正本は `company/engineering/docs/2026-06-24-github-pr-policy.md`
 - 実装作業は原則として新しい `feature/*` / `fix/*` / `docs/*` branch を作って進める
+- GitHub Issue を起点にする作業は、同じ目的の open Issue / PR を確認してから起票・継続を判断する
 - 完了後は検証結果を残し、push して Pull Request を作成する
 - PR 本文は日本語で「何をやったか」「なぜやったか」「確認したこと」「未解決事項」を書く
 - merge は原則ユーザーが行う。agent は勝手に merge せず、PR URL と判断材料を返す
+- Issue、PR、branch、commit、verification、未解決事項は、必要に応じて証拠 md または project note に戻す
 - 直接 push は、ユーザーが明示した場合、緊急同期、automation memory など PR より即時反映が重要な小変更に限る
 
 ## 同期先

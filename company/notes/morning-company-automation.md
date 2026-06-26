@@ -74,3 +74,19 @@ webサービス制作を別プロジェクトとして追加する。
 1. Morning: webサービスの企画を行い、対象ユーザー、解決する痛み、最小機能、今日の実装範囲を決める。
 2. Midday: `Projects/` 配下でコーディングまたは最小プロトタイプ作成を行う。
 3. Evening: 動作確認、未完了、改善点、翌日の最小TODOをフィードバックとして残す。
+
+## 2026-06-24 Codex Implementation Meeting Gate
+
+Codex が GitHub Issue や project 実装を直接扱う場合、朝会が未実施の状態であれば、実装前に短い全体MTGを挟む。
+
+目的は新しい会議を増やすことではなく、会社全体の優先順位、marketing / PM / engineering の影響、完了条件を1回だけ揃えてから実装することである。
+
+実装前MTGの最小確認:
+
+1. Issue または実装対象は、現在の Main Focus と矛盾しないか。
+2. marketing / content / sales に戻すべき成果物や告知材料があるか。
+3. Codex が扱う slice は1つに絞れているか。
+4. 完了条件は test / lint / diff / source / human review のどれで確認するか。
+5. 作業結果を `company/notes/`、`company/projects/`、`company/decisions/` のどこへ戻すか。
+
+朝会が既に実施済みで、同じ内容が handoff note や project note に残っている場合は、追加MTGを省略してよい。

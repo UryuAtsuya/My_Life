@@ -23,7 +23,9 @@ GitHub (UryuAtsuya/My_Life) と同期し、履歴管理を行う。
 - **Codex** — 開発、コードレビュー、技術検証、実装タスク、PR ベースの変更管理
 
 ## Loop Engineering 運用
+- agent 指示は root に集約しすぎず、用途別 md に分ける。分割ルールの正本は `company/engineering/docs/2026-06-26-agent-instruction-map.md`。
 - MyLife の recurring work は、単発プロンプトではなく loop として設計する。正本は `company/engineering/docs/2026-06-22-loop-engineering-policy.md`。
+- 部門横断の company work は、Secretary → CEO → PM → Research / Engineering → Reviews → Record の stage として接続する。正本は `company/engineering/docs/2026-06-24-company-harness-engineering-policy.md`。
 - loop は Discover → Triage → Execute → Verify → Record → Decide next の順で進める。
 - 1 loop は原則1 objective、1 slice、1 verification に絞る。
 - 完了条件は作業前に test / lint / diff / source / human review のいずれかで確認可能にする。
@@ -35,15 +37,18 @@ GitHub (UryuAtsuya/My_Life) と同期し、履歴管理を行う。
 ### 並行運用ルール
 - Claude Code と Codex は同じ `company/` を正本として扱い、担当が違っても記録先を分けすぎない。
 - CEO 判断、優先順位、事業方針、部署振り分けは Claude Code を主担当にする。
+- CEO は「何をやるか」「なぜ今やるか」「どこまでできたら十分か」を決め、production promotion、外部公開、費用発生、法務・規約リスクは Go / No-Go を明記する。
 - コード変更、実装レビュー、テスト、技術的リスクの洗い出しは Codex を主担当にする。
 - 両方が触る案件は、Claude Code が「何をやるか」を決め、Codex が「どう実装・検証するか」を詰める。
 - Codex が技術的に重要な判断をした場合は、`company/decisions/` または対象プロジェクトの `notes/` に戻す。
 
 ### Codex 連携ルール
 1. コーディングタスクは GitHub Issue として起票
-2. Codex に Issue を割り当て、実装を委譲
-3. PR が作成されたら Codex でレビュー
-4. マージ後、Projects/ 内のドキュメントを更新
+2. 同じ目的の open Issue / PR がないか確認
+3. Codex に Issue を割り当て、実装を委譲
+4. PR が作成されたら Codex でレビュー
+5. Issue、PR、branch、commit、verification、未解決事項を証拠 md または project note に戻す
+6. マージ後、Projects/ 内のドキュメントを更新
 
 ### GitHub / PR 運用
 - 共通ルールの正本は `company/engineering/docs/2026-06-24-github-pr-policy.md`。
@@ -61,6 +66,7 @@ GitHub (UryuAtsuya/My_Life) と同期し、履歴管理を行う。
 
 ## ハーネス運用ルール
 - automation は週次トークン予算を優先し、同じ調査・TODO・説明を無変更で再生成しない。
+- GitHub Issue や外部リンクから始まる依頼は、まず run objective、owner、success check、required artifacts に落としてから部門へ渡す。
 - 実装系 automation は差分がある場合だけ重い検証や文書更新を行う。差分がなければ短い状態確認で終了する。
 - 1 run は原則1つの実装 slice、1つの検証結果、1つの簡潔な同期記録に絞る。
 - 同じ objective が未完了の場合、新しい日次計画を複製せず既存 run を継続する。
