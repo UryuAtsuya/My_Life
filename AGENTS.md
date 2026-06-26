@@ -23,6 +23,7 @@ GitHub (UryuAtsuya/My_Life) と同期し、履歴管理を行う。
 - **Codex** — 開発、コードレビュー、技術検証、実装タスク、PR ベースの変更管理
 
 ## Loop Engineering 運用
+- agent 指示は root に集約しすぎず、用途別 md に分ける。分割ルールの正本は `company/engineering/docs/2026-06-26-agent-instruction-map.md`。
 - MyLife の recurring work は、単発プロンプトではなく loop として設計する。正本は `company/engineering/docs/2026-06-22-loop-engineering-policy.md`。
 - 部門横断の company work は、Secretary → CEO → PM → Research / Engineering → Reviews → Record の stage として接続する。正本は `company/engineering/docs/2026-06-24-company-harness-engineering-policy.md`。
 - loop は Discover → Triage → Execute → Verify → Record → Decide next の順で進める。

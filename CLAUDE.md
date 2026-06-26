@@ -23,6 +23,7 @@ GitHub (UryuAtsuya/My_Life) と同期し、履歴管理を行う。
 - **Codex** — Projects/ 内のコーディング・実装タスク（issue 駆動・PR ベース）
 
 ## Loop Engineering 運用
+- agent 指示は root に集約しすぎず、用途別 md に分ける。分割ルールの正本は `company/engineering/docs/2026-06-26-agent-instruction-map.md`。
 - recurring work は単発プロンプトではなく loop として扱う。正本は `company/engineering/docs/2026-06-22-loop-engineering-policy.md`。
 - 部門横断の company work は stage 接続として扱う。正本は `company/engineering/docs/2026-06-24-company-harness-engineering-policy.md`。
 - Claude Code は What / Why / Priority / Record を主導し、Codex は How / Implementation / Verification を主導する。
