@@ -36,15 +36,18 @@ GitHub (UryuAtsuya/My_Life) と同期し、履歴管理を行う。
 ### 並行運用ルール
 - Claude Code と Codex は同じ `company/` を正本として扱い、担当が違っても記録先を分けすぎない。
 - CEO 判断、優先順位、事業方針、部署振り分けは Claude Code を主担当にする。
+- CEO は「何をやるか」「なぜ今やるか」「どこまでできたら十分か」を決め、production promotion、外部公開、費用発生、法務・規約リスクは Go / No-Go を明記する。
 - コード変更、実装レビュー、テスト、技術的リスクの洗い出しは Codex を主担当にする。
 - 両方が触る案件は、Claude Code が「何をやるか」を決め、Codex が「どう実装・検証するか」を詰める。
 - Codex が技術的に重要な判断をした場合は、`company/decisions/` または対象プロジェクトの `notes/` に戻す。
 
 ### Codex 連携ルール
 1. コーディングタスクは GitHub Issue として起票
-2. Codex に Issue を割り当て、実装を委譲
-3. PR が作成されたら Codex でレビュー
-4. マージ後、Projects/ 内のドキュメントを更新
+2. 同じ目的の open Issue / PR がないか確認
+3. Codex に Issue を割り当て、実装を委譲
+4. PR が作成されたら Codex でレビュー
+5. Issue、PR、branch、commit、verification、未解決事項を証拠 md または project note に戻す
+6. マージ後、Projects/ 内のドキュメントを更新
 
 ### GitHub / PR 運用
 - 共通ルールの正本は `company/engineering/docs/2026-06-24-github-pr-policy.md`。

@@ -29,9 +29,11 @@
 
 - 共通ルールの正本は `company/engineering/docs/2026-06-24-github-pr-policy.md`
 - 実装作業は原則として新しい `feature/*` / `fix/*` / `docs/*` branch を作って進める
+- GitHub Issue を起点にする作業は、同じ目的の open Issue / PR を確認してから起票・継続を判断する
 - 完了後は検証結果を残し、push して Pull Request を作成する
 - PR 本文は日本語で「何をやったか」「なぜやったか」「確認したこと」「未解決事項」を書く
 - merge は原則ユーザーが行う。agent は勝手に merge せず、PR URL と判断材料を返す
+- Issue、PR、branch、commit、verification、未解決事項は、必要に応じて証拠 md または project note に戻す
 - 直接 push は、ユーザーが明示した場合、緊急同期、automation memory など PR より即時反映が重要な小変更に限る
 
 ## 同期先
