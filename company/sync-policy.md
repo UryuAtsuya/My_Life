@@ -11,6 +11,7 @@
 - company Todo は `company/todos/` と `company/secretary/todos/` に集約する
 - 意思決定は `company/decisions/`、会議・作業メモは `company/notes/` に残す
 - 進行中プロジェクトの管理メモは `company/projects/` に置く
+- agent 指示の分割方針は `company/engineering/docs/2026-06-26-agent-instruction-map.md` に従う
 - 部門横断の work は `company/engineering/docs/2026-06-24-company-harness-engineering-policy.md` に従い、Secretary、CEO、PM、Research、Engineering、Reviews、Marketing、Record の stage と handoff で接続する
 - Claude Code と Codex はこのディレクトリを共通の作業ルートとして扱う
 - Claude Code は CEO / PM / 秘書寄りの判断、優先順位整理、会社運用、ドキュメント作成を主担当にする
