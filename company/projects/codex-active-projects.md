@@ -38,6 +38,14 @@ Last updated: 2026-06-26
 4. 新しい project / service を作ったら、`Projects/README.md` と必要に応じてこの一覧へ追加する。
 5. GitHub / PR 作業は `company/engineering/docs/2026-06-24-github-pr-policy.md` に従い、原則 branch 作成、push、PR、日本語説明、ユーザー merge とする。
 
+## 2026-06-26 Friday XGuard Weekly Closeout
+
+1. `x-ban-recovery-storage`: `develop = origin/develop = 3c56003153433cc4608aee18151eb9d37aaee5d6`。divergedなし。前回closeout後に `content_compliance_events` runtime repository wiring が入った。
+2. `x-ban-recovery-storage`: `origin/main = e7107885aee57a57e52b1f2fdc7e6373bd56cabf`。`origin/develop` は `origin/main` のancestorで、mainへの直接実装pushではなくdevelopからのmergeとして扱う。
+3. Review: P0なし。P1はproductionで `CONTENT_COMPLIANCE_EVENT_REPOSITORY=memory` を明示選択できること。P2は新規HTTP storeの実Supabase REST/PostgREST検証がないこと。
+4. Verification: diff check、targeted Vitest 3 files / 15 tests、TypeScript、追加targeted Vitest 2 files / 40 tests はpass。real Supabase/Postgres integrationは未実施。
+5. Production No-Go継続: production memory repository拒否gate、real Supabase/PostgREST検証、OAuth live token exchange、staging smoke/runbook evidence が未完了。
+
 ## 2026-06-24 mbti_lovetype_diagnosis Project Intake
 
 1. ユーザー依頼により、`mbti_lovetype_diagnosis` を Codex 管理対象プロジェクトとして追加した。
