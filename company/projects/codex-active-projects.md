@@ -1,12 +1,12 @@
 # Codex Active Projects
 
-Last updated: 2026-06-24
+Last updated: 2026-06-26
 
 ## Main Focus
 
 | Priority | Project | Status | Next action |
 |---|---|---|---|
-| 1 | X BAN Recovery Storage | `origin/develop = bfed1c6` / `origin/main = 04d81df` / content compliance DB contract反映済み / production No-Go | `SupabaseContentComplianceEventRepository`をruntimeへ配線し、実DB integrationとstaging smoke/runbook evidenceを確認する |
+| 1 | X BAN Recovery Storage | `feature/supabase-integration-preflight = origin/feature/supabase-integration-preflight = c2522e8` / staging未検証 / production No-Go | `npm run check:supabase-integration-env`を全PASSにし、既存Supabase/Postgres integration test runを再開する |
 | 2 | Ontology AIO Service | 企画、調査、診断レポートテンプレート、URL診断プロトタイプあり。GitHub repo `UryuAtsuya/AIO` へ publish 済み | URL診断の精度改善、サンプルサイト評価、レポート出力の形を決める |
 | 3 | AIRS | AI 就活・キャリア診断サービス。現行 repo / UI 改善対象 | 現行 URL と直近で直したい機能を決める |
 | 4 | note article flow | `AI時代に、毎日の仕事ログを残す理由` を公開済み。2026-05-22のcoffee/AI/MBTI 3記事は `ready_not_published` | AI仕事ログ24h、MBTI紹介note72h、既存note/coffee実測を回収し、今日公開する1本だけを決める |
@@ -26,7 +26,7 @@ Last updated: 2026-06-24
 | `note-article-flow` | active | note editorial OS for turning company/Codex logs into proof-backed articles, eyecatches, measurement, and monetization paths. | 2026-05-23は実測回収を先に閉じ、公開候補を1本だけ決める。 |
 | `web-service-new-product` | prototype | 新しいwebサービスを、朝企画、昼コーディング、夜フィードバックで進める別プロジェクト。 | Today Boardは保留し、X BAN Recovery Storageをwebサービス側の最優先に切り替える。 |
 | `mbti_lovetype_diagnosis` | added | GitHub repository `UryuAtsuya/mbti_lovetype_diagnosis`。`matchchecker` は別名、アプリ名、または関連repo候補として扱う。 | GitHub上の正式repo名/default branch/latest commitを確認し、local checkout場所と最初のCodex sliceを決める。 |
-| `x-ban-recovery-storage` | `origin/develop = bfed1c6` / `origin/main = 04d81df` / content compliance DB contract反映済み / production No-Go | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | P1: `SupabaseContentComplianceEventRepository` がruntimeへ未配線。配線後に実Supabase/Postgres integration、OAuth live token exchange、staging smoke/runbook evidenceを確認する。 |
+| `x-ban-recovery-storage` | `feature/supabase-integration-preflight = origin/feature/supabase-integration-preflight = c2522e8` / staging未検証 / production No-Go | XアカウントBAN後に新アカウントで再起動できるよう、平常時からXデータをDB保管し、証明ページと復元導線を作るサービス。 | `npm run check:supabase-integration-env`で`RUN_SUPABASE_SQL_INTEGRATION_TESTS=1`、`SUPABASE_DB_URL` or `POSTGRES_URL`、`psql`、`supabase/schema.sql`を全PASSにしてから既存integration test runを再開する。 |
 | `ontology-aio-service` | prototype | SEO / AIO / Entity / Structured Data の充足状況を URL 入力で診断するサービス案。`Projects/ontology-aio-service/prototype/` と GitHub repo `UryuAtsuya/AIO` に初期 prototype あり。 | 3サイト程度で診断結果を試し、レポート出力と改善提案の型を固める。 |
 | `airs` | priority | AI 就活サイト。就活・キャリア診断系のサービス改善プロジェクト。GitHub repo `UryuAtsuya/AIRS`、local path `/Users/uryuatsuya/MBTI_AI/mbti_ai`。 | 現行 URL、直近修正機能、診断結果 UI の優先度を確認する。 |
 
@@ -37,6 +37,14 @@ Last updated: 2026-06-24
 3. AIRS は `Projects/airs/README.md` を入口にし、実装 repo `UryuAtsuya/AIRS` と local path `/Users/uryuatsuya/MBTI_AI/mbti_ai` を確認対象にする。
 4. 新しい project / service を作ったら、`Projects/README.md` と必要に応じてこの一覧へ追加する。
 5. GitHub / PR 作業は `company/engineering/docs/2026-06-24-github-pr-policy.md` に従い、原則 branch 作成、push、PR、日本語説明、ユーザー merge とする。
+
+## 2026-06-26 Friday XGuard Weekly Closeout
+
+1. `x-ban-recovery-storage`: `develop = origin/develop = 3c56003153433cc4608aee18151eb9d37aaee5d6`。divergedなし。前回closeout後に `content_compliance_events` runtime repository wiring が入った。
+2. `x-ban-recovery-storage`: `origin/main = e7107885aee57a57e52b1f2fdc7e6373bd56cabf`。`origin/develop` は `origin/main` のancestorで、mainへの直接実装pushではなくdevelopからのmergeとして扱う。
+3. Review: P0なし。P1はproductionで `CONTENT_COMPLIANCE_EVENT_REPOSITORY=memory` を明示選択できること。P2は新規HTTP storeの実Supabase REST/PostgREST検証がないこと。
+4. Verification: diff check、targeted Vitest 3 files / 15 tests、TypeScript、追加targeted Vitest 2 files / 40 tests はpass。real Supabase/Postgres integrationは未実施。
+5. Production No-Go継続: production memory repository拒否gate、real Supabase/PostgREST検証、OAuth live token exchange、staging smoke/runbook evidence が未完了。
 
 ## 2026-06-24 mbti_lovetype_diagnosis Project Intake
 
