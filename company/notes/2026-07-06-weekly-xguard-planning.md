@@ -24,18 +24,19 @@ XGuardを今週の最優先にする。production releaseはNo-Goを維持する
 - local `main`: `030a916`
 - `origin/main`: `7455cfa`
 - PR #27 commit `31482ed` は `origin/develop` と `origin/main` に含まれる。
-- 既存未追跡: `.playwright-cli/` と `output/playwright/` は今回対象外として触らない。
+- 既存差分: `backend/src/repositories/oauthStateRepository.ts`, `backend/src/repositories/supabaseOAuthStateHttpStore.ts`, `.playwright-cli/`, `output/playwright/` は今回対象外として触らない。
 
 ## Blocker
 
 - local `main` が `origin/main` より遅れているため、production branchのlocal確認前に同期が必要。
+- `develop`上にOAuth state repository系の未コミット差分があるため、次の実装前に所有権とPR対象を確認する必要がある。
 - PR #27 `feature/supabase-proof-page-transaction-store` はremote上で `develop` / `main` に含まれるが、実DB migration / RPC検証は未完了。
 - `npm run check` は前回、標準timeoutで `frontend/src/App.test.tsx` 2件がtimeout。targeted extended testはpassしているが、標準check pass扱いにはしない。
 - production昇格は、staging検証、実Supabase/Postgres integration evidence、OAuth live token exchange、runbookが揃うまでNo-Go。
 
 ## 今週の実装slice
 
-1. local `main` を `origin/main` と同期できる状態にし、production branch確認を最新remote基準へ揃える。
+1. `develop`上のOAuth state repository系未コミット差分の所有権を確認し、PR対象にするか分離するか決める。
 2. Supabase/Postgres環境で `update_proof_page_visibility_and_record_content_compliance_event` RPC のmigration適用とtransaction保存を検証する。
 3. `npm run check` の標準timeout失敗を、frontend test cleanup / wait / async handleの観点で恒久修正する。
 4. OAuth live token exchange とproduction callback URLの確認をrunbook化し、mock callback/session発行禁止を維持する。
