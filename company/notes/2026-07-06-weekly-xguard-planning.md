@@ -24,7 +24,7 @@ XGuardを今週の最優先にする。production releaseはNo-Goを維持する
 - local `main`: `030a916`
 - `origin/main`: `7455cfa`
 - PR #27 commit `31482ed` は `origin/develop` と `origin/main` に含まれる。
-- 既存差分: `backend/src/repositories/oauthStateRepository.ts`, `backend/src/repositories/supabaseOAuthStateHttpStore.ts`, `.playwright-cli/`, `output/playwright/` は今回対象外として触らない。
+- 既存差分: `backend/src/repositories/oauthStateRepository.ts`, `backend/src/repositories/supabaseOAuthStateHttpStore.ts`, `backend/src/__tests__/oauthStateRepository.test.ts`, `backend/src/__tests__/supabaseOAuthStateHttpStore.test.ts`, `.playwright-cli/`, `output/playwright/` は今回対象外として触らない。
 
 ## Blocker
 
