@@ -22,6 +22,14 @@ GitHub (UryuAtsuya/My_Life) と同期し、履歴管理を行う。
 - **Claude Code** — プロジェクト管理・会社運用・意思決定支援・ドキュメント作成
 - **Codex** — Projects/ 内のコーディング・実装タスク（issue 駆動・PR ベース）
 
+## 導入済みSkillの必須運用
+- MyLife のファイルを操作・編集・調査・計画するときは、作業開始前に導入済みSkillの適用可否を確認し、該当するSkillを最低1つ必ず使う。該当するSkillが複数ある場合は併用する。
+- Webページの取得・探索・抽出には `ax` を使う。
+- ライブラリ、フレームワーク、SDK、API、CLIの最新仕様確認には Context7 の `find-docs` を使う。Context7の設定・Skill管理には `context7-cli` を使う。
+- 日本語の技術文書、記事、解説、運用記録の作成・推敲には `japanese-tech-writing` を使う。説明文の読みやすさを整える場合は `cognitive-rhythm-writing` も併用する。
+- 企画、設計、要件、長期計画の抜け漏れ確認には `grill-me` を使う。
+- 該当する導入済みSkillがない場合は、作業報告に「該当Skillなし」と理由を記録する。形式だけのSkill呼び出しは行わない。
+
 ## Loop Engineering 運用
 - agent 指示は root に集約しすぎず、用途別 md に分ける。分割ルールの正本は `company/engineering/docs/2026-06-26-agent-instruction-map.md`。
 - recurring work は単発プロンプトではなく loop として扱う。正本は `company/engineering/docs/2026-06-22-loop-engineering-policy.md`。
