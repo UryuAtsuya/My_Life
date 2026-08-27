@@ -19,6 +19,7 @@
 | Vault 全体の入口 | `AGENTS.md`, `CLAUDE.md` | 目的、役割分担、必読ルールへの導線 |
 | Company 同期 | `company/sync-policy.md` | company の保存先、commit / push、Claude Code / Codex の連携 |
 | Loop Engineering | `company/engineering/docs/2026-06-22-loop-engineering-policy.md` | recurring work、1 objective / 1 slice / 1 verification |
+| AI開発ツールの役割分担 | `company/engineering/docs/2026-08-27-ai-development-tooling-policy.md` | 開発プロセス、最新仕様、コード理解、ブラウザ検証、LLM評価、Jarvis基盤の選定条件 |
 | Company stage / handoff | `company/engineering/docs/2026-06-24-company-harness-engineering-policy.md` | Secretary -> CEO -> PM -> Engineering -> Reviews -> Record |
 | GitHub Issue / PR / 証拠 | `company/engineering/docs/2026-06-24-github-pr-policy.md` | Issue 起票、既存Issue確認、branch、PR、証拠md |
 | CEO 判断 | `company/ceo/CLAUDE.md` | 優先順位、Go / No-Go、Codex へ渡す条件 |
@@ -29,6 +30,7 @@
 
 - GitHub、branch、PR、commit、証拠mdに関わるなら `2026-06-24-github-pr-policy.md`。
 - loop、automation、繰り返し実行の完了条件なら `2026-06-22-loop-engineering-policy.md`。
+- AI開発ツール、plugin、開発支援基盤の採用条件なら `2026-08-27-ai-development-tooling-policy.md`。
 - 部署間の受け渡し、owner、handoff、stageなら `2026-06-24-company-harness-engineering-policy.md`。
 - CEO の判断軸、優先順位、Go / No-Goなら `company/ceo/CLAUDE.md`。
 - プロジェクトの現状、未解決 blocker、次の1手なら `company/projects/codex-active-projects.md` または対象 project note。

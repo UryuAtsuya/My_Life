@@ -15,6 +15,7 @@ Codex を主担当にし、実装、コードレビュー、テスト、技術�
 - Codex が実装やレビューを行った場合は、対象リポジトリ、検証結果、未解決事項、次の候補を `company/projects/` または `company/notes/` に戻す
 - CEO 判断が必要な仕様変更、優先順位変更、リスク受容は Claude Code 側へ返す
 - loop engineering の正本は `docs/2026-06-22-loop-engineering-policy.md` とする
+- AI開発ツールとpluginの役割分担は `docs/2026-08-27-ai-development-tooling-policy.md` を参照する
 - 週末の agent / skill / memory / PR 運用見直しは `docs/2026-07-02-weekend-agent-review-loop.md` を正本にする
 - 開発 automation は Discover → Triage → Execute → Verify → Record → Decide next の順で主導する
 - 1回の開発 loop は最小の unfinished slice を1つだけ扱い、検証結果を1つ以上残す
